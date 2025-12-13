@@ -64,8 +64,7 @@
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnLogout.BackColor = System.Drawing.Color.SlateGray;
-            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
@@ -82,8 +81,7 @@
             // 
             this.btnProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnProfile.BackColor = System.Drawing.Color.SlateGray;
-            this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
@@ -103,14 +101,13 @@
             // 
             this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnDashboard.BackColor = System.Drawing.Color.SlateGray;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(11, 143);
+            this.btnDashboard.Location = new System.Drawing.Point(11, 147);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
@@ -119,19 +116,19 @@
             this.btnDashboard.Text = "    Dashboard";
             this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDashboard.UseVisualStyleBackColor = false;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // btnBorrow
             // 
             this.btnBorrow.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnBorrow.BackColor = System.Drawing.Color.SlateGray;
-            this.btnBorrow.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnBorrow.FlatAppearance.BorderSize = 0;
+            this.btnBorrow.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBorrow.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBorrow.ForeColor = System.Drawing.Color.White;
             this.btnBorrow.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrow.Image")));
             this.btnBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrow.Location = new System.Drawing.Point(11, 399);
+            this.btnBorrow.Location = new System.Drawing.Point(11, 317);
             this.btnBorrow.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(242, 77);
@@ -144,14 +141,13 @@
             // 
             this.btnReserve.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnReserve.BackColor = System.Drawing.Color.SlateGray;
-            this.btnReserve.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnReserve.FlatAppearance.BorderSize = 0;
+            this.btnReserve.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnReserve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReserve.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReserve.ForeColor = System.Drawing.Color.White;
             this.btnReserve.Image = ((System.Drawing.Image)(resources.GetObject("btnReserve.Image")));
             this.btnReserve.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReserve.Location = new System.Drawing.Point(11, 311);
+            this.btnReserve.Location = new System.Drawing.Point(11, 403);
             this.btnReserve.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(242, 80);
@@ -164,14 +160,13 @@
             // 
             this.btnSearchBook.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSearchBook.BackColor = System.Drawing.Color.SlateGray;
-            this.btnSearchBook.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnSearchBook.FlatAppearance.BorderSize = 0;
+            this.btnSearchBook.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSearchBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchBook.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchBook.ForeColor = System.Drawing.Color.White;
             this.btnSearchBook.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBook.Image")));
             this.btnSearchBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchBook.Location = new System.Drawing.Point(11, 223);
+            this.btnSearchBook.Location = new System.Drawing.Point(11, 229);
             this.btnSearchBook.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnSearchBook.Name = "btnSearchBook";
             this.btnSearchBook.Size = new System.Drawing.Size(242, 81);

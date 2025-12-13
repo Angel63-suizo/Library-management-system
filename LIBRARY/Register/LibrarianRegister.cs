@@ -19,6 +19,7 @@ namespace LIBRARY.Register
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            txtConfirm.PasswordChar = '*';
         }
 
         private void btnSignup_Click(object sender, EventArgs e)
@@ -59,6 +60,7 @@ namespace LIBRARY.Register
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
+            txtConfirm.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
         }
 
         private void lblLogin_Click(object sender, EventArgs e)

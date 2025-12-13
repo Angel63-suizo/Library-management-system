@@ -95,9 +95,9 @@
             this.txtConfirm.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.txtConfirm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtConfirm.Font = new System.Drawing.Font("Candara Light", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConfirm.Location = new System.Drawing.Point(3, 12);
+            this.txtConfirm.Location = new System.Drawing.Point(-1, 13);
             this.txtConfirm.Name = "txtConfirm";
-            this.txtConfirm.Size = new System.Drawing.Size(409, 22);
+            this.txtConfirm.Size = new System.Drawing.Size(413, 22);
             this.txtConfirm.TabIndex = 2;
             // 
             // txtUsername

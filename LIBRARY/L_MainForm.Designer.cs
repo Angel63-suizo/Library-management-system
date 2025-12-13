@@ -76,8 +76,7 @@
             // 
             this.btnSearchBooks.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnSearchBooks.BackColor = System.Drawing.Color.SlateGray;
-            this.btnSearchBooks.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnSearchBooks.FlatAppearance.BorderSize = 0;
+            this.btnSearchBooks.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSearchBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSearchBooks.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchBooks.ForeColor = System.Drawing.Color.White;
@@ -96,8 +95,7 @@
             // 
             this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnLogout.BackColor = System.Drawing.Color.SlateGray;
-            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
@@ -114,8 +112,7 @@
             // 
             this.btnProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnProfile.BackColor = System.Drawing.Color.SlateGray;
-            this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnProfile.FlatAppearance.BorderSize = 0;
+            this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProfile.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.White;
@@ -134,8 +131,7 @@
             // 
             this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnDashboard.BackColor = System.Drawing.Color.SlateGray;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.LightSlateGray;
-            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDashboard.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
@@ -155,8 +151,7 @@
             // 
             this.btnMembers.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnMembers.BackColor = System.Drawing.Color.SlateGray;
-            this.btnMembers.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnMembers.FlatAppearance.BorderSize = 0;
+            this.btnMembers.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnMembers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMembers.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMembers.ForeColor = System.Drawing.Color.White;
@@ -175,8 +170,7 @@
             // 
             this.btnInventory.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnInventory.BackColor = System.Drawing.Color.SlateGray;
-            this.btnInventory.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnInventory.FlatAppearance.BorderSize = 0;
+            this.btnInventory.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInventory.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInventory.ForeColor = System.Drawing.Color.White;
@@ -195,8 +189,7 @@
             // 
             this.btnCirculation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCirculation.BackColor = System.Drawing.Color.SlateGray;
-            this.btnCirculation.FlatAppearance.BorderColor = System.Drawing.Color.AliceBlue;
-            this.btnCirculation.FlatAppearance.BorderSize = 0;
+            this.btnCirculation.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCirculation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCirculation.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCirculation.ForeColor = System.Drawing.Color.White;

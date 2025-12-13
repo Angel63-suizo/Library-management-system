@@ -33,14 +33,19 @@ namespace LIBRARY
                 btnReserve.Visible = false;
             }
 
-            /*if (CurrentUser.AccessLevel < 2) // students
+            if (CurrentUser.AccessLevel < 2) // students
             {
-                btnLoans.Visible = false;
-            }*/
+                btnReserve.Visible = false;
+            }
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
+            MDashboard.M_Profile profile = new MDashboard.M_Profile(CurrentUser);
+            this.Controls.Add(profile);
+            profile.Dock = DockStyle.Fill;
+            profile.Show();
+            profile.BringToFront();
 
         }
 
@@ -48,6 +53,14 @@ namespace LIBRARY
         {
             MessageBox.Show("Are you sure you want to logout?", "Question", MessageBoxButtons.YesNo);
             this.Close();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            MDashboard.M_dashboard dashboard = new MDashboard.M_dashboard(CurrentUser);
+            this.Controls.Add(dashboard);
+            dashboard.Dock = DockStyle.Fill;
+            dashboard.BringToFront();
         }
     }
 }

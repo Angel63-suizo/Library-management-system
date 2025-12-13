@@ -21,6 +21,8 @@ namespace LIBRARY.Register
             InitializeComponent();
             PopulateMemberTypes();
             cmbMemberType.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtPassword.PasswordChar = '*';
+            txtConfirmPassword.PasswordChar = '*';
         }
 
         private void register_Load(object sender, EventArgs e)
@@ -116,6 +118,12 @@ namespace LIBRARY.Register
             {
                 MessageBox.Show("Failed to load member types: " + ex.Message);
             }
+        }
+
+        private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            txtPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
+            txtConfirmPassword.PasswordChar = chkShowPassword.Checked ? '\0' : '*';
         }
     }
 }
