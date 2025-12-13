@@ -38,6 +38,7 @@
             this.btnMembers = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
             this.btnCirculation = new System.Windows.Forms.Button();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlSidebar1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -204,11 +205,21 @@
             this.btnCirculation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCirculation.UseVisualStyleBackColor = false;
             // 
+            // pnlContent
+            // 
+            this.pnlContent.BackColor = System.Drawing.Color.Black;
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(270, 60);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(1654, 995);
+            this.pnlContent.TabIndex = 27;
+            // 
             // L_MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSidebar1);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
@@ -232,5 +243,6 @@
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnCirculation;
         private System.Windows.Forms.Button btnSearchBooks;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }

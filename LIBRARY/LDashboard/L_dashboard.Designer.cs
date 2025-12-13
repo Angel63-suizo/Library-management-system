@@ -41,8 +41,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel4.SuspendLayout();
@@ -60,7 +58,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Location = new System.Drawing.Point(1108, 148);
+            this.panel2.Location = new System.Drawing.Point(820, 148);
             this.panel2.MinimumSize = new System.Drawing.Size(376, 416);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 416);
@@ -98,7 +96,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.pictureBox4);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(1516, 148);
+            this.panel4.Location = new System.Drawing.Point(1228, 148);
             this.panel4.MinimumSize = new System.Drawing.Size(376, 416);
             this.panel4.Name = "panel4";
             this.panel4.Padding = new System.Windows.Forms.Padding(20);
@@ -136,7 +134,7 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.pictureBox5);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(700, 148);
+            this.panel5.Location = new System.Drawing.Point(412, 148);
             this.panel5.MinimumSize = new System.Drawing.Size(376, 416);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(20);
@@ -174,7 +172,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(290, 148);
+            this.panel1.Location = new System.Drawing.Point(2, 148);
             this.panel1.MinimumSize = new System.Drawing.Size(376, 416);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(376, 416);
@@ -204,36 +202,18 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Borrowed Books";
             // 
-            // panel6
-            // 
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 60);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(270, 1042);
-            this.panel6.TabIndex = 19;
-            // 
-            // panel7
-            // 
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1942, 60);
-            this.panel7.TabIndex = 20;
-            // 
             // L_dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Name = "L_dashboard";
-            this.Size = new System.Drawing.Size(1942, 1102);
+            this.Size = new System.Drawing.Size(1654, 995);
             this.Load += new System.EventHandler(this.L_dashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -265,7 +245,5 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
     }
 }

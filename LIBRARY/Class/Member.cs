@@ -14,14 +14,17 @@ namespace LIBRARY.Class
         public int MemberId { get; set; }
         public string CardNumber { get; set; }
         public int MemberTypeId { get; set; }
-
+        public string Address { get; set; }
         public string MemberRole { get; set; }
         public int MaxBorrow { get; set; }
         public int MaxReserve { get; set; }
         public int BorrowDays { get; set; }
         public int AccessLevel { get; set; }
-
+        public string contactNumber { get; set; }
         public string Status { get; set; }
+         public DateTime RegisterDate { get; set; }
+        public DateTime ExpirationDate { get; set; }
+        public byte[] Photo { get; set; }
 
         public Member() { }
          
@@ -41,6 +44,13 @@ namespace LIBRARY.Class
             BorrowDays = Convert.ToInt32(r["BorrowDays"]);
             AccessLevel = Convert.ToInt32(r["AccessLevel"]);
             Status = r["Status"].ToString();
+            contactNumber = r["Contact"].ToString();
+            Address = r["Address"].ToString();
+            RegisterDate = Convert.ToDateTime(r["RegistrationDate"]);
+            ExpirationDate = Convert.ToDateTime(r["ExpirationDate"]);
+            Photo = r["PhotoPath"] != DBNull.Value
+        ? (byte[])r["PhotoPath"]
+        : null;
 
             Role = "Member";
 

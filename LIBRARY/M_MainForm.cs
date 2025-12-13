@@ -1,4 +1,5 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.MDashboard;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace LIBRARY
@@ -23,9 +25,7 @@ namespace LIBRARY
 
         private void M_MainForm_Load(object sender, EventArgs e)
         {
-            MDashboard.M_dashboard dashboard = new MDashboard.M_dashboard(CurrentUser);
-            this.Controls.Add(dashboard);
-            dashboard.Dock = DockStyle.Fill;
+            LoadUserControl(new M_dashboard(CurrentUser));
 
             if (CurrentUser.AccessLevel == 0)  // Visitor
             {
@@ -41,26 +41,35 @@ namespace LIBRARY
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            MDashboard.M_Profile profile = new MDashboard.M_Profile(CurrentUser);
-            this.Controls.Add(profile);
-            profile.Dock = DockStyle.Fill;
-            profile.Show();
-            profile.BringToFront();
+            LoadUserControl(new M_Profile(CurrentUser));
 
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Are you sure you want to logout?", "Question", MessageBoxButtons.YesNo);
-            this.Close();
+            switch (MessageBox.Show("Are you sure you want to logout?", "Question", MessageBoxButtons.YesNo))
+            {
+                case DialogResult.Yes:
+                    this.Hide();
+                    new Login.Login().Show();
+                    break;
+                case DialogResult.No:
+                    return;
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            MDashboard.M_dashboard dashboard = new MDashboard.M_dashboard(CurrentUser);
-            this.Controls.Add(dashboard);
-            dashboard.Dock = DockStyle.Fill;
-            dashboard.BringToFront();
+            LoadUserControl(new M_dashboard(CurrentUser));
+
+        }
+
+        private void LoadUserControl(UserControl mem)
+        {
+            pnlContent.Controls.Clear();   
+            mem.Dock = DockStyle.Fill;       
+            pnlContent.Controls.Add(mem);  
+            mem.BringToFront();
         }
     }
 }

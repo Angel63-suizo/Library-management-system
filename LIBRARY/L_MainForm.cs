@@ -1,4 +1,6 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.LDashboard;
+using LIBRARY.MDashboard;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,25 +30,30 @@ namespace LIBRARY
                 this.Close();
             }*/
 
-            LDashboard.L_dashboard dash = new LDashboard.L_dashboard(CurrentUser);
-            this.Controls.Add(dash);
-            dash.Dock = DockStyle.Fill;
-     
+            LoadUserControl(new L_dashboard(CurrentUser));
+
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-        
-           switch (MessageBox.Show("Are you sure you want to logout?", "Question", MessageBoxButtons.YesNo))
+
+            switch (MessageBox.Show("Are you sure you want to logout?", "Question", MessageBoxButtons.YesNo))
             {
                 case DialogResult.Yes:
-                    this.Close();
+                    this.Hide();
+                    new Login.Login().Show();
                     break;
                 case DialogResult.No:
                     return;
             }
-            
+        }
 
+        private void LoadUserControl(UserControl mem)
+        {
+            pnlContent.Controls.Clear();
+            mem.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(mem);
+            mem.BringToFront();
         }
     }
 }

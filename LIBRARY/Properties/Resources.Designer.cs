@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace LIBRARY.Properties
 {
 
@@ -33,6 +35,8 @@ namespace LIBRARY.Properties
         internal Resources()
         {
         }
+
+        public static Image DefaultAvatar { get; internal set; }
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
