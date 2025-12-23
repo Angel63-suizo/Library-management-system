@@ -24,32 +24,6 @@ namespace LIBRARY.Register
 
         private void btnSignup_Click(object sender, EventArgs e)
         {
-            if (txtPassword.Text != txtConfirm.Text)
-            {
-                MessageBox.Show("Passwords do not match!");
-                return;
-            }
-
-            Librarian lib = new Librarian
-            {
-                Username = txtUsername.Text,
-                FirstName = txtFirstName.Text,
-                LastName = txtLastName.Text,
-                Email = txtEmail.Text
-            };
-
-            bool success = Register_Repository.RegisterLibrarian(lib, txtPassword.Text);
-
-            if (success)
-            {
-                MessageBox.Show("Library Staff registered successfully!");
-                this.Hide();
-                new Login.Login().Show();
-            }
-            else
-            {
-                MessageBox.Show("Registration failed.");
-            }
         }
 
         private void LibrarianRegister_Load(object sender, EventArgs e)

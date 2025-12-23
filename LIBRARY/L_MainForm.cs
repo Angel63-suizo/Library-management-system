@@ -15,22 +15,15 @@ namespace LIBRARY
 {
     public partial class L_MainForm : Form
     {
-        private Librarian CurrentUser;
-        public L_MainForm(Librarian user)
+        public L_MainForm()
         {
             InitializeComponent();
-            CurrentUser = user;
         }
 
         private void L_MainForm_Load(object sender, EventArgs e)
         {
-            /*if (Session.Role != "Librarian")
-            {
-                MessageBox.Show("You do not have permission to access this page.");
-                this.Close();
-            }*/
 
-            LoadUserControl(new L_dashboard(CurrentUser));
+            LoadUserControl(new L_dashboard());
 
         }
 

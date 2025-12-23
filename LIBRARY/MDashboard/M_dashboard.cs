@@ -14,12 +14,10 @@ namespace LIBRARY.MDashboard
 
     public partial class M_dashboard : UserControl
     {
-        private Member CurrentUser;
 
-        public M_dashboard(Member user)
+        public M_dashboard()
         {
             InitializeComponent();
-            CurrentUser = user;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,6 +31,11 @@ namespace LIBRARY.MDashboard
         }
 
         private void lbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

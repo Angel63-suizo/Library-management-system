@@ -28,86 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(M_dashboard));
             this.lbl = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btnViewFines = new System.Windows.Forms.Button();
+            this.btnViewBorrowed = new System.Windows.Forms.Button();
+            this.btnSearchBook = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lblReservation = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblOverdue = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblBorrowedBooks = new System.Windows.Forms.Label();
+            this.lblBB = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.flowLayoutPanel1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(322, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(10);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1159, 164);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(651, 45);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(3, 80);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(666, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 16);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Book : ";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(42, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Due Date : ";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(42, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Loan ID : ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // lbl
             // 
@@ -122,79 +72,211 @@
             this.lbl.Text = "Dashboard";
             this.lbl.Click += new System.EventHandler(this.lbl_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.flowLayoutPanel2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(322, 350);
-            this.panel2.Margin = new System.Windows.Forms.Padding(10);
-            this.panel2.Name = "panel2";
-            this.panel2.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
-            this.panel2.Size = new System.Drawing.Size(1159, 166);
-            this.panel2.TabIndex = 1;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.BackColor = System.Drawing.Color.LightGray;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(651, 45);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(3, 80);
-            this.flowLayoutPanel2.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(666, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Book : ";
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(42, 113);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 16);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Due Date : ";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(42, 65);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Loan ID : ";
-            // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.lbl);
-            this.panel5.Controls.Add(this.panel1);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel4);
+            this.panel5.Controls.Add(this.panel3);
             this.panel5.Controls.Add(this.panel2);
+            this.panel5.Controls.Add(this.panel1);
+            this.panel5.Controls.Add(this.lbl);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(30, 50, 30, 30);
             this.panel5.Size = new System.Drawing.Size(1654, 995);
             this.panel5.TabIndex = 4;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btnViewFines);
+            this.panel6.Controls.Add(this.btnViewBorrowed);
+            this.panel6.Controls.Add(this.btnSearchBook);
+            this.panel6.Location = new System.Drawing.Point(90, 397);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1450, 162);
+            this.panel6.TabIndex = 5;
+            // 
+            // btnViewFines
+            // 
+            this.btnViewFines.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewFines.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnViewFines.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewFines.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewFines.Image = ((System.Drawing.Image)(resources.GetObject("btnViewFines.Image")));
+            this.btnViewFines.Location = new System.Drawing.Point(803, 66);
+            this.btnViewFines.Name = "btnViewFines";
+            this.btnViewFines.Size = new System.Drawing.Size(297, 74);
+            this.btnViewFines.TabIndex = 7;
+            this.btnViewFines.Text = "   View Fines";
+            this.btnViewFines.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewFines.UseVisualStyleBackColor = false;
+            // 
+            // btnViewBorrowed
+            // 
+            this.btnViewBorrowed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnViewBorrowed.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnViewBorrowed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewBorrowed.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBorrowed.Image = ((System.Drawing.Image)(resources.GetObject("btnViewBorrowed.Image")));
+            this.btnViewBorrowed.Location = new System.Drawing.Point(438, 66);
+            this.btnViewBorrowed.Name = "btnViewBorrowed";
+            this.btnViewBorrowed.Size = new System.Drawing.Size(297, 74);
+            this.btnViewBorrowed.TabIndex = 6;
+            this.btnViewBorrowed.Text = "   View Borrowed";
+            this.btnViewBorrowed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnViewBorrowed.UseVisualStyleBackColor = false;
+            // 
+            // btnSearchBook
+            // 
+            this.btnSearchBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSearchBook.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnSearchBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearchBook.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchBook.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBook.Image")));
+            this.btnSearchBook.Location = new System.Drawing.Point(76, 66);
+            this.btnSearchBook.Name = "btnSearchBook";
+            this.btnSearchBook.Size = new System.Drawing.Size(297, 74);
+            this.btnSearchBook.TabIndex = 0;
+            this.btnSearchBook.Text = "   Search Book";
+            this.btnSearchBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearchBook.UseVisualStyleBackColor = false;
+            this.btnSearchBook.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel4.Location = new System.Drawing.Point(90, 345);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1450, 4);
+            this.panel4.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.MistyRose;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.lblReservation);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Location = new System.Drawing.Point(1094, 131);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(446, 162);
+            this.panel3.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(53, 37);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(70, 75);
+            this.pictureBox3.TabIndex = 4;
+            this.pictureBox3.TabStop = false;
+            // 
+            // lblReservation
+            // 
+            this.lblReservation.AutoSize = true;
+            this.lblReservation.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReservation.Location = new System.Drawing.Point(157, 84);
+            this.lblReservation.Name = "lblReservation";
+            this.lblReservation.Size = new System.Drawing.Size(33, 37);
+            this.lblReservation.TabIndex = 2;
+            this.lblReservation.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(157, 25);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(174, 37);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Reservation";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Ivory;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.lblOverdue);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Location = new System.Drawing.Point(594, 131);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(446, 162);
+            this.panel2.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(55, 37);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(70, 75);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblOverdue
+            // 
+            this.lblOverdue.AutoSize = true;
+            this.lblOverdue.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverdue.Location = new System.Drawing.Point(157, 84);
+            this.lblOverdue.Name = "lblOverdue";
+            this.lblOverdue.Size = new System.Drawing.Size(33, 37);
+            this.lblOverdue.TabIndex = 2;
+            this.lblOverdue.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(157, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(128, 37);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Overdue";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Lavender;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.lblBorrowedBooks);
+            this.panel1.Controls.Add(this.lblBB);
+            this.panel1.Location = new System.Drawing.Point(90, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(451, 162);
+            this.panel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(55, 37);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 75);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // lblBorrowedBooks
+            // 
+            this.lblBorrowedBooks.AutoSize = true;
+            this.lblBorrowedBooks.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBorrowedBooks.Location = new System.Drawing.Point(157, 84);
+            this.lblBorrowedBooks.Name = "lblBorrowedBooks";
+            this.lblBorrowedBooks.Size = new System.Drawing.Size(33, 37);
+            this.lblBorrowedBooks.TabIndex = 2;
+            this.lblBorrowedBooks.Text = "0";
+            // 
+            // lblBB
+            // 
+            this.lblBB.AutoSize = true;
+            this.lblBB.Font = new System.Drawing.Font("Segoe Fluent Icons", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBB.Location = new System.Drawing.Point(157, 25);
+            this.lblBB.Name = "lblBB";
+            this.lblBB.Size = new System.Drawing.Size(234, 37);
+            this.lblBB.TabIndex = 0;
+            this.lblBB.Text = "Borrowed Books";
             // 
             // M_dashboard
             // 
@@ -205,30 +287,42 @@
             this.Margin = new System.Windows.Forms.Padding(270, 60, 3, 3);
             this.Name = "M_dashboard";
             this.Size = new System.Drawing.Size(1654, 995);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblBB;
+        private System.Windows.Forms.Label lblBorrowedBooks;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblReservation;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblOverdue;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btnSearchBook;
+        private System.Windows.Forms.Button btnViewFines;
+        private System.Windows.Forms.Button btnViewBorrowed;
     }
 }

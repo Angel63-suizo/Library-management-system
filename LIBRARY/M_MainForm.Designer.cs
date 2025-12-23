@@ -36,7 +36,6 @@
             this.btnBorrow = new System.Windows.Forms.Button();
             this.btnReserve = new System.Windows.Forms.Button();
             this.btnSearchBook = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlSidebar1.SuspendLayout();
             this.SuspendLayout();
@@ -54,11 +53,11 @@
             this.pnlSidebar1.Controls.Add(this.btnReserve);
             this.pnlSidebar1.Controls.Add(this.btnSearchBook);
             this.pnlSidebar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSidebar1.Location = new System.Drawing.Point(0, 60);
+            this.pnlSidebar1.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar1.Name = "pnlSidebar1";
             this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 40, 0, 50);
             this.pnlSidebar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlSidebar1.Size = new System.Drawing.Size(270, 995);
+            this.pnlSidebar1.Size = new System.Drawing.Size(270, 1055);
             this.pnlSidebar1.TabIndex = 22;
             // 
             // btnLogout
@@ -69,7 +68,7 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(11, 869);
+            this.btnLogout.Location = new System.Drawing.Point(11, 899);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(242, 70);
@@ -88,7 +87,7 @@
             this.btnProfile.ForeColor = System.Drawing.Color.White;
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(11, 63);
+            this.btnProfile.Location = new System.Drawing.Point(11, 93);
             this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 30, 3, 20);
             this.btnProfile.Name = "btnProfile";
             this.btnProfile.Size = new System.Drawing.Size(242, 74);
@@ -108,7 +107,7 @@
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
             this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
             this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(11, 147);
+            this.btnDashboard.Location = new System.Drawing.Point(11, 177);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
@@ -129,7 +128,7 @@
             this.btnBorrow.ForeColor = System.Drawing.Color.White;
             this.btnBorrow.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrow.Image")));
             this.btnBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrow.Location = new System.Drawing.Point(11, 317);
+            this.btnBorrow.Location = new System.Drawing.Point(11, 347);
             this.btnBorrow.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnBorrow.Name = "btnBorrow";
             this.btnBorrow.Size = new System.Drawing.Size(242, 77);
@@ -148,7 +147,7 @@
             this.btnReserve.ForeColor = System.Drawing.Color.White;
             this.btnReserve.Image = ((System.Drawing.Image)(resources.GetObject("btnReserve.Image")));
             this.btnReserve.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReserve.Location = new System.Drawing.Point(11, 403);
+            this.btnReserve.Location = new System.Drawing.Point(11, 433);
             this.btnReserve.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(242, 80);
@@ -167,7 +166,7 @@
             this.btnSearchBook.ForeColor = System.Drawing.Color.White;
             this.btnSearchBook.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBook.Image")));
             this.btnSearchBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchBook.Location = new System.Drawing.Point(11, 229);
+            this.btnSearchBook.Location = new System.Drawing.Point(11, 259);
             this.btnSearchBook.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnSearchBook.Name = "btnSearchBook";
             this.btnSearchBook.Size = new System.Drawing.Size(242, 81);
@@ -176,23 +175,13 @@
             this.btnSearchBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSearchBook.UseVisualStyleBackColor = false;
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1924, 60);
-            this.panel1.TabIndex = 23;
-            // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.Color.Black;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(270, 60);
+            this.pnlContent.Location = new System.Drawing.Point(270, 0);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1654, 995);
+            this.pnlContent.Size = new System.Drawing.Size(1654, 1055);
             this.pnlContent.TabIndex = 25;
             // 
             // M_MainForm
@@ -202,7 +191,6 @@
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSidebar1);
-            this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
             this.Name = "M_MainForm";
             this.Text = " ";
@@ -222,7 +210,6 @@
         private System.Windows.Forms.Button btnSearchBook;
         private System.Windows.Forms.Button btnReserve;
         private System.Windows.Forms.Button btnBorrow;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlContent;
     }
 }

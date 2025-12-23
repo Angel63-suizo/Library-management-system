@@ -1,0 +1,40 @@
+﻿using LIBRARY.Class;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace LIBRARY
+{
+    public partial class L_MainForm : Form
+    {
+        private Librarian LoggedInUser;
+        private User LoggedUser;
+
+        public L_MainForm(User user)
+        {
+            InitializeComponent();
+            LoggedUser = user;
+            LoggedInUser = user as Librarian;
+        }
+
+        private void L_MainForm_Load(object sender, EventArgs e)
+        {
+            if (LoggedInUser != null)
+            {
+                LDashboard.L_dashboard dash = new LDashboard.L_dashboard(LoggedInUser);
+                this.Controls.Add(dash);
+                dash.Dock = DockStyle.Fill;
+            }
+            else
+            {
+                // No librarian provided; optionally handle differently
+            }
+        }
+    }
+}

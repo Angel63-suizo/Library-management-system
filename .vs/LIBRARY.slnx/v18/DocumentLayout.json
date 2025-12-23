@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\source\\repos\\LIBRARY\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\user\\source\\repos\\library\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\user\\source\\repos\\library\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\user\\source\\repos\\library\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\user\\source\\repos\\library\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\user\\source\\repos\\library\\library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\USER\\source\\repos\\LIBRARY\\library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "A_MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\A_MainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\A_MainForm.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\A_MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T04:47:15.801Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "A_Resources.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Resources.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Resources.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Resources.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Resources.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:24:28.23Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "A_Inventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T06:22:02.995Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "A_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\A_MainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\A_MainForm.cs",
+              "RelativeToolTip": "LIBRARY\\A_MainForm.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAIAwwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T09:44:34.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "A_Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAewB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:57:13.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\Program.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\source\\repos\\LIBRARY\\LIBRARY\\Program.cs",
+              "RelativeToolTip": "LIBRARY\\Program.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T02:49:04.712Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

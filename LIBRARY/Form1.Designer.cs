@@ -85,7 +85,7 @@
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegister.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.Black;
-            this.btnRegister.Location = new System.Drawing.Point(631, 216);
+            this.btnRegister.Location = new System.Drawing.Point(631, 221);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(344, 45);
             this.btnRegister.TabIndex = 50;
@@ -100,7 +100,7 @@
             this.btnogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnogin.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnogin.ForeColor = System.Drawing.Color.White;
-            this.btnogin.Location = new System.Drawing.Point(631, 154);
+            this.btnogin.Location = new System.Drawing.Point(631, 160);
             this.btnogin.Name = "btnogin";
             this.btnogin.Size = new System.Drawing.Size(344, 45);
             this.btnogin.TabIndex = 51;
@@ -114,7 +114,7 @@
             this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignin.Font = new System.Drawing.Font("Candara Light", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignin.ForeColor = System.Drawing.Color.Black;
-            this.btnSignin.Location = new System.Drawing.Point(631, 457);
+            this.btnSignin.Location = new System.Drawing.Point(631, 453);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(344, 45);
             this.btnSignin.TabIndex = 52;
@@ -127,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Candara", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(626, 399);
+            this.label2.Location = new System.Drawing.Point(626, 410);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(239, 28);
             this.label2.TabIndex = 59;

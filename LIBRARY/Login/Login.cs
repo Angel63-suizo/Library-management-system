@@ -30,7 +30,7 @@ namespace LIBRARY.Login
         {
 
 
-            var user = Login_Repository.Login(txtUsername.Text, txtPassword.Text);
+            /*var user = Login_Repository.Login(txtUsername.Text, txtPassword.Text);
 
             if (user == null)
             {
@@ -53,11 +53,16 @@ namespace LIBRARY.Login
                         this.Hide();
                         break;
 
+                    case "Admin":
+                        new A_MainForm((Admin)user).Show();
+                        this.Hide();
+                        break;
+
                     default:
                         MessageBox.Show("Error: User Role is not Defined");
                         break;
                 }
-            }
+            }*/
         }
            
 
@@ -72,7 +77,7 @@ namespace LIBRARY.Login
         {
             Register.register signup = new Register.register();
             signup.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
@@ -81,6 +86,41 @@ namespace LIBRARY.Login
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }

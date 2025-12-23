@@ -15,33 +15,21 @@ namespace LIBRARY
 {
     public partial class M_MainForm : Form
     {
-        private Member CurrentUser; // Add this field to hold the current member
 
-        public M_MainForm(Member user) // Update constructor to accept a Member
+        public M_MainForm()
         {
             InitializeComponent();
-            CurrentUser = user;
+
         }
 
         private void M_MainForm_Load(object sender, EventArgs e)
         {
-            LoadUserControl(new M_dashboard(CurrentUser));
-
-            if (CurrentUser.AccessLevel == 0)  // Visitor
-            {
-                btnBorrow.Visible = false;
-                btnReserve.Visible = false;
-            }
-
-            if (CurrentUser.AccessLevel < 2) // students
-            {
-                btnReserve.Visible = false;
-            }
+            LoadUserControl(new M_dashboard());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_Profile(CurrentUser));
+            LoadUserControl(new M_Profile());
 
         }
 
@@ -60,7 +48,7 @@ namespace LIBRARY
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_dashboard(CurrentUser));
+            LoadUserControl(new M_dashboard());
 
         }
 
@@ -70,6 +58,11 @@ namespace LIBRARY
             mem.Dock = DockStyle.Fill;       
             pnlContent.Controls.Add(mem);  
             mem.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

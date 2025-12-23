@@ -14,11 +14,9 @@ namespace LIBRARY.LDashboard
 {
     public partial class L_dashboard : UserControl
     {
-        private Librarian CurrentUser;
-        public L_dashboard(Librarian currentUser)
+        public L_dashboard()
         {
             InitializeComponent();
-            CurrentUser = currentUser;
         }
         private void L_dashboard_Load(object sender, EventArgs e)
         {

@@ -14,15 +14,5 @@ namespace LIBRARY.Class
         public Librarian()
         {
         }
-
-        public Librarian(MySqlDataReader r)
-        {
-            UserId = Convert.ToInt32(r["UserId"]);
-            Username = r["Username"].ToString();
-            FirstName = r["FirstName"].ToString();
-            LastName = r["LastName"].ToString();
-            Email = r["Email"].ToString();
-            Role = "Librarian";
-        }
     }
 }
