@@ -1,11 +1,14 @@
 ﻿using LIBRARY.Class;
 using LIBRARY.MDashboard;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +18,7 @@ namespace LIBRARY.Login
 {
     public partial class Login : Form
     {
+        private string selectedRole = "Member";
         public Login()
         {
             InitializeComponent();
@@ -28,46 +32,72 @@ namespace LIBRARY.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
-
-            /*var user = Login_Repository.Login(txtUsername.Text, txtPassword.Text);
-
-            if (user == null)
+           
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Invalid username or password");
+                MessageBox.Show("Please enter all credentials.");
                 return;
+            }
+
+           
+            if (selectedRole == "Admin")
+            {
+                string adminUser = ConfigurationManager.AppSettings["AdminUser"];
+                string adminPass = ConfigurationManager.AppSettings["AdminPass"];
+
+                if (username == adminUser && password == adminPass)
+                {
+                    Admin loggedInAdmin = new Admin()
+                    {
+                        Username = adminUser,
+                        Password = adminPass,
+                        Role = "Admin"
+                    };
+
+                    A_MainForm mainform = new A_MainForm(loggedInAdmin);
+                    mainform.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Admin Credentials.");
+                }
             }
             else
             {
-                Session.Start(user);
+                var User = Login_Repository.Login(username, password, selectedRole);
 
-                switch (user.Role)
+                if (User == null)
+                {
+                    MessageBox.Show("Invalid credentials");
+                    return;
+                }
+
+                switch (User.Role)
                 {
                     case "Member":
-                        new M_MainForm((Member)user).Show();
+                        new M_MainForm((Member)User).Show();
                         this.Hide();
                         break;
 
                     case "Librarian":
-                        new L_MainForm((Librarian)user).Show();
-                        this.Hide();
-                        break;
-
-                    case "Admin":
-                        new A_MainForm((Admin)user).Show();
+                        new L_MainForm((libraryStaff)User).Show();
                         this.Hide();
                         break;
 
                     default:
-                        MessageBox.Show("Error: User Role is not Defined");
+                        MessageBox.Show("Error: Unauthorized role or role not defined.");
                         break;
                 }
-            }*/
+            }
         }
-           
 
 
-     
+
+
         private void lblSignup_Click(object sender, EventArgs e)
         {
 
@@ -107,7 +137,7 @@ namespace LIBRARY.Login
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
-
+            selectedRole = "Librarian";
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -124,6 +154,17 @@ namespace LIBRARY.Login
         {
 
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            selectedRole = "Admin";
+        }
+
+        private void btnMember_Click(object sender, EventArgs e)
+        {
+            selectedRole = "Member";
+        }
+
     }
     
 }

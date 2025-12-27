@@ -15,10 +15,11 @@ namespace LIBRARY
 {
     public partial class A_MainForm : Form
     {
-        public A_MainForm()
+        private Admin LoggedInAdmin;
+        public A_MainForm(Admin admin)
         {
             InitializeComponent();
-
+            LoggedInAdmin = admin;
         }
 
         private void A_MainForm_Load(object sender, EventArgs e)

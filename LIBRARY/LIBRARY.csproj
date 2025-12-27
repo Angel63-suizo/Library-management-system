@@ -168,12 +168,13 @@
     <Compile Include="A_MainForm.Designer.cs">
       <DependentUpon>A_MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\Admin.cs" />
-    <Compile Include="Class\Database.cs" />
-    <Compile Include="Class\Librarian.cs" />
-    <Compile Include="Class\Member.cs" />
-    <Compile Include="Class\MemberType.cs" />
-    <Compile Include="Class\User.cs" />
+    <Compile Include="Login\Login_Repository.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Librarian.cs" />
+    <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\MemberType.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_MainForm));
             this.pnlSidebar1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnInventory = new System.Windows.Forms.Button();
@@ -39,12 +45,6 @@
             this.btnCirculation = new System.Windows.Forms.Button();
             this.btnResources = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlSidebar1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -77,6 +77,71 @@
             this.pnlSidebar1.TabIndex = 25;
             this.pnlSidebar1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar1_Paint);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(120, 29);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(82, 26);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Library";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(11, 86);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(277, 87);
+            this.panel3.TabIndex = 33;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(71, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 20);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Administrator";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(21, 26);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(71, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(172, 20);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "System Administrator";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(32, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
+            // 
             // btnReports
             // 
             this.btnReports.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -88,7 +153,7 @@
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(12, 653);
+            this.btnReports.Location = new System.Drawing.Point(11, 660);
             this.btnReports.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(276, 81);
@@ -108,7 +173,7 @@
             this.btnSettings.ForeColor = System.Drawing.Color.White;
             this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(11, 740);
+            this.btnSettings.Location = new System.Drawing.Point(11, 752);
             this.btnSettings.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(276, 81);
@@ -128,7 +193,7 @@
             this.btnInventory.ForeColor = System.Drawing.Color.White;
             this.btnInventory.Image = ((System.Drawing.Image)(resources.GetObject("btnInventory.Image")));
             this.btnInventory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInventory.Location = new System.Drawing.Point(11, 566);
+            this.btnInventory.Location = new System.Drawing.Point(11, 570);
             this.btnInventory.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(276, 81);
@@ -147,10 +212,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(3, 961);
+            this.btnLogout.Location = new System.Drawing.Point(12, 960);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(284, 70);
+            this.btnLogout.Size = new System.Drawing.Size(276, 70);
             this.btnLogout.TabIndex = 15;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -210,7 +275,7 @@
             this.btnCirculation.ForeColor = System.Drawing.Color.White;
             this.btnCirculation.Image = ((System.Drawing.Image)(resources.GetObject("btnCirculation.Image")));
             this.btnCirculation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCirculation.Location = new System.Drawing.Point(11, 480);
+            this.btnCirculation.Location = new System.Drawing.Point(11, 482);
             this.btnCirculation.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
             this.btnCirculation.Name = "btnCirculation";
             this.btnCirculation.Size = new System.Drawing.Size(276, 80);
@@ -249,71 +314,6 @@
             this.pnlContent.Size = new System.Drawing.Size(1617, 1055);
             this.pnlContent.TabIndex = 27;
             this.pnlContent.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContent_Paint);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(69, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 28);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Library";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.LightSlateGray;
-            this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(11, 86);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(277, 87);
-            this.panel3.TabIndex = 33;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(71, 46);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 20);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Administrator";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(21, 26);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(71, 26);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 20);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "System Administrator";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-1, 11);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
             // 
             // A_MainForm
             // 

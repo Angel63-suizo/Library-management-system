@@ -9,10 +9,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace LIBRARY.Class
 {
-    public class Librarian : User
+    public class libraryStaff : User
     {
-        public Librarian()
+     /*public BorrowingTransaction ProcessCheckout()
         {
+            Console.WriteLine("Proccessing Book Checkout...";
+            return new BorrowingTransaction ();
         }
+
+        public Fine ProcessReturn()
+        {
+            Console.WriteLine("Processing book return...");
+            return new Fine();
+        }*/
     }
 }

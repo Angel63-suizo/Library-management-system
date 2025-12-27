@@ -15,9 +15,11 @@ namespace LIBRARY
 {
     public partial class L_MainForm : Form
     {
-        public L_MainForm()
+        private libraryStaff LoggedInStaff;
+        public L_MainForm(libraryStaff staff)
         {
             InitializeComponent();
+            LoggedInStaff = staff;
         }
 
         private void L_MainForm_Load(object sender, EventArgs e)

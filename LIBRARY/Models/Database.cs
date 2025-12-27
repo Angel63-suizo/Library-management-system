@@ -10,7 +10,7 @@ namespace LIBRARY.Class
     public class Database
     {
         public static string ConnectionString =
-            "Server=localhost;     Port=3306;     Database=librarydb;     Uid=root;     Pwd=;";
+            "Server=127.0.0.1;     Port=3306;     Database=librarydb;     Uid=root;     Pwd=;";
 
         public static MySqlConnection GetConnection()
         {

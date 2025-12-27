@@ -15,11 +15,11 @@ namespace LIBRARY
 {
     public partial class M_MainForm : Form
     {
-
-        public M_MainForm()
+        private Member LoggedInMember;
+        public M_MainForm(Member member)
         {
             InitializeComponent();
-
+            LoggedInMember = member;
         }
 
         private void M_MainForm_Load(object sender, EventArgs e)
