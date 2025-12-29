@@ -35,14 +35,18 @@ namespace LIBRARY.Login
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
-           
+
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 MessageBox.Show("Please enter all credentials.");
                 return;
             }
+            else if (selectedRole == null)
+            {
+                MessageBox.Show("Please chosse your Role.");
+            }
 
-           
+
             if (selectedRole == "Admin")
             {
                 string adminUser = ConfigurationManager.AppSettings["AdminUser"];
@@ -66,36 +70,27 @@ namespace LIBRARY.Login
                     MessageBox.Show("Invalid Admin Credentials.");
                 }
             }
-            else
+            else if (selectedRole == "Member")
             {
                 var User = Login_Repository.Login(username, password, selectedRole);
 
-                if (User == null)
-                {
-                    MessageBox.Show("Invalid credentials");
-                    return;
-                }
+                M_MainForm memberform = new M_MainForm((Member)User);
+                memberform.Show();
+                this.Hide();
+            }
+            else if (selectedRole == "Librarian")
+            {
+                var User = Login_Repository.Login(username, password, selectedRole);
 
-                switch (User.Role)
-                {
-                    case "Member":
-                        new M_MainForm((Member)User).Show();
-                        this.Hide();
-                        break;
-
-                    case "Librarian":
-                        new L_MainForm((libraryStaff)User).Show();
-                        this.Hide();
-                        break;
-
-                    default:
-                        MessageBox.Show("Error: Unauthorized role or role not defined.");
-                        break;
-                }
+                L_MainForm libraryform = new L_MainForm((libraryStaff)User);
+                libraryform.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Error: Unauthorized role or role not defined.");
             }
         }
-
-
 
 
         private void lblSignup_Click(object sender, EventArgs e)

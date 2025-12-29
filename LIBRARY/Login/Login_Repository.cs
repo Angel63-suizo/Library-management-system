@@ -28,13 +28,14 @@ namespace LIBRARY.Login
                 cmd.CommandType = System.Data.CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@p_username", username);
                 cmd.Parameters.AddWithValue("@p_Role", roleName);
+                cmd.Parameters.AddWithValue("@p_PasswordHash", password);
 
                 conn.Open();
                 using (var reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
                     {
-                        string Password = reader["Password"].ToString();
+                        string Password = reader["PasswordHash"].ToString();
                         if(Password == HashPassword(password))
                         {
                             return new User
