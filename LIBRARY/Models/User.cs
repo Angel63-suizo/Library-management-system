@@ -28,8 +28,6 @@ namespace LIBRARY.Class
         public string Phone { get => phone; set => phone = value; }
         public string Role { get => role; set => role = value; }
         public DateTime CreatedAt { get => createdAt; set => createdAt = value; }
-
-
         public bool Login (string username, string password)
         {
             //add logic to checlk credentials

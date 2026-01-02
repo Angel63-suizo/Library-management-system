@@ -21,7 +21,6 @@ namespace LIBRARY.ADashboard
 
         private void A_UserManagement_Load(object sender, EventArgs e)
         {
-
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
@@ -42,7 +41,17 @@ namespace LIBRARY.ADashboard
         private void btnAddMember_Click(object sender, EventArgs e)
         {
             A_AddMember add = new A_AddMember();
-            add.Show();
+            Control parentpanel = this.Parent;
+
+            if(parentpanel != null)
+            {
+                parentpanel.Controls.Add(add);
+                add.BringToFront();
+                add .Left = (parentpanel.Width - add.Width) / 2;
+                add.Top = (parentpanel.Height - add.Height) / 2;
+
+                this.Enabled = false;
+            }
         }
 
         private void panel9_Paint(object sender, PaintEventArgs e)

@@ -133,11 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ADashboard\A_AddMember.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ADashboard\A_AddMember.Designer.cs">
       <DependentUpon>A_AddMember.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADashboard\A_AddMember_Repository.cs" />
     <Compile Include="ADashboard\A_dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>

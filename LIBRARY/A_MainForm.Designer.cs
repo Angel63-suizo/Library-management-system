@@ -348,12 +348,12 @@
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnReports;
-        private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }

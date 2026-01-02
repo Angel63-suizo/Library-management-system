@@ -3,24 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\login\\login_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\login\\login_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\m_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\m_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,59 +62,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "M_MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\M_MainForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\M_MainForm.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\M_MainForm.cs",
-              "RelativeToolTip": "LIBRARY\\M_MainForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T17:47:13.654Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "A_MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
-              "RelativeToolTip": "LIBRARY\\A_MainForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T17:47:03.7Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\Login\\Login.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
-              "RelativeToolTip": "LIBRARY\\Login\\Login.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAgwFoAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T17:36:37.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\Login\\Login_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\Login\\Login_Repository.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvyUAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-29T17:31:55.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "A_MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
@@ -94,7 +70,147 @@
               "RelativeToolTip": "LIBRARY\\A_MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-29T14:41:40.823Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "A_AddMember.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs [Design]*",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T05:44:25.313Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "A_AddMember_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:48:26.096Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "A_AddMember.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs*",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember.cs*",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAmwFQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T14:13:15.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "A_UserManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwDYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T04:59:26.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "A_UserManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T04:59:24.111Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "A_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
+              "RelativeToolTip": "LIBRARY\\A_MainForm.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAEwE4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T04:50:48.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "A_dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T05:27:13.785Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "A_dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-02T04:50:39.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\User.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\User.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB0AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T14:16:38.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Database.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Database.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\Database.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Database.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\Database.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T07:14:10.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Login\\Login.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
+              "RelativeToolTip": "LIBRARY\\Login\\Login.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T17:36:37.176Z"
             }
           ]
         }
