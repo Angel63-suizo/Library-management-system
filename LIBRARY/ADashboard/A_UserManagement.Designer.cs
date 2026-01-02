@@ -30,40 +30,41 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_UserManagement));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalMembers = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblActive = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblSuspended = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblNew = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLibraryStaff = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddMember = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.lblTypes = new System.Windows.Forms.Label();
+            this.cmbMemberType = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.memberId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.booksOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fines = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvMemberGrid = new System.Windows.Forms.DataGridView();
+            this.colMemberID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colBooksOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFines = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.action = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -78,7 +79,7 @@
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -86,7 +87,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblTotalMembers);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 63);
@@ -94,17 +95,17 @@
             this.panel1.Size = new System.Drawing.Size(364, 145);
             this.panel1.TabIndex = 24;
             // 
-            // label3
+            // lblTotalMembers
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(164, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "0";
+            this.lblTotalMembers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalMembers.AutoSize = true;
+            this.lblTotalMembers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalMembers.Location = new System.Drawing.Point(164, 83);
+            this.lblTotalMembers.Name = "lblTotalMembers";
+            this.lblTotalMembers.Size = new System.Drawing.Size(0, 23);
+            this.lblTotalMembers.TabIndex = 5;
+            this.lblTotalMembers.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
@@ -144,7 +145,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblActive);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(430, 63);
@@ -152,17 +153,16 @@
             this.panel2.Size = new System.Drawing.Size(361, 145);
             this.panel2.TabIndex = 25;
             // 
-            // label2
+            // lblActive
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(164, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0";
+            this.lblActive.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblActive.AutoSize = true;
+            this.lblActive.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActive.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblActive.Location = new System.Drawing.Point(164, 83);
+            this.lblActive.Name = "lblActive";
+            this.lblActive.Size = new System.Drawing.Size(0, 23);
+            this.lblActive.TabIndex = 5;
             // 
             // panel4
             // 
@@ -202,7 +202,7 @@
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblSuspended);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(853, 63);
@@ -211,17 +211,16 @@
             this.panel5.TabIndex = 26;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
-            // label5
+            // lblSuspended
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(164, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
+            this.lblSuspended.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSuspended.AutoSize = true;
+            this.lblSuspended.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSuspended.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblSuspended.Location = new System.Drawing.Point(164, 83);
+            this.lblSuspended.Name = "lblSuspended";
+            this.lblSuspended.Size = new System.Drawing.Size(0, 23);
+            this.lblSuspended.TabIndex = 5;
             // 
             // panel6
             // 
@@ -261,7 +260,7 @@
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblNew);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Location = new System.Drawing.Point(1264, 63);
@@ -270,17 +269,16 @@
             this.panel7.TabIndex = 27;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
-            // label7
+            // lblNew
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(164, 83);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 23);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "0";
+            this.lblNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNew.AutoSize = true;
+            this.lblNew.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNew.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNew.Location = new System.Drawing.Point(164, 83);
+            this.lblNew.Name = "lblNew";
+            this.lblNew.Size = new System.Drawing.Size(0, 23);
+            this.lblNew.TabIndex = 5;
             // 
             // panel8
             // 
@@ -319,12 +317,13 @@
             // 
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.textBox1);
+            this.panel9.Controls.Add(this.btnLibraryStaff);
+            this.panel9.Controls.Add(this.txtSearch);
             this.panel9.Controls.Add(this.btnAddMember);
-            this.panel9.Controls.Add(this.label10);
-            this.panel9.Controls.Add(this.comboBox2);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.comboBox1);
+            this.panel9.Controls.Add(this.lblStatus);
+            this.panel9.Controls.Add(this.cmbStatus);
+            this.panel9.Controls.Add(this.lblTypes);
+            this.panel9.Controls.Add(this.cmbMemberType);
             this.panel9.Controls.Add(this.btnSearch);
             this.panel9.Location = new System.Drawing.Point(3, 234);
             this.panel9.Name = "panel9";
@@ -332,15 +331,33 @@
             this.panel9.TabIndex = 28;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
-            // textBox1
+            // btnLibraryStaff
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(103, 41);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(868, 43);
-            this.textBox1.TabIndex = 0;
+            this.btnLibraryStaff.BackColor = System.Drawing.Color.SlateGray;
+            this.btnLibraryStaff.FlatAppearance.BorderSize = 0;
+            this.btnLibraryStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLibraryStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLibraryStaff.ForeColor = System.Drawing.Color.White;
+            this.btnLibraryStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnLibraryStaff.Image")));
+            this.btnLibraryStaff.Location = new System.Drawing.Point(1169, 41);
+            this.btnLibraryStaff.Name = "btnLibraryStaff";
+            this.btnLibraryStaff.Size = new System.Drawing.Size(184, 43);
+            this.btnLibraryStaff.TabIndex = 7;
+            this.btnLibraryStaff.Text = "  Library Staff";
+            this.btnLibraryStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLibraryStaff.UseVisualStyleBackColor = false;
+            this.btnLibraryStaff.Click += new System.EventHandler(this.btnLibraryStaff_Click);
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(103, 41);
+            this.txtSearch.Multiline = true;
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(592, 43);
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnAddMember
             // 
@@ -350,48 +367,50 @@
             this.btnAddMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMember.ForeColor = System.Drawing.Color.White;
             this.btnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMember.Image")));
-            this.btnAddMember.Location = new System.Drawing.Point(1392, 30);
+            this.btnAddMember.Location = new System.Drawing.Point(1392, 41);
             this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(184, 54);
+            this.btnAddMember.Size = new System.Drawing.Size(184, 43);
             this.btnAddMember.TabIndex = 6;
             this.btnAddMember.Text = "   Add Member";
             this.btnAddMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddMember.UseVisualStyleBackColor = false;
             this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
-            // label10
+            // lblStatus
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(1205, 41);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(44, 16);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "Status";
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(943, 41);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(44, 16);
+            this.lblStatus.TabIndex = 5;
+            this.lblStatus.Text = "Status";
             // 
-            // comboBox2
+            // cmbStatus
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1208, 60);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(129, 24);
-            this.comboBox2.TabIndex = 4;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Location = new System.Drawing.Point(946, 60);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(129, 24);
+            this.cmbStatus.TabIndex = 4;
+            this.cmbStatus.SelectedIndexChanged += new System.EventHandler(this.cmbStatus_SelectedIndexChanged);
             // 
-            // label9
+            // lblTypes
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1018, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 16);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Types";
+            this.lblTypes.AutoSize = true;
+            this.lblTypes.Location = new System.Drawing.Point(756, 41);
+            this.lblTypes.Name = "lblTypes";
+            this.lblTypes.Size = new System.Drawing.Size(46, 16);
+            this.lblTypes.TabIndex = 3;
+            this.lblTypes.Text = "Types";
             // 
-            // comboBox1
+            // cmbMemberType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1021, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(129, 24);
-            this.comboBox1.TabIndex = 2;
+            this.cmbMemberType.FormattingEnabled = true;
+            this.cmbMemberType.Location = new System.Drawing.Point(759, 60);
+            this.cmbMemberType.Name = "cmbMemberType";
+            this.cmbMemberType.Size = new System.Drawing.Size(129, 24);
+            this.cmbMemberType.TabIndex = 2;
+            this.cmbMemberType.SelectedIndexChanged += new System.EventHandler(this.cmbMemberType_SelectedIndexChanged);
             // 
             // btnSearch
             // 
@@ -402,76 +421,81 @@
             this.btnSearch.Size = new System.Drawing.Size(64, 43);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // dataGridView1
+            // dgvMemberGrid
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.memberId,
-            this.name,
-            this.contact,
-            this.Type,
-            this.booksOut,
-            this.fines,
+            this.dgvMemberGrid.AllowUserToAddRows = false;
+            this.dgvMemberGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.dgvMemberGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMemberGrid.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMemberGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvMemberGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMemberGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colMemberID,
+            this.colName,
+            this.colContact,
+            this.colStatus,
+            this.colBooksOut,
+            this.colFines,
             this.action});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 382);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1611, 628);
-            this.dataGridView1.TabIndex = 29;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvMemberGrid.Location = new System.Drawing.Point(3, 382);
+            this.dgvMemberGrid.Name = "dgvMemberGrid";
+            this.dgvMemberGrid.RowHeadersVisible = false;
+            this.dgvMemberGrid.RowHeadersWidth = 51;
+            this.dgvMemberGrid.RowTemplate.Height = 24;
+            this.dgvMemberGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMemberGrid.Size = new System.Drawing.Size(1611, 628);
+            this.dgvMemberGrid.TabIndex = 29;
+            this.dgvMemberGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // memberId
+            // colMemberID
             // 
-            this.memberId.HeaderText = "Member ID";
-            this.memberId.MinimumWidth = 6;
-            this.memberId.Name = "memberId";
-            this.memberId.ReadOnly = true;
-            this.memberId.Width = 150;
+            this.colMemberID.DataPropertyName = "Member ID";
+            this.colMemberID.HeaderText = "Member ID";
+            this.colMemberID.MinimumWidth = 6;
+            this.colMemberID.Name = "colMemberID";
+            this.colMemberID.ReadOnly = true;
             // 
-            // name
+            // colName
             // 
-            this.name.HeaderText = "Name";
-            this.name.MinimumWidth = 6;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 200;
+            this.colName.DataPropertyName = "Name";
+            this.colName.HeaderText = "Name";
+            this.colName.MinimumWidth = 6;
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
             // 
-            // contact
+            // colContact
             // 
-            this.contact.HeaderText = "Contact #";
-            this.contact.MinimumWidth = 6;
-            this.contact.Name = "contact";
-            this.contact.ReadOnly = true;
-            this.contact.Width = 200;
+            this.colContact.DataPropertyName = "Contact #";
+            this.colContact.HeaderText = "Contact #";
+            this.colContact.MinimumWidth = 6;
+            this.colContact.Name = "colContact";
+            this.colContact.ReadOnly = true;
             // 
-            // Type
+            // colStatus
             // 
-            this.Type.HeaderText = "Status";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            this.Type.Width = 150;
+            this.colStatus.DataPropertyName = "Status";
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.MinimumWidth = 6;
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
             // 
-            // booksOut
+            // colBooksOut
             // 
-            this.booksOut.HeaderText = "Books Outs";
-            this.booksOut.MinimumWidth = 6;
-            this.booksOut.Name = "booksOut";
-            this.booksOut.ReadOnly = true;
-            this.booksOut.Width = 200;
+            this.colBooksOut.DataPropertyName = "Books Out";
+            this.colBooksOut.HeaderText = "Books Out";
+            this.colBooksOut.MinimumWidth = 6;
+            this.colBooksOut.Name = "colBooksOut";
+            this.colBooksOut.ReadOnly = true;
             // 
-            // fines
+            // colFines
             // 
-            this.fines.HeaderText = "Fines";
-            this.fines.MinimumWidth = 6;
-            this.fines.Name = "fines";
-            this.fines.ReadOnly = true;
-            this.fines.Width = 150;
+            this.colFines.DataPropertyName = "Fines";
+            this.colFines.HeaderText = "Fines";
+            this.colFines.MinimumWidth = 6;
+            this.colFines.Name = "colFines";
+            this.colFines.ReadOnly = true;
             // 
             // action
             // 
@@ -479,14 +503,13 @@
             this.action.MinimumWidth = 6;
             this.action.Name = "action";
             this.action.ReadOnly = true;
-            this.action.Width = 125;
             // 
             // A_UserManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMemberGrid);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
@@ -517,7 +540,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMemberGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -525,40 +548,41 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotalMembers;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblActive;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblSuspended;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblNew;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnAddMember;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn memberId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contact;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn booksOut;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fines;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.Label lblTypes;
+        private System.Windows.Forms.ComboBox cmbMemberType;
+        private System.Windows.Forms.DataGridView dgvMemberGrid;
+        private System.Windows.Forms.Button btnLibraryStaff;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colMemberID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colContact;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colBooksOut;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFines;
         private System.Windows.Forms.DataGridViewButtonColumn action;
     }
 }

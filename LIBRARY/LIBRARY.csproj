@@ -132,6 +132,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\A_AddLibraryStaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_AddLibraryStaff.Designer.cs">
+      <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\A_AddLibraryStaff_Repository.cs" />
     <Compile Include="ADashboard\A_AddMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -151,6 +158,8 @@
     <Compile Include="ADashboard\A_Inventory.Designer.cs">
       <DependentUpon>A_Inventory.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADashboard\A_MemberGrid_Repository.cs" />
+    <Compile Include="ADashboard\A_StatsBox_Repository.cs" />
     <Compile Include="ADashboard\A_Resources.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,7 +181,7 @@
     <Compile Include="Login\Login_Repository.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Database.cs" />
-    <Compile Include="Models\Librarian.cs" />
+    <Compile Include="Models\LibraryStaff.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MemberType.cs" />
     <Compile Include="Models\User.cs" />
@@ -238,6 +247,9 @@
     <Compile Include="Register\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ADashboard\A_AddLibraryStaff.resx">
+      <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_AddMember.resx">
       <DependentUpon>A_AddMember.cs</DependentUpon>
     </EmbeddedResource>

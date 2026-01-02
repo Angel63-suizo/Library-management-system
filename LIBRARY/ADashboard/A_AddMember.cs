@@ -49,11 +49,11 @@ namespace LIBRARY.ADashboard
             newMember.Email = txtEmail.Text;
             newMember.Password = txtPassword.Text;
             newMember.Address = txtAddress.Text;
-
+            
             A_AddMember_Repository repo = new A_AddMember_Repository();
             repo.AddNewMember(newMember, cmbMemberType.Text, cmbStatus.Text);
 
-            MessageBox.Show("New member added successfully!");
+            MessageBox.Show("New member added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
         }
