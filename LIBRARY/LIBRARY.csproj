@@ -132,6 +132,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\A_GetMemberDetails_Repository.cs" />
+    <Compile Include="ADashboard\A_GridViewMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_GridViewMember.Designer.cs">
+      <DependentUpon>A_GridViewMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\A_AddLibraryStaff.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,6 +178,12 @@
     </Compile>
     <Compile Include="ADashboard\A_UserManagement.Designer.cs">
       <DependentUpon>A_UserManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\A_ViewMemberDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_ViewMemberDetails.Designer.cs">
+      <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="A_MainForm.cs">
       <SubType>Form</SubType>
@@ -256,6 +269,9 @@
     <EmbeddedResource Include="ADashboard\A_dashboard.resx">
       <DependentUpon>A_dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_GridViewMember.resx">
+      <DependentUpon>A_GridViewMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_Inventory.resx">
       <DependentUpon>A_Inventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +280,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_UserManagement.resx">
       <DependentUpon>A_UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_ViewMemberDetails.resx">
+      <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_MainForm.resx">
       <DependentUpon>A_MainForm.cs</DependentUpon>

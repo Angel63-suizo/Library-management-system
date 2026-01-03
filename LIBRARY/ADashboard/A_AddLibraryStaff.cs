@@ -48,7 +48,7 @@ namespace LIBRARY.ADashboard
             {
                 foreach (Control c in parentPanel.Controls)
                 {
-                    if (c is A_UserManagement)
+                    if (c is A_GridViewMember)
                     {
                         c.Enabled = true;
                         break;

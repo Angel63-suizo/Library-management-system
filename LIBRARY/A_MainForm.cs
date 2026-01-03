@@ -27,13 +27,19 @@ namespace LIBRARY
             LoadUserControl(new A_dashboard());
 
         }
+         private void LoadUserControl(UserControl mem)
+          {
+            pnlContent.SuspendLayout();
 
-        private void LoadUserControl(UserControl mem)
-        {
-            pnlContent.Controls.Clear();
+            if (pnlContent.Controls.Count > 0)
+            {
+                pnlContent.Controls[0].Dispose();
+                pnlContent.Controls.Clear();
+            }
             mem.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(mem);
-            mem.BringToFront();
+
+            pnlContent.ResumeLayout(true);
         }
 
         private void btnLogout_Click(object sender, EventArgs e)

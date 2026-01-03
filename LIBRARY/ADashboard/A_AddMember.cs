@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using LIBRARY.Class;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using LIBRARY.Class;
 
 namespace LIBRARY.ADashboard
 {
@@ -24,7 +18,7 @@ namespace LIBRARY.ADashboard
         {
             A_AddMember_Repository repo = new A_AddMember_Repository();
             try
-            { 
+            {
                 DataTable dt = repo.GetMemberType();
                 cmbMemberType.DataSource = dt;
                 cmbMemberType.DisplayMember = "NameType";
@@ -37,8 +31,8 @@ namespace LIBRARY.ADashboard
             }
 
             cmbStatus.DataSource = repo.GetStatus("Member", "Status");
-            cmbStatus.SelectedItem = "Active";    
-            
+            cmbStatus.SelectedItem = "Active";
+
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -49,7 +43,7 @@ namespace LIBRARY.ADashboard
             newMember.Email = txtEmail.Text;
             newMember.Password = txtPassword.Text;
             newMember.Address = txtAddress.Text;
-            
+
             A_AddMember_Repository repo = new A_AddMember_Repository();
             repo.AddNewMember(newMember, cmbMemberType.Text, cmbStatus.Text);
 
@@ -66,7 +60,7 @@ namespace LIBRARY.ADashboard
             {
                 foreach (Control c in parentPanel.Controls)
                 {
-                    if (c is A_UserManagement) 
+                    if (c is A_GridViewMember)
                     {
                         c.Enabled = true;
                         break;

@@ -67,9 +67,8 @@ C:\Users\USER\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_UserMa
 C:\Users\USER\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddMember.resources
 C:\Users\USER\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_Resources.resources
 C:\Users\USER\source\repos\LIBRARY\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_Inventory.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe.config
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.pdb
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe.config
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\BCrypt.Net-Next.dll
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\BouncyCastle.Cryptography.dll
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\ExCSS.dll
@@ -114,6 +113,7 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddLibraryStaff.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddMember.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_dashboard.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_Inventory.resources
@@ -136,4 +136,6 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.Up2Date
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.pdb
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddLibraryStaff.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.pdb
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_GridViewMember.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_ViewMemberDetails.resources
