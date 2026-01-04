@@ -23,5 +23,18 @@ namespace LIBRARY.ADashboard
             }
             return dt;
         }
+
+        public DataTable GetResourceStats()
+        {
+            DataTable dt = new DataTable();
+            using (var conn = Database.GetConnection())
+            using (var cmd = new MySqlCommand("sp_GetResourceStats", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                new MySqlDataAdapter (cmd).Fill(dt);
+            }
+            return dt;
+        }
     }
 }

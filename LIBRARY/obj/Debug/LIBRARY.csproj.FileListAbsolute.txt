@@ -139,3 +139,7 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.pdb
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_GridViewMember.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_ViewMemberDetails.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_ResourcesGridView.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddNewResource.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_ResourceDetail.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_EditResource.resources

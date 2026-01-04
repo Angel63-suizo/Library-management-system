@@ -13,7 +13,7 @@ namespace LIBRARY.ADashboard
     public partial class A_ViewMemberDetails : UserControl
     {
         private DataRow _memberData;
-        private DataTable _transactionHistory;
+       //private DataTable _transactionHistory;
         public A_ViewMemberDetails(DataRow memberData)
         {
             InitializeComponent();

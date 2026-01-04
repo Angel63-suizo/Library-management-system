@@ -132,7 +132,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\A_AddNewResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_AddNewResource.Designer.cs">
+      <DependentUpon>A_AddNewResource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\A_AddResource_Repository.cs" />
+    <Compile Include="ADashboard\A_EditResource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_EditResource.Designer.cs">
+      <DependentUpon>A_EditResource.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\A_GetMemberDetails_Repository.cs" />
+    <Compile Include="ADashboard\A_GetResourceDetail_Repository.cs" />
+    <Compile Include="ADashboard\A_GetResourceGrid_Repository.cs" />
     <Compile Include="ADashboard\A_GridViewMember.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +181,18 @@
       <DependentUpon>A_Inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\A_MemberGrid_Repository.cs" />
+    <Compile Include="ADashboard\A_ResourceDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_ResourceDetail.Designer.cs">
+      <DependentUpon>A_ResourceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\A_ResourcesGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\A_ResourcesGridView.Designer.cs">
+      <DependentUpon>A_ResourcesGridView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\A_StatsBox_Repository.cs" />
     <Compile Include="ADashboard\A_Resources.cs">
       <SubType>UserControl</SubType>
@@ -193,10 +220,17 @@
     </Compile>
     <Compile Include="Login\Login_Repository.cs" />
     <Compile Include="Models\Admin.cs" />
+    <Compile Include="Models\BookCopy.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\EBook.cs" />
     <Compile Include="Models\LibraryStaff.cs" />
     <Compile Include="Models\Member.cs" />
     <Compile Include="Models\MemberType.cs" />
+    <Compile Include="Models\Periodical.cs" />
+    <Compile Include="Models\PhysicalBook.cs" />
+    <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\Thesis.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -266,8 +300,14 @@
     <EmbeddedResource Include="ADashboard\A_AddMember.resx">
       <DependentUpon>A_AddMember.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_AddNewResource.resx">
+      <DependentUpon>A_AddNewResource.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_dashboard.resx">
       <DependentUpon>A_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_EditResource.resx">
+      <DependentUpon>A_EditResource.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_GridViewMember.resx">
       <DependentUpon>A_GridViewMember.cs</DependentUpon>
@@ -275,8 +315,14 @@
     <EmbeddedResource Include="ADashboard\A_Inventory.resx">
       <DependentUpon>A_Inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_ResourceDetail.resx">
+      <DependentUpon>A_ResourceDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_Resources.resx">
       <DependentUpon>A_Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\A_ResourcesGridView.resx">
+      <DependentUpon>A_ResourcesGridView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_UserManagement.resx">
       <DependentUpon>A_UserManagement.cs</DependentUpon>

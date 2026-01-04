@@ -30,39 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_Resources));
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblCategories = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblBorrowed = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblAvailable = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalBooks = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnAddMember = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BookID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Bookdetails = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Categories = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.publisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.copies = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Action = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pnlGridContent = new System.Windows.Forms.Panel();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -75,8 +62,6 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -84,7 +69,7 @@
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblCategories);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Location = new System.Drawing.Point(1267, 40);
@@ -92,17 +77,17 @@
             this.panel7.Size = new System.Drawing.Size(350, 145);
             this.panel7.TabIndex = 31;
             // 
-            // label7
+            // lblCategories
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(164, 83);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 23);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "0";
+            this.lblCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCategories.AutoSize = true;
+            this.lblCategories.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCategories.Location = new System.Drawing.Point(164, 83);
+            this.lblCategories.Name = "lblCategories";
+            this.lblCategories.Size = new System.Drawing.Size(21, 23);
+            this.lblCategories.TabIndex = 5;
+            this.lblCategories.Text = "0";
             // 
             // panel8
             // 
@@ -142,7 +127,7 @@
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblBorrowed);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(856, 40);
@@ -150,17 +135,17 @@
             this.panel5.Size = new System.Drawing.Size(350, 145);
             this.panel5.TabIndex = 30;
             // 
-            // label5
+            // lblBorrowed
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(164, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
+            this.lblBorrowed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBorrowed.AutoSize = true;
+            this.lblBorrowed.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBorrowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblBorrowed.Location = new System.Drawing.Point(164, 83);
+            this.lblBorrowed.Name = "lblBorrowed";
+            this.lblBorrowed.Size = new System.Drawing.Size(21, 23);
+            this.lblBorrowed.TabIndex = 5;
+            this.lblBorrowed.Text = "0";
             // 
             // panel6
             // 
@@ -202,7 +187,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblAvailable);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(429, 40);
@@ -210,17 +195,17 @@
             this.panel2.Size = new System.Drawing.Size(361, 145);
             this.panel2.TabIndex = 29;
             // 
-            // label2
+            // lblAvailable
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(164, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0";
+            this.lblAvailable.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAvailable.AutoSize = true;
+            this.lblAvailable.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAvailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblAvailable.Location = new System.Drawing.Point(164, 83);
+            this.lblAvailable.Name = "lblAvailable";
+            this.lblAvailable.Size = new System.Drawing.Size(21, 23);
+            this.lblAvailable.TabIndex = 5;
+            this.lblAvailable.Text = "0";
             // 
             // panel4
             // 
@@ -261,7 +246,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblTotalBooks);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 40);
@@ -269,17 +254,17 @@
             this.panel1.Size = new System.Drawing.Size(364, 145);
             this.panel1.TabIndex = 28;
             // 
-            // label3
+            // lblTotalBooks
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(145, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "0";
+            this.lblTotalBooks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalBooks.AutoSize = true;
+            this.lblTotalBooks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalBooks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalBooks.Location = new System.Drawing.Point(145, 74);
+            this.lblTotalBooks.Name = "lblTotalBooks";
+            this.lblTotalBooks.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalBooks.TabIndex = 5;
+            this.lblTotalBooks.Text = "0";
             // 
             // panel3
             // 
@@ -314,159 +299,20 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Total Books";
             // 
-            // panel9
+            // pnlGridContent
             // 
-            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.textBox1);
-            this.panel9.Controls.Add(this.btnAddMember);
-            this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.comboBox1);
-            this.panel9.Controls.Add(this.btnSearch);
-            this.panel9.Location = new System.Drawing.Point(0, 213);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1617, 120);
-            this.panel9.TabIndex = 32;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(103, 41);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(868, 43);
-            this.textBox1.TabIndex = 0;
-            // 
-            // btnAddMember
-            // 
-            this.btnAddMember.BackColor = System.Drawing.Color.SlateGray;
-            this.btnAddMember.FlatAppearance.BorderSize = 0;
-            this.btnAddMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddMember.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddMember.ForeColor = System.Drawing.Color.White;
-            this.btnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMember.Image")));
-            this.btnAddMember.Location = new System.Drawing.Point(1368, 30);
-            this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(208, 54);
-            this.btnAddMember.TabIndex = 6;
-            this.btnAddMember.Text = "   Add Books";
-            this.btnAddMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddMember.UseVisualStyleBackColor = false;
-            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(1022, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 16);
-            this.label9.TabIndex = 3;
-            this.label9.Text = "Types";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1021, 60);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(271, 24);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(48, 41);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(64, 43);
-            this.btnSearch.TabIndex = 1;
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.BookID,
-            this.Bookdetails,
-            this.Categories,
-            this.publisher,
-            this.copies,
-            this.status,
-            this.Action});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 373);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1617, 652);
-            this.dataGridView1.TabIndex = 33;
-            // 
-            // BookID
-            // 
-            this.BookID.HeaderText = "Book ID";
-            this.BookID.MinimumWidth = 6;
-            this.BookID.Name = "BookID";
-            this.BookID.ReadOnly = true;
-            this.BookID.Width = 150;
-            // 
-            // Bookdetails
-            // 
-            this.Bookdetails.HeaderText = "Book Details";
-            this.Bookdetails.MinimumWidth = 6;
-            this.Bookdetails.Name = "Bookdetails";
-            this.Bookdetails.ReadOnly = true;
-            this.Bookdetails.Width = 250;
-            // 
-            // Categories
-            // 
-            this.Categories.HeaderText = "Categories";
-            this.Categories.MinimumWidth = 6;
-            this.Categories.Name = "Categories";
-            this.Categories.ReadOnly = true;
-            this.Categories.Width = 150;
-            // 
-            // publisher
-            // 
-            this.publisher.HeaderText = "Publisher";
-            this.publisher.MinimumWidth = 6;
-            this.publisher.Name = "publisher";
-            this.publisher.ReadOnly = true;
-            this.publisher.Width = 150;
-            // 
-            // copies
-            // 
-            this.copies.HeaderText = "Copies";
-            this.copies.MinimumWidth = 6;
-            this.copies.Name = "copies";
-            this.copies.ReadOnly = true;
-            this.copies.Width = 125;
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.MinimumWidth = 6;
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 150;
-            // 
-            // Action
-            // 
-            this.Action.HeaderText = "Action";
-            this.Action.MinimumWidth = 6;
-            this.Action.Name = "Action";
-            this.Action.Width = 150;
+            this.pnlGridContent.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pnlGridContent.Location = new System.Drawing.Point(3, 254);
+            this.pnlGridContent.Name = "pnlGridContent";
+            this.pnlGridContent.Size = new System.Drawing.Size(1614, 785);
+            this.pnlGridContent.TabIndex = 32;
             // 
             // A_Resources
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel9);
+            this.Controls.Add(this.pnlGridContent);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
@@ -494,9 +340,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -504,38 +347,25 @@
         #endregion
 
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCategories;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblBorrowed;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAvailable;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotalBooks;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnAddMember;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BookID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Bookdetails;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Categories;
-        private System.Windows.Forms.DataGridViewTextBoxColumn publisher;
-        private System.Windows.Forms.DataGridViewTextBoxColumn copies;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Action;
+        private System.Windows.Forms.Panel pnlGridContent;
     }
 }
