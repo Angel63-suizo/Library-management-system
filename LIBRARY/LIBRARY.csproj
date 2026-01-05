@@ -132,6 +132,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\AlertsView_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\AlertsView_UC.Designer.cs">
+      <DependentUpon>AlertsView_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\A_AddNewResource.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,25 @@
     </Compile>
     <Compile Include="ADashboard\A_ViewMemberDetails.Designer.cs">
       <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\FullInventory_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\FullInventory_UC.Designer.cs">
+      <DependentUpon>FullInventory_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\GetInventoryGrid_Repository.cs" />
+    <Compile Include="ADashboard\InventoryMovements_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\InventoryMovements_UC.Designer.cs">
+      <DependentUpon>InventoryMovements_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\StockAlert_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\StockAlert_UC.Designer.cs">
+      <DependentUpon>StockAlert_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="A_MainForm.cs">
       <SubType>Form</SubType>
@@ -294,6 +319,9 @@
     <Compile Include="Register\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ADashboard\AlertsView_UC.resx">
+      <DependentUpon>AlertsView_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_AddLibraryStaff.resx">
       <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,6 +357,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_ViewMemberDetails.resx">
       <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\FullInventory_UC.resx">
+      <DependentUpon>FullInventory_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\InventoryMovements_UC.resx">
+      <DependentUpon>InventoryMovements_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\StockAlert_UC.resx">
+      <DependentUpon>StockAlert_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_MainForm.resx">
       <DependentUpon>A_MainForm.cs</DependentUpon>

@@ -92,29 +92,6 @@ namespace LIBRARY.ADashboard
 
         }
 
-        private void AddActionButtons()
-        {
-            if (dgvResourceGrid.Columns.Contains("View")) return;
-
-            DataGridViewImageColumn viewCol = new DataGridViewImageColumn();
-            viewCol.Name = "ViewCol";
-            viewCol.HeaderText = "";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvResourceGrid.Columns.Add(viewCol);
-
-            DataGridViewImageColumn deleteCol = new DataGridViewImageColumn();
-            deleteCol.Name = "DeleteCol";
-            deleteCol.HeaderText = "";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvResourceGrid.Columns.Add(deleteCol);
-
-            DataGridViewImageColumn editCol = new DataGridViewImageColumn();
-            editCol.Name = "EditCol";
-            editCol.HeaderText = "Actions";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvResourceGrid.Columns.Add(editCol);
-        }
-
         private void dgvResourceGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;

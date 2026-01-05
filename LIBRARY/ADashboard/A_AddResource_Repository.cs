@@ -15,7 +15,7 @@ namespace LIBRARY.ADashboard
 {
     internal class A_AddResource_Repository
     {
-        public string AddNewResource(Resource resource, int categoryId, string resourceType)
+        public string AddNewResource(Resource resource, int categoryId, string resourceType, int Copies)
         {
             string accessionbase = string.Empty;
             try
@@ -34,6 +34,7 @@ namespace LIBRARY.ADashboard
                     cmd.Parameters.AddWithValue("p_Language", resource.Language);
                     cmd.Parameters.AddWithValue("p_Pages", resource.Pages);
                     cmd.Parameters.AddWithValue("p_ResourceType", resourceType);
+                    cmd.Parameters.AddWithValue("p_TotalCopies", Copies);
 
                     conn.Open();
                     using (var reader = cmd.ExecuteReader())

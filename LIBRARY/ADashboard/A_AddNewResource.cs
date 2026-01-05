@@ -1,4 +1,5 @@
 ﻿using ExCSS;
+using Fizzler;
 using LIBRARY.Models;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
@@ -36,10 +37,12 @@ namespace LIBRARY.ADashboard
                 newresource.Language = txtLanguage.Text;
                 newresource.Pages = int.Parse(txtPages.Text);
 
+                int copies = Convert.ToInt32(txtCopies.Text);
+
                 int categoryId = Convert.ToInt32(cmbCategory.SelectedValue);
 
                 A_AddResource_Repository repo = new A_AddResource_Repository();
-                repo.AddNewResource(newresource, categoryId, cmbResourceType.Text);
+                repo.AddNewResource(newresource, categoryId, cmbResourceType.Text, copies);
 
                 MessageBox.Show("Book added successfully!");
             }
@@ -84,6 +87,11 @@ namespace LIBRARY.ADashboard
             numYear.Value = 2026;
             cmbResourceType.SelectedIndex = 0;
             cmbCategory.SelectedIndex = 0;
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

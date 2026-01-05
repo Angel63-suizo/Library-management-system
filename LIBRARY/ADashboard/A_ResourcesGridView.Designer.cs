@@ -133,7 +133,6 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvResourceGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvResourceGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.dgvResourceGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvResourceGrid.BackgroundColor = System.Drawing.Color.White;
             this.dgvResourceGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -165,14 +164,14 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvResourceGrid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvResourceGrid.Location = new System.Drawing.Point(5, 144);
+            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 160);
             this.dgvResourceGrid.Name = "dgvResourceGrid";
             this.dgvResourceGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvResourceGrid.RowHeadersVisible = false;
             this.dgvResourceGrid.RowHeadersWidth = 51;
             this.dgvResourceGrid.RowTemplate.Height = 40;
             this.dgvResourceGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvResourceGrid.Size = new System.Drawing.Size(1605, 638);
+            this.dgvResourceGrid.Size = new System.Drawing.Size(1614, 622);
             this.dgvResourceGrid.TabIndex = 33;
             this.dgvResourceGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResourceGrid_CellContentClick);
             // 

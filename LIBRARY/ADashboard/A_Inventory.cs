@@ -1,4 +1,5 @@
-﻿using System;
+﻿using K4os.Compression.LZ4.Internal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,9 +20,23 @@ namespace LIBRARY.ADashboard
 
         private void A_Inventory_Load(object sender, EventArgs e)
         {
-
+            LoadUserControl(new AlertsView_UC());
         }
 
+        private void LoadUserControl(UserControl mem)
+        {
+            pnlInventroryContainer.SuspendLayout();
+
+            if (pnlInventroryContainer.Controls.Count > 0)
+            {
+                pnlInventroryContainer.Controls[0].Dispose();
+                pnlInventroryContainer.Controls.Clear();
+            }
+            mem.Dock = DockStyle.Fill;
+            pnlInventroryContainer.Controls.Add(mem);
+
+            pnlInventroryContainer.ResumeLayout(true);
+        }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
 
@@ -55,6 +70,16 @@ namespace LIBRARY.ADashboard
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
+        }
+
+        private void btnAlertsView_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new AlertsView_UC());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new FullInventory_UC());
         }
     }
 }
