@@ -1,6 +1,6 @@
 ﻿namespace LIBRARY.ADashboard
 {
-    partial class A_AddMember
+    partial class AddMember
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnClose = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,7 +55,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnClose);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label8);
@@ -77,8 +75,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1001, 591);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1015, 576);
+            this.panel1.TabIndex = 1;
             // 
             // panel3
             // 
@@ -263,27 +261,19 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Add New Member";
             // 
-            // btnClose
-            // 
-            this.btnClose.Location = new System.Drawing.Point(898, 18);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(83, 38);
-            this.btnClose.TabIndex = 37;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // A_AddMember
+            // AddMember
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ClientSize = new System.Drawing.Size(1015, 576);
             this.Controls.Add(this.panel1);
-            this.Name = "A_AddMember";
-            this.Size = new System.Drawing.Size(1001, 591);
-            this.Load += new System.EventHandler(this.A_AddMember_Load);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "AddMember";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AddMember";
+            this.Load += new System.EventHandler(this.AddMember_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -295,6 +285,14 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox cmbMemberType;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
@@ -306,14 +304,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cmbMemberType;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.ComboBox cmbStatus;
-        private System.Windows.Forms.Button btnClose;
     }
 }

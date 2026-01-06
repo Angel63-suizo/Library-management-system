@@ -132,6 +132,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\AddMember.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\AlertsView_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,12 +173,6 @@
       <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\A_AddLibraryStaff_Repository.cs" />
-    <Compile Include="ADashboard\A_AddMember.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ADashboard\A_AddMember.Designer.cs">
-      <DependentUpon>A_AddMember.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADashboard\A_AddMember_Repository.cs" />
     <Compile Include="ADashboard\A_dashboard.cs">
       <SubType>UserControl</SubType>
@@ -219,6 +219,13 @@
       <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\Dashboard_Repository.cs" />
+    <Compile Include="ADashboard\Delete_Repository.cs" />
+    <Compile Include="ADashboard\EditMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\EditMembers.Designer.cs">
+      <DependentUpon>EditMembers.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\FullInventory_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -244,6 +251,7 @@
     <Compile Include="ADashboard\SystemSettings_UC.Designer.cs">
       <DependentUpon>SystemSettings_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADashboard\Update_Repository.cs" />
     <Compile Include="A_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -327,14 +335,14 @@
     <Compile Include="Register\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ADashboard\AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\AlertsView_UC.resx">
       <DependentUpon>AlertsView_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_AddLibraryStaff.resx">
       <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ADashboard\A_AddMember.resx">
-      <DependentUpon>A_AddMember.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_AddNewResource.resx">
       <DependentUpon>A_AddNewResource.cs</DependentUpon>
@@ -365,6 +373,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_ViewMemberDetails.resx">
       <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\EditMembers.resx">
+      <DependentUpon>EditMembers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\FullInventory_UC.resx">
       <DependentUpon>FullInventory_UC.cs</DependentUpon>

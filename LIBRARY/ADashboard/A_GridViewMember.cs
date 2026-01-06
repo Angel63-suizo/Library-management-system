@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,12 +28,21 @@ namespace LIBRARY.ADashboard
         private void dgvMemberGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
-            string cardnum = dgvMemberGrid.Rows[e.RowIndex].Cells["colCardNumber"].Value.ToString();
+            string cardNum = dgvMemberGrid.Rows[e.RowIndex].Cells["colCardNumber"].Value.ToString();
 
             if (dgvMemberGrid.Columns[e.ColumnIndex].Name == "EditCol")
             {
-                MessageBox.Show("Editing Member: " + cardnum);
+                EditMembers editForm = new EditMembers(cardNum);
+
+                if (editForm.ShowDialog() == DialogResult.OK)
+                {
+                    RefreshGrid();
+
+                    Dashboard_Repository logRepo = new Dashboard_Repository();
+                }
             }
+
+
 
             if (dgvMemberGrid.Columns[e.ColumnIndex].Name == "ViewCol")
             {
@@ -60,29 +70,39 @@ namespace LIBRARY.ADashboard
 
             if (dgvMemberGrid.Columns[e.ColumnIndex].Name == "DeleteCol")
             {
-                DialogResult dialog = MessageBox.Show("Are you sure you want to delete member " + cardnum + "?", "Confirm Delete", MessageBoxButtons.YesNo);
+                var confirm = MessageBox.Show("Delete this member and ALL their history? This cannot be undone.",
+                                             "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                if (dialog == DialogResult.Yes)
+                if (confirm == DialogResult.Yes)
                 {
+                    Delete_Repository repo = new Delete_Repository();
+                    var result = repo.DeleteMemberFull(cardNum);
 
+                    if (result.success)
+                    {
+                        MessageBox.Show(result.message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RefreshGrid(); 
+                    }
+                    else
+                    {
+                        MessageBox.Show(result.message, "Deletion Blocked", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            A_AddMember add = new A_AddMember();
-            Control parentpanel = this.Parent;
+            AddMember add = new AddMember();
 
-            if (parentpanel != null)
+            if (add.ShowDialog() == DialogResult.OK)
             {
-                parentpanel.Controls.Add(add);
-                add.BringToFront();
-                add.Left = (parentpanel.Width - add.Width) / 2;
-                add.Top = (parentpanel.Height - add.Height) / 2;
+                RefreshGrid();
 
-                this.Enabled = false;
+                Dashboard_Repository logRepo = new Dashboard_Repository();
             }
+
+            RefreshGrid();
         }
 
         private void btnLibraryStaff_Click(object sender, EventArgs e)

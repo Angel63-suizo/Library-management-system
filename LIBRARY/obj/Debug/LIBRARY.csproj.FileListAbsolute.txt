@@ -114,7 +114,6 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddLibraryStaff.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddMember.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_dashboard.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_Inventory.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_Resources.resources
@@ -148,3 +147,5 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.FullInventory_UC.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\Member.Form1.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.SystemSettings_UC.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.EditMembers.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddMember.resources
