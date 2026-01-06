@@ -234,7 +234,7 @@
             // 
             // colContact
             // 
-            this.colContact.DataPropertyName = "Contact #";
+            this.colContact.DataPropertyName = "Phone";
             this.colContact.FillWeight = 123.6588F;
             this.colContact.HeaderText = "Contact #";
             this.colContact.MinimumWidth = 6;
