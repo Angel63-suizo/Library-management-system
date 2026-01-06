@@ -1,11 +1,13 @@
 ﻿using ExCSS;
 using LIBRARY.Models;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,99 +21,65 @@ namespace LIBRARY.ADashboard
         public A_EditResource(String BookId)
         {
             InitializeComponent();
+
+            _bookId = BookId;
+            LoadInitialData();
         }
-        private DataRow originalData;
 
         private void CheckForChanges(object sender, EventArgs e)
         {
-            if (originalData == null) return;
-
-            bool isChanged =
-                txtISBN.Text != originalData["ISBN"].ToString() ||
-                txtTitle.Text != originalData["Title"].ToString() ||
-                txtAuthor.Text != originalData["Author"].ToString() ||
-                txtPublisher.Text != originalData["Publisher"].ToString() ||
-                numPubYear.Value != Convert.ToDecimal(originalData["PublicationYear"]) ||
-                cmbCategory.SelectedValue.ToString() != originalData["CategoryId"].ToString() ||
-                txtDescription.Text != (originalData["Description"]?.ToString() ?? "" );
-
-            btnSave.Enabled = isChanged;
-
-            btnSave.BackColor = isChanged ? Color.FromArgb(74, 144, 226) : Color.LightGray;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
             Resource updatedResource = new Resource
             {
-                ISBN = txtISBN.Text,
-                Title = txtTitle.Text,
-                Author = txtAuthor.Text,
-                PublisherId = txtPublisher.Text,
+                AccessionBase = _bookId, 
+                ISBN = txtISBN.Text.Trim(),
+                Title = txtTitle.Text.Trim(),
+                Author = txtAuthor.Text.Trim(),
+                PublisherName = txtPublisher.Text.Trim(),
                 PublicationYear = (int)numPubYear.Value,
-                Description = txtDescription.Text,
+                Description = txtDescription.Text.Trim()
             };
 
-            int categoryId = Convert.ToInt32(cmbCategory.SelectedValue);
-
-            A_GetResourceDetail_Repository repo = new A_GetResourceDetail_Repository();
-            if (repo.UpdateResource(updatedResource, categoryId, _bookId, txtDescription.Text))
+            Update_Repository repo = new Update_Repository();
+            if (repo.UpdateResource(updatedResource))
             {
-                MessageBox.Show("Changes saved successfully!");
-
-                originalData = repo.GetResourceDetails(_bookId);
-                btnSave.Enabled = false;
-
-                this.DialogResult = DialogResult.OK;
+                MessageBox.Show("Update Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.DialogResult = DialogResult.OK; 
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Update failed. Check if the Book ID exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void A_EditResource_Load(object sender, EventArgs e)
         {
-            A_GetResourceDetail_Repository repo = new A_GetResourceDetail_Repository();
+        }
+        private void LoadInitialData()
+        {
+            Update_Repository repo = new Update_Repository();
+            DataRow row = repo.GetResourceDetails2(_bookId);
 
-            originalData = repo.GetResourceDetails(_bookId);
-            if (originalData != null)
+            if (row != null)
             {
-                lblBookID.Text = _bookId; 
-                txtISBN.Text = originalData["ISBN"].ToString();
-                txtTitle.Text = originalData["Title"].ToString();
-                txtAuthor.Text = originalData["Author"].ToString();
-                txtPublisher.Text = originalData["Publisher"].ToString();
-
-                numPubYear.Value = Convert.ToDecimal(originalData["PublicationYear"]);
-                cmbCategory.SelectedValue = originalData["CategoryId"];
-
-                txtDescription.Text = originalData["Description"]?.ToString() ?? "";
-
-                txtISBN.TextChanged += CheckForChanges;
-                txtTitle.TextChanged += CheckForChanges;
-                txtAuthor.TextChanged += CheckForChanges;
-                txtPublisher.TextChanged += CheckForChanges;
-                numPubYear.TextChanged += CheckForChanges;
-                cmbCategory.SelectedIndexChanged += CheckForChanges;
-                txtDescription.TextChanged += CheckForChanges;
-
-                btnSave.Enabled = false;
-
-
+                lblBookID.Text = row["AccessionBase"].ToString();
+                txtISBN.Text = row["ISBN"].ToString();
+                txtTitle.Text = row["Title"].ToString();
+                txtAuthor.Text = row["Author"].ToString();
+                txtPublisher.Text = row["PublisherName"].ToString();
+                numPubYear.Value = Convert.ToInt32(row["PublicationYear"]);
+                txtDescription.Text = row["Description"].ToString();
             }
+        }
 
-            A_AddResource_Repository repos = new A_AddResource_Repository();
-            try
-            {
-                DataTable dt = repos.GetCategories();
-                cmbCategory.DataSource = dt;
-                cmbCategory.DisplayMember = "Name";
-                cmbCategory.ValueMember = "CategoryId";
-                cmbCategory.SelectedIndex = 0;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error loading member types: " + ex.Message);
-            }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
-    
     }
 }

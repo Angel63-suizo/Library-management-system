@@ -33,15 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_GridViewMember));
             this.dgvMemberGrid = new System.Windows.Forms.DataGridView();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.btnLibraryStaff = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnAddMember = new System.Windows.Forms.Button();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.lblTypes = new System.Windows.Forms.Label();
-            this.cmbMemberType = new System.Windows.Forms.ComboBox();
             this.colCardNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colContact = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,6 +42,15 @@
             this.EditCol = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ViewCol = new System.Windows.Forms.DataGridViewButtonColumn();
             this.DeleteCol = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnLibraryStaff = new System.Windows.Forms.Button();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnAddMember = new System.Windows.Forms.Button();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.lblTypes = new System.Windows.Forms.Label();
+            this.cmbMemberType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMemberGrid)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -105,6 +105,90 @@
             this.dgvMemberGrid.TabIndex = 30;
             this.dgvMemberGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMemberGrid_CellContentClick);
             // 
+            // colCardNumber
+            // 
+            this.colCardNumber.DataPropertyName = "Card Number";
+            this.colCardNumber.FillWeight = 123.6588F;
+            this.colCardNumber.HeaderText = "Card Number";
+            this.colCardNumber.MinimumWidth = 6;
+            this.colCardNumber.Name = "colCardNumber";
+            this.colCardNumber.ReadOnly = true;
+            // 
+            // colName
+            // 
+            this.colName.DataPropertyName = "Name";
+            this.colName.FillWeight = 123.6588F;
+            this.colName.HeaderText = "Name";
+            this.colName.MinimumWidth = 6;
+            this.colName.Name = "colName";
+            this.colName.ReadOnly = true;
+            // 
+            // colContact
+            // 
+            this.colContact.DataPropertyName = "Phone";
+            this.colContact.FillWeight = 123.6588F;
+            this.colContact.HeaderText = "Contact #";
+            this.colContact.MinimumWidth = 6;
+            this.colContact.Name = "colContact";
+            this.colContact.ReadOnly = true;
+            // 
+            // colStatus
+            // 
+            this.colStatus.DataPropertyName = "Status";
+            this.colStatus.FillWeight = 123.6588F;
+            this.colStatus.HeaderText = "Status";
+            this.colStatus.MinimumWidth = 6;
+            this.colStatus.Name = "colStatus";
+            this.colStatus.ReadOnly = true;
+            // 
+            // colBooksOut
+            // 
+            this.colBooksOut.DataPropertyName = "Books Out";
+            this.colBooksOut.FillWeight = 123.6588F;
+            this.colBooksOut.HeaderText = "Books Out";
+            this.colBooksOut.MinimumWidth = 6;
+            this.colBooksOut.Name = "colBooksOut";
+            this.colBooksOut.ReadOnly = true;
+            // 
+            // colFines
+            // 
+            this.colFines.DataPropertyName = "Fines";
+            this.colFines.FillWeight = 123.6588F;
+            this.colFines.HeaderText = "Fines";
+            this.colFines.MinimumWidth = 6;
+            this.colFines.Name = "colFines";
+            this.colFines.ReadOnly = true;
+            // 
+            // EditCol
+            // 
+            this.EditCol.FillWeight = 57.15382F;
+            this.EditCol.HeaderText = "Actions";
+            this.EditCol.MinimumWidth = 6;
+            this.EditCol.Name = "EditCol";
+            this.EditCol.ReadOnly = true;
+            this.EditCol.Text = "Edit";
+            this.EditCol.UseColumnTextForButtonValue = true;
+            // 
+            // ViewCol
+            // 
+            this.ViewCol.FillWeight = 52.76507F;
+            this.ViewCol.HeaderText = "";
+            this.ViewCol.MinimumWidth = 6;
+            this.ViewCol.Name = "ViewCol";
+            this.ViewCol.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.ViewCol.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.ViewCol.Text = "View";
+            this.ViewCol.UseColumnTextForButtonValue = true;
+            // 
+            // DeleteCol
+            // 
+            this.DeleteCol.FillWeight = 48.12835F;
+            this.DeleteCol.HeaderText = "";
+            this.DeleteCol.MinimumWidth = 6;
+            this.DeleteCol.Name = "DeleteCol";
+            this.DeleteCol.Text = "Delete";
+            this.DeleteCol.UseColumnTextForButtonValue = true;
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
@@ -121,6 +205,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1611, 117);
             this.panel9.TabIndex = 31;
+            this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.panel9_Paint);
             // 
             // pictureBox5
             // 
@@ -213,90 +298,6 @@
             this.cmbMemberType.Size = new System.Drawing.Size(129, 24);
             this.cmbMemberType.TabIndex = 2;
             this.cmbMemberType.SelectedIndexChanged += new System.EventHandler(this.cmbMemberType_SelectedIndexChanged);
-            // 
-            // colCardNumber
-            // 
-            this.colCardNumber.DataPropertyName = "Card Number";
-            this.colCardNumber.FillWeight = 123.6588F;
-            this.colCardNumber.HeaderText = "Card Number";
-            this.colCardNumber.MinimumWidth = 6;
-            this.colCardNumber.Name = "colCardNumber";
-            this.colCardNumber.ReadOnly = true;
-            // 
-            // colName
-            // 
-            this.colName.DataPropertyName = "Name";
-            this.colName.FillWeight = 123.6588F;
-            this.colName.HeaderText = "Name";
-            this.colName.MinimumWidth = 6;
-            this.colName.Name = "colName";
-            this.colName.ReadOnly = true;
-            // 
-            // colContact
-            // 
-            this.colContact.DataPropertyName = "Phone";
-            this.colContact.FillWeight = 123.6588F;
-            this.colContact.HeaderText = "Contact #";
-            this.colContact.MinimumWidth = 6;
-            this.colContact.Name = "colContact";
-            this.colContact.ReadOnly = true;
-            // 
-            // colStatus
-            // 
-            this.colStatus.DataPropertyName = "Status";
-            this.colStatus.FillWeight = 123.6588F;
-            this.colStatus.HeaderText = "Status";
-            this.colStatus.MinimumWidth = 6;
-            this.colStatus.Name = "colStatus";
-            this.colStatus.ReadOnly = true;
-            // 
-            // colBooksOut
-            // 
-            this.colBooksOut.DataPropertyName = "Books Out";
-            this.colBooksOut.FillWeight = 123.6588F;
-            this.colBooksOut.HeaderText = "Books Out";
-            this.colBooksOut.MinimumWidth = 6;
-            this.colBooksOut.Name = "colBooksOut";
-            this.colBooksOut.ReadOnly = true;
-            // 
-            // colFines
-            // 
-            this.colFines.DataPropertyName = "Fines";
-            this.colFines.FillWeight = 123.6588F;
-            this.colFines.HeaderText = "Fines";
-            this.colFines.MinimumWidth = 6;
-            this.colFines.Name = "colFines";
-            this.colFines.ReadOnly = true;
-            // 
-            // EditCol
-            // 
-            this.EditCol.FillWeight = 57.15382F;
-            this.EditCol.HeaderText = "Actions";
-            this.EditCol.MinimumWidth = 6;
-            this.EditCol.Name = "EditCol";
-            this.EditCol.ReadOnly = true;
-            this.EditCol.Text = "Edit";
-            this.EditCol.UseColumnTextForButtonValue = true;
-            // 
-            // ViewCol
-            // 
-            this.ViewCol.FillWeight = 52.76507F;
-            this.ViewCol.HeaderText = "";
-            this.ViewCol.MinimumWidth = 6;
-            this.ViewCol.Name = "ViewCol";
-            this.ViewCol.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.ViewCol.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.ViewCol.Text = "View";
-            this.ViewCol.UseColumnTextForButtonValue = true;
-            // 
-            // DeleteCol
-            // 
-            this.DeleteCol.FillWeight = 48.12835F;
-            this.DeleteCol.HeaderText = "";
-            this.DeleteCol.MinimumWidth = 6;
-            this.DeleteCol.Name = "DeleteCol";
-            this.DeleteCol.Text = "Delete";
-            this.DeleteCol.UseColumnTextForButtonValue = true;
             // 
             // A_GridViewMember
             // 

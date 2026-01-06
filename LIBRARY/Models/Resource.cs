@@ -15,6 +15,7 @@ namespace LIBRARY.Models
         private string title;
         private string author;
         private string publisherId;
+        private string publisherName;
         private int publicationYear;
         private string edition;
         private string language;
@@ -28,11 +29,12 @@ namespace LIBRARY.Models
         public string Title { get => title; set => title = value; }
         public string Author { get => author; set => author = value; }
         public string PublisherId { get => publisherId; set => publisherId = value; }
+        public string PublisherName { get => publisherName; set => publisherName = value; }
         public int PublicationYear { get => publicationYear; set => publicationYear = value; }
         public string Edition { get => edition; set => edition = value; }
         public string Language { get => language; set => language = value; }
         public int Pages { get => pages; set => pages = value; }
-        public string ResourcheType { get => resourcheType; set => resourcheType = value; }
+        public string ResourceType { get => resourcheType; set => resourcheType = value; }
         public string Description { get => description; set => description = value; }
 
        /* public string getDetails()
