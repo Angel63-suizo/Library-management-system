@@ -1,4 +1,5 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ namespace LIBRARY.ADashboard
             }
         }
 
-        public string AddNewMember(Member member, string memberTypeName, string status)
+        public string AddNewMember(Models.Member member, string memberTypeName, string status)
         {
             string cardNum = string.Empty;
             try

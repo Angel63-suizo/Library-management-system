@@ -36,5 +36,31 @@ namespace LIBRARY.ADashboard
             }
             return dt;
         }
+
+        public DataTable GetInventoryStats()
+        {
+            DataTable dt = new DataTable();
+            using (var conn = Database.GetConnection())
+            using (var cmd = new MySqlCommand("sp_GetInventoryStats", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                new MySqlDataAdapter(cmd).Fill(dt);
+            }
+            return dt;
+        }
+
+        public DataTable GetDashboardStats()
+        {
+            DataTable dt = new DataTable();
+            using (var conn = Database.GetConnection())
+            using (var cmd = new MySqlCommand("sp_GetDashboardStats", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                new MySqlDataAdapter(cmd).Fill(dt);
+            }
+            return dt;
+        }
     }
 }

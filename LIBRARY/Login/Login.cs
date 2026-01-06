@@ -74,7 +74,7 @@ namespace LIBRARY.Login
             {
                 var User = Login_Repository.Login(username, password, selectedRole);
 
-                M_MainForm memberform = new M_MainForm((Member)User);
+                M_MainForm memberform = new M_MainForm((Models.Member)User);
                 memberform.Show();
                 this.Hide();
             }

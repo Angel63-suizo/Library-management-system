@@ -33,11 +33,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblItems = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pnlStockAlertContainer = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pnlInventroryMoveContainer = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.pnlStockAlertContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.pnlInventoryMoveContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel10.SuspendLayout();
@@ -48,10 +48,10 @@
             // 
             this.panel9.AutoScroll = true;
             this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.pnlStockAlertContainer);
             this.panel9.Controls.Add(this.pictureBox5);
             this.panel9.Controls.Add(this.lblItems);
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Controls.Add(this.pnlStockAlertContainer);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
@@ -91,20 +91,11 @@
             this.label9.Text = "Low Stock Alert";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pnlStockAlertContainer
-            // 
-            this.pnlStockAlertContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlStockAlertContainer.BackColor = System.Drawing.Color.White;
-            this.pnlStockAlertContainer.Location = new System.Drawing.Point(16, 139);
-            this.pnlStockAlertContainer.Name = "pnlStockAlertContainer";
-            this.pnlStockAlertContainer.Size = new System.Drawing.Size(752, 431);
-            this.pnlStockAlertContainer.TabIndex = 0;
-            // 
             // panel10
             // 
             this.panel10.AutoScroll = true;
             this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.pnlInventroryMoveContainer);
+            this.panel10.Controls.Add(this.pnlInventoryMoveContainer);
             this.panel10.Controls.Add(this.pictureBox6);
             this.panel10.Controls.Add(this.label25);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Right;
@@ -112,15 +103,6 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(790, 649);
             this.panel10.TabIndex = 40;
-            // 
-            // pnlInventroryMoveContainer
-            // 
-            this.pnlInventroryMoveContainer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlInventroryMoveContainer.BackColor = System.Drawing.Color.White;
-            this.pnlInventroryMoveContainer.Location = new System.Drawing.Point(38, 139);
-            this.pnlInventroryMoveContainer.Name = "pnlInventroryMoveContainer";
-            this.pnlInventroryMoveContainer.Size = new System.Drawing.Size(730, 431);
-            this.pnlInventroryMoveContainer.TabIndex = 5;
             // 
             // pictureBox6
             // 
@@ -143,6 +125,22 @@
             this.label25.TabIndex = 2;
             this.label25.Text = "Recent Inventory Movements";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlStockAlertContainer
+            // 
+            this.pnlStockAlertContainer.AutoScroll = true;
+            this.pnlStockAlertContainer.Location = new System.Drawing.Point(16, 139);
+            this.pnlStockAlertContainer.Name = "pnlStockAlertContainer";
+            this.pnlStockAlertContainer.Size = new System.Drawing.Size(752, 431);
+            this.pnlStockAlertContainer.TabIndex = 4;
+            // 
+            // pnlInventoryMoveContainer
+            // 
+            this.pnlInventoryMoveContainer.AutoScroll = true;
+            this.pnlInventoryMoveContainer.Location = new System.Drawing.Point(21, 139);
+            this.pnlInventoryMoveContainer.Name = "pnlInventoryMoveContainer";
+            this.pnlInventoryMoveContainer.Size = new System.Drawing.Size(752, 431);
+            this.pnlInventoryMoveContainer.TabIndex = 5;
             // 
             // AlertsView_UC
             // 
@@ -170,10 +168,10 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblItems;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel pnlStockAlertContainer;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel pnlInventroryMoveContainer;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.FlowLayoutPanel pnlStockAlertContainer;
+        private System.Windows.Forms.FlowLayoutPanel pnlInventoryMoveContainer;
     }
 }

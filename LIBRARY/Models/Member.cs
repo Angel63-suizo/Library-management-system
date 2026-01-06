@@ -1,13 +1,11 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LIBRARY.Class;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-namespace LIBRARY.Class
+namespace LIBRARY.Models
 {
     public class Member : User
     {
@@ -30,18 +28,5 @@ namespace LIBRARY.Class
         public DateTime Registrationdate { get => registrationdate; set => registrationdate = value; }
         public DateTime Expirationdate { get => expirationdate; set => expirationdate = value; }
         public string Status { get => status; set => status = value; }
-
-
-
-         /*ublic List<Book> SearchCatalog (string Criteria)
-            {
-                return new List<Book>();
-            }
-
-            public Reservation ReserveBook(int copyId)
-            {
-                Console.WriteLine($"Reserving book copy: {copyId}");
-                return new Reservation();
-            }*/
     }
 }

@@ -36,6 +36,27 @@ namespace LIBRARY.ADashboard
             pnlInventroryContainer.Controls.Add(mem);
 
             pnlInventroryContainer.ResumeLayout(true);
+
+            UpdateInventoryLabels();
+            Timer refreshTimer = new Timer();
+            refreshTimer.Interval = 5000;
+            refreshTimer.Tick += (s, args) => UpdateInventoryLabels();
+            refreshTimer.Start();
+        }
+
+        private void UpdateInventoryLabels()
+        {
+            A_StatsBox_Repository repo = new A_StatsBox_Repository();
+            DataTable dt = repo.GetInventoryStats();
+
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                lblTotalInventory.Text = row["TotalInventory"].ToString();
+                lblLowStock.Text = row["LowStockItems"].ToString();
+                lblOutOfStock.Text = row["OutOfStocks"].ToString();
+                lblCategories.Text = row["TotalCategories"].ToString();
+            }
         }
         private void panel9_Paint(object sender, PaintEventArgs e)
         {
@@ -80,6 +101,11 @@ namespace LIBRARY.ADashboard
         private void button2_Click(object sender, EventArgs e)
         {
             LoadUserControl(new FullInventory_UC());
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

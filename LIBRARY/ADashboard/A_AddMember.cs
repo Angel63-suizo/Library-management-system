@@ -37,7 +37,7 @@ namespace LIBRARY.ADashboard
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Member newMember = new Member();
+            Models.Member newMember = new Models.Member();
             newMember.Firstname = txtFirstName.Text;
             newMember.Lastname = txtLastName.Text;
             newMember.Email = txtEmail.Text;

@@ -30,22 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_Inventory));
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblCategories = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblCategorie = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblOutOfStock = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblLowStock = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalInventory = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -71,25 +71,26 @@
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblCategories);
             this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.label8);
+            this.panel7.Controls.Add(this.lblCategorie);
             this.panel7.Location = new System.Drawing.Point(1256, 42);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(361, 145);
             this.panel7.TabIndex = 35;
             // 
-            // label7
+            // lblCategories
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(164, 82);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 23);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "0";
+            this.lblCategories.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCategories.AutoSize = true;
+            this.lblCategories.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategories.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCategories.Location = new System.Drawing.Point(164, 82);
+            this.lblCategories.Name = "lblCategories";
+            this.lblCategories.Size = new System.Drawing.Size(21, 23);
+            this.lblCategories.TabIndex = 5;
+            this.lblCategories.Text = "0";
+            this.lblCategories.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel8
             // 
@@ -112,42 +113,42 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.WaitOnLoad = true;
             // 
-            // label8
+            // lblCategorie
             // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label8.Location = new System.Drawing.Point(164, 38);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(106, 23);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Categories";
+            this.lblCategorie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCategorie.AutoSize = true;
+            this.lblCategorie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategorie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblCategorie.Location = new System.Drawing.Point(164, 38);
+            this.lblCategorie.Name = "lblCategorie";
+            this.lblCategorie.Size = new System.Drawing.Size(106, 23);
+            this.lblCategorie.TabIndex = 2;
+            this.lblCategorie.Text = "Categories";
             // 
             // panel5
             // 
             this.panel5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.label5);
+            this.panel5.Controls.Add(this.lblOutOfStock);
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Controls.Add(this.label6);
+            this.panel5.Controls.Add(this.lbl1);
             this.panel5.Location = new System.Drawing.Point(827, 42);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(380, 145);
             this.panel5.TabIndex = 34;
             // 
-            // label5
+            // lblOutOfStock
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(164, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(21, 23);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "0";
+            this.lblOutOfStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblOutOfStock.AutoSize = true;
+            this.lblOutOfStock.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOutOfStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblOutOfStock.Location = new System.Drawing.Point(164, 82);
+            this.lblOutOfStock.Name = "lblOutOfStock";
+            this.lblOutOfStock.Size = new System.Drawing.Size(21, 23);
+            this.lblOutOfStock.TabIndex = 5;
+            this.lblOutOfStock.Text = "0";
             // 
             // panel6
             // 
@@ -170,24 +171,24 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.WaitOnLoad = true;
             // 
-            // label6
+            // lbl1
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(164, 38);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(131, 23);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Out of Stocks";
+            this.lbl1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lbl1.Location = new System.Drawing.Point(164, 38);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(131, 23);
+            this.lbl1.TabIndex = 2;
+            this.lbl1.Text = "Out of Stocks";
             // 
             // panel2
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblLowStock);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(414, 42);
@@ -195,17 +196,17 @@
             this.panel2.Size = new System.Drawing.Size(376, 145);
             this.panel2.TabIndex = 33;
             // 
-            // label2
+            // lblLowStock
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(164, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0";
+            this.lblLowStock.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblLowStock.AutoSize = true;
+            this.lblLowStock.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLowStock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblLowStock.Location = new System.Drawing.Point(164, 82);
+            this.lblLowStock.Name = "lblLowStock";
+            this.lblLowStock.Size = new System.Drawing.Size(21, 23);
+            this.lblLowStock.TabIndex = 5;
+            this.lblLowStock.Text = "0";
             // 
             // panel4
             // 
@@ -245,7 +246,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblTotalInventory);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 42);
@@ -253,17 +254,17 @@
             this.panel1.Size = new System.Drawing.Size(364, 145);
             this.panel1.TabIndex = 32;
             // 
-            // label3
+            // lblTotalInventory
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(145, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "0";
+            this.lblTotalInventory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalInventory.AutoSize = true;
+            this.lblTotalInventory.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalInventory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalInventory.Location = new System.Drawing.Point(145, 82);
+            this.lblTotalInventory.Name = "lblTotalInventory";
+            this.lblTotalInventory.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalInventory.TabIndex = 5;
+            this.lblTotalInventory.Text = "0";
             // 
             // panel3
             // 
@@ -377,22 +378,22 @@
         #endregion
 
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCategories;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblCategorie;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblOutOfStock;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblLowStock;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotalInventory;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;

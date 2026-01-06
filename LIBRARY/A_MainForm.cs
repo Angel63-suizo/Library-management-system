@@ -114,5 +114,10 @@ namespace LIBRARY
         {
             LoadUserControl(new A_Resources());
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new SystemSettings_UC());
+        }
     }
 }

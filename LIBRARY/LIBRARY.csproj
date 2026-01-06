@@ -218,6 +218,7 @@
     <Compile Include="ADashboard\A_ViewMemberDetails.Designer.cs">
       <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADashboard\Dashboard_Repository.cs" />
     <Compile Include="ADashboard\FullInventory_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -237,6 +238,12 @@
     <Compile Include="ADashboard\StockAlert_UC.Designer.cs">
       <DependentUpon>StockAlert_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="ADashboard\SystemSettings_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ADashboard\SystemSettings_UC.Designer.cs">
+      <DependentUpon>SystemSettings_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="A_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +253,7 @@
     <Compile Include="Login\Login_Repository.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
+    <Compile Include="Models\Browse_Catalog.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\EBook.cs" />
@@ -366,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\StockAlert_UC.resx">
       <DependentUpon>StockAlert_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\SystemSettings_UC.resx">
+      <DependentUpon>SystemSettings_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_MainForm.resx">
       <DependentUpon>A_MainForm.cs</DependentUpon>

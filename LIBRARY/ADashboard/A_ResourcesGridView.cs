@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace LIBRARY.ADashboard
 {
@@ -99,10 +100,15 @@ namespace LIBRARY.ADashboard
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "EditCol")
             {
+                A_EditResource viewForm = new A_EditResource(bookId);
 
-                string BookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookid"].Value.ToString();
-                A_EditResource viewForm = new A_EditResource(BookId);
-                viewForm.ShowDialog();
+                if (viewForm.ShowDialog() == DialogResult.OK)
+                {
+                    GetInventoryGrid_Repository logRepo = new GetInventoryGrid_Repository();
+                    logRepo.LogMovement(int.Parse(bookId), "Update", $"Modified details for: {bookId}", "Admin");
+
+                    RefreshGrid();
+                }
             }
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "ViewCol")

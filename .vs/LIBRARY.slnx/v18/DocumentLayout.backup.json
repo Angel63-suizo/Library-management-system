@@ -3,39 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\getinventorygrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\getinventorygrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_getresourcegrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_getresourcegrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -43,20 +11,144 @@
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\a_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_gridviewmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_gridviewmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\inventorymovements_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\inventorymovements_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_statsbox_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_statsbox_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\dashboard_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\dashboard_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\stockalert_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\stockalert_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\systemsettings_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\systemsettings_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\systemsettings_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\systemsettings_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\m_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\m_mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\browse_catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\browse_catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\membertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\membertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\mdashboard\\m_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\mdashboard\\m_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\getinventorygrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\getinventorygrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\stockalert_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\stockalert_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\inventorymovements_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\inventorymovements_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_getresourcedetail_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_getresourcedetail_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\fullinventory_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_getresourcegrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_getresourcegrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resourcesgridview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addnewresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addnewresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\alertsview_uc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addresource_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,7 +159,7 @@
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|c:\\users\\angel\\source\\repos\\angel63-suizo\\library-management-system\\library\\adashboard\\a_editresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_editresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_editresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -75,16 +167,8 @@
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resourcedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_getresourcedetail_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_getresourcedetail_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_editresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_editresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +181,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_getmemberdetails_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -127,28 +207,8 @@
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_membergrid_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_statsbox_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_statsbox_repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_resources.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\adashboard\\a_addmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|solutionrelative:library\\models\\bookcopy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5088730A-B6C9-4DCD-834F-D722E0924A3D}|LIBRARY\\LIBRARY.csproj|C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\library\\models\\ebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -174,129 +234,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "A_Inventory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T05:20:00.618Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AlertsView_UC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\AlertsView_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:35:40.52Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FullInventory_UC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\FullInventory_UC.cs [Design]",
+              "Title": "A_GridViewMember.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GridViewMember.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GridViewMember.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GridViewMember.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_GridViewMember.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:48:40.181Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-01-06T04:31:23.593Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FullInventory_UC.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAIwLEAAAANAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Dashboard_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\Dashboard_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\Dashboard_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\Dashboard_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\Dashboard_Repository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwA0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T07:34:42.939Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetInventoryGrid_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T07:19:24.569Z",
+              "WhenOpened": "2026-01-06T04:10:35.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "A_GetResourceGrid_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBoAAAANAAAAAAAAAA==",
+              "Title": "A_dashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T09:40:12.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-06T03:41:21.659Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "A_ResourcesGridView.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAwF0AAAAAAAAAAAAAAA==",
+              "Title": "A_StatsBox_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAIwD4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T14:10:38.608Z",
+              "WhenOpened": "2026-01-04T06:35:15.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "A_MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
-              "RelativeToolTip": "LIBRARY\\A_MainForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "A_dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_dashboard.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_dashboard.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-02T04:50:48.189Z",
+              "WhenOpened": "2026-01-06T03:42:33.114Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "A_Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAIAxwFMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T05:36:19.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "A_MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
               "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
@@ -308,31 +313,372 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "A_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\A_MainForm.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\A_MainForm.cs",
+              "RelativeToolTip": "LIBRARY\\A_MainForm.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAawCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:19:40.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FullInventory_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T07:34:42.939Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "A_Resources.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Resources.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Resources.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAtwBwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:37:33.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "A_UserManagement.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_UserManagement.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T06:07:08.433Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StockAlert_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\StockAlert_UC.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\StockAlert_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:38:28.528Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "A_Inventory.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T05:20:00.618Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "A_Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Inventory.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Inventory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T05:36:19.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SystemSettings_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\SystemSettings_UC.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\SystemSettings_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T01:45:41.334Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "A_Resources.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Resources.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Resources.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T13:08:29.464Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SystemSettings_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\SystemSettings_UC.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T02:02:11.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FullInventory_UC.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\FullInventory_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\FullInventory_UC.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\FullInventory_UC.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T06:48:40.181Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "A_ResourcesGridView.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAIwGoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T14:10:38.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "M_MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\M_MainForm.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\M_MainForm.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\M_MainForm.cs",
+              "RelativeToolTip": "LIBRARY\\M_MainForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:39:08.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\Member.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Member.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:45:16.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Login\\Login.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Login\\Login.cs",
+              "RelativeToolTip": "LIBRARY\\Login\\Login.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAgwE4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T01:03:14.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Form1.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Form1.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Form1.cs",
+              "RelativeToolTip": "LIBRARY\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:58:13.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Form1.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Form1.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Form1.cs [Design]",
+              "RelativeToolTip": "LIBRARY\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T01:01:52.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Browse_Catalog.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Browse_Catalog.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\Browse_Catalog.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Browse_Catalog.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\Browse_Catalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:59:44.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MemberType.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\MemberType.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\MemberType.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\MemberType.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\MemberType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:56:15.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "A_AddMember.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T16:04:16.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "A_AddMember_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T06:48:26.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookCopy.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\BookCopy.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\Models\\BookCopy.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\BookCopy.cs",
+              "RelativeToolTip": "LIBRARY\\Models\\BookCopy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-03T15:31:57.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "M_dashboard.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\MDashboard\\M_dashboard.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\MDashboard\\M_dashboard.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\MDashboard\\M_dashboard.cs",
+              "RelativeToolTip": "LIBRARY\\MDashboard\\M_dashboard.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T00:40:09.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AlertsView_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\AlertsView_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\AlertsView_UC.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T14:48:40.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GetInventoryGrid_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\GetInventoryGrid_Repository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwEYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T07:19:24.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "StockAlert_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\StockAlert_UC.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T14:45:41.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "InventoryMovements_UC.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T14:47:27.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "A_GetResourceDetail_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T13:16:19.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "A_GetResourceGrid_Repository.cs",
+              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
+              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
+              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
+              "RelativeToolTip": "LIBRARY\\ADashboard\\A_GetResourceGrid_Repository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-04T09:40:12.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
               "Title": "A_ResourcesGridView.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs",
               "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourcesGridView.cs [Design]",
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_ResourcesGridView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:51:21.384Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-05T06:51:21.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "InventoryMovements_UC.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\InventoryMovements_UC.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\InventoryMovements_UC.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\InventoryMovements_UC.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T05:30:57.921Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 36,
               "Title": "A_AddNewResource.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddNewResource.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddNewResource.cs",
@@ -340,25 +686,11 @@
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddNewResource.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAYwCcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T15:55:56.034Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-03T15:55:56.034Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AlertsView_UC.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\AlertsView_UC.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAEwBgAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T06:39:31.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 37,
               "Title": "A_AddResource_Repository.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddResource_Repository.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddResource_Repository.cs",
@@ -366,12 +698,11 @@
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddResource_Repository.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAqwC4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T15:19:54.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-03T15:19:54.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 39,
               "Title": "A_EditResource.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_EditResource.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_EditResource.cs",
@@ -379,24 +710,22 @@
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_EditResource.cs",
               "ViewState": "AgIAAEQAAAAAAAAAAAAgwBIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T14:58:05.646Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T14:58:05.646Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 41,
               "Title": "A_EditResource.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_EditResource.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_EditResource.cs",
               "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_EditResource.cs [Design]",
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_EditResource.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T14:15:54.995Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-01-04T14:15:54.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 38,
               "Title": "A_UserManagement.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_UserManagement.cs",
@@ -409,18 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "A_Resources.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Resources.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Resources.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T13:08:29.464Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 40,
               "Title": "A_ResourceDetail.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourceDetail.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ResourceDetail.cs",
@@ -432,19 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "A_GetResourceDetail_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_GetResourceDetail_Repository.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwDUAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T13:16:19.574Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 42,
               "Title": "Resource.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Resource.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\Resource.cs",
@@ -456,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 43,
               "Title": "A_ResourceDetail.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ResourceDetail.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ResourceDetail.cs",
@@ -467,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 44,
               "Title": "A_AddMember.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember.cs",
@@ -478,19 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "A_AddMember_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember_Repository.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAqwDIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-30T06:48:26.096Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 45,
               "Title": "A_GetMemberDetails_Repository.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GetMemberDetails_Repository.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GetMemberDetails_Repository.cs",
@@ -502,7 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 46,
               "Title": "A_ViewMemberDetails.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ViewMemberDetails.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ViewMemberDetails.cs",
@@ -513,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 47,
               "Title": "A_AddLibraryStaff.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddLibraryStaff.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddLibraryStaff.cs",
@@ -524,7 +818,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 48,
               "Title": "A_GridViewMember.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_GridViewMember.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_GridViewMember.cs",
@@ -532,11 +826,12 @@
               "RelativeToolTip": "LIBRARY\\ADashboard\\A_GridViewMember.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAnwCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T14:00:22.254Z"
+              "WhenOpened": "2026-01-03T14:00:22.254Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 49,
               "Title": "A_ViewMemberDetails.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_ViewMemberDetails.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_ViewMemberDetails.cs",
@@ -548,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "A_MemberGrid_Repository.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_MemberGrid_Repository.cs",
               "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_MemberGrid_Repository.cs",
@@ -560,55 +855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "A_StatsBox_Repository.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_StatsBox_Repository.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA+wCIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T06:35:15.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "A_Resources.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_Resources.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_Resources.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_Resources.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAYwB0AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T14:02:23.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "A_UserManagement.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_UserManagement.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_UserManagement.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T06:07:08.433Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "A_AddMember.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\ADashboard\\A_AddMember.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\ADashboard\\A_AddMember.cs",
-              "RelativeToolTip": "LIBRARY\\ADashboard\\A_AddMember.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwFIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T16:04:16.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 51,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Category.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\Category.cs",
@@ -620,19 +867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "BookCopy.cs",
-              "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\BookCopy.cs",
-              "RelativeDocumentMoniker": "LIBRARY\\Models\\BookCopy.cs",
-              "ToolTip": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\BookCopy.cs",
-              "RelativeToolTip": "LIBRARY\\Models\\BookCopy.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBYAAABPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-03T15:31:57.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 53,
               "Title": "Periodical.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Periodical.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\Periodical.cs",
@@ -644,7 +879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 55,
               "Title": "Thesis.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\Thesis.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\Thesis.cs",
@@ -656,7 +891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 52,
               "Title": "EBook.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\EBook.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\EBook.cs",
@@ -668,7 +903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 54,
               "Title": "PhysicalBook.cs",
               "DocumentMoniker": "C:\\Users\\Angel\\source\\repos\\Angel63-suizo\\Library-management-system\\LIBRARY\\Models\\PhysicalBook.cs",
               "RelativeDocumentMoniker": "LIBRARY\\Models\\PhysicalBook.cs",

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Models;
 
 namespace Member
 {
@@ -19,32 +20,17 @@ namespace Member
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
-
-            Browse_Catalog browse = new Browse_Catalog();
-            browse.Dock = DockStyle.Fill;
-
-            panelMain.Controls.Add(browse);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
-
-            My_Books browse = new My_Books();
-            browse.Dock = DockStyle.Fill;
-
-            panelMain.Controls.Add(browse);
+            
         }
 
         private void btnBorrowingHistory_Click(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
-
-            Borrowing_History browse = new Borrowing_History();
-            browse.Dock = DockStyle.Fill;
-
-            panelMain.Controls.Add(browse);
+           
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
@@ -59,12 +45,7 @@ namespace Member
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            panelMain.Controls.Clear();
-
-            ProfileAccount browse = new ProfileAccount();
-            browse.Dock = DockStyle.Fill;
-
-            panelMain.Controls.Add(browse);
+           
         }
     }
 }

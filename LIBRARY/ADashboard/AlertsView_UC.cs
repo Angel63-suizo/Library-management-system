@@ -19,15 +19,29 @@ namespace LIBRARY.ADashboard
 
         private void AlertsView_UC_Load(object sender, EventArgs e)
         {
-            StockAlert_UC stockgrid = new StockAlert_UC();
-            stockgrid.Dock = DockStyle.Fill;
+            LoadMovementData();
+        }
 
-            pnlStockAlertContainer.Controls.Add(stockgrid);
+        public void LoadMovementData()
+        {
+            GetInventoryGrid_Repository repo = new GetInventoryGrid_Repository();
+            DataTable dtMovements = repo.GetRecentMovements();
 
-            InventoryMovements_UC inventgrid = new InventoryMovements_UC();
-            inventgrid.Dock = DockStyle.Fill;
+            pnlInventoryMoveContainer.Controls.Clear(); 
 
-            pnlInventroryMoveContainer.Controls.Add(inventgrid);
+            foreach (DataRow row in dtMovements.Rows)
+            {
+                InventoryMovements_UC card = new InventoryMovements_UC(
+                    row["ActionType"].ToString(),
+                    row["Title"].ToString(),
+                    row["Details"].ToString(),
+                    row["PerformedBy"].ToString(),
+                    Convert.ToDateTime(row["MovementDate"]).ToString("yyyy-MM-dd")
+                );
+
+                card.Width = pnlInventoryMoveContainer.Width - 25;
+                pnlInventoryMoveContainer.Controls.Add(card);
+            }
         }
     }
 }

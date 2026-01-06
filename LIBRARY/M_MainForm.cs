@@ -1,4 +1,4 @@
-﻿using LIBRARY.Class;
+﻿using LIBRARY.Models;
 using LIBRARY.MDashboard;
 using System;
 using System.Collections.Generic;
@@ -10,13 +10,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using LIBRARY.Class;
 
 namespace LIBRARY
 {
     public partial class M_MainForm : Form
     {
-        private Member LoggedInMember;
-        public M_MainForm(Member member)
+        private Models.Member LoggedInMember;
+        public M_MainForm(Models.Member member)
         {
             InitializeComponent();
             LoggedInMember = member;

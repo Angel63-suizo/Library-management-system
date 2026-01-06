@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_dashboard));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblTotalBooks = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblBooksBorrowed = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblTotalMembers = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblOverdueBooks = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblTotalRevenue = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblActiveStaff = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblTotalBooks);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 32);
@@ -109,17 +109,17 @@
             this.panel1.Size = new System.Drawing.Size(478, 176);
             this.panel1.TabIndex = 23;
             // 
-            // label3
+            // lblTotalBooks
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(164, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 23);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "0";
+            this.lblTotalBooks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalBooks.AutoSize = true;
+            this.lblTotalBooks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalBooks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalBooks.Location = new System.Drawing.Point(164, 99);
+            this.lblTotalBooks.Name = "lblTotalBooks";
+            this.lblTotalBooks.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalBooks.TabIndex = 5;
+            this.lblTotalBooks.Text = "0";
             // 
             // panel3
             // 
@@ -158,16 +158,16 @@
             // chart1
             // 
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(0, 446);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(806, 452);
             this.chart1.TabIndex = 27;
             this.chart1.Text = "chart1";
@@ -175,16 +175,16 @@
             // chart2
             // 
             this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(844, 446);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.chart2.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(810, 452);
             this.chart2.TabIndex = 28;
             this.chart2.Text = "chart2";
@@ -194,7 +194,7 @@
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label4);
+            this.panel4.Controls.Add(this.lblBooksBorrowed);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(577, 32);
@@ -202,17 +202,17 @@
             this.panel4.Size = new System.Drawing.Size(486, 176);
             this.panel4.TabIndex = 29;
             // 
-            // label4
+            // lblBooksBorrowed
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(164, 99);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(21, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "0";
+            this.lblBooksBorrowed.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBooksBorrowed.AutoSize = true;
+            this.lblBooksBorrowed.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooksBorrowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblBooksBorrowed.Location = new System.Drawing.Point(164, 99);
+            this.lblBooksBorrowed.Name = "lblBooksBorrowed";
+            this.lblBooksBorrowed.Size = new System.Drawing.Size(21, 23);
+            this.lblBooksBorrowed.TabIndex = 5;
+            this.lblBooksBorrowed.Text = "0";
             // 
             // panel5
             // 
@@ -251,7 +251,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblTotalMembers);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Location = new System.Drawing.Point(1151, 32);
@@ -259,17 +259,17 @@
             this.panel2.Size = new System.Drawing.Size(503, 176);
             this.panel2.TabIndex = 30;
             // 
-            // label2
+            // lblTotalMembers
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(164, 99);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0";
+            this.lblTotalMembers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalMembers.AutoSize = true;
+            this.lblTotalMembers.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalMembers.Location = new System.Drawing.Point(164, 99);
+            this.lblTotalMembers.Name = "lblTotalMembers";
+            this.lblTotalMembers.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalMembers.TabIndex = 5;
+            this.lblTotalMembers.Text = "0";
             // 
             // panel6
             // 
@@ -308,7 +308,7 @@
             this.panel7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblOverdueBooks);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Location = new System.Drawing.Point(1151, 237);
@@ -316,17 +316,17 @@
             this.panel7.Size = new System.Drawing.Size(503, 176);
             this.panel7.TabIndex = 31;
             // 
-            // label7
+            // lblOverdueBooks
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(164, 99);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 23);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "0";
+            this.lblOverdueBooks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblOverdueBooks.AutoSize = true;
+            this.lblOverdueBooks.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOverdueBooks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblOverdueBooks.Location = new System.Drawing.Point(164, 99);
+            this.lblOverdueBooks.Name = "lblOverdueBooks";
+            this.lblOverdueBooks.Size = new System.Drawing.Size(21, 23);
+            this.lblOverdueBooks.TabIndex = 5;
+            this.lblOverdueBooks.Text = "0";
             // 
             // panel8
             // 
@@ -365,7 +365,7 @@
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label9);
+            this.panel9.Controls.Add(this.lblTotalRevenue);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.label10);
             this.panel9.Location = new System.Drawing.Point(577, 237);
@@ -373,17 +373,17 @@
             this.panel9.Size = new System.Drawing.Size(486, 176);
             this.panel9.TabIndex = 32;
             // 
-            // label9
+            // lblTotalRevenue
             // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label9.Location = new System.Drawing.Point(164, 99);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(21, 23);
-            this.label9.TabIndex = 5;
-            this.label9.Text = "0";
+            this.lblTotalRevenue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTotalRevenue.AutoSize = true;
+            this.lblTotalRevenue.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalRevenue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTotalRevenue.Location = new System.Drawing.Point(164, 99);
+            this.lblTotalRevenue.Name = "lblTotalRevenue";
+            this.lblTotalRevenue.Size = new System.Drawing.Size(21, 23);
+            this.lblTotalRevenue.TabIndex = 5;
+            this.lblTotalRevenue.Text = "0";
             // 
             // panel10
             // 
@@ -422,7 +422,7 @@
             this.panel11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel11.BackColor = System.Drawing.Color.White;
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label11);
+            this.panel11.Controls.Add(this.lblActiveStaff);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Location = new System.Drawing.Point(3, 237);
@@ -430,17 +430,17 @@
             this.panel11.Size = new System.Drawing.Size(478, 176);
             this.panel11.TabIndex = 33;
             // 
-            // label11
+            // lblActiveStaff
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Location = new System.Drawing.Point(164, 99);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(21, 23);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "0";
+            this.lblActiveStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblActiveStaff.AutoSize = true;
+            this.lblActiveStaff.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActiveStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblActiveStaff.Location = new System.Drawing.Point(164, 99);
+            this.lblActiveStaff.Name = "lblActiveStaff";
+            this.lblActiveStaff.Size = new System.Drawing.Size(21, 23);
+            this.lblActiveStaff.TabIndex = 5;
+            this.lblActiveStaff.Text = "0";
             // 
             // panel12
             // 
@@ -500,6 +500,7 @@
             this.btn.Text = "    System Settings";
             this.btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn.UseVisualStyleBackColor = true;
+            this.btn.Click += new System.EventHandler(this.btn_Click);
             // 
             // btnGenerateReport
             // 
@@ -521,9 +522,10 @@
             this.btnAddBook.Name = "btnAddBook";
             this.btnAddBook.Size = new System.Drawing.Size(325, 86);
             this.btnAddBook.TabIndex = 2;
-            this.btnAddBook.Text = "    Add New  Book";
+            this.btnAddBook.Text = "    View Resources";
             this.btnAddBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddBook.UseVisualStyleBackColor = true;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // btnAddMember
             // 
@@ -533,9 +535,10 @@
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.Size = new System.Drawing.Size(327, 86);
             this.btnAddMember.TabIndex = 1;
-            this.btnAddMember.Text = "    Add New Member";
+            this.btnAddMember.Text = "    View Member";
             this.btnAddMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddMember.UseVisualStyleBackColor = true;
+            this.btnAddMember.Click += new System.EventHandler(this.btnAddMember_Click);
             // 
             // label13
             // 
@@ -610,29 +613,29 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTotalBooks;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblBooksBorrowed;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblTotalMembers;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblOverdueBooks;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblTotalRevenue;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblActiveStaff;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label label12;
