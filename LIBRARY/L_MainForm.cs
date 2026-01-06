@@ -1,4 +1,5 @@
-﻿using LIBRARY.Class;
+﻿using LIBRARY.ADashboard;
+using LIBRARY.Class;
 using LIBRARY.LDashboard;
 using LIBRARY.MDashboard;
 using System;
@@ -25,7 +26,7 @@ namespace LIBRARY
         private void L_MainForm_Load(object sender, EventArgs e)
         {
 
-            LoadUserControl(new L_dashboard());
+            LoadUserControl(new S_circulation());
 
         }
 
@@ -49,6 +50,31 @@ namespace LIBRARY
             mem.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(mem);
             mem.BringToFront();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new S_circulation());
+        }
+
+        private void btnMembers_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new S_book_lookup());
+        }
+
+        private void btnBookSearch_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new S_book_search());
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new S_reports());
+        }
+
+        private void pnlSidebar1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

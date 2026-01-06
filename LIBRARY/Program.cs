@@ -15,18 +15,18 @@ namespace LIBRARY
 
         static void Main()
         {
-            Admin CurrentUser = new Admin();
-            //Librarian CurrentUser = new Librarian();
+            //Admin CurrentUser = new Admin();
+            libraryStaff CurrentUser = new libraryStaff();
             //Member CurrentUser = new Member();
-            Admin LoggedInAdmin = new Admin();
+            //Admin LoggedInAdmin = new Admin();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new M_MainForm(CurrentUser));
-            //Application.Run(new L_MainForm(CurrentUser));
+            Application.Run(new L_MainForm(CurrentUser));
             //Application.Run(new Login.Login());
             //Application.Run(new Register.register());
             //Application.Run(new Register.LibrarianRegister());
-            Application.Run(new A_MainForm(LoggedInAdmin));
+            //Application.Run(new A_MainForm(LoggedInAdmin));
             //.Run(new Form1());
         }
     }

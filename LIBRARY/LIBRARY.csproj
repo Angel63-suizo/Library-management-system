@@ -250,6 +250,30 @@
     <Compile Include="A_MainForm.Designer.cs">
       <DependentUpon>A_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LDashboard\S-book_search.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LDashboard\S-book_search.Designer.cs">
+      <DependentUpon>S-book_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDashboard\S-member_lookup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LDashboard\S-member_lookup.Designer.cs">
+      <DependentUpon>S-member_lookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDashboard\S-circulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LDashboard\S-circulation.Designer.cs">
+      <DependentUpon>S-circulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LDashboard\S-reports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LDashboard\S-reports.Designer.cs">
+      <DependentUpon>S-reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login\Login_Repository.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
@@ -387,6 +411,18 @@
     <EmbeddedResource Include="LDashboard\L_dashboard.resx">
       <DependentUpon>L_dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LDashboard\S-book_search.resx">
+      <DependentUpon>S-book_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDashboard\S-circulation.resx">
+      <DependentUpon>S-circulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDashboard\S-member_lookup.resx">
+      <DependentUpon>S-member_lookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LDashboard\S-reports.resx">
+      <DependentUpon>S-reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,6 +449,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Register\LibrarianRegister.resx">
       <DependentUpon>LibrarianRegister.cs</DependentUpon>
@@ -434,6 +471,53 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Icon %2819%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2820%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2821%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2822%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2823%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2831%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2832%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2833%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2835%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2837%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2836%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon %2834%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ret.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
