@@ -1,6 +1,7 @@
 ﻿using ExCSS;
 using LIBRARY.Class;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,38 +23,43 @@ namespace LIBRARY.MDashboard
         public M_Profile()
         {
             InitializeComponent();
-           /* CurrentUser = user;
+            this.button1.Click += new System.EventHandler(this.btnClose_Click);
+            this.button2.Click += new System.EventHandler(this.btnReserve_Click);
+            /* CurrentUser = user;
 
-            //editable
-            Usernametxt.Text = CurrentUser.Username;
-            Emailtxt.Text = CurrentUser.Email;
-            Contacttxt.Text = CurrentUser.contactNumber;
-            Addresstxt.Text = CurrentUser.Address;
+             //editable
+             Usernametxt.Text = CurrentUser.Username;
+             Emailtxt.Text = CurrentUser.Email;
+             Contacttxt.Text = CurrentUser.contactNumber;
+             Addresstxt.Text = CurrentUser.Address;
 
 
-            //fixed
-            lblCardNumber.Text = CurrentUser.MemberId.ToString("D8");
-            lblEmail.Text = CurrentUser.Email;
-            lblFullname.Text = CurrentUser.FirstName + " " + CurrentUser.LastName;
-            MemberTypelbl.Text = CurrentUser.MemberRole;
-            lblMemberStatus.Text = CurrentUser.Status;
-            lblRegisterDate.Text = CurrentUser.RegisterDate.ToString("MMMM dd, yyyy");
-            lblExpirationDate.Text = CurrentUser.ExpirationDate.ToString("MMMM dd, yyyy");
-            picProfilePhoto.Text = CurrentUser.Photo != null ? "Photo Uploaded" : "No Photo";
+             //fixed
+             lblCardNumber.Text = CurrentUser.MemberId.ToString("D8");
+             lblEmail.Text = CurrentUser.Email;
+             lblFullname.Text = CurrentUser.FirstName + " " + CurrentUser.LastName;
+             MemberTypelbl.Text = CurrentUser.MemberRole;
+             lblMemberStatus.Text = CurrentUser.Status;
+             lblRegisterDate.Text = CurrentUser.RegisterDate.ToString("MMMM dd, yyyy");
+             lblExpirationDate.Text = CurrentUser.ExpirationDate.ToString("MMMM dd, yyyy");
+             picProfilePhoto.Text = CurrentUser.Photo != null ? "Photo Uploaded" : "No Photo";
 
-            MemberType memberType = MemberType.GetMemberTypeById(CurrentUser.MemberTypeId);
-            lblMaxBorrowed.Text = memberType.Maxborrow.ToString();
-            lblBorrowingDuration.Text = memberType.Borrowdays.ToString() + " days";
-            lblRenewalLimit.Text = memberType.Accesslevel.ToString() + " times";
-            lblReservationPrivileges.Text = memberType.Maxreserve.ToString();
-           */
+             MemberType memberType = MemberType.GetMemberTypeById(CurrentUser.MemberTypeId);
+             lblMaxBorrowed.Text = memberType.Maxborrow.ToString();
+             lblBorrowingDuration.Text = memberType.Borrowdays.ToString() + " days";
+             lblRenewalLimit.Text = memberType.Accesslevel.ToString() + " times";
+             lblReservationPrivileges.Text = memberType.Maxreserve.ToString();
+            */
         }
 
         private void M_Profile_Load(object sender, EventArgs e)
         {
-           
+
             //LoadProfile();
-        
+            label1.Text = "Introduction to Algorithms";
+            label4.Text = "Computer Science";
+            label10.Text = "A comprehensive textbook on computer algorithms...";
+
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -251,6 +257,19 @@ namespace LIBRARY.MDashboard
             MessageBox.Show("Profile updated successfully.");*/
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Parent.Controls.Remove(this);
+        }
+
+        private void btnReserve_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Book has been reserved successfully!", "Library System");
+
+            // Update UI state to reflect reservation
+            label7.Text = "Reserved"; // Change from "Available Now"
+            label8.Text = "Ready for pickup tomorrow";
+        }
     }
 }
 

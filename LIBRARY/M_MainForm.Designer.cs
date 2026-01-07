@@ -31,13 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(M_MainForm));
             this.pnlSidebar1 = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnProfile = new System.Windows.Forms.Button();
-            this.btnDashboard = new System.Windows.Forms.Button();
-            this.btnBorrow = new System.Windows.Forms.Button();
-            this.btnReserve = new System.Windows.Forms.Button();
-            this.btnSearchBook = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnBrowseCatalog = new System.Windows.Forms.Button();
+            this.btnMyAccount = new System.Windows.Forms.Button();
+            this.btnBorrowingHistory = new System.Windows.Forms.Button();
+            this.btnMyBooks = new System.Windows.Forms.Button();
             this.pnlSidebar1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlSidebar1
@@ -46,18 +54,21 @@
             this.pnlSidebar1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlSidebar1.BackColor = System.Drawing.Color.LightSlateGray;
             this.pnlSidebar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlSidebar1.Controls.Add(this.panel3);
+            this.pnlSidebar1.Controls.Add(this.label3);
+            this.pnlSidebar1.Controls.Add(this.pictureBox2);
             this.pnlSidebar1.Controls.Add(this.btnLogout);
-            this.pnlSidebar1.Controls.Add(this.btnProfile);
-            this.pnlSidebar1.Controls.Add(this.btnDashboard);
-            this.pnlSidebar1.Controls.Add(this.btnBorrow);
-            this.pnlSidebar1.Controls.Add(this.btnReserve);
-            this.pnlSidebar1.Controls.Add(this.btnSearchBook);
+            this.pnlSidebar1.Controls.Add(this.btnBrowseCatalog);
+            this.pnlSidebar1.Controls.Add(this.btnMyAccount);
+            this.pnlSidebar1.Controls.Add(this.btnBorrowingHistory);
+            this.pnlSidebar1.Controls.Add(this.btnMyBooks);
             this.pnlSidebar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar1.Location = new System.Drawing.Point(0, 0);
+            this.pnlSidebar1.Margin = new System.Windows.Forms.Padding(2);
             this.pnlSidebar1.Name = "pnlSidebar1";
-            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 40, 0, 50);
+            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 41);
             this.pnlSidebar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlSidebar1.Size = new System.Drawing.Size(270, 1055);
+            this.pnlSidebar1.Size = new System.Drawing.Size(203, 609);
             this.pnlSidebar1.TabIndex = 22;
             // 
             // btnLogout
@@ -68,135 +79,195 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(11, 899);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 3, 3, 30);
+            this.btnLogout.Location = new System.Drawing.Point(8, 573);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 24);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(242, 70);
+            this.btnLogout.Size = new System.Drawing.Size(182, 57);
             this.btnLogout.TabIndex = 15;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnProfile
-            // 
-            this.btnProfile.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnProfile.BackColor = System.Drawing.Color.SlateGray;
-            this.btnProfile.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProfile.ForeColor = System.Drawing.Color.White;
-            this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
-            this.btnProfile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProfile.Location = new System.Drawing.Point(11, 93);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(3, 30, 3, 20);
-            this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(242, 74);
-            this.btnProfile.TabIndex = 5;
-            this.btnProfile.Text = "   Profile";
-            this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProfile.UseVisualStyleBackColor = false;
-            this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnDashboard.BackColor = System.Drawing.Color.SlateGray;
-            this.btnDashboard.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashboard.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Image")));
-            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDashboard.Location = new System.Drawing.Point(11, 177);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
-            this.btnDashboard.Size = new System.Drawing.Size(242, 75);
-            this.btnDashboard.TabIndex = 3;
-            this.btnDashboard.Text = "    Dashboard";
-            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDashboard.UseVisualStyleBackColor = false;
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
-            // 
-            // btnBorrow
-            // 
-            this.btnBorrow.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnBorrow.BackColor = System.Drawing.Color.SlateGray;
-            this.btnBorrow.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBorrow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBorrow.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBorrow.ForeColor = System.Drawing.Color.White;
-            this.btnBorrow.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrow.Image")));
-            this.btnBorrow.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrow.Location = new System.Drawing.Point(11, 347);
-            this.btnBorrow.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
-            this.btnBorrow.Name = "btnBorrow";
-            this.btnBorrow.Size = new System.Drawing.Size(242, 77);
-            this.btnBorrow.TabIndex = 0;
-            this.btnBorrow.Text = "   Borrowed Books";
-            this.btnBorrow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBorrow.UseVisualStyleBackColor = false;
-            // 
-            // btnReserve
-            // 
-            this.btnReserve.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnReserve.BackColor = System.Drawing.Color.SlateGray;
-            this.btnReserve.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnReserve.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReserve.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReserve.ForeColor = System.Drawing.Color.White;
-            this.btnReserve.Image = ((System.Drawing.Image)(resources.GetObject("btnReserve.Image")));
-            this.btnReserve.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReserve.Location = new System.Drawing.Point(11, 433);
-            this.btnReserve.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
-            this.btnReserve.Name = "btnReserve";
-            this.btnReserve.Size = new System.Drawing.Size(242, 80);
-            this.btnReserve.TabIndex = 1;
-            this.btnReserve.Text = "   Reservations";
-            this.btnReserve.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReserve.UseVisualStyleBackColor = false;
-            // 
-            // btnSearchBook
-            // 
-            this.btnSearchBook.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSearchBook.BackColor = System.Drawing.Color.SlateGray;
-            this.btnSearchBook.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSearchBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearchBook.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchBook.ForeColor = System.Drawing.Color.White;
-            this.btnSearchBook.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchBook.Image")));
-            this.btnSearchBook.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearchBook.Location = new System.Drawing.Point(11, 259);
-            this.btnSearchBook.Margin = new System.Windows.Forms.Padding(3, 3, 3, 20);
-            this.btnSearchBook.Name = "btnSearchBook";
-            this.btnSearchBook.Size = new System.Drawing.Size(242, 81);
-            this.btnSearchBook.TabIndex = 2;
-            this.btnSearchBook.Text = "   Search Books";
-            this.btnSearchBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSearchBook.UseVisualStyleBackColor = false;
-            // 
             // pnlContent
             // 
             this.pnlContent.BackColor = System.Drawing.Color.Black;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(270, 0);
+            this.pnlContent.Location = new System.Drawing.Point(203, 0);
+            this.pnlContent.Margin = new System.Windows.Forms.Padding(2);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(1654, 1055);
+            this.pnlContent.Size = new System.Drawing.Size(825, 609);
             this.pnlContent.TabIndex = 25;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(97, 22);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Library";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(0, 62);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(203, 71);
+            this.panel3.TabIndex = 38;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(53, 37);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Staff";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(53, 21);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 16);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Library Staff";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(16, 21);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(10, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 36;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnBrowseCatalog
+            // 
+            this.btnBrowseCatalog.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnBrowseCatalog.BackColor = System.Drawing.Color.SlateGray;
+            this.btnBrowseCatalog.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBrowseCatalog.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBrowseCatalog.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowseCatalog.ForeColor = System.Drawing.Color.White;
+            this.btnBrowseCatalog.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowseCatalog.Image")));
+            this.btnBrowseCatalog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBrowseCatalog.Location = new System.Drawing.Point(10, 125);
+            this.btnBrowseCatalog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnBrowseCatalog.Name = "btnBrowseCatalog";
+            this.btnBrowseCatalog.Padding = new System.Windows.Forms.Padding(0, 0, 11, 0);
+            this.btnBrowseCatalog.Size = new System.Drawing.Size(182, 61);
+            this.btnBrowseCatalog.TabIndex = 3;
+            this.btnBrowseCatalog.Text = "    Browse Catalog";
+            this.btnBrowseCatalog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBrowseCatalog.UseVisualStyleBackColor = false;
+            this.btnBrowseCatalog.Click += new System.EventHandler(this.btnDashboard_Click);
+            // 
+            // btnMyAccount
+            // 
+            this.btnMyAccount.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnMyAccount.BackColor = System.Drawing.Color.SlateGray;
+            this.btnMyAccount.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMyAccount.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyAccount.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyAccount.ForeColor = System.Drawing.Color.White;
+            this.btnMyAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnMyAccount.Image")));
+            this.btnMyAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMyAccount.Location = new System.Drawing.Point(10, 371);
+            this.btnMyAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnMyAccount.Name = "btnMyAccount";
+            this.btnMyAccount.Size = new System.Drawing.Size(182, 63);
+            this.btnMyAccount.TabIndex = 0;
+            this.btnMyAccount.Text = "   My Account";
+            this.btnMyAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMyAccount.UseVisualStyleBackColor = false;
+            this.btnMyAccount.Click += new System.EventHandler(this.btnMyAccount_Click);
+            // 
+            // btnBorrowingHistory
+            // 
+            this.btnBorrowingHistory.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnBorrowingHistory.BackColor = System.Drawing.Color.SlateGray;
+            this.btnBorrowingHistory.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBorrowingHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBorrowingHistory.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBorrowingHistory.ForeColor = System.Drawing.Color.White;
+            this.btnBorrowingHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrowingHistory.Image")));
+            this.btnBorrowingHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBorrowingHistory.Location = new System.Drawing.Point(8, 288);
+            this.btnBorrowingHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnBorrowingHistory.Name = "btnBorrowingHistory";
+            this.btnBorrowingHistory.Size = new System.Drawing.Size(182, 65);
+            this.btnBorrowingHistory.TabIndex = 1;
+            this.btnBorrowingHistory.Text = "   Borrowing History";
+            this.btnBorrowingHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBorrowingHistory.UseVisualStyleBackColor = false;
+            this.btnBorrowingHistory.Click += new System.EventHandler(this.btnBorrowingHistory_Click);
+            // 
+            // btnMyBooks
+            // 
+            this.btnMyBooks.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMyBooks.BackColor = System.Drawing.Color.SlateGray;
+            this.btnMyBooks.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMyBooks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMyBooks.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMyBooks.ForeColor = System.Drawing.Color.White;
+            this.btnMyBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnMyBooks.Image")));
+            this.btnMyBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMyBooks.Location = new System.Drawing.Point(10, 204);
+            this.btnMyBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnMyBooks.Name = "btnMyBooks";
+            this.btnMyBooks.Size = new System.Drawing.Size(182, 66);
+            this.btnMyBooks.TabIndex = 2;
+            this.btnMyBooks.Text = "   My Books";
+            this.btnMyBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMyBooks.UseVisualStyleBackColor = false;
+            this.btnMyBooks.Click += new System.EventHandler(this.btnMyBooks_Click);
             // 
             // M_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1028, 609);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSidebar1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "M_MainForm";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.M_MainForm_Load);
             this.pnlSidebar1.ResumeLayout(false);
+            this.pnlSidebar1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,11 +276,16 @@
 
         private System.Windows.Forms.Panel pnlSidebar1;
         private System.Windows.Forms.Button btnLogout;
-        private System.Windows.Forms.Button btnDashboard;
-        private System.Windows.Forms.Button btnProfile;
-        private System.Windows.Forms.Button btnSearchBook;
-        private System.Windows.Forms.Button btnReserve;
-        private System.Windows.Forms.Button btnBorrow;
+        private System.Windows.Forms.Button btnBrowseCatalog;
+        private System.Windows.Forms.Button btnMyBooks;
+        private System.Windows.Forms.Button btnBorrowingHistory;
+        private System.Windows.Forms.Button btnMyAccount;
         private System.Windows.Forms.Panel pnlContent;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label5;
     }
 }
