@@ -271,6 +271,7 @@
     <Compile Include="A_MainForm.Designer.cs">
       <DependentUpon>A_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LDashboard\GetMember_Repository.cs" />
     <Compile Include="LDashboard\S-book_search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -358,12 +359,6 @@
     </Compile>
     <Compile Include="M_MainForm.Designer.cs">
       <DependentUpon>M_MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LDashboard\L_dashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LDashboard\L_dashboard.Designer.cs">
-      <DependentUpon>L_dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
@@ -462,9 +457,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LDashboard\L_dashboard.resx">
-      <DependentUpon>L_dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LDashboard\S-book_search.resx">
       <DependentUpon>S-book_search.cs</DependentUpon>

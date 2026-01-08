@@ -16,13 +16,13 @@ namespace LIBRARY
         static void Main()
         {
             //Admin CurrentUser = new Admin();
-            //libraryStaff CurrentUser = new libraryStaff();
-            Models.Member CurrentUser = new Models.Member();
+            libraryStaff CurrentUser = new libraryStaff();
+            //Models.Member CurrentUser = new Models.Member();
             //Admin LoggedInAdmin = new Admin();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new M_MainForm(CurrentUser));
-            //Application.Run(new L_MainForm(CurrentUser));
+            //Application.Run(new M_MainForm(CurrentUser));
+            Application.Run(new L_MainForm(CurrentUser));
             //Application.Run(new Login.Login());
             //Application.Run(new Register.register());
             //Application.Run(new Register.LibrarianRegister());
