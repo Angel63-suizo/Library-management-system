@@ -28,19 +28,19 @@ namespace LIBRARY.ADashboard
             return dt.Rows.Count > 0 ? dt.Rows[0] : null;
         }
 
-       /* public DataTable GetMemberTransactionHistory(string memberId)
+       public DataTable GetMemberTransactionHistory(string cardNum)
         {
             DataTable dt = new DataTable();
             using (var conn = Database.GetConnection())
             using (var cmd = new MySqlCommand("sp_GetMemberTransactionHistory", conn))
             {
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("p_MemberId", memberId);
+                cmd.Parameters.AddWithValue("p_CardNumber", cardNum);
 
                 conn.Open();
                 new MySqlDataAdapter(cmd).Fill(dt);
             }
             return dt;
-        }*/
+        }
     }
 }

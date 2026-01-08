@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LIBRARY.ADashboard
@@ -51,20 +44,12 @@ namespace LIBRARY.ADashboard
 
                 DataRow memberProfile = repo.GetMemberDetails(cardNumber);
 
-                // DataTable history = repo.GetMemberTransactionHistory(cardNumber);
+                DataTable history = repo.GetMemberTransactionHistory(cardNumber);
 
                 if (memberProfile != null)
                 {
-                    A_ViewMemberDetails viewControl = new A_ViewMemberDetails(memberProfile);
-                    Form popupForm = new Form();
-                    popupForm.FormBorderStyle = FormBorderStyle.None; 
-                    popupForm.StartPosition = FormStartPosition.CenterParent;
-                    popupForm.Size = viewControl.Size;
-
-                    viewControl.Dock = DockStyle.Fill;
-                    popupForm.Controls.Add(viewControl);
-
-                    popupForm.ShowDialog();
+                    ViewMemberDetails view = new ViewMemberDetails(memberProfile, history);
+                    view.ShowDialog();
                 }
             }
 
@@ -81,7 +66,7 @@ namespace LIBRARY.ADashboard
                     if (result.success)
                     {
                         MessageBox.Show(result.message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        RefreshGrid(); 
+                        RefreshGrid();
                     }
                     else
                     {
@@ -208,6 +193,11 @@ namespace LIBRARY.ADashboard
             cmbStatus.Items.Add("Suspended");
             cmbStatus.Items.Add("Expired");
             cmbStatus.SelectedIndex = 0;
+        }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

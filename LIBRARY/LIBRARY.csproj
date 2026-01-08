@@ -212,12 +212,6 @@
     <Compile Include="ADashboard\A_UserManagement.Designer.cs">
       <DependentUpon>A_UserManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADashboard\A_ViewMemberDetails.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ADashboard\A_ViewMemberDetails.Designer.cs">
-      <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADashboard\Dashboard_Repository.cs" />
     <Compile Include="ADashboard\Delete_Repository.cs" />
     <Compile Include="ADashboard\EditMembers.cs">
@@ -252,6 +246,12 @@
       <DependentUpon>SystemSettings_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\Update_Repository.cs" />
+    <Compile Include="ADashboard\ViewMemberDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\ViewMemberDetails.Designer.cs">
+      <DependentUpon>ViewMemberDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="A_MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +294,7 @@
     <Compile Include="Models\MemberType.cs" />
     <Compile Include="Models\Periodical.cs" />
     <Compile Include="Models\PhysicalBook.cs" />
+    <Compile Include="Models\Publisher.cs" />
     <Compile Include="Models\Resource.cs" />
     <Compile Include="Models\Thesis.cs" />
     <Compile Include="Models\User.cs" />
@@ -395,9 +396,6 @@
     <EmbeddedResource Include="ADashboard\A_UserManagement.resx">
       <DependentUpon>A_UserManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADashboard\A_ViewMemberDetails.resx">
-      <DependentUpon>A_ViewMemberDetails.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\EditMembers.resx">
       <DependentUpon>EditMembers.cs</DependentUpon>
     </EmbeddedResource>
@@ -412,6 +410,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\SystemSettings_UC.resx">
       <DependentUpon>SystemSettings_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\ViewMemberDetails.resx">
+      <DependentUpon>ViewMemberDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_MainForm.resx">
       <DependentUpon>A_MainForm.cs</DependentUpon>

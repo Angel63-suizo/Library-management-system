@@ -96,24 +96,23 @@ namespace LIBRARY.ADashboard
         private void dgvResourceGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
-            string bookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookid"].Value.ToString();
+            string bookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookId"].Value.ToString();
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "EditCol")
             {
-                A_EditResource viewForm = new A_EditResource(bookId);
+                A_EditResource editForm = new A_EditResource(bookId);
 
-                if (viewForm.ShowDialog() == DialogResult.OK)
+                if (editForm.ShowDialog() == DialogResult.OK)
                 {
-                    GetInventoryGrid_Repository logRepo = new GetInventoryGrid_Repository();
-                    logRepo.LogMovement(int.Parse(bookId), "Update", $"Modified details for: {bookId}", "Admin");
-
                     RefreshGrid();
+
+                    Dashboard_Repository logRepo = new Dashboard_Repository();
                 }
             }
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "ViewCol")
             {
-                string BookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookid"].Value.ToString();
+                string BookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookId"].Value.ToString();
                 A_ResourceDetail viewForm = new A_ResourceDetail(BookId);
                 viewForm.ShowDialog();
 

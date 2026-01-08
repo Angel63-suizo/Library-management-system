@@ -298,7 +298,7 @@
             // pnlGridContainer
             // 
             this.pnlGridContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pnlGridContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pnlGridContainer.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.pnlGridContainer.Location = new System.Drawing.Point(3, 271);
             this.pnlGridContainer.Name = "pnlGridContainer";
             this.pnlGridContainer.Size = new System.Drawing.Size(1611, 760);
@@ -308,7 +308,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.pnlGridContainer);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
