@@ -61,7 +61,7 @@ namespace LIBRARY.ADashboard
         }
         private void LoadInitialData()
         {
-            Update_Repository repo = new Update_Repository();
+            Update_Repository repo = new Update_Repository(); 
             DataRow row = repo.GetResourceDetails2(_bookId);
 
             if (row != null)

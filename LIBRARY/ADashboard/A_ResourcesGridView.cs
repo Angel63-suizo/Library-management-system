@@ -120,11 +120,23 @@ namespace LIBRARY.ADashboard
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "DeleteCol")
             {
-                DialogResult dialog = MessageBox.Show("Are you sure you want to delete member " + bookId + "?", "Confirm Delete", MessageBoxButtons.YesNo);
+                var confirm = MessageBox.Show("Delete this resource and all their history? This cannot be undone.",
+                                            "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-                if (dialog == DialogResult.Yes)
+                if (confirm == DialogResult.Yes)
                 {
+                    Delete_Repository repo = new Delete_Repository();
+                    var result = repo.DeleteResource(bookId);
 
+                    if (result.Success)
+                    {
+                        MessageBox.Show(result.Message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RefreshGrid();
+                    }
+                    else
+                    {
+                        MessageBox.Show(result.Message, "Deletion Blocked", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

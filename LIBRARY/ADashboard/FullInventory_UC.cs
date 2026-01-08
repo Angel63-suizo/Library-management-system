@@ -22,17 +22,31 @@ namespace LIBRARY.ADashboard
         {
             if (e.RowIndex < 0) return;
 
-            // Accessing data safely via the hidden columns
             string bookTitle = dgvInventoryGrid.Rows[e.RowIndex].Cells["Title"].Value.ToString();
 
             if (dgvInventoryGrid.Columns[e.ColumnIndex].Name == "AddCol")
             {
-                // Logic for adding copies or editing
+                AddCopy addCopyForm = new AddCopy(bookTitle);
+
+                if (addCopyForm.ShowDialog() == DialogResult.OK)
+                {
+                    RefreshGrid();
+                }
             }
 
             if (dgvInventoryGrid.Columns[e.ColumnIndex].Name == "DeleteCol")
             {
-                MessageBox.Show($"Deleting resource: {bookTitle}");
+                string booktitle = dgvInventoryGrid.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+                string currentStock = dgvInventoryGrid.Rows[e.RowIndex].Cells["AvailableCopies"].Value.ToString();
+                string totalStock = dgvInventoryGrid.Rows[e.RowIndex].Cells["TotalCopies"].Value.ToString();
+
+                DeleteCopy removeForm = new DeleteCopy(booktitle, currentStock, totalStock);
+
+                if (removeForm.ShowDialog() == DialogResult.OK)
+                {
+                    RefreshGrid();
+                }
+
             }
         }
 

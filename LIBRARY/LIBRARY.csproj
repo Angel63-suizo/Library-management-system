@@ -132,6 +132,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADashboard\AddCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\AddCopy.Designer.cs">
+      <DependentUpon>AddCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADashboard\AddCopy_Repository.cs" />
     <Compile Include="ADashboard\AddMember.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -213,6 +220,12 @@
       <DependentUpon>A_UserManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\Dashboard_Repository.cs" />
+    <Compile Include="ADashboard\DeleteCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADashboard\DeleteCopy.Designer.cs">
+      <DependentUpon>DeleteCopy.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADashboard\Delete_Repository.cs" />
     <Compile Include="ADashboard\EditMembers.cs">
       <SubType>Form</SubType>
@@ -360,6 +373,9 @@
     <Compile Include="Register\register.Designer.cs">
       <DependentUpon>register.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ADashboard\AddCopy.resx">
+      <DependentUpon>AddCopy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\AddMember.resx">
       <DependentUpon>AddMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +411,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_UserManagement.resx">
       <DependentUpon>A_UserManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADashboard\DeleteCopy.resx">
+      <DependentUpon>DeleteCopy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\EditMembers.resx">
       <DependentUpon>EditMembers.cs</DependentUpon>

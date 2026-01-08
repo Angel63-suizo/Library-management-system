@@ -153,3 +153,5 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.Up2Date
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.pdb
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddCopy.resources
+C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.DeleteCopy.resources

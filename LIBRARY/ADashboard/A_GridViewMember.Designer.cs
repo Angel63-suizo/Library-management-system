@@ -72,7 +72,7 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvMemberGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -95,13 +95,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvMemberGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvMemberGrid.Location = new System.Drawing.Point(6, 135);
+            this.dgvMemberGrid.Location = new System.Drawing.Point(0, 147);
             this.dgvMemberGrid.Name = "dgvMemberGrid";
             this.dgvMemberGrid.RowHeadersVisible = false;
             this.dgvMemberGrid.RowHeadersWidth = 51;
             this.dgvMemberGrid.RowTemplate.Height = 40;
             this.dgvMemberGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMemberGrid.Size = new System.Drawing.Size(1605, 634);
+            this.dgvMemberGrid.Size = new System.Drawing.Size(1611, 634);
             this.dgvMemberGrid.TabIndex = 30;
             this.dgvMemberGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMemberGrid_CellContentClick);
             // 
@@ -303,7 +303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.dgvMemberGrid);
             this.Controls.Add(this.panel9);
             this.Name = "A_GridViewMember";

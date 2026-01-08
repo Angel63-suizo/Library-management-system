@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using static LIBRARY.ADashboard.AddCopy_Repository;
+
+namespace LIBRARY.ADashboard
+{
+    public partial class AddCopy : Form
+    {
+        private string _bookTitle;
+        public AddCopy(string title)
+        {
+            InitializeComponent();
+            _bookTitle = title;
+
+            this.Text = "Add Copies for: " + _bookTitle;
+        }
+
+        private void AddCopy_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtCopy.Text, out int numCopies) && numCopies > 0)
+            {
+                Copy_Repository repo = new Copy_Repository();
+
+                if (repo.BulkAddCopies(_bookTitle, numCopies))
+                {
+                    System.Windows.Forms.MessageBox.Show($"{numCopies} copies added successfully!", "Success");
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("Please enter a valid whole number of copies.");
+            }
+        }
+    }
+    
+}

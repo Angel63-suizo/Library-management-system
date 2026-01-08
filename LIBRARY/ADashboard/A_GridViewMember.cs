@@ -55,7 +55,7 @@ namespace LIBRARY.ADashboard
 
             if (dgvMemberGrid.Columns[e.ColumnIndex].Name == "DeleteCol")
             {
-                var confirm = MessageBox.Show("Delete this member and ALL their history? This cannot be undone.",
+                var confirm = MessageBox.Show("Delete this member and all their history? This cannot be undone.",
                                              "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (confirm == DialogResult.Yes)
