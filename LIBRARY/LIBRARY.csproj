@@ -296,6 +296,30 @@
       <DependentUpon>S-reports.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login_Repository.cs" />
+    <Compile Include="MDashboard\M-borrowing_history.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\M-borrowing_history.Designer.cs">
+      <DependentUpon>M-borrowing_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\M-browse_catalog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\M-browse_catalog.Designer.cs">
+      <DependentUpon>M-browse_catalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\M-my_account.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\M-my_account.Designer.cs">
+      <DependentUpon>M-my_account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\M-my_books.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\M-my_books.Designer.cs">
+      <DependentUpon>M-my_books.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
     <Compile Include="Models\Browse_Catalog.cs" />
@@ -459,6 +483,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="L_MainForm.resx">
       <DependentUpon>L_MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\M-borrowing_history.resx">
+      <DependentUpon>M-borrowing_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\M-browse_catalog.resx">
+      <DependentUpon>M-browse_catalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\M-my_account.resx">
+      <DependentUpon>M-my_account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\M-my_books.resx">
+      <DependentUpon>M-my_books.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\M_dashboard.resx">
       <DependentUpon>M_dashboard.cs</DependentUpon>
