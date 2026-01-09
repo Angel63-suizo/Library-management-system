@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnLoadMember = new System.Windows.Forms.Button();
@@ -69,7 +69,6 @@
             this.lblCardNumber = new System.Windows.Forms.Label();
             this.lblMemberType = new System.Windows.Forms.Label();
             this.lblFullName = new System.Windows.Forms.Label();
-            this.pbProfile = new System.Windows.Forms.PictureBox();
             this.lblPlaceholder = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pbPlaceholder = new System.Windows.Forms.PictureBox();
@@ -84,6 +83,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pnlCirculation = new System.Windows.Forms.Panel();
+            this.pbProfile = new System.Windows.Forms.PictureBox();
             this.colCopyId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAccession = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTitle = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -102,7 +102,6 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.pnlStatusContainer.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlaceholder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -111,6 +110,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.pnlCirculation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -564,18 +564,6 @@
             this.lblFullName.TabIndex = 8;
             this.lblFullName.Text = "Name";
             // 
-            // pbProfile
-            // 
-            this.pbProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pbProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pbProfile.ImageLocation = "";
-            this.pbProfile.Location = new System.Drawing.Point(3, 3);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.Size = new System.Drawing.Size(149, 126);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProfile.TabIndex = 7;
-            this.pbProfile.TabStop = false;
-            // 
             // lblPlaceholder
             // 
             this.lblPlaceholder.AutoSize = true;
@@ -678,20 +666,20 @@
             this.dgvTransaction.AllowUserToAddRows = false;
             this.dgvTransaction.AllowUserToResizeColumns = false;
             this.dgvTransaction.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dgvTransaction.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvTransaction.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvTransaction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvTransaction.BackgroundColor = System.Drawing.Color.White;
             this.dgvTransaction.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvTransaction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTransaction.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvTransaction.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransaction.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCopyId,
@@ -700,15 +688,15 @@
             this.colAuthor,
             this.colDueDate,
             this.colAction});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvTransaction.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvTransaction.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvTransaction.Location = new System.Drawing.Point(28, 92);
             this.dgvTransaction.Name = "dgvTransaction";
             this.dgvTransaction.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -781,10 +769,24 @@
             this.pnlCirculation.Name = "pnlCirculation";
             this.pnlCirculation.Size = new System.Drawing.Size(1533, 1225);
             this.pnlCirculation.TabIndex = 24;
+            this.pnlCirculation.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCirculation_Paint);
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pbProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pbProfile.ImageLocation = "";
+            this.pbProfile.Location = new System.Drawing.Point(3, 3);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.Size = new System.Drawing.Size(149, 126);
+            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProfile.TabIndex = 7;
+            this.pbProfile.TabStop = false;
             // 
             // colCopyId
             // 
             this.colCopyId.DataPropertyName = "CopyId";
+            this.colCopyId.FillWeight = 20.91302F;
             this.colCopyId.HeaderText = "";
             this.colCopyId.MinimumWidth = 6;
             this.colCopyId.Name = "colCopyId";
@@ -792,7 +794,7 @@
             // colAccession
             // 
             this.colAccession.DataPropertyName = "AccessionNumber";
-            this.colAccession.FillWeight = 123.6588F;
+            this.colAccession.FillWeight = 141.3826F;
             this.colAccession.HeaderText = "";
             this.colAccession.MinimumWidth = 6;
             this.colAccession.Name = "colAccession";
@@ -801,9 +803,9 @@
             // colTitle
             // 
             this.colTitle.DataPropertyName = "Title";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.colTitle.DefaultCellStyle = dataGridViewCellStyle11;
-            this.colTitle.FillWeight = 123.6588F;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.colTitle.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colTitle.FillWeight = 141.3826F;
             this.colTitle.HeaderText = "";
             this.colTitle.MinimumWidth = 6;
             this.colTitle.Name = "colTitle";
@@ -812,7 +814,7 @@
             // colAuthor
             // 
             this.colAuthor.DataPropertyName = "Author";
-            this.colAuthor.FillWeight = 123.6588F;
+            this.colAuthor.FillWeight = 141.3826F;
             this.colAuthor.HeaderText = "";
             this.colAuthor.MinimumWidth = 6;
             this.colAuthor.Name = "colAuthor";
@@ -821,7 +823,7 @@
             // colDueDate
             // 
             this.colDueDate.DataPropertyName = "DueDate";
-            this.colDueDate.FillWeight = 123.6588F;
+            this.colDueDate.FillWeight = 141.3826F;
             this.colDueDate.HeaderText = "";
             this.colDueDate.MinimumWidth = 6;
             this.colDueDate.Name = "colDueDate";
@@ -829,7 +831,7 @@
             // 
             // colAction
             // 
-            this.colAction.FillWeight = 57.15382F;
+            this.colAction.FillWeight = 65.34558F;
             this.colAction.HeaderText = "";
             this.colAction.MinimumWidth = 6;
             this.colAction.Name = "colAction";
@@ -866,7 +868,6 @@
             this.panel4.PerformLayout();
             this.pnlStatusContainer.ResumeLayout(false);
             this.pnlStatusContainer.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlaceholder)).EndInit();
@@ -878,6 +879,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.pnlCirculation.ResumeLayout(false);
             this.pnlCirculation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -924,7 +926,6 @@
         private System.Windows.Forms.Label lblCardNumber;
         private System.Windows.Forms.Label lblMemberType;
         private System.Windows.Forms.Label lblFullName;
-        private System.Windows.Forms.PictureBox pbProfile;
         private System.Windows.Forms.Panel pnlContentStatus;
         private System.Windows.Forms.Label lblTransactionStatus;
         private System.Windows.Forms.Label label5;
@@ -935,6 +936,7 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dgvTransaction;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pbProfile;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCopyId;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAccession;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTitle;

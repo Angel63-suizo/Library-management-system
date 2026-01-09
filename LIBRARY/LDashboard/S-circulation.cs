@@ -79,7 +79,25 @@ namespace LIBRARY.LDashboard
                 MessageBox.Show("Please load a valid user first.");
                 return;
             }
-        
+
+            int alreadyBorrowed = int.Parse(lblBooksBorrowed.Text.Split('/')[0].Trim());
+
+            int itemsInGrid = dgvTransaction.Rows.Cast<DataGridViewRow>().Count(r => !r.IsNewRow);
+
+            int maxLimit = int.Parse(lblBooksBorrowed.Text.Split('/')[1].Trim());
+
+            if (isCheckoutMode)
+            {
+                if ((alreadyBorrowed + itemsInGrid) >= maxLimit)
+                {
+                    MessageBox.Show($"Limit Reached! This member can only borrow a maximum of {maxLimit} books.\n" +
+                                    $"Currently borrowed: {alreadyBorrowed}\n" +
+                                    $"In current list: {itemsInGrid}",
+                                    "Borrowing Limit Exceeded", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             string bookId = txtSearch2.Text.Trim();
             GetBook_Repository bookRepo = new GetBook_Repository();
             DataRow bookRow = bookRepo.GetBookCopy(bookId);
@@ -89,7 +107,6 @@ namespace LIBRARY.LDashboard
 
                 string bookStatus = bookRow["Status"].ToString();
 
-                // MODE VALIDATION
                 if (isCheckoutMode && bookStatus != "Available")
                 {
                     MessageBox.Show($"Cannot checkout: Book is currently '{bookStatus}'.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -101,8 +118,6 @@ namespace LIBRARY.LDashboard
                     MessageBox.Show($"Cannot return: Book is currently '{bookStatus}'. Only 'Borrowed' books can be returned.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
-                // DUPLICATE CHECK
                 foreach (DataGridViewRow r in dgvTransaction.Rows)
                 {
                     if (r.Cells["colAccession"].Value?.ToString() == bookId)
@@ -114,14 +129,12 @@ namespace LIBRARY.LDashboard
 
                 DateTime dueDate = DateTime.Now.AddDays(currentUser.BorrowingPeriodDays);
                 SetupDataGridView();
-
-                // ADD TO GRID
                 dgvTransaction.Rows.Add(
                     bookRow["CopyId"],
                     bookRow["AccessionNumber"],
                     bookRow["Title"],
                     bookRow["Author"],
-                    isCheckoutMode ? dueDate.ToString("MMM dd, yyyy") : "N/A" // Show N/A for returns
+                    isCheckoutMode ? dueDate.ToString("MMM dd, yyyy") : "N/A"
                 );
 
                 scannedBooks.Add(bookId);
@@ -173,7 +186,6 @@ namespace LIBRARY.LDashboard
 
             isCheckoutMode = checkout;
 
-            // UI Visuals
             label17.Text = checkout ? "Checking Out Books" : "Returning Books";
             btnCheckout.BackColor = checkout ? Color.SlateGray : Color.White;
             btnCheckout.ForeColor = checkout ? Color.White : Color.Black;
@@ -181,7 +193,6 @@ namespace LIBRARY.LDashboard
             btnReturn.ForeColor = checkout ? Color.Black : Color.White;
             pictureBox9.Image = checkout ? Properties.Resources.check : Properties.Resources.ret;
 
-            // Toggle Due Date Column visibility
             if (dgvTransaction.Columns.Contains("colDueDate"))
             {
                 dgvTransaction.Columns["colDueDate"].Visible = checkout;
@@ -222,7 +233,21 @@ namespace LIBRARY.LDashboard
                 lblStatus.ForeColor = Color.DarkRed;
             }
 
-            lblBooksBorrowed.Text = $"{row["BooksBorrowed"]} / {row["MaxBorrowLimit"]}";
+            int current = Convert.ToInt32(row["BooksBorrowed"]);
+            int max = Convert.ToInt32(row["MaxBorrowLimit"]);
+
+            lblBooksBorrowed.Text = $"{current} / {max}";
+
+            if (current >= max)
+            {
+                lblBooksBorrowed.ForeColor = Color.Red;
+                panel4.BackColor = Color.MistyRose; 
+            }
+            else
+            {
+                lblBooksBorrowed.ForeColor = Color.Black;
+                panel4.BackColor = Color.Honeydew;
+            }
 
             decimal fines = Convert.ToDecimal(row["UnpaidFines"]);
             lblUnpaidFines.Text = fines.ToString("C2");
@@ -325,6 +350,11 @@ namespace LIBRARY.LDashboard
         private void btnReturn_Click(object sender, EventArgs e)
         {
             ItemsClear();
+        }
+
+        private void pnlCirculation_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

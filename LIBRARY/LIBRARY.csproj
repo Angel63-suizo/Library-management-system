@@ -274,6 +274,7 @@
     <Compile Include="LDashboard\BorrowingTransaction_Repository.cs" />
     <Compile Include="LDashboard\GetBook_Repository.cs" />
     <Compile Include="LDashboard\GetMember_Repository.cs" />
+    <Compile Include="LDashboard\MemberLookup_Repository.cs" />
     <Compile Include="LDashboard\S-book_search.cs">
       <SubType>UserControl</SubType>
     </Compile>
