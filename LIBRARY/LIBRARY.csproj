@@ -271,6 +271,8 @@
     <Compile Include="A_MainForm.Designer.cs">
       <DependentUpon>A_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LDashboard\BorrowingTransaction_Repository.cs" />
+    <Compile Include="LDashboard\GetBook_Repository.cs" />
     <Compile Include="LDashboard\GetMember_Repository.cs" />
     <Compile Include="LDashboard\S-book_search.cs">
       <SubType>UserControl</SubType>
@@ -323,6 +325,7 @@
     </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
+    <Compile Include="Models\BorrowingTransaction.cs" />
     <Compile Include="Models\Browse_Catalog.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Database.cs" />

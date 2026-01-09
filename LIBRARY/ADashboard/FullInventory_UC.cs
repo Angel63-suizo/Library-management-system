@@ -77,7 +77,7 @@ namespace LIBRARY.ADashboard
             if (dgvInventoryGrid.Columns.Contains("StockStatus")) dgvInventoryGrid.Columns["StockStatus"].DisplayIndex = 2;
             if (dgvInventoryGrid.Columns.Contains("Condition")) dgvInventoryGrid.Columns["Condition"].DisplayIndex = 3;
             if (dgvInventoryGrid.Columns.Contains("Actions")) dgvInventoryGrid.Columns["Actions"].DisplayIndex = 4;
-
+             
             dgvInventoryGrid.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
             dgvInventoryGrid.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
