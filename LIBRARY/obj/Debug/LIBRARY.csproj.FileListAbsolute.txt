@@ -156,7 +156,6 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddCopy.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.DeleteCopy.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.AssemblyReference.cache
-C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe.config
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddCopy.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddMember.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AlertsView_UC.resources
@@ -199,8 +198,6 @@ C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Deb
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.Register.register.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.GenerateResource.cache
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.CoreCompileInputs.cache
-C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe
-C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.pdb
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe.config
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.pdb
@@ -248,3 +245,6 @@ C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Deb
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.Up2Date
+C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe
+C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.pdb
+C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe.config
