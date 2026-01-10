@@ -271,6 +271,7 @@
     <Compile Include="A_MainForm.Designer.cs">
       <DependentUpon>A_MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LDashboard\BookSearch_Repository.cs" />
     <Compile Include="LDashboard\BorrowingTransaction_Repository.cs" />
     <Compile Include="LDashboard\GetBook_Repository.cs" />
     <Compile Include="LDashboard\GetMember_Repository.cs" />

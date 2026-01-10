@@ -17,6 +17,7 @@ namespace LIBRARY.LDashboard
             InitializeComponent();
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.txtSearch.KeyDown += new KeyEventHandler(this.txtSearch_KeyDown);
+            ResetToEmptyState();
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -42,35 +43,132 @@ namespace LIBRARY.LDashboard
 
         private void ExecuteBookSearch()
         {
-            string query = txtSearch.Text.Trim();
+            string bookId = txtSearch.Text.Trim();
 
-            if (string.IsNullOrWhiteSpace(query))
+            if (string.IsNullOrWhiteSpace(bookId))
             {
                 ResetToEmptyState();
                 return;
             }
 
-            ShowResults(query);
+            ShowResults(bookId);
         }
 
-        private void ShowResults(string query)
+        private void ShowResults(string bookId)
         {
-            pictureBox7.Visible = false;
-            label10.Visible = false;
-            label19.Visible = false;
-
-            label19.Visible = true;
-            label19.Text = $"Searching for: \"{query}\"...";
+            pnlContainerA.Visible = true;
+            flpCopyStatus.Visible = true;
+            label19.Text = $"Searching for: \"{bookId}\"...";
             label19.ForeColor = Color.SteelBlue;
+
+            BookSearch_Repository repo = new BookSearch_Repository();
+
+            DataRow bookInfo = repo.GetBookInfo(bookId);
+
+            if (bookInfo != null)
+            {
+                lblTitle.Text = bookInfo["Title"].ToString();
+                lblAuthor.Text = bookInfo["Author"].ToString();
+                lblAccessionBase.Text = bookInfo["BookID"].ToString();
+                lblISBN.Text = bookInfo["ISBN"].ToString();
+                lblCategory.Text = bookInfo["Category"].ToString();
+                lblYear.Text = bookInfo["Year"].ToString();
+                lblPublisher.Text = bookInfo["Publisher"] != DBNull.Value
+                ? bookInfo["Publisher"].ToString()
+                : "No Publisher Listed";
+
+                lblCopies.Text = bookInfo["TotalCopies"].ToString();
+                lblAvailable.Text = bookInfo["Available"].ToString();
+                lblBorrowed.Text = bookInfo["Borrowed"].ToString();
+
+                int resId = Convert.ToInt32(bookInfo["ResourceId"]);
+                DataTable copies = repo.GetCopyStatuses(resId);
+                DisplayCopyCards(copies);
+
+            }
+            else
+            {
+                MessageBox.Show("No book found with that Accession Base.");
+                ResetToEmptyState();
+            }
+            
         }
 
         private void ResetToEmptyState()
         {
-            pictureBox7.Visible = true;
-            label10.Visible = true;
-            label19.Visible = true;
+            pnlContainerA.Visible = false;
+            flpCopyStatus.Visible = false;
             label19.Text = "Enter a Book ID, title, or ISBN to search";
             label19.ForeColor = Color.DimGray;
+        }
+
+        private void DisplayCopyCards(DataTable dt)
+        {
+            flpCopyStatus.Controls.Clear(); 
+
+            foreach (DataRow row in dt.Rows)
+            {
+                string status = row["Status"].ToString();
+                string accession = row["AccessionNumber"].ToString();
+
+                Panel card = new Panel();
+                card.Size = new Size(240, 120);
+                card.Margin = new Padding(10);
+                card.BorderStyle = BorderStyle.None;
+
+                if (status == "Available")
+                {
+                    card.BackColor = Color.FromArgb(232, 250, 237); 
+                    AddCardContent(card, accession, status, null, null, Color.DarkGreen);
+                }
+                else if (status == "Borrowed")
+                {
+                    card.BackColor = Color.FromArgb(255, 251, 222); 
+                    string borrower = row["BorrowedBy"]?.ToString() ?? "Unknown";
+                    string dueDate = row["DueDate"] != DBNull.Value
+                        ? Convert.ToDateTime(row["DueDate"]).ToString("yyyy-MM-dd")
+                        : "N/A";
+                    AddCardContent(card, accession, status, borrower, dueDate, Color.Goldenrod);
+                }
+
+                flpCopyStatus.Controls.Add(card);
+            }
+        }
+
+        private void AddCardContent(Panel p, string acc, string stat, string borrower, string due, Color accentColor)
+        {
+            Label lblAcc = new Label { Text = acc, Font = new Font("Segoe UI", 10, FontStyle.Bold), Location = new Point(45, 15), AutoSize = true };
+
+            Label lblStat = new Label { Text = stat, Font = new Font("Segoe UI", 8), Location = new Point(45, 35), AutoSize = true, ForeColor = Color.DimGray };
+
+            Label line = new Label { Size = new Size(190, 1), BackColor = Color.LightGray, Location = new Point(15, 60), AutoSize = false };
+
+            p.Controls.Add(lblAcc);
+            p.Controls.Add(lblStat);
+            p.Controls.Add(line);
+
+            if (!string.IsNullOrEmpty(borrower))
+            {
+                Label lblInfo = new Label
+                {
+                    Text = $"Borrowed by: {borrower}\nDue: {due}",
+                    Font = new Font("Segoe UI", 8),
+                    Location = new Point(15, 70),
+                    Size = new Size(200, 40),
+                    ForeColor = accentColor
+                };
+                p.Controls.Add(lblInfo);
+            }
+
+            Label icon = new Label
+            {
+                Text = stat == "Available" ? "✔️" : "⚠️",
+                Location = new Point(15, 15),
+                AutoSize = true,
+                ForeColor = accentColor,
+                Font = new Font("Segoe UI", 12)
+            };
+            p.Controls.Add(icon);
         }
     }
 }

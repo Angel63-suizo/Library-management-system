@@ -130,5 +130,10 @@ namespace LIBRARY.LDashboard
                 }
             }
         }
+
+        private void pnlMemberLookup_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

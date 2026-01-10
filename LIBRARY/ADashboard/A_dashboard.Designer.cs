@@ -32,16 +32,17 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTotalBooks = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTrends = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartCategory = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblBooksBorrowed = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -76,8 +77,8 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTrends)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCategory)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -155,39 +156,52 @@
             this.label1.Text = "Total  Books";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // chart1
+            // chartTrends
             // 
-            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.chartTrends.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            chartArea1.AxisX.MajorGrid.Enabled = false;
+            chartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chartArea1.AxisY.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
             chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            this.chartTrends.ChartAreas.Add(chartArea1);
+            legend1.Alignment = System.Drawing.StringAlignment.Center;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(0, 446);
-            this.chart1.Name = "chart1";
+            this.chartTrends.Legends.Add(legend1);
+            this.chartTrends.Location = new System.Drawing.Point(0, 446);
+            this.chartTrends.Name = "chartTrends";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(806, 452);
-            this.chart1.TabIndex = 27;
-            this.chart1.Text = "chart1";
-            // 
-            // chart2
-            // 
-            this.chart2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            chartArea2.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
-            this.chart2.Location = new System.Drawing.Point(844, 446);
-            this.chart2.Name = "chart2";
+            series1.Name = "Borrowed";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(810, 452);
-            this.chart2.TabIndex = 28;
-            this.chart2.Text = "chart2";
+            series2.Name = "Returned";
+            this.chartTrends.Series.Add(series1);
+            this.chartTrends.Series.Add(series2);
+            this.chartTrends.Size = new System.Drawing.Size(806, 452);
+            this.chartTrends.TabIndex = 27;
+            this.chartTrends.Text = "chart1";
+            // 
+            // chartCategory
+            // 
+            this.chartCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            chartArea2.Name = "ChartArea1";
+            this.chartCategory.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartCategory.Legends.Add(legend2);
+            this.chartCategory.Location = new System.Drawing.Point(844, 446);
+            this.chartCategory.Name = "chartCategory";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Label = "#VALX #PERCENT";
+            series3.Legend = "Legend1";
+            series3.Name = "Default";
+            series3.XValueMember = "Category";
+            series3.YValueMembers = "TotalCount";
+            this.chartCategory.Series.Add(series3);
+            this.chartCategory.Size = new System.Drawing.Size(810, 452);
+            this.chartCategory.TabIndex = 28;
+            this.chartCategory.Text = "chart2";
             // 
             // panel4
             // 
@@ -562,8 +576,8 @@
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.chart2);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartCategory);
+            this.Controls.Add(this.chartTrends);
             this.Controls.Add(this.panel1);
             this.Name = "A_dashboard";
             this.Size = new System.Drawing.Size(1654, 1158);
@@ -573,8 +587,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTrends)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartCategory)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -609,8 +623,8 @@
         #endregion
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTrends;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartCategory;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblTotalBooks;

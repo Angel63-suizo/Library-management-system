@@ -101,12 +101,14 @@
             // 
             // btnAdmin
             // 
+            this.btnAdmin.BackColor = System.Drawing.Color.White;
+            this.btnAdmin.ForeColor = System.Drawing.Color.Black;
             this.btnAdmin.Location = new System.Drawing.Point(27, 81);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(151, 65);
             this.btnAdmin.TabIndex = 73;
             this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.UseVisualStyleBackColor = false;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // label2
