@@ -114,12 +114,12 @@ namespace LIBRARY.MDashboard
 
         private void DrawCustomBorder(object sender, PaintEventArgs e)
         {
-            Panel panel = (Panel)sender;
+            Control ctrl = (Control)sender;
             int radius = 16;
             int borderThickness = 1;
             Color borderColor = Color.FromArgb(220, 223, 230);
 
-            if (panel.Name == "panel20" && (isPanel20Hovered || isSearchFocused))
+            if (ctrl.Name == "panel20" && (isPanel20Hovered || isSearchFocused))
             {
                 borderColor = Color.FromArgb(55, 65, 81);
                 borderThickness = 2;
@@ -128,7 +128,7 @@ namespace LIBRARY.MDashboard
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
             Rectangle rect = new Rectangle(borderThickness, borderThickness,
-                                           panel.Width - borderThickness * 2, panel.Height - borderThickness * 2);
+                                           ctrl.Width - borderThickness * 2, ctrl.Height - borderThickness * 2);
 
             using (GraphicsPath path = new GraphicsPath())
             {
@@ -138,10 +138,7 @@ namespace LIBRARY.MDashboard
                 path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
                 path.CloseFigure();
 
-                using (SolidBrush brush = new SolidBrush(panel.BackColor))
-                    e.Graphics.FillPath(brush, path);
-
-                panel.Region = new Region(path);
+                ctrl.Region = new Region(path);
 
                 using (Pen pen = new Pen(borderColor, borderThickness))
                     e.Graphics.DrawPath(pen, path);
@@ -194,5 +191,17 @@ namespace LIBRARY.MDashboard
             cmbSearch.DroppedDown = cmbSearch.Items.Count > 0;
         }
 
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            LoadUserControl(new M_Profile());
+        }
+
+        private void LoadUserControl(UserControl mem)
+        {
+            pnlContent.Controls.Clear();   
+            mem.Dock = DockStyle.Fill;       
+            pnlContent.Controls.Add(mem);  
+            mem.BringToFront();
+        }
     }
 }

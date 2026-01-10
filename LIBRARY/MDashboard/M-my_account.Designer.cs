@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(M_my_account));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
@@ -131,6 +133,7 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(239, 145);
             this.panel8.TabIndex = 3;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button5
             // 
@@ -145,6 +148,8 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Pay Now";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.BtnPayNow_Click);
+            this.button5.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label18
             // 
@@ -189,6 +194,7 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(239, 109);
             this.panel7.TabIndex = 2;
+            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label16
             // 
@@ -254,6 +260,8 @@
             this.button3.Text = "   Download Receipt";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.BtnDownloadReceipt_Click);
+            this.button3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button2
             // 
@@ -267,6 +275,8 @@
             this.button2.Text = "   Update Contact Info";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BtnUpdateContact_Click);
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button1
             // 
@@ -280,6 +290,8 @@
             this.button1.Text = "  Change Password";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.BtnChangePassword_Click);
+            this.button1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel13
             // 
@@ -292,6 +304,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(331, 286);
             this.panel13.TabIndex = 23;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label37
             // 
@@ -323,6 +336,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(331, 252);
             this.panel12.TabIndex = 22;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel15
             // 
@@ -334,6 +348,7 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(239, 73);
             this.panel15.TabIndex = 4;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label32
             // 
@@ -377,6 +392,7 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(239, 73);
             this.panel14.TabIndex = 2;
+            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label31
             // 
@@ -438,6 +454,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(676, 383);
             this.panel1.TabIndex = 18;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel16
             // 
@@ -447,6 +464,7 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(55, 24);
             this.panel16.TabIndex = 14;
+            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label8
             // 
@@ -468,6 +486,7 @@
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(66, 24);
             this.panel11.TabIndex = 13;
+            this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label6
             // 
@@ -493,6 +512,8 @@
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Edit Profile";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
+            this.btnEdit.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel5
             // 
@@ -730,6 +751,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(331, 368);
             this.panel6.TabIndex = 19;
+            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel9
             // 
@@ -749,6 +771,7 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(676, 378);
             this.panel10.TabIndex = 27;
+            this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button4
             // 
@@ -759,17 +782,34 @@
             this.button4.TabIndex = 23;
             this.button4.Text = "View All";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.BtnViewAll_Click);
+            this.button4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.Description,
             this.Amount,
             this.Status});
+            this.dataGridView1.GridColor = System.Drawing.Color.White;
             this.dataGridView1.Location = new System.Drawing.Point(22, 63);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(628, 287);

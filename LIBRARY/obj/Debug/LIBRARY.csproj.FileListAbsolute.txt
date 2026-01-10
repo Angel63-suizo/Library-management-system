@@ -91,7 +91,6 @@ C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Deb
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.ViewMemberDetails.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.A_MainForm.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\Member.Form1.resources
-C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.LDashboard.L_dashboard.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.LDashboard.S_book_search.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.LDashboard.S_circulation.resources
 C:\Users\HP\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.LDashboard.S_book_lookup.resources

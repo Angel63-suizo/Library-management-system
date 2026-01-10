@@ -44,16 +44,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picProfilePhoto = new System.Windows.Forms.PictureBox();
+            this.pnlContent = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfilePhoto)).BeginInit();
+            this.pnlContent.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label10);
@@ -66,11 +67,12 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.picProfilePhoto);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(292, 123);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(682, 472);
+            this.panel1.Size = new System.Drawing.Size(662, 458);
             this.panel1.TabIndex = 6;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button2
             // 
@@ -84,9 +86,10 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 37);
             this.button2.TabIndex = 28;
-            this.button2.Text = "    Reserve Book";
+            this.button2.Text = "Reserve Book";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btnReserve_Click);
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // button1
             // 
@@ -100,6 +103,7 @@
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btnClose_Click);
+            this.button1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label10
             // 
@@ -131,6 +135,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(407, 66);
             this.panel3.TabIndex = 24;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label8
             // 
@@ -177,12 +182,13 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Lavender;
+            this.panel2.BackColor = System.Drawing.Color.LightCyan;
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(293, 93);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(114, 23);
             this.panel2.TabIndex = 21;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label4
             // 
@@ -230,7 +236,7 @@
             // picProfilePhoto
             // 
             this.picProfilePhoto.BackColor = System.Drawing.SystemColors.Control;
-            this.picProfilePhoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picProfilePhoto.Image = global::LIBRARY.Properties.Resources.introduce;
             this.picProfilePhoto.Location = new System.Drawing.Point(21, 19);
             this.picProfilePhoto.Margin = new System.Windows.Forms.Padding(2);
             this.picProfilePhoto.Name = "picProfilePhoto";
@@ -239,17 +245,26 @@
             this.picProfilePhoto.TabIndex = 17;
             this.picProfilePhoto.TabStop = false;
             // 
+            // pnlContent
+            // 
+            this.pnlContent.Controls.Add(this.panel1);
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(0, 0);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(1315, 875);
+            this.pnlContent.TabIndex = 7;
+            // 
             // M_Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlContent);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "M_Profile";
-            this.Size = new System.Drawing.Size(682, 472);
+            this.Size = new System.Drawing.Size(1315, 875);
             this.Load += new System.EventHandler(this.M_Profile_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -258,6 +273,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picProfilePhoto)).EndInit();
+            this.pnlContent.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -279,5 +295,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel pnlContent;
     }
 }

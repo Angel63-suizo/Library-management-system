@@ -40,6 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanelBooks = new System.Windows.Forms.FlowLayoutPanel();
             this.BookDetailsControl = new System.Windows.Forms.Panel();
+            this.btnView = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,9 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.pb = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -58,7 +57,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,7 +65,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
@@ -76,7 +73,6 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -85,7 +81,6 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label29 = new System.Windows.Forms.Label();
@@ -93,28 +88,41 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
+            this.pnlContent = new System.Windows.Forms.Panel();
+            this.pb = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel20.SuspendLayout();
             this.pnlCombo.SuspendLayout();
             this.flowLayoutPanelBooks.SuspendLayout();
             this.BookDetailsControl.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel12.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel18.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel14.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel16.SuspendLayout();
+            this.pnlContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -226,7 +234,8 @@
             // 
             // BookDetailsControl
             // 
-            this.BookDetailsControl.BackColor = System.Drawing.Color.AliceBlue;
+            this.BookDetailsControl.BackColor = System.Drawing.Color.White;
+            this.BookDetailsControl.Controls.Add(this.btnView);
             this.BookDetailsControl.Controls.Add(this.panel8);
             this.BookDetailsControl.Controls.Add(this.label8);
             this.BookDetailsControl.Controls.Add(this.label7);
@@ -241,6 +250,22 @@
             this.BookDetailsControl.Size = new System.Drawing.Size(321, 335);
             this.BookDetailsControl.TabIndex = 19;
             this.BookDetailsControl.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.SlateGray;
+            this.btnView.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.White;
+            this.btnView.Location = new System.Drawing.Point(225, 243);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(67, 25);
+            this.btnView.TabIndex = 14;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            this.btnView.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel8
             // 
@@ -315,18 +340,10 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Introduction to Algorithms";
             // 
-            // pb
-            // 
-            this.pb.Image = global::LIBRARY.Properties.Resources.intro1;
-            this.pb.Location = new System.Drawing.Point(28, 27);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(266, 153);
-            this.pb.TabIndex = 0;
-            this.pb.TabStop = false;
-            // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.panel11);
             this.panel3.Controls.Add(this.label9);
@@ -341,15 +358,6 @@
             this.panel3.Size = new System.Drawing.Size(321, 335);
             this.panel3.TabIndex = 20;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::LIBRARY.Properties.Resources.clean_code;
-            this.pictureBox1.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(266, 153);
-            this.pictureBox1.TabIndex = 15;
-            this.pictureBox1.TabStop = false;
             // 
             // panel11
             // 
@@ -426,7 +434,8 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.button2);
             this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Controls.Add(this.panel13);
             this.panel4.Controls.Add(this.panel12);
@@ -440,15 +449,6 @@
             this.panel4.Size = new System.Drawing.Size(321, 335);
             this.panel4.TabIndex = 20;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::LIBRARY.Properties.Resources.prag;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(266, 153);
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
             // 
             // panel13
             // 
@@ -525,7 +525,8 @@
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.button5);
             this.panel6.Controls.Add(this.pictureBox3);
             this.panel6.Controls.Add(this.panel18);
             this.panel6.Controls.Add(this.panel17);
@@ -540,15 +541,6 @@
             this.panel6.Size = new System.Drawing.Size(321, 335);
             this.panel6.TabIndex = 22;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::LIBRARY.Properties.Resources.head;
-            this.pictureBox3.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(266, 153);
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
             // 
             // panel18
             // 
@@ -625,7 +617,8 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.button4);
             this.panel5.Controls.Add(this.pictureBox4);
             this.panel5.Controls.Add(this.panel19);
             this.panel5.Controls.Add(this.label21);
@@ -640,15 +633,6 @@
             this.panel5.Size = new System.Drawing.Size(321, 335);
             this.panel5.TabIndex = 21;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::LIBRARY.Properties.Resources.epektib;
-            this.pictureBox4.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(266, 153);
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
             // 
             // panel19
             // 
@@ -725,7 +709,8 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.button3);
             this.panel7.Controls.Add(this.pictureBox5);
             this.panel7.Controls.Add(this.label37);
             this.panel7.Controls.Add(this.panel15);
@@ -739,15 +724,6 @@
             this.panel7.Size = new System.Drawing.Size(321, 335);
             this.panel7.TabIndex = 23;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::LIBRARY.Properties.Resources.dat;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 27);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(266, 153);
-            this.pictureBox5.TabIndex = 15;
-            this.pictureBox5.TabStop = false;
             // 
             // label37
             // 
@@ -822,17 +798,156 @@
             this.label38.TabIndex = 1;
             this.label38.Text = "Database System Concepts";
             // 
+            // pnlContent
+            // 
+            this.pnlContent.AutoScroll = true;
+            this.pnlContent.Controls.Add(this.flowLayoutPanelBooks);
+            this.pnlContent.Controls.Add(this.panel1);
+            this.pnlContent.Controls.Add(this.label1);
+            this.pnlContent.Controls.Add(this.label2);
+            this.pnlContent.Controls.Add(this.panel2);
+            this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContent.Location = new System.Drawing.Point(0, 0);
+            this.pnlContent.Name = "pnlContent";
+            this.pnlContent.Size = new System.Drawing.Size(1143, 937);
+            this.pnlContent.TabIndex = 25;
+            // 
+            // pb
+            // 
+            this.pb.Image = global::LIBRARY.Properties.Resources.intro1;
+            this.pb.Location = new System.Drawing.Point(28, 27);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(266, 153);
+            this.pb.TabIndex = 0;
+            this.pb.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::LIBRARY.Properties.Resources.clean_code;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(266, 153);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::LIBRARY.Properties.Resources.prag;
+            this.pictureBox2.Location = new System.Drawing.Point(28, 27);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(266, 153);
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::LIBRARY.Properties.Resources.head;
+            this.pictureBox3.Location = new System.Drawing.Point(28, 27);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(266, 153);
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::LIBRARY.Properties.Resources.epektib;
+            this.pictureBox4.Location = new System.Drawing.Point(28, 27);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(266, 153);
+            this.pictureBox4.TabIndex = 15;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::LIBRARY.Properties.Resources.dat;
+            this.pictureBox5.Location = new System.Drawing.Point(28, 27);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(266, 153);
+            this.pictureBox5.TabIndex = 15;
+            this.pictureBox5.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SlateGray;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(233, 243);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 25);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "View";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SlateGray;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(235, 243);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 25);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "View";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.SlateGray;
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(235, 244);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(67, 25);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "View";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.SlateGray;
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(235, 244);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(67, 25);
+            this.button4.TabIndex = 16;
+            this.button4.Text = "View";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.SlateGray;
+            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(233, 239);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(67, 25);
+            this.button5.TabIndex = 17;
+            this.button5.Text = "View";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
+            // 
             // M_browse_catalog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.flowLayoutPanelBooks);
+            this.Controls.Add(this.pnlContent);
             this.Name = "M_browse_catalog";
             this.Size = new System.Drawing.Size(1143, 937);
             this.panel1.ResumeLayout(false);
@@ -844,34 +959,35 @@
             this.BookDetailsControl.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            this.pnlContent.ResumeLayout(false);
+            this.pnlContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -940,5 +1056,12 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel pnlCombo;
         private System.Windows.Forms.ComboBox cmbSearch;
+        private System.Windows.Forms.Button btnView;
+        private System.Windows.Forms.Panel pnlContent;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
     }
 }

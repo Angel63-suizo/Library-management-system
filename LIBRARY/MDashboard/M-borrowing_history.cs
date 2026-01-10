@@ -16,11 +16,16 @@ namespace LIBRARY.MDashboard
         private bool isSearchFocused = false;
         private bool isPanel7Hovered = false;
         private bool isComboFocused = false;
+        private DataTable borrowingData;
 
         public M_borrowing_history()
         {
             InitializeComponent();
-
+            InitializeBorrowingGrid();
+            LoadSampleData();
+            UpdateSummaryStatistics();
+            txtSearch.TextChanged += (s, e) => ApplyFilters();
+            cmbSearch.SelectedIndexChanged += (s, e) => ApplyFilters();
             txtSearch.Enter += (s, e) =>
             {
                 isSearchFocused = true;
@@ -37,7 +42,7 @@ namespace LIBRARY.MDashboard
             {
                 isSearchFocused = true;
                 isComboFocused = true;
-                panel20.Invalidate();
+                panel7.Invalidate();
             };
 
             cmbSearch.Leave += (s, e) =>
@@ -51,12 +56,12 @@ namespace LIBRARY.MDashboard
         private void DrawCustomBorder(object sender, PaintEventArgs e)
         {
 
-            Panel panel = (Panel)sender;
+            Control ctrl = (Control)sender;
             int radius = 16;
             int borderThickness = 1;
             Color borderColor = Color.FromArgb(220, 223, 230);
 
-            if (panel.Name == "panel7" && (isPanel7Hovered || isSearchFocused))
+            if (ctrl.Name == "panel7" && (isPanel7Hovered || isSearchFocused))
             {
                 borderColor = Color.FromArgb(55, 65, 81);
                 borderThickness = 2;
@@ -65,7 +70,7 @@ namespace LIBRARY.MDashboard
             e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
 
             Rectangle rect = new Rectangle(borderThickness, borderThickness,
-                                           panel.Width - borderThickness * 2, panel.Height - borderThickness * 2);
+                                           ctrl.Width - borderThickness * 2, ctrl.Height - borderThickness * 2);
 
             using (GraphicsPath path = new GraphicsPath())
             {
@@ -75,10 +80,7 @@ namespace LIBRARY.MDashboard
                 path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
                 path.CloseFigure();
 
-                using (SolidBrush brush = new SolidBrush(panel.BackColor))
-                    e.Graphics.FillPath(brush, path);
-
-                panel.Region = new Region(path);
+                ctrl.Region = new Region(path);
 
                 using (Pen pen = new Pen(borderColor, borderThickness))
                     e.Graphics.DrawPath(pen, path);
@@ -99,6 +101,87 @@ namespace LIBRARY.MDashboard
                 rect.Height -= 1;
                 e.Graphics.DrawRectangle(pen, rect);
             }
+        }
+        private void ApplyFilters()
+        {
+            if (borrowingData == null) return;
+
+            string searchText = txtSearch.Text.Trim().Replace("'", "''");
+            string selectedStatus = cmbSearch.SelectedItem?.ToString() ?? "All Status";
+
+            // Search by Title OR Author
+            string searchFilter = $"(Title LIKE '%{searchText}%' OR Author LIKE '%{searchText}%')";
+
+            // Combine with Status if not "All Status"
+            string finalFilter = searchFilter;
+            if (selectedStatus != "All Status" && !string.IsNullOrEmpty(selectedStatus))
+            {
+                finalFilter += $" AND Status = '{selectedStatus}'";
+            }
+
+            // Apply the filter
+            borrowingData.DefaultView.RowFilter = finalFilter;
+            label7.Text = $"Showing {dgvHistory.Rows.Count} of {borrowingData.Rows.Count} records";
+        }
+        private void InitializeBorrowingGrid()
+        {
+            borrowingData = new DataTable();
+
+            // These column names MUST match the "DataPropertyName" in your dgvHistory column properties
+            borrowingData.Columns.Add("Title");
+            borrowingData.Columns.Add("Author");
+            borrowingData.Columns.Add("BorrowDate");
+            borrowingData.Columns.Add("ReturnDate");
+            borrowingData.Columns.Add("Status");
+            borrowingData.Columns.Add("Fine");
+
+            dgvHistory.Columns["Title"].DataPropertyName = "Title";
+            dgvHistory.Columns["Author"].DataPropertyName = "Author";
+            dgvHistory.Columns["BorrowDate"].DataPropertyName = "BorrowDate";
+            dgvHistory.Columns["ReturnDate"].DataPropertyName = "ReturnDate";
+            dgvHistory.Columns["Status"].DataPropertyName = "Status";
+            dgvHistory.Columns["Fine"].DataPropertyName = "Fine";
+
+            // IMPORTANT: Since you added columns in Properties, prevent the grid from adding them again
+            dgvHistory.AutoGenerateColumns = false;
+
+            // Link the DataTable to the Grid
+            dgvHistory.DataSource = borrowingData;
+        }
+        private void LoadSampleData()
+        {
+            // Adding rows to the DataTable
+            borrowingData.Rows.Add("The Great Gatsby", "F. Scott Fitzgerald", "2023-10-01", "2023-10-15", "Returned", "$0.00");
+            borrowingData.Rows.Add("1984", "George Orwell", "2023-11-01", "-", "Currently Borrowed", "$0.00");
+            borrowingData.Rows.Add("The Hobbit", "J.R.R. Tolkien", "2023-09-20", "2023-10-05", "Overdue Return", "$5.50");
+        }
+        private void UpdateSummaryStatistics()
+        {
+            if (borrowingData == null) return;
+
+            // 1. Total Borrowed (Total rows in the table)
+            label9.Text = borrowingData.Rows.Count.ToString();
+
+            // 2. Currently Borrowed Count
+            int currentlyBorrowed = borrowingData.AsEnumerable()
+                .Count(row => row.Field<string>("Status") == "Currently Borrowed");
+            label8.Text = currentlyBorrowed.ToString();
+
+            // 3. Returned Count (Includes "Returned" and "Overdue Return")
+            int returned = borrowingData.AsEnumerable()
+                .Count(row => row.Field<string>("Status").Contains("Returned"));
+            label10.Text = returned.ToString();
+
+            // 4. Total Fines Paid
+            decimal totalFines = borrowingData.AsEnumerable()
+                .Sum(row => {
+                    decimal fine;
+                    return decimal.TryParse(row.Field<string>("Fine"), out fine) ? fine : 0;
+                });
+            label11.Text = $"${totalFines:N2}";
+
+            // 5. Update the "Showing X of X records" label (label7)
+            label7.Text = $"Showing {dgvHistory.Rows.Count} of {borrowingData.Rows.Count} records";
         }
     }
 }

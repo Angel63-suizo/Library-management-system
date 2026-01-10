@@ -1,5 +1,4 @@
-﻿using ExCSS;
-using LIBRARY.Class;
+﻿using LIBRARY.Class;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Pqc.Crypto.Lms;
 using System;
@@ -7,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
@@ -15,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+
 
 namespace LIBRARY.MDashboard
 {
@@ -60,6 +61,40 @@ namespace LIBRARY.MDashboard
             label4.Text = "Computer Science";
             label10.Text = "A comprehensive textbook on computer algorithms...";
 
+        }
+
+        private void DrawCustomBorder(object sender, PaintEventArgs e)
+        {
+            Control ctrl = (Control)sender;
+
+            int radius = 16;                  // Border corner roundness
+            int borderThickness = 1;          // Thickness of the line
+            Color borderColor = Color.FromArgb(220, 223, 230); // Soft light gray
+
+            e.Graphics.SmoothingMode = SmoothingMode.AntiAlias;
+
+            // Define the drawing area slightly smaller than the control to prevent clipping
+            Rectangle rect = new Rectangle(borderThickness, borderThickness,
+                                           ctrl.Width - borderThickness * 2, ctrl.Height - borderThickness * 2);
+
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                // Create the rounded rectangle path
+                path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
+                path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
+                path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90);
+                path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 90, 90);
+                path.CloseFigure();
+
+                // Set the region so the background color follows the rounded corners
+                ctrl.Region = new Region(path);
+
+                // Draw the border line
+                using (Pen pen = new Pen(borderColor, borderThickness))
+                {
+                    e.Graphics.DrawPath(pen, path);
+                }
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -259,9 +294,15 @@ namespace LIBRARY.MDashboard
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Parent.Controls.Remove(this);
+            LoadUserControl(new M_browse_catalog());
         }
-
+        private void LoadUserControl(UserControl mem)
+        {
+            pnlContent.Controls.Clear();
+            mem.Dock = DockStyle.Fill;
+            pnlContent.Controls.Add(mem);
+            mem.BringToFront();
+        }
         private void btnReserve_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Book has been reserved successfully!", "Library System");

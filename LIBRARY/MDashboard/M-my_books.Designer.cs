@@ -491,13 +491,14 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(26, 9);
+            this.button3.Location = new System.Drawing.Point(11, 11);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(83, 37);
             this.button3.TabIndex = 0;
             this.button3.Text = "Renew";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.RenewBook);
+            this.button3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel35
             // 
@@ -513,7 +514,7 @@
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.ForeColor = System.Drawing.Color.Red;
-            this.label38.Location = new System.Drawing.Point(37, 22);
+            this.label38.Location = new System.Drawing.Point(8, 22);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(39, 16);
             this.label38.TabIndex = 11;
@@ -532,7 +533,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(33, 18);
+            this.pictureBox11.Location = new System.Drawing.Point(10, 17);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(20, 20);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -543,7 +544,7 @@
             // 
             this.panel34.BackColor = System.Drawing.Color.MistyRose;
             this.panel34.Controls.Add(this.label37);
-            this.panel34.Location = new System.Drawing.Point(59, 15);
+            this.panel34.Location = new System.Drawing.Point(36, 15);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(74, 27);
             this.panel34.TabIndex = 1;
@@ -677,13 +678,14 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(26, 9);
+            this.button2.Location = new System.Drawing.Point(11, 11);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(83, 37);
             this.button2.TabIndex = 0;
             this.button2.Text = "Renew";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.RenewBook);
+            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // panel28
             // 
@@ -699,7 +701,7 @@
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label31.Location = new System.Drawing.Point(37, 22);
+            this.label31.Location = new System.Drawing.Point(8, 22);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(39, 16);
             this.label31.TabIndex = 11;
@@ -718,7 +720,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::LIBRARY.Properties.Resources.Icon__54_;
-            this.pictureBox10.Location = new System.Drawing.Point(33, 18);
+            this.pictureBox10.Location = new System.Drawing.Point(10, 17);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(20, 20);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -729,7 +731,7 @@
             // 
             this.panel27.BackColor = System.Drawing.Color.LemonChiffon;
             this.panel27.Controls.Add(this.label30);
-            this.panel27.Location = new System.Drawing.Point(59, 15);
+            this.panel27.Location = new System.Drawing.Point(36, 15);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(74, 27);
             this.panel27.TabIndex = 1;
@@ -958,6 +960,7 @@
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(244, 43);
             this.panel12.TabIndex = 3;
+            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label15
             // 
@@ -977,6 +980,7 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(179, 43);
             this.panel13.TabIndex = 4;
+            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label16
             // 
@@ -996,6 +1000,7 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(179, 43);
             this.panel14.TabIndex = 5;
+            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label17
             // 
@@ -1015,12 +1020,13 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(167, 43);
             this.panel15.TabIndex = 6;
+            this.panel15.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(55, 11);
+            this.label18.Location = new System.Drawing.Point(6, 11);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(50, 20);
             this.label18.TabIndex = 4;
@@ -1034,12 +1040,13 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(116, 43);
             this.panel16.TabIndex = 7;
+            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(38, 11);
+            this.label19.Location = new System.Drawing.Point(7, 11);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(38, 20);
             this.label19.TabIndex = 3;
@@ -1053,12 +1060,13 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(131, 43);
             this.panel17.TabIndex = 8;
+            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(34, 11);
+            this.label20.Location = new System.Drawing.Point(7, 11);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(59, 20);
             this.label20.TabIndex = 3;
@@ -1078,7 +1086,7 @@
             // 
             this.panel20.BackColor = System.Drawing.Color.Honeydew;
             this.panel20.Controls.Add(this.label23);
-            this.panel20.Location = new System.Drawing.Point(59, 15);
+            this.panel20.Location = new System.Drawing.Point(36, 15);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(74, 27);
             this.panel20.TabIndex = 1;
@@ -1098,7 +1106,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::LIBRARY.Properties.Resources.Icon__53_;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 18);
+            this.pictureBox7.Location = new System.Drawing.Point(10, 17);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(20, 20);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -1119,7 +1127,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label24.Location = new System.Drawing.Point(37, 22);
+            this.label24.Location = new System.Drawing.Point(8, 22);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(39, 16);
             this.label24.TabIndex = 11;
@@ -1140,13 +1148,14 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(26, 9);
+            this.button1.Location = new System.Drawing.Point(11, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 37);
             this.button1.TabIndex = 0;
             this.button1.Text = "Renew";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.RenewBook);
+            this.button1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // M_my_books
             // 
