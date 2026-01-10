@@ -133,6 +133,8 @@ namespace LIBRARY.Login
         private void btnStaff_Click(object sender, EventArgs e)
         {
             selectedRole = "Librarian";
+            btnStaff.BackColor = Color.SteelBlue;
+            btnStaff.ForeColor = Color.White;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -153,11 +155,15 @@ namespace LIBRARY.Login
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             selectedRole = "Admin";
+            btnAdmin.BackColor = Color.SteelBlue;
+            btnAdmin.ForeColor = Color.White;
         }
 
         private void btnMember_Click(object sender, EventArgs e)
         {
             selectedRole = "Member";
+            btnMember.BackColor = Color.SteelBlue;
+            btnMember.ForeColor = Color.White;
         }
 
     }

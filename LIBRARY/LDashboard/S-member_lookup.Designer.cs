@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -40,22 +40,7 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.lblMemSearch = new System.Windows.Forms.Label();
-            this.pnlMemberLookup = new System.Windows.Forms.Panel();
             this.pnlContainerA = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pbProfile = new System.Windows.Forms.PictureBox();
-            this.lblFullName = new System.Windows.Forms.Label();
-            this.lblMemberStatus = new System.Windows.Forms.Label();
-            this.lblMemberType = new System.Windows.Forms.Label();
-            this.lbl1 = new System.Windows.Forms.Label();
-            this.lblCardNumber = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.lblBooksBorrowed = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTotalFines = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,9 +48,24 @@
             this.lbl = new System.Windows.Forms.Label();
             this.lblJoinDate = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.lblBooksBorrowed = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblCardNumber = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
+            this.lblMemberType = new System.Windows.Forms.Label();
+            this.lblMemberStatus = new System.Windows.Forms.Label();
+            this.lblFullName = new System.Windows.Forms.Label();
+            this.pbProfile = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.lblMemSearch = new System.Windows.Forms.Label();
+            this.pnlMemberLookup = new System.Windows.Forms.Panel();
             this.pnlContainerB = new System.Windows.Forms.Panel();
-            this.dgvCurrentBorrow = new System.Windows.Forms.DataGridView();
             this.label20 = new System.Windows.Forms.Label();
+            this.dgvCurrentBorrow = new System.Windows.Forms.DataGridView();
             this.AccessionNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,12 +75,12 @@
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.pnlContainerA.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.pnlMemberLookup.SuspendLayout();
-            this.pnlContainerA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
-            this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.pnlContainerB.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentBorrow)).BeginInit();
             this.SuspendLayout();
@@ -185,45 +185,6 @@
             this.panel7.Size = new System.Drawing.Size(1525, 418);
             this.panel7.TabIndex = 30;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::LIBRARY.Properties.Resources.Icon__29_;
-            this.pictureBox7.Location = new System.Drawing.Point(697, 100);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 22);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(84, 76);
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
-            // 
-            // lblMemSearch
-            // 
-            this.lblMemSearch.AutoSize = true;
-            this.lblMemSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemSearch.ForeColor = System.Drawing.Color.DimGray;
-            this.lblMemSearch.Location = new System.Drawing.Point(556, 198);
-            this.lblMemSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 22);
-            this.lblMemSearch.Name = "lblMemSearch";
-            this.lblMemSearch.Size = new System.Drawing.Size(336, 28);
-            this.lblMemSearch.TabIndex = 2;
-            this.lblMemSearch.Text = "Enter a Member ID or name to search";
-            this.lblMemSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pnlMemberLookup
-            // 
-            this.pnlMemberLookup.AutoScroll = true;
-            this.pnlMemberLookup.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.pnlMemberLookup.Controls.Add(this.pnlContainerB);
-            this.pnlMemberLookup.Controls.Add(this.label9);
-            this.pnlMemberLookup.Controls.Add(this.label8);
-            this.pnlMemberLookup.Controls.Add(this.panel7);
-            this.pnlMemberLookup.Controls.Add(this.panel6);
-            this.pnlMemberLookup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMemberLookup.Location = new System.Drawing.Point(0, 0);
-            this.pnlMemberLookup.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlMemberLookup.Name = "pnlMemberLookup";
-            this.pnlMemberLookup.Size = new System.Drawing.Size(1533, 763);
-            this.pnlMemberLookup.TabIndex = 31;
-            // 
             // pnlContainerA
             // 
             this.pnlContainerA.Controls.Add(this.panel2);
@@ -245,145 +206,6 @@
             this.pnlContainerA.Name = "pnlContainerA";
             this.pnlContainerA.Size = new System.Drawing.Size(1530, 418);
             this.pnlContainerA.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 26);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Member Information";
-            // 
-            // pbProfile
-            // 
-            this.pbProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pbProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.pbProfile.ImageLocation = "";
-            this.pbProfile.Location = new System.Drawing.Point(203, 83);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.Size = new System.Drawing.Size(149, 126);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbProfile.TabIndex = 8;
-            this.pbProfile.TabStop = false;
-            // 
-            // lblFullName
-            // 
-            this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lblFullName.AutoSize = true;
-            this.lblFullName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFullName.Location = new System.Drawing.Point(198, 231);
-            this.lblFullName.Name = "lblFullName";
-            this.lblFullName.Size = new System.Drawing.Size(66, 28);
-            this.lblFullName.TabIndex = 9;
-            this.lblFullName.Text = "Name";
-            // 
-            // lblMemberStatus
-            // 
-            this.lblMemberStatus.AutoSize = true;
-            this.lblMemberStatus.BackColor = System.Drawing.Color.Honeydew;
-            this.lblMemberStatus.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberStatus.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblMemberStatus.Location = new System.Drawing.Point(199, 274);
-            this.lblMemberStatus.Name = "lblMemberStatus";
-            this.lblMemberStatus.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.lblMemberStatus.Size = new System.Drawing.Size(76, 33);
-            this.lblMemberStatus.TabIndex = 2;
-            this.lblMemberStatus.Text = "Status";
-            // 
-            // lblMemberType
-            // 
-            this.lblMemberType.AutoSize = true;
-            this.lblMemberType.BackColor = System.Drawing.Color.AliceBlue;
-            this.lblMemberType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberType.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblMemberType.Location = new System.Drawing.Point(199, 327);
-            this.lblMemberType.Name = "lblMemberType";
-            this.lblMemberType.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
-            this.lblMemberType.Size = new System.Drawing.Size(129, 33);
-            this.lblMemberType.TabIndex = 10;
-            this.lblMemberType.Text = "MemberType";
-            // 
-            // lbl1
-            // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.ForeColor = System.Drawing.Color.Gray;
-            this.lbl1.Location = new System.Drawing.Point(613, 83);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(96, 23);
-            this.lbl1.TabIndex = 11;
-            this.lbl1.Text = "Member ID";
-            // 
-            // lblCardNumber
-            // 
-            this.lblCardNumber.AutoSize = true;
-            this.lblCardNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardNumber.Location = new System.Drawing.Point(612, 117);
-            this.lblCardNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblCardNumber.Name = "lblCardNumber";
-            this.lblCardNumber.Size = new System.Drawing.Size(85, 25);
-            this.lblCardNumber.TabIndex = 12;
-            this.lblCardNumber.Text = "LIB-0000";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(612, 206);
-            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(77, 25);
-            this.lblEmail.TabIndex = 14;
-            this.lblEmail.Text = "@gmail";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(613, 172);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 23);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Email";
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.panel4.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel4.Controls.Add(this.lblBooksBorrowed);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Location = new System.Drawing.Point(617, 248);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(336, 126);
-            this.panel4.TabIndex = 15;
-            // 
-            // lblBooksBorrowed
-            // 
-            this.lblBooksBorrowed.AutoSize = true;
-            this.lblBooksBorrowed.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBooksBorrowed.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblBooksBorrowed.Location = new System.Drawing.Point(42, 61);
-            this.lblBooksBorrowed.Name = "lblBooksBorrowed";
-            this.lblBooksBorrowed.Size = new System.Drawing.Size(50, 32);
-            this.lblBooksBorrowed.TabIndex = 4;
-            this.lblBooksBorrowed.Text = "0/0";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.label2.Location = new System.Drawing.Point(33, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 28);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Books Borrowed";
             // 
             // panel2
             // 
@@ -465,6 +287,185 @@
             this.label12.TabIndex = 16;
             this.label12.Text = "Join Date";
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel4.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel4.Controls.Add(this.lblBooksBorrowed);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(617, 248);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(336, 126);
+            this.panel4.TabIndex = 15;
+            // 
+            // lblBooksBorrowed
+            // 
+            this.lblBooksBorrowed.AutoSize = true;
+            this.lblBooksBorrowed.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBooksBorrowed.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lblBooksBorrowed.Location = new System.Drawing.Point(42, 61);
+            this.lblBooksBorrowed.Name = "lblBooksBorrowed";
+            this.lblBooksBorrowed.Size = new System.Drawing.Size(50, 32);
+            this.lblBooksBorrowed.TabIndex = 4;
+            this.lblBooksBorrowed.Text = "0/0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.label2.Location = new System.Drawing.Point(33, 21);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(155, 28);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Books Borrowed";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(612, 206);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(77, 25);
+            this.lblEmail.TabIndex = 14;
+            this.lblEmail.Text = "@gmail";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(613, 172);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 23);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Email";
+            // 
+            // lblCardNumber
+            // 
+            this.lblCardNumber.AutoSize = true;
+            this.lblCardNumber.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardNumber.Location = new System.Drawing.Point(612, 117);
+            this.lblCardNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCardNumber.Name = "lblCardNumber";
+            this.lblCardNumber.Size = new System.Drawing.Size(85, 25);
+            this.lblCardNumber.TabIndex = 12;
+            this.lblCardNumber.Text = "LIB-0000";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl1.Location = new System.Drawing.Point(613, 83);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(96, 23);
+            this.lbl1.TabIndex = 11;
+            this.lbl1.Text = "Member ID";
+            // 
+            // lblMemberType
+            // 
+            this.lblMemberType.AutoSize = true;
+            this.lblMemberType.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblMemberType.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberType.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblMemberType.Location = new System.Drawing.Point(199, 327);
+            this.lblMemberType.Name = "lblMemberType";
+            this.lblMemberType.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.lblMemberType.Size = new System.Drawing.Size(129, 33);
+            this.lblMemberType.TabIndex = 10;
+            this.lblMemberType.Text = "MemberType";
+            // 
+            // lblMemberStatus
+            // 
+            this.lblMemberStatus.AutoSize = true;
+            this.lblMemberStatus.BackColor = System.Drawing.Color.Honeydew;
+            this.lblMemberStatus.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberStatus.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblMemberStatus.Location = new System.Drawing.Point(199, 274);
+            this.lblMemberStatus.Name = "lblMemberStatus";
+            this.lblMemberStatus.Padding = new System.Windows.Forms.Padding(10, 5, 10, 5);
+            this.lblMemberStatus.Size = new System.Drawing.Size(76, 33);
+            this.lblMemberStatus.TabIndex = 2;
+            this.lblMemberStatus.Text = "Status";
+            // 
+            // lblFullName
+            // 
+            this.lblFullName.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(198, 231);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(66, 28);
+            this.lblFullName.TabIndex = 9;
+            this.lblFullName.Text = "Name";
+            // 
+            // pbProfile
+            // 
+            this.pbProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.pbProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.pbProfile.ImageLocation = "";
+            this.pbProfile.Location = new System.Drawing.Point(203, 83);
+            this.pbProfile.Name = "pbProfile";
+            this.pbProfile.Size = new System.Drawing.Size(149, 126);
+            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbProfile.TabIndex = 8;
+            this.pbProfile.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(29, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Member Information";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::LIBRARY.Properties.Resources.Icon__29_;
+            this.pictureBox7.Location = new System.Drawing.Point(697, 100);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 22);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(84, 76);
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
+            // 
+            // lblMemSearch
+            // 
+            this.lblMemSearch.AutoSize = true;
+            this.lblMemSearch.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemSearch.ForeColor = System.Drawing.Color.DimGray;
+            this.lblMemSearch.Location = new System.Drawing.Point(556, 198);
+            this.lblMemSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 22);
+            this.lblMemSearch.Name = "lblMemSearch";
+            this.lblMemSearch.Size = new System.Drawing.Size(336, 28);
+            this.lblMemSearch.TabIndex = 2;
+            this.lblMemSearch.Text = "Enter a Member ID or name to search";
+            this.lblMemSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlMemberLookup
+            // 
+            this.pnlMemberLookup.AutoScroll = true;
+            this.pnlMemberLookup.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.pnlMemberLookup.Controls.Add(this.pnlContainerB);
+            this.pnlMemberLookup.Controls.Add(this.label9);
+            this.pnlMemberLookup.Controls.Add(this.label8);
+            this.pnlMemberLookup.Controls.Add(this.panel7);
+            this.pnlMemberLookup.Controls.Add(this.panel6);
+            this.pnlMemberLookup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMemberLookup.Location = new System.Drawing.Point(0, 0);
+            this.pnlMemberLookup.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlMemberLookup.Name = "pnlMemberLookup";
+            this.pnlMemberLookup.Size = new System.Drawing.Size(1533, 763);
+            this.pnlMemberLookup.TabIndex = 31;
+            this.pnlMemberLookup.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMemberLookup_Paint);
+            // 
             // pnlContainerB
             // 
             this.pnlContainerB.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -476,25 +477,36 @@
             this.pnlContainerB.Size = new System.Drawing.Size(1509, 418);
             this.pnlContainerB.TabIndex = 31;
             // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(22, 33);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(232, 25);
+            this.label20.TabIndex = 36;
+            this.label20.Text = "Currently Borrowed Books";
+            // 
             // dgvCurrentBorrow
             // 
             this.dgvCurrentBorrow.AllowUserToAddRows = false;
             this.dgvCurrentBorrow.AllowUserToResizeColumns = false;
             this.dgvCurrentBorrow.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dgvCurrentBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dgvCurrentBorrow.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCurrentBorrow.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCurrentBorrow.BackgroundColor = System.Drawing.Color.White;
             this.dgvCurrentBorrow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCurrentBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCurrentBorrow.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCurrentBorrow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCurrentBorrow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.AccessionNumber,
@@ -503,15 +515,15 @@
             this.BorrowDate,
             this.DueDate,
             this.Status});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCurrentBorrow.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCurrentBorrow.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCurrentBorrow.Location = new System.Drawing.Point(18, 85);
             this.dgvCurrentBorrow.Name = "dgvCurrentBorrow";
             this.dgvCurrentBorrow.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -523,17 +535,6 @@
             this.dgvCurrentBorrow.TabIndex = 35;
             this.dgvCurrentBorrow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTransaction_CellContentClick);
             this.dgvCurrentBorrow.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgvCurrentBorrow_CellFormatting);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(22, 33);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(232, 25);
-            this.label20.TabIndex = 36;
-            this.label20.Text = "Currently Borrowed Books";
             // 
             // AccessionNumber
             // 
@@ -547,8 +548,8 @@
             // Title
             // 
             this.Title.DataPropertyName = "Title";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Title.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Title.DefaultCellStyle = dataGridViewCellStyle3;
             this.Title.FillWeight = 141.3826F;
             this.Title.HeaderText = "Book Title";
             this.Title.MinimumWidth = 6;
@@ -604,16 +605,16 @@
             this.panel1.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.pnlContainerA.ResumeLayout(false);
+            this.pnlContainerA.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.pnlMemberLookup.ResumeLayout(false);
             this.pnlMemberLookup.PerformLayout();
-            this.pnlContainerA.ResumeLayout(false);
-            this.pnlContainerA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.pnlContainerB.ResumeLayout(false);
             this.pnlContainerB.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCurrentBorrow)).EndInit();

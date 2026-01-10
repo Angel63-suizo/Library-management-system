@@ -16,6 +16,7 @@ namespace LIBRARY.ADashboard
         public A_dashboard()
         {
             InitializeComponent();
+            SetupCharts();
         }
 
         private void A_dashboard_Load(object sender, EventArgs e)
@@ -96,6 +97,32 @@ namespace LIBRARY.ADashboard
                 lblBooksBorrowed.Text = string.Format("{0:N0}", row["BooksBorrowed"] ?? 0);
                 lblTotalRevenue.Text = string.Format("${0:N0}", row["TotalRevenue"] ?? 0);
             }
+        }
+
+        private void SetupCharts()
+        {
+            Dashboard_Repository repo = new Dashboard_Repository();
+
+            DataTable trendsData = repo.GetMonthlyTrends();
+            chartTrends.DataSource = trendsData;
+
+            chartTrends.Series["Borrowed"].XValueMember = "Month";
+            chartTrends.Series["Borrowed"].YValueMembers = "Borrowed";
+
+            chartTrends.Series["Returned"].XValueMember = "Month";
+            chartTrends.Series["Returned"].YValueMembers = "Returned";
+
+            DataTable categoryData = repo.GetCategoryStats();
+            chartCategory.DataSource = categoryData;
+
+            chartCategory.Series[0].XValueMember = "Category";
+            chartCategory.Series[0].YValueMembers = "TotalCount";
+
+            chartCategory.Series[0]["PieLabelStyle"] = "Outside";
+            chartCategory.ChartAreas[0].BackColor = Color.Transparent;
+
+            chartTrends.DataBind();
+            chartCategory.DataBind();
         }
     }
 }
