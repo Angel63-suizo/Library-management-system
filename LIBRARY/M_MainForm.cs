@@ -25,12 +25,12 @@ namespace LIBRARY
 
         private void M_MainForm_Load(object sender, EventArgs e)
         {
-            LoadUserControl(new M_browse_catalog());
+           // LoadUserControl(new M_browse_catalog());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_Profile());
+          //  LoadUserControl(new M_Profile());
 
         }
 
@@ -49,7 +49,7 @@ namespace LIBRARY
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_browse_catalog());
+            //LoadUserControl(new M_browse_catalog());
 
         }
 
@@ -68,17 +68,17 @@ namespace LIBRARY
 
         private void btnMyBooks_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_my_books());
+           // LoadUserControl(new M_my_books());
         }
 
         private void btnBorrowingHistory_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_borrowing_history());
+           // LoadUserControl(new M_borrowing_history());
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_my_account());
+           // LoadUserControl(new M_my_account());
         }
     }
 }

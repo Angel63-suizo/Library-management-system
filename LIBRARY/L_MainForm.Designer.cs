@@ -51,7 +51,6 @@
             // pnlSidebar1
             // 
             this.pnlSidebar1.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
-            this.pnlSidebar1.AutoScroll = true;
             this.pnlSidebar1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.pnlSidebar1.BackColor = System.Drawing.Color.LightSlateGray;
             this.pnlSidebar1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -67,9 +66,9 @@
             this.pnlSidebar1.Location = new System.Drawing.Point(0, 0);
             this.pnlSidebar1.Margin = new System.Windows.Forms.Padding(0);
             this.pnlSidebar1.Name = "pnlSidebar1";
-            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 41);
+            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 39, 0, 50);
             this.pnlSidebar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlSidebar1.Size = new System.Drawing.Size(203, 609);
+            this.pnlSidebar1.Size = new System.Drawing.Size(307, 1055);
             this.pnlSidebar1.TabIndex = 25;
             this.pnlSidebar1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSidebar1_Paint);
             // 
@@ -78,18 +77,17 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(96, 19);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(128, 23);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.Size = new System.Drawing.Size(82, 26);
             this.label3.TabIndex = 36;
             this.label3.Text = "Library";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(8, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(11, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -102,10 +100,10 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(0, 67);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 82);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 71);
+            this.panel3.Size = new System.Drawing.Size(306, 87);
             this.panel3.TabIndex = 34;
             // 
             // label4
@@ -113,18 +111,17 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(53, 37);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(71, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 16);
+            this.label4.Size = new System.Drawing.Size(39, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Staff";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(16, 21);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 26);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -136,25 +133,25 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(53, 21);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(71, 26);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 16);
+            this.label5.Size = new System.Drawing.Size(102, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "Library Staff";
             // 
             // btnLogout
             // 
-            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnLogout.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnLogout.BackColor = System.Drawing.Color.SlateGray;
             this.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(8, 597);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 24);
+            this.btnLogout.Location = new System.Drawing.Point(11, 887);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 30);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(182, 57);
+            this.btnLogout.Size = new System.Drawing.Size(276, 70);
             this.btnLogout.TabIndex = 15;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -165,16 +162,17 @@
             this.btnCirculations.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnCirculations.BackColor = System.Drawing.Color.SlateGray;
             this.btnCirculations.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCirculations.FlatAppearance.BorderSize = 0;
             this.btnCirculations.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCirculations.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCirculations.ForeColor = System.Drawing.Color.White;
             this.btnCirculations.Image = ((System.Drawing.Image)(resources.GetObject("btnCirculations.Image")));
             this.btnCirculations.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCirculations.Location = new System.Drawing.Point(10, 124);
-            this.btnCirculations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnCirculations.Location = new System.Drawing.Point(11, 250);
+            this.btnCirculations.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnCirculations.Name = "btnCirculations";
-            this.btnCirculations.Padding = new System.Windows.Forms.Padding(0, 0, 11, 0);
-            this.btnCirculations.Size = new System.Drawing.Size(182, 61);
+            this.btnCirculations.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btnCirculations.Size = new System.Drawing.Size(274, 75);
             this.btnCirculations.TabIndex = 3;
             this.btnCirculations.Text = "   Circulation";
             this.btnCirculations.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -186,15 +184,16 @@
             this.btnMemberLookup.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnMemberLookup.BackColor = System.Drawing.Color.SlateGray;
             this.btnMemberLookup.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMemberLookup.FlatAppearance.BorderSize = 0;
             this.btnMemberLookup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMemberLookup.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMemberLookup.ForeColor = System.Drawing.Color.White;
             this.btnMemberLookup.Image = ((System.Drawing.Image)(resources.GetObject("btnMemberLookup.Image")));
             this.btnMemberLookup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMemberLookup.Location = new System.Drawing.Point(10, 203);
-            this.btnMemberLookup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnMemberLookup.Location = new System.Drawing.Point(11, 347);
+            this.btnMemberLookup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnMemberLookup.Name = "btnMemberLookup";
-            this.btnMemberLookup.Size = new System.Drawing.Size(182, 63);
+            this.btnMemberLookup.Size = new System.Drawing.Size(274, 78);
             this.btnMemberLookup.TabIndex = 0;
             this.btnMemberLookup.Text = "   Member Lookup";
             this.btnMemberLookup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -206,15 +205,16 @@
             this.btnReports.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnReports.BackColor = System.Drawing.Color.SlateGray;
             this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnReports.FlatAppearance.BorderSize = 0;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReports.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReports.ForeColor = System.Drawing.Color.White;
             this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
             this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(10, 368);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnReports.Location = new System.Drawing.Point(11, 550);
+            this.btnReports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(182, 65);
+            this.btnReports.Size = new System.Drawing.Size(274, 80);
             this.btnReports.TabIndex = 1;
             this.btnReports.Text = "   Reports";
             this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -226,15 +226,16 @@
             this.btnBookSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnBookSearch.BackColor = System.Drawing.Color.SlateGray;
             this.btnBookSearch.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBookSearch.FlatAppearance.BorderSize = 0;
             this.btnBookSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBookSearch.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookSearch.ForeColor = System.Drawing.Color.White;
             this.btnBookSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnBookSearch.Image")));
             this.btnBookSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBookSearch.Location = new System.Drawing.Point(10, 284);
-            this.btnBookSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnBookSearch.Location = new System.Drawing.Point(11, 447);
+            this.btnBookSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnBookSearch.Name = "btnBookSearch";
-            this.btnBookSearch.Size = new System.Drawing.Size(182, 66);
+            this.btnBookSearch.Size = new System.Drawing.Size(276, 81);
             this.btnBookSearch.TabIndex = 2;
             this.btnBookSearch.Text = "   Book Search";
             this.btnBookSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -245,21 +246,21 @@
             // 
             this.pnlContent.BackColor = System.Drawing.Color.Black;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(203, 0);
-            this.pnlContent.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlContent.Location = new System.Drawing.Point(307, 0);
+            this.pnlContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(825, 609);
+            this.pnlContent.Size = new System.Drawing.Size(1617, 1055);
             this.pnlContent.TabIndex = 27;
             // 
             // L_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSidebar1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "L_MainForm";
             this.Text = "L_MainForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

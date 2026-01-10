@@ -1,6 +1,7 @@
 ﻿using LIBRARY.Class;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace LIBRARY.Models
         private DateTime expirationdate;
         private string status;
 
+
         public int MemberId { get => memberId; set => memberId = value; }
         public string Cardnumber { get => cardnumber; set => cardnumber = value; }
         public string Address { get => address; set => address = value; }
@@ -28,5 +30,6 @@ namespace LIBRARY.Models
         public DateTime Registrationdate { get => registrationdate; set => registrationdate = value; }
         public DateTime Expirationdate { get => expirationdate; set => expirationdate = value; }
         public string Status { get => status; set => status = value; }
+        public DataRow Row { get; }
     }
 }
