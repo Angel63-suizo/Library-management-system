@@ -344,6 +344,13 @@
     <Compile Include="MDashboard\M-my_books.Designer.cs">
       <DependentUpon>M-my_books.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDashboard\MyBooks_Repository.cs" />
+    <Compile Include="MDashboard\ucBorrowedBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\ucBorrowedBook.Designer.cs">
+      <DependentUpon>ucBorrowedBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
     <Compile Include="Models\BorrowingTransaction.cs" />
@@ -516,6 +523,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\PhotoCropperForm.resx">
       <DependentUpon>PhotoCropperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\ucBorrowedBook.resx">
+      <DependentUpon>ucBorrowedBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="M_MainForm.resx">
       <DependentUpon>M_MainForm.cs</DependentUpon>

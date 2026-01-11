@@ -15,18 +15,7 @@ namespace LIBRARY.MDashboard
     public partial class M_my_books : UserControl
     {
         private MemberType LoggedInMember;
-        private List<BorrowedBook> borrowedBooks = new List<BorrowedBook>();
-
-        class BorrowedBook
-        {
-            public string Title { get; set; }
-            public string Author { get; set; }
-            public string BookCode { get; set; }
-            public DateTime BorrowDate { get; set; }
-            public DateTime DueDate { get; set; }
-            public decimal FinePerDay { get; set; }
-        }
-         
+  
         public M_my_books(MemberType member)
         {
             InitializeComponent();
@@ -35,18 +24,11 @@ namespace LIBRARY.MDashboard
             panel1.Paint += DrawCustomBorder;
             panel2.Paint += DrawCustomBorder;
             panel3.Paint += DrawCustomBorder;
-            flowLayoutPanel1.Paint += DrawCustomBorder;
-
             panel5.Paint += (s, e) => {
                 
                 DrawCustomBorder(s, e);
             };
         }
-        private void M_Profile_Load(object sender, EventArgs e)
-        {
-            LoadBorrowedBooks();
-        }
-
 
         private void DrawCustomBorder(object sender, PaintEventArgs e)
         {
@@ -79,95 +61,47 @@ namespace LIBRARY.MDashboard
         }
         private void LoadBorrowedBooks()
         {
-            borrowedBooks.Clear();
-
-            borrowedBooks.Add(new BorrowedBook
+            try
             {
-                Title = "Introduction to Algorithms",
-                Author = "Thomas H. Cormen",
-                BookCode = "B001-003",
-                BorrowDate = DateTime.Now.AddDays(-20),
-                DueDate = DateTime.Now.AddDays(-5),
-                FinePerDay = 1.00m
-            });
+                flpBorrowedBooks.SuspendLayout();
+                flpBorrowedBooks.Controls.Clear();
 
-            borrowedBooks.Add(new BorrowedBook
-            {
-                Title = "Clean Code",
-                Author = "Robert C. Martin",
-                BookCode = "B002-005",
-                BorrowDate = DateTime.Now.AddDays(-10),
-                DueDate = DateTime.Now.AddDays(3),
-                FinePerDay = 1.00m
-            });
+                MyBooks_Repository repo = new MyBooks_Repository();
+                DataTable dt = repo.GetMemberBorrowedBooks(LoggedInMember.MemberId);
 
-            borrowedBooks.Add(new BorrowedBook
-            {
-                Title = "Effective Java",
-                Author = "Joshua Bloch",
-                BookCode = "B003-001",
-                BorrowDate = DateTime.Now.AddDays(-5),
-                DueDate = DateTime.Now.AddDays(10),
-                FinePerDay = 1.00m
-            });
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    int totalBorrowed = dt.Rows.Count;
 
-            UpdateSummary();
-        }
-        private string GetStatus(BorrowedBook book)
-        {
-            if (DateTime.Now > book.DueDate)
-                return "Overdue";
+                    int dueSoonCount = dt.AsEnumerable()
+                        .Count(r => r.Field<string>("CopyStatus") == "Due Soon");
 
-            if ((book.DueDate - DateTime.Now).Days <= 3)
-                return "Due Soon";
+                    decimal totalFines = dt.AsEnumerable()
+                        .Sum(r => r.Field<decimal>("Fine"));
 
-            return "On Time";
-        }
+                    lblBooksBorrowed.Text = totalBorrowed.ToString();
+                    lblDue.Text = dueSoonCount.ToString();
+                    lblTotalFines.Text = $"${totalFines:N2}";
 
-        private decimal GetFine(BorrowedBook book)
-        {
-            if (DateTime.Now <= book.DueDate)
-                return 0;
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        ucBorrowedBook bookRow = new ucBorrowedBook();
+                        bookRow.SetData(row);
+                        bookRow.Height = 100;
+                        bookRow.Width = Math.Max(flpBorrowedBooks.Width - 25, 200);
 
-            int overdueDays = (DateTime.Now - book.DueDate).Days;
-            return overdueDays * book.FinePerDay;
-        }
-        private void UpdateSummary()
-        {
-            int totalBooks = borrowedBooks.Count;
-            int dueSoon = borrowedBooks.Count(b => GetStatus(b) == "Due Soon");
-            decimal totalFine = borrowedBooks.Sum(b => GetFine(b));
-
-            label9.Text = totalBooks.ToString();       
-            label10.Text = dueSoon.ToString();          
-            label11.Text = $"${totalFine:0.00}";        
-
-            panel5.Visible = totalFine > 0;            
-        }
-
-        private void RenewBook(object sender, EventArgs e)
-        {
-            Button btn = sender as Button;
-
-            var book = borrowedBooks.FirstOrDefault(b => GetStatus(b) != "On Time");
-
-            if (book == null)
-            {
-                MessageBox.Show("No book available for renewal.",
-                    "Renew", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+                        flpBorrowedBooks.Controls.Add(bookRow);
+                    }
+                }
             }
-
-            book.DueDate = book.DueDate.AddDays(7);
-
-            MessageBox.Show(
-                $"'{book.Title}' has been renewed.\nNew Due Date: {book.DueDate:yyyy-MM-dd}",
-                "Renew Successful",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information
-            );
-
-            UpdateSummary();
+            finally
+            {
+                flpBorrowedBooks.ResumeLayout(true);
+            }
+        }
+        private void M_my_books_Load(object sender, EventArgs e)
+        {
+            LoadBorrowedBooks();
         }
     }
 }
