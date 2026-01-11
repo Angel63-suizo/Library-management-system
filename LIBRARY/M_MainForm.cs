@@ -16,8 +16,8 @@ namespace LIBRARY
 {
     public partial class M_MainForm : Form
     {
-        private Models.Member LoggedInMember;
-        public M_MainForm(Models.Member member)
+        private MemberType LoggedInMember;
+        public M_MainForm(MemberType member)
         {
             InitializeComponent();
             LoggedInMember = member;
@@ -25,12 +25,11 @@ namespace LIBRARY
 
         private void M_MainForm_Load(object sender, EventArgs e)
         {
-           // LoadUserControl(new M_browse_catalog());
+            LoadUserControl(new M_browse_catalog(LoggedInMember));
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-          //  LoadUserControl(new M_Profile());
 
         }
 
@@ -49,7 +48,7 @@ namespace LIBRARY
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_browse_catalog());
+            LoadUserControl(new M_browse_catalog(LoggedInMember));
 
         }
 
@@ -68,7 +67,7 @@ namespace LIBRARY
 
         private void btnMyBooks_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_my_books());
+            LoadUserControl(new M_my_books(LoggedInMember));
         }
 
         private void btnBorrowingHistory_Click(object sender, EventArgs e)

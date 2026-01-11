@@ -18,11 +18,15 @@ namespace LIBRARY.Login
 {
     public partial class Login : Form
     {
-        private string selectedRole = "Member";
+        private string _selectedRole = "Member";
         public Login()
         {
             InitializeComponent();
             txtPassword.PasswordChar = '*';
+            SetRole("Member");
+            btnMember.BackColor = Color.SteelBlue;
+            btnMember.ForeColor = Color.White;
+
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -35,60 +39,65 @@ namespace LIBRARY.Login
             string username = txtUsername.Text.Trim();
             string password = txtPassword.Text.Trim();
 
+            if (!ValidateInputs(username, password)) return;
 
-            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            if (_selectedRole == "Admin")
+            {
+                HandleAdminLogin(username, password);
+            }
+            else
+            {
+                HandleUserLogin(username, password);
+            }
+        }
+
+        private bool ValidateInputs(string user, string pass)
+        {
+            if (string.IsNullOrEmpty(user) || string.IsNullOrEmpty(pass))
             {
                 MessageBox.Show("Please enter all credentials.");
-                return;
+                return false;
             }
-            else if (selectedRole == null)
+            return true;
+        }
+
+        private void HandleAdminLogin(string user, string pass)
+        {
+            string adminUser = ConfigurationManager.AppSettings["AdminUser"];
+            string adminPass = ConfigurationManager.AppSettings["AdminPass"];
+
+            if (user == adminUser && pass == adminPass)
             {
-                MessageBox.Show("Please chosse your Role.");
-            }
-
-
-            if (selectedRole == "Admin")
-            {
-                string adminUser = ConfigurationManager.AppSettings["AdminUser"];
-                string adminPass = ConfigurationManager.AppSettings["AdminPass"];
-
-                if (username == adminUser && password == adminPass)
-                {
-                    Admin loggedInAdmin = new Admin()
-                    {
-                        Username = adminUser,
-                        Password = adminPass,
-                        Role = "Admin"
-                    };
-
-                    A_MainForm mainform = new A_MainForm(loggedInAdmin);
-                    mainform.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Invalid Admin Credentials.");
-                }
-            }
-            else if (selectedRole == "Member")
-            {
-                var User = Login_Repository.Login(username, password, selectedRole);
-
-                M_MainForm memberform = new M_MainForm((Models.Member)User);
-                memberform.Show();
-                this.Hide();
-            }
-            else if (selectedRole == "Librarian")
-            {
-                var User = Login_Repository.Login(username, password, selectedRole);
-
-                L_MainForm libraryform = new L_MainForm((libraryStaff)User);
-                libraryform.Show();
+                Admin loggedInAdmin = new Admin { Username = adminUser, Role = "Admin" };
+                new A_MainForm(loggedInAdmin).Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Error: Unauthorized role or role not defined.");
+                MessageBox.Show("Invalid Admin Credentials.");
+            }
+        }
+
+        private void HandleUserLogin(string user, string pass)
+        {
+            
+            var loggedInUser = Login_Repository.Login(user, pass, _selectedRole);
+
+            if (loggedInUser == null)
+            {
+                MessageBox.Show("Invalid Username or Password.");
+                return;
+            }
+
+            if (_selectedRole == "Member" && loggedInUser is MemberType member)
+            {
+                new M_MainForm(member).Show();
+                this.Hide();
+            }
+            else if (_selectedRole == "Librarian" && loggedInUser is libraryStaff staff)
+            {
+                new L_MainForm(staff).Show();
+                this.Hide();
             }
         }
 
@@ -130,13 +139,6 @@ namespace LIBRARY.Login
 
         }
 
-        private void btnStaff_Click(object sender, EventArgs e)
-        {
-            selectedRole = "Librarian";
-            btnStaff.BackColor = Color.SteelBlue;
-            btnStaff.ForeColor = Color.White;
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -149,23 +151,43 @@ namespace LIBRARY.Login
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+           
+        }
 
+
+        private void SetRole(string role)
+        {
+            _selectedRole = role;
+
+            btnMember.BackColor = Color.White;
+            btnMember.ForeColor = Color.Black;
+            btnStaff.BackColor = Color.White;
+            btnStaff.ForeColor = Color.Black;
+            btnAdmin.BackColor = Color.White;
+            btnAdmin.ForeColor = Color.Black;
         }
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-            selectedRole = "Admin";
+            SetRole("Admin");
             btnAdmin.BackColor = Color.SteelBlue;
             btnAdmin.ForeColor = Color.White;
+
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            SetRole("Librarian");
+            btnStaff.BackColor = Color.SteelBlue;
+            btnStaff.ForeColor = Color.White;
         }
 
         private void btnMember_Click(object sender, EventArgs e)
         {
-            selectedRole = "Member";
+            SetRole("Member");
             btnMember.BackColor = Color.SteelBlue;
             btnMember.ForeColor = Color.White;
         }
-
     }
     
 }

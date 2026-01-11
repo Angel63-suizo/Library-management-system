@@ -1,5 +1,9 @@
-﻿using System;
+﻿using LIBRARY.ADashboard;
+using LIBRARY.Class;
+using LIBRARY.Models;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -9,107 +13,82 @@ namespace LIBRARY.MDashboard
 {
     public partial class M_browse_catalog : UserControl
     {
+        private MemberType LoggedInMember;
+        private Catalog_Repository catalogRepo = new Catalog_Repository();
         private bool isSearchFocused = false;
         private bool isPanel20Hovered = false;
 
-        private List<BookItem> books = new List<BookItem>();
-        private List<string> originalItems = new List<string>();
-        private bool isComboFocused = false;
 
-
-        public M_browse_catalog()
+        public M_browse_catalog(MemberType member)
         {
             InitializeComponent();
-            LoadBooks();
-
-            foreach (var item in cmbSearch.Items)
-                originalItems.Add(item.ToString());
+            LoggedInMember = member;
 
             txtSearch.TextChanged += TxtSearch_TextChanged;
-            cmbSearch.SelectedIndexChanged += FilterBooks;
-            cmbSearch.TextChanged += cmbSearch_TextChanged;
+            cmbSearch.SelectedIndexChanged += (s, e) => LoadCatalog(); // Added this
 
-            txtSearch.Enter += (s, e) =>
-            {
-                isSearchFocused = true;
-                panel20.Invalidate();
-            };
-
-            txtSearch.Leave += (s, e) =>
-            {
-                isSearchFocused = false;
-                panel20.Invalidate();
-            };
-
-            cmbSearch.Enter += (s, e) =>
-            {
-                isSearchFocused = true;
-                isComboFocused = true;
-                panel20.Invalidate();
-            };
-
-            cmbSearch.Leave += (s, e) =>
-            {
-                isSearchFocused = false;
-                isComboFocused = false;
-                panel20.Invalidate();
-            };
-
+            txtSearch.Enter += (s, e) => { isSearchFocused = true; panel20.Invalidate(); };
+            txtSearch.Leave += (s, e) => { isSearchFocused = false; panel20.Invalidate(); };
             panel20.Paint += DrawCustomBorder;
+
+            PopulateCategories();
+            LoadCatalog();
         }
 
-        private class BookItem
+        private void PopulateCategories()
         {
-            public Panel Container;
-            public string Title;
-            public string Author;
-            public string Category;
-        }
-
-        private void LoadBooks()
-        {
-            books.Add(new BookItem { Container = BookDetailsControl, Title = label3.Text, Author = label5.Text, Category = label4.Text });
-            books.Add(new BookItem { Container = panel3, Title = label14.Text, Author = label13.Text, Category = label11.Text });
-            books.Add(new BookItem { Container = panel4, Title = label20.Text, Author = label19.Text, Category = label6.Text });
-            books.Add(new BookItem { Container = panel6, Title = label32.Text, Author = label31.Text, Category = label12.Text });
-            books.Add(new BookItem { Container = panel5, Title = label26.Text, Author = label25.Text, Category = label23.Text });
-            books.Add(new BookItem { Container = panel7, Title = label38.Text, Author = label37.Text, Category = label35.Text });
-
-           
-            foreach (var book in books)
-                book.Container.Tag = $"{book.Title} {book.Author}".ToLower();
-        }
-
-        private void FilterBooks(object sender, EventArgs e)
-        {
-            string search = txtSearch.Text.ToLower();
-            string category = cmbSearch.Text;
-
-            foreach (var book in books)
+            try
             {
-                bool matchesSearch = book.Title.ToLower().StartsWith(search);
-                bool matchesCategory = category == "All Categories" || book.Category.Equals(category, StringComparison.OrdinalIgnoreCase);
+                A_AddResource_Repository repo = new A_AddResource_Repository();
+                DataTable types = repo.GetCategories();
 
-                book.Container.Visible = matchesSearch && matchesCategory;
+                cmbSearch.Items.Clear();
+                cmbSearch.Items.Add("All Categories");
+
+                if (types != null && types.Rows.Count > 0)
+                {
+                    foreach (DataRow row in types.Rows)
+                    {
+                        cmbSearch.Items.Add(row["Name"].ToString());
+                    }
+                }
+                cmbSearch.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error populating Categories: " + ex.Message);
             }
 
-            ArrangeBooks();
         }
 
-        private void TxtSearch_TextChanged(object sender, EventArgs e)
-        {
-            FilterBooks(sender, e);
-        }
-
-        private void ArrangeBooks()
+        private void LoadCatalog()
         {
             flowLayoutPanelBooks.SuspendLayout();
             flowLayoutPanelBooks.Controls.Clear();
 
-            foreach (var book in books.Where(b => b.Container.Visible))
-                flowLayoutPanelBooks.Controls.Add(book.Container);
+            List<Resource> catalogItems = catalogRepo.GetCatalogItems(txtSearch.Text, cmbSearch.Text);
+
+            foreach (Resource book in catalogItems)
+            {
+                BookCardControl card = new BookCardControl();
+
+                card.PopulateData(book, book.AvailableCopies, book.TotalCopies);
+
+                card.Click += (s, e) => {
+                    frmBookDetails details = new frmBookDetails(LoggedInMember, book);
+                    details.ShowDialog();
+
+                };
+
+                flowLayoutPanelBooks.Controls.Add(card);
+            }
 
             flowLayoutPanelBooks.ResumeLayout();
+        }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+            LoadCatalog();
         }
 
         private void DrawCustomBorder(object sender, PaintEventArgs e)
@@ -172,28 +151,11 @@ namespace LIBRARY.MDashboard
         }
         private void cmbSearch_TextChanged(object sender, EventArgs e)
         {
-            if(!cmbSearch.Focused) return;
-
-            string text = cmbSearch.Text.ToLower();
-
-            cmbSearch.BeginUpdate();
-            cmbSearch.Items.Clear();
-
-            foreach (string item in originalItems)
-            {
-                if (item.ToLower().StartsWith(text))
-                    cmbSearch.Items.Add(item);
-            }
-
-            cmbSearch.EndUpdate();
-
-            cmbSearch.SelectionStart = cmbSearch.Text.Length;
-            cmbSearch.DroppedDown = cmbSearch.Items.Count > 0;
+            LoadCatalog();
         }
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_Profile());
         }
 
         private void LoadUserControl(UserControl mem)
@@ -202,6 +164,11 @@ namespace LIBRARY.MDashboard
             mem.Dock = DockStyle.Fill;       
             pnlContent.Controls.Add(mem);  
             mem.BringToFront();
+        }
+
+        private void pnlContent_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

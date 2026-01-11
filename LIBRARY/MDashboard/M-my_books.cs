@@ -1,18 +1,20 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Drawing2D;
 
 namespace LIBRARY.MDashboard
 {
     public partial class M_my_books : UserControl
     {
+        private MemberType LoggedInMember;
         private List<BorrowedBook> borrowedBooks = new List<BorrowedBook>();
 
         class BorrowedBook
@@ -24,10 +26,11 @@ namespace LIBRARY.MDashboard
             public DateTime DueDate { get; set; }
             public decimal FinePerDay { get; set; }
         }
-
-        public M_my_books()
+         
+        public M_my_books(MemberType member)
         {
             InitializeComponent();
+            LoggedInMember = member;
 
             panel1.Paint += DrawCustomBorder;
             panel2.Paint += DrawCustomBorder;
