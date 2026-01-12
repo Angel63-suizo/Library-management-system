@@ -25,7 +25,7 @@ namespace LIBRARY.MDashboard
             LoadSampleData();
             UpdateSummaryStatistics();
             txtSearch.TextChanged += (s, e) => ApplyFilters();
-            cmbSearch.SelectedIndexChanged += (s, e) => ApplyFilters();
+            cmbStatus.SelectedIndexChanged += (s, e) => ApplyFilters();
             txtSearch.Enter += (s, e) =>
             {
                 isSearchFocused = true;
@@ -38,14 +38,14 @@ namespace LIBRARY.MDashboard
                 panel7.Invalidate();
             };
 
-            cmbSearch.Enter += (s, e) =>
+            cmbStatus.Enter += (s, e) =>
             {
                 isSearchFocused = true;
                 isComboFocused = true;
                 panel7.Invalidate();
             };
 
-            cmbSearch.Leave += (s, e) =>
+            cmbStatus.Leave += (s, e) =>
             {
                 isSearchFocused = false;
                 isComboFocused = false;
@@ -107,7 +107,7 @@ namespace LIBRARY.MDashboard
             if (borrowingData == null) return;
 
             string searchText = txtSearch.Text.Trim().Replace("'", "''");
-            string selectedStatus = cmbSearch.SelectedItem?.ToString() ?? "All Status";
+            string selectedStatus = cmbStatus.SelectedItem?.ToString() ?? "All Status";
 
             // Search by Title OR Author
             string searchFilter = $"(Title LIKE '%{searchText}%' OR Author LIKE '%{searchText}%')";
@@ -160,17 +160,17 @@ namespace LIBRARY.MDashboard
             if (borrowingData == null) return;
 
             // 1. Total Borrowed (Total rows in the table)
-            label9.Text = borrowingData.Rows.Count.ToString();
+            lblTotalBorrowed.Text = borrowingData.Rows.Count.ToString();
 
             // 2. Currently Borrowed Count
             int currentlyBorrowed = borrowingData.AsEnumerable()
                 .Count(row => row.Field<string>("Status") == "Currently Borrowed");
-            label8.Text = currentlyBorrowed.ToString();
+            lblCurrentlyBorrowed.Text = currentlyBorrowed.ToString();
 
             // 3. Returned Count (Includes "Returned" and "Overdue Return")
             int returned = borrowingData.AsEnumerable()
                 .Count(row => row.Field<string>("Status").Contains("Returned"));
-            label10.Text = returned.ToString();
+            lblReturned.Text = returned.ToString();
 
             // 4. Total Fines Paid
             decimal totalFines = borrowingData.AsEnumerable()
@@ -178,7 +178,7 @@ namespace LIBRARY.MDashboard
                     decimal fine;
                     return decimal.TryParse(row.Field<string>("Fine"), out fine) ? fine : 0;
                 });
-            label11.Text = $"${totalFines:N2}";
+            lblFinesPaid.Text = $"${totalFines:N2}";
 
             // 5. Update the "Showing X of X records" label (label7)
             label7.Text = $"Showing {dgvHistory.Rows.Count} of {borrowingData.Rows.Count} records";

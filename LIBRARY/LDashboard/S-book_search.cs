@@ -24,9 +24,9 @@ namespace LIBRARY.LDashboard
         {
             ExecuteBookSearch();
 
-            string searchQuery = txtSearch.Text.Trim();
+           string bookId = txtSearch.Text.Trim();
 
-            if (string.IsNullOrEmpty(searchQuery))
+            if (string.IsNullOrEmpty(bookId))
             {
                 MessageBox.Show("Enter a Book ID, title, or ISBN");
                 return;
@@ -130,12 +130,24 @@ namespace LIBRARY.LDashboard
                         : "N/A";
                     AddCardContent(card, accession, status, borrower, dueDate, Color.Goldenrod);
                 }
+                else if (status == "Reserved")
+                {
+                    card.BackColor = Color.FromArgb(235, 245, 255); 
+                                                                    
+                    string reserver = row["ReservedBy"]?.ToString() ?? "Pending Pickup";
+                    string expiry = row["ExpiryDate"] != DBNull.Value
+                        ? Convert.ToDateTime(row["ExpiryDate"]).ToString("yyyy-MM-dd")
+                        : "N/A";
+
+                    AddCardContent(card, accession, status, $"Reserved by: {reserver}", $"Expires: {expiry}", Color.RoyalBlue);
+                }
+
 
                 flpCopyStatus.Controls.Add(card);
             }
         }
 
-        private void AddCardContent(Panel p, string acc, string stat, string borrower, string due, Color accentColor)
+        private void AddCardContent(Panel p, string acc, string stat, string infoHeader, string infoDate, Color accentColor)
         {
             Label lblAcc = new Label { Text = acc, Font = new Font("Segoe UI", 10, FontStyle.Bold), Location = new Point(45, 15), AutoSize = true };
 
@@ -147,11 +159,11 @@ namespace LIBRARY.LDashboard
             p.Controls.Add(lblStat);
             p.Controls.Add(line);
 
-            if (!string.IsNullOrEmpty(borrower))
+            if (!string.IsNullOrEmpty(infoHeader))
             {
                 Label lblInfo = new Label
                 {
-                    Text = $"Borrowed by: {borrower}\nDue: {due}",
+                    Text = $"{infoHeader}\n{infoDate}",
                     Font = new Font("Segoe UI", 8),
                     Location = new Point(15, 70),
                     Size = new Size(200, 40),
@@ -160,15 +172,25 @@ namespace LIBRARY.LDashboard
                 p.Controls.Add(lblInfo);
             }
 
+            // UPDATED ICON LOGIC
+            string iconText = "✔️"; // Default Available
+            if (stat == "Borrowed") iconText = "⚠️";
+            else if (stat == "Reserved") iconText = "🔖"; // Bookmark icon for Reserved
+
             Label icon = new Label
             {
-                Text = stat == "Available" ? "✔️" : "⚠️",
+                Text = iconText,
                 Location = new Point(15, 15),
                 AutoSize = true,
                 ForeColor = accentColor,
                 Font = new Font("Segoe UI", 12)
             };
             p.Controls.Add(icon);
+        }
+
+        private void pnlBookSearch_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

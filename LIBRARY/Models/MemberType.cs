@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LIBRARY.Class
 {
-    internal class MemberType : Models.Member
+    public class MemberType : Models.Member
     {
         private int memberTypeId;
         private string typeName; 

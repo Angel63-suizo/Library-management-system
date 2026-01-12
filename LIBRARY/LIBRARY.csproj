@@ -301,6 +301,25 @@
       <DependentUpon>S-reports.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login_Repository.cs" />
+    <Compile Include="MDashboard\BookCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\BookCardControl.Designer.cs">
+      <DependentUpon>BookCardControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\Catalog_Repository.cs" />
+    <Compile Include="MDashboard\frmBookDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDashboard\frmBookDetails.Designer.cs">
+      <DependentUpon>frmBookDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\frmConfirmReservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDashboard\frmConfirmReservation.Designer.cs">
+      <DependentUpon>frmConfirmReservation.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDashboard\M-borrowing_history.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -325,6 +344,13 @@
     <Compile Include="MDashboard\M-my_books.Designer.cs">
       <DependentUpon>M-my_books.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDashboard\MyBooks_Repository.cs" />
+    <Compile Include="MDashboard\ucBorrowedBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\ucBorrowedBook.Designer.cs">
+      <DependentUpon>ucBorrowedBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
     <Compile Include="Models\BorrowingTransaction.cs" />
@@ -346,12 +372,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MDashboard\M_Profile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MDashboard\M_Profile.Designer.cs">
-      <DependentUpon>M_Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="MDashboard\PhotoCropperForm.cs">
       <SubType>Form</SubType>
@@ -376,12 +396,6 @@
     </Compile>
     <Compile Include="L_MainForm.Designer.cs">
       <DependentUpon>L_MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MDashboard\M_dashboard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="MDashboard\M_dashboard.Designer.cs">
-      <DependentUpon>M_dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -486,6 +500,15 @@
     <EmbeddedResource Include="L_MainForm.resx">
       <DependentUpon>L_MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\BookCardControl.resx">
+      <DependentUpon>BookCardControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\frmBookDetails.resx">
+      <DependentUpon>frmBookDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\frmConfirmReservation.resx">
+      <DependentUpon>frmConfirmReservation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\M-borrowing_history.resx">
       <DependentUpon>M-borrowing_history.cs</DependentUpon>
     </EmbeddedResource>
@@ -498,14 +521,11 @@
     <EmbeddedResource Include="MDashboard\M-my_books.resx">
       <DependentUpon>M-my_books.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDashboard\M_dashboard.resx">
-      <DependentUpon>M_dashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MDashboard\M_Profile.resx">
-      <DependentUpon>M_Profile.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\PhotoCropperForm.resx">
       <DependentUpon>PhotoCropperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\ucBorrowedBook.resx">
+      <DependentUpon>ucBorrowedBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="M_MainForm.resx">
       <DependentUpon>M_MainForm.cs</DependentUpon>

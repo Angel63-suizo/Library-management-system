@@ -64,11 +64,11 @@
             this.pnlSidebar1.Controls.Add(this.btnMyBooks);
             this.pnlSidebar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar1.Location = new System.Drawing.Point(0, 0);
-            this.pnlSidebar1.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlSidebar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlSidebar1.Name = "pnlSidebar1";
-            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 41);
+            this.pnlSidebar1.Padding = new System.Windows.Forms.Padding(0, 39, 0, 50);
             this.pnlSidebar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnlSidebar1.Size = new System.Drawing.Size(203, 609);
+            this.pnlSidebar1.Size = new System.Drawing.Size(270, 1055);
             this.pnlSidebar1.TabIndex = 22;
             // 
             // panel3
@@ -77,10 +77,10 @@
             this.panel3.Controls.Add(this.label4);
             this.panel3.Controls.Add(this.pictureBox3);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Location = new System.Drawing.Point(0, 62);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(0, 76);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 71);
+            this.panel3.Size = new System.Drawing.Size(271, 87);
             this.panel3.TabIndex = 38;
             // 
             // label4
@@ -88,18 +88,17 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(53, 37);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(71, 46);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 16);
+            this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 2;
             this.label4.Text = "Member";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(16, 21);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(21, 26);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -111,10 +110,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Fluent Icons", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(53, 21);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(71, 26);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 16);
+            this.label5.Size = new System.Drawing.Size(128, 20);
             this.label5.TabIndex = 1;
             this.label5.Text = "Library Member";
             // 
@@ -123,18 +121,17 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(97, 22);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(129, 27);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 22);
+            this.label3.Size = new System.Drawing.Size(82, 26);
             this.label3.TabIndex = 37;
             this.label3.Text = "Library";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(10, -1);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(13, -1);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 64);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -149,10 +146,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(8, 573);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 24);
+            this.btnLogout.Location = new System.Drawing.Point(11, 858);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 30);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(182, 57);
+            this.btnLogout.Size = new System.Drawing.Size(243, 70);
             this.btnLogout.TabIndex = 15;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -168,11 +165,11 @@
             this.btnBrowseCatalog.ForeColor = System.Drawing.Color.White;
             this.btnBrowseCatalog.Image = ((System.Drawing.Image)(resources.GetObject("btnBrowseCatalog.Image")));
             this.btnBrowseCatalog.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrowseCatalog.Location = new System.Drawing.Point(10, 125);
-            this.btnBrowseCatalog.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnBrowseCatalog.Location = new System.Drawing.Point(13, 307);
+            this.btnBrowseCatalog.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnBrowseCatalog.Name = "btnBrowseCatalog";
-            this.btnBrowseCatalog.Padding = new System.Windows.Forms.Padding(0, 0, 11, 0);
-            this.btnBrowseCatalog.Size = new System.Drawing.Size(182, 61);
+            this.btnBrowseCatalog.Padding = new System.Windows.Forms.Padding(0, 0, 15, 0);
+            this.btnBrowseCatalog.Size = new System.Drawing.Size(243, 75);
             this.btnBrowseCatalog.TabIndex = 3;
             this.btnBrowseCatalog.Text = "    Browse Catalog";
             this.btnBrowseCatalog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -189,10 +186,10 @@
             this.btnMyAccount.ForeColor = System.Drawing.Color.White;
             this.btnMyAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnMyAccount.Image")));
             this.btnMyAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMyAccount.Location = new System.Drawing.Point(10, 371);
-            this.btnMyAccount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnMyAccount.Location = new System.Drawing.Point(13, 610);
+            this.btnMyAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnMyAccount.Name = "btnMyAccount";
-            this.btnMyAccount.Size = new System.Drawing.Size(182, 63);
+            this.btnMyAccount.Size = new System.Drawing.Size(243, 78);
             this.btnMyAccount.TabIndex = 0;
             this.btnMyAccount.Text = "   My Account";
             this.btnMyAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -209,10 +206,10 @@
             this.btnBorrowingHistory.ForeColor = System.Drawing.Color.White;
             this.btnBorrowingHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnBorrowingHistory.Image")));
             this.btnBorrowingHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBorrowingHistory.Location = new System.Drawing.Point(8, 288);
-            this.btnBorrowingHistory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnBorrowingHistory.Location = new System.Drawing.Point(11, 507);
+            this.btnBorrowingHistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnBorrowingHistory.Name = "btnBorrowingHistory";
-            this.btnBorrowingHistory.Size = new System.Drawing.Size(182, 65);
+            this.btnBorrowingHistory.Size = new System.Drawing.Size(243, 80);
             this.btnBorrowingHistory.TabIndex = 1;
             this.btnBorrowingHistory.Text = "   Borrowing History";
             this.btnBorrowingHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -229,10 +226,10 @@
             this.btnMyBooks.ForeColor = System.Drawing.Color.White;
             this.btnMyBooks.Image = ((System.Drawing.Image)(resources.GetObject("btnMyBooks.Image")));
             this.btnMyBooks.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMyBooks.Location = new System.Drawing.Point(10, 204);
-            this.btnMyBooks.Margin = new System.Windows.Forms.Padding(2, 2, 2, 16);
+            this.btnMyBooks.Location = new System.Drawing.Point(13, 404);
+            this.btnMyBooks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
             this.btnMyBooks.Name = "btnMyBooks";
-            this.btnMyBooks.Size = new System.Drawing.Size(182, 66);
+            this.btnMyBooks.Size = new System.Drawing.Size(243, 81);
             this.btnMyBooks.TabIndex = 2;
             this.btnMyBooks.Text = "   My Books";
             this.btnMyBooks.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -243,21 +240,21 @@
             // 
             this.pnlContent.BackColor = System.Drawing.Color.Black;
             this.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlContent.Location = new System.Drawing.Point(203, 0);
-            this.pnlContent.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlContent.Location = new System.Drawing.Point(270, 0);
+            this.pnlContent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlContent.Name = "pnlContent";
-            this.pnlContent.Size = new System.Drawing.Size(825, 609);
+            this.pnlContent.Size = new System.Drawing.Size(1654, 1055);
             this.pnlContent.TabIndex = 25;
             // 
             // M_MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.pnlContent);
             this.Controls.Add(this.pnlSidebar1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "M_MainForm";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

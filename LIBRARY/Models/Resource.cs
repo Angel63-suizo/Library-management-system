@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using System.Windows.Documents;
 
 namespace LIBRARY.Models
 {
-    internal class Resource
+    public class Resource
     {
         private int resourceid;
         private string accessionBase;
@@ -22,7 +23,7 @@ namespace LIBRARY.Models
         private int pages;
         private string resourcheType;
         private string description;
-
+        private string coverImagePath;
         public int ResourceId { get => resourceid; set => resourceid = value; }
         public string AccessionBase { get => accessionBase; set => accessionBase = value; }
         public string ISBN { get => isbn; set => isbn = value; }
@@ -36,10 +37,20 @@ namespace LIBRARY.Models
         public int Pages { get => pages; set => pages = value; }
         public string ResourceType { get => resourcheType; set => resourcheType = value; }
         public string Description { get => description; set => description = value; }
+        public string CoverImagePath { get => coverImagePath; set => coverImagePath = value; }
 
-       /* public string getDetails()
+        public string GetFullImagePath()
         {
+            string folderPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Images", "Covers");
+            return Path.Combine(folderPath, CoverImagePath ?? "default_cover.png");
+        }
 
-        }*/
+        public string GetDetails()
+        {
+            return $"{Title} by {Author} ({PublicationYear}) - ISBN: {ISBN}";
+        }
+
+        public int TotalCopies { get; set; }
+        public int AvailableCopies { get; set; }
     }
 }

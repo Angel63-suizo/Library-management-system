@@ -2,6 +2,7 @@
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -20,39 +21,51 @@ namespace LIBRARY.Login
                 return BitConverter.ToString(bytes).Replace("-", "").ToLower();
             }
         }
-        public static User Login(string username, string password, string roleName)
+        public static User Login(string user, string pass, string role)
         {
             using (var conn = Database.GetConnection())
-            using (var cmd = new MySqlCommand("sp_Login_user", conn))    
             {
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@p_username", username);
-                cmd.Parameters.AddWithValue("@p_Role", roleName);
-                cmd.Parameters.AddWithValue("@p_PasswordHash", password);
-
-                conn.Open();
-                using (var reader = cmd.ExecuteReader())
+                using (MySqlCommand cmd = new MySqlCommand("sp_login_user", conn))
                 {
-                    if (reader.Read())
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("p_Username", user);
+                    cmd.Parameters.AddWithValue("p_Password", HashPassword(pass)); 
+
+                    if (conn.State != ConnectionState.Open) conn.Open();
+
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        string Password = reader["PasswordHash"].ToString();
-                        if(Password == HashPassword(password))
+                        if (reader.Read())
                         {
-                            return new User
+                            string dbRole = reader["Role"].ToString();
+
+                            if (dbRole != role) return null;
+
+                            if (dbRole == "Member")
                             {
-                                UserId = Convert.ToInt32(reader["UserId"]),
-                                Username = reader["Username"].ToString(),
-                                Firstname = reader["FirstName"].ToString(),
-                                Lastname = reader["LastName"].ToString(),
-                                Email = reader["Email"].ToString(),
-                                Phone = reader["Phone"].ToString(),
-                                Role = reader["Role"].ToString()
-                            };
+                                return new MemberType
+                                {
+                                    UserId = Convert.ToInt32(reader["UserId"]),
+                                    MemberId = Convert.ToInt32(reader["MemberId"]),
+                                    Firstname = reader["FirstName"].ToString(),
+                                    Lastname = reader["LastName"].ToString(),
+                                    Username = reader["Username"].ToString(),
+                                };
+                            }
+                            else
+                            {
+                                return new libraryStaff
+                                {
+                                    UserId = Convert.ToInt32(reader["UserId"]),
+                                    Firstname = reader["FirstName"].ToString(),
+                                    Lastname = reader["LastName"].ToString(),
+                                    Role = dbRole
+                                };
+                            }
                         }
                     }
                 }
             }
-
             return null;
         }
     }
