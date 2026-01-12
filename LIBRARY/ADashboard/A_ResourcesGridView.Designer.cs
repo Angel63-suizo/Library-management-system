@@ -64,17 +64,19 @@
             this.panel9.Controls.Add(this.cmbCategory);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1614, 117);
+            this.panel9.Size = new System.Drawing.Size(1210, 95);
             this.panel9.TabIndex = 32;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(55, 41);
+            this.pictureBox5.Location = new System.Drawing.Point(41, 33);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(47, 43);
+            this.pictureBox5.Size = new System.Drawing.Size(36, 35);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -83,45 +85,51 @@
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(102, 41);
+            this.txtSearch.Location = new System.Drawing.Point(76, 33);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(866, 43);
+            this.txtSearch.Size = new System.Drawing.Size(650, 35);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // btnAddBook
             // 
             this.btnAddBook.BackColor = System.Drawing.Color.SlateGray;
+            this.btnAddBook.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
             this.btnAddBook.FlatAppearance.BorderSize = 0;
             this.btnAddBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddBook.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBook.ForeColor = System.Drawing.Color.White;
             this.btnAddBook.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBook.Image")));
-            this.btnAddBook.Location = new System.Drawing.Point(1392, 41);
+            this.btnAddBook.Location = new System.Drawing.Point(1044, 33);
+            this.btnAddBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(184, 43);
+            this.btnAddBook.Size = new System.Drawing.Size(138, 35);
             this.btnAddBook.TabIndex = 6;
             this.btnAddBook.Text = "   Add Book";
             this.btnAddBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAddBook.UseVisualStyleBackColor = false;
             this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
+            this.btnAddBook.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // lblTypes
             // 
             this.lblTypes.AutoSize = true;
-            this.lblTypes.Location = new System.Drawing.Point(1065, 41);
+            this.lblTypes.Location = new System.Drawing.Point(799, 33);
+            this.lblTypes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTypes.Name = "lblTypes";
-            this.lblTypes.Size = new System.Drawing.Size(73, 16);
+            this.lblTypes.Size = new System.Drawing.Size(57, 13);
             this.lblTypes.TabIndex = 3;
             this.lblTypes.Text = "Categories";
             // 
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(1068, 60);
+            this.cmbCategory.Location = new System.Drawing.Point(801, 49);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(218, 24);
+            this.cmbCategory.Size = new System.Drawing.Size(164, 21);
             this.cmbCategory.TabIndex = 2;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
@@ -131,6 +139,7 @@
             this.dgvResourceGrid.AllowUserToResizeColumns = false;
             this.dgvResourceGrid.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dgvResourceGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvResourceGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -138,7 +147,7 @@
             this.dgvResourceGrid.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -164,16 +173,18 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvResourceGrid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 160);
+            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 130);
+            this.dgvResourceGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvResourceGrid.Name = "dgvResourceGrid";
             this.dgvResourceGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvResourceGrid.RowHeadersVisible = false;
             this.dgvResourceGrid.RowHeadersWidth = 51;
             this.dgvResourceGrid.RowTemplate.Height = 40;
             this.dgvResourceGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvResourceGrid.Size = new System.Drawing.Size(1614, 622);
+            this.dgvResourceGrid.Size = new System.Drawing.Size(1210, 505);
             this.dgvResourceGrid.TabIndex = 33;
             this.dgvResourceGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResourceGrid_CellContentClick);
+            this.dgvResourceGrid.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // colBookId
             // 
@@ -263,12 +274,13 @@
             // 
             // A_ResourcesGridView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvResourceGrid);
             this.Controls.Add(this.panel9);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "A_ResourcesGridView";
-            this.Size = new System.Drawing.Size(1614, 785);
+            this.Size = new System.Drawing.Size(1210, 638);
             this.Load += new System.EventHandler(this.A_ResourcesGridView_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
