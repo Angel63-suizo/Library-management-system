@@ -174,11 +174,10 @@ namespace LIBRARY.ADashboard
 
                 if (colName == "Condition")
                 {
-                    int good = GetSafeInt(row.Cells["Good"].Value);
                     int damaged = GetSafeInt(row.Cells["Damaged"].Value);
                     int lost = GetSafeInt(row.Cells["Lost"].Value);
 
-                    e.Value = $"Good: {good}\nDamaged: {damaged}\nLost: {lost}";
+                    e.Value = $"Damaged: {damaged}\nLost: {lost}";
                     e.FormattingApplied = true;
                 }
 

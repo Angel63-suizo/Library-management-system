@@ -77,7 +77,6 @@ namespace LIBRARY.ADashboard
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    // Mapping parameters - Double check these names match your SQL IN parameters
                     cmd.Parameters.AddWithValue("p_AccessionBase", res.AccessionBase);
                     cmd.Parameters.AddWithValue("p_ISBN", res.ISBN);
                     cmd.Parameters.AddWithValue("p_Title", res.Title);
@@ -85,6 +84,7 @@ namespace LIBRARY.ADashboard
                     cmd.Parameters.AddWithValue("p_PublisherName", res.PublisherName);
                     cmd.Parameters.AddWithValue("p_PublicationYear", res.PublicationYear);
                     cmd.Parameters.AddWithValue("p_Description", res.Description);
+                    cmd.Parameters.AddWithValue("p_Location", res.Location);
 
                     conn.Open();
                     int rowsAffected = cmd.ExecuteNonQuery();

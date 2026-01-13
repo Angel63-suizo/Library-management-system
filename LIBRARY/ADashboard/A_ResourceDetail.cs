@@ -43,12 +43,12 @@ namespace LIBRARY.ADashboard
                 lblCategory.Text = details["Category"].ToString();
                 lblDescription.Text = details["Description"].ToString();
                 lblISBN.Text = details["ISBN"].ToString();
-                lblPublisher.Text = details["Publisher"].ToString();
                 lblPubYear.Text = details["PublicationYear"].ToString();
                 lblTotalCopies.Text = details["TotalCopies"].ToString();
                 lblAvailableCopies.Text = details["AvailableCopies"].ToString();
                 lblCurrentlyBorrowed.Text = details["CurrentlyBorrowed"].ToString();
-                lblLocation.Text = details["Location"]?.ToString() ?? "N/A";
+                lblPublisher.Text = details["Publisher"].ToString();
+                lblLocation.Text = details["Location"].ToString();
 
                 int available = Convert.ToInt32(details["AvailableCopies"]);
                 lblStatus.Text = available > 0 ? "Available" : "Not Available";
@@ -83,6 +83,11 @@ namespace LIBRARY.ADashboard
                     e.Graphics.DrawPath(pen, path);
                 }
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

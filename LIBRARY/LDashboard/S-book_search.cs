@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,14 +11,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LIBRARY.LDashboard
-{
+{ 
     public partial class S_book_search : UserControl
     {
+        private libraryStaff LoggedInStaff;
+
         private bool isSearchFocused = false;
         private bool isPanel1Hovered = false;
-        public S_book_search()
+        public S_book_search(libraryStaff staff)
         {
             InitializeComponent();
+            LoggedInStaff = staff;
+
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.txtSearch.KeyDown += new KeyEventHandler(this.txtSearch_KeyDown);
             ResetToEmptyState();
@@ -175,10 +180,9 @@ namespace LIBRARY.LDashboard
                 p.Controls.Add(lblInfo);
             }
 
-            // UPDATED ICON LOGIC
-            string iconText = "✔️"; // Default Available
+            string iconText = "✔️"; 
             if (stat == "Borrowed") iconText = "⚠️";
-            else if (stat == "Reserved") iconText = "🔖"; // Bookmark icon for Reserved
+            else if (stat == "Reserved") iconText = "🔖"; 
 
             Label icon = new Label
             {

@@ -44,6 +44,7 @@
             this.colBookdetails = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPublisher = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colLocation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCopies = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAvailable = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EditCol = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -64,19 +65,19 @@
             this.panel9.Controls.Add(this.cmbCategory);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1210, 95);
+            this.panel9.Size = new System.Drawing.Size(1613, 117);
             this.panel9.TabIndex = 32;
             // 
             // pictureBox5
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(41, 33);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(55, 41);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox5.Size = new System.Drawing.Size(47, 43);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -85,11 +86,11 @@
             // 
             this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSearch.Font = new System.Drawing.Font("Segoe Fluent Icons", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(76, 33);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSearch.Location = new System.Drawing.Point(101, 41);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(650, 35);
+            this.txtSearch.Size = new System.Drawing.Size(866, 43);
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
@@ -102,10 +103,10 @@
             this.btnAddBook.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBook.ForeColor = System.Drawing.Color.White;
             this.btnAddBook.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBook.Image")));
-            this.btnAddBook.Location = new System.Drawing.Point(1044, 33);
-            this.btnAddBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddBook.Location = new System.Drawing.Point(1392, 41);
+            this.btnAddBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(138, 35);
+            this.btnAddBook.Size = new System.Drawing.Size(184, 43);
             this.btnAddBook.TabIndex = 6;
             this.btnAddBook.Text = "   Add Book";
             this.btnAddBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,20 +117,19 @@
             // lblTypes
             // 
             this.lblTypes.AutoSize = true;
-            this.lblTypes.Location = new System.Drawing.Point(799, 33);
-            this.lblTypes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTypes.Location = new System.Drawing.Point(1065, 41);
             this.lblTypes.Name = "lblTypes";
-            this.lblTypes.Size = new System.Drawing.Size(57, 13);
+            this.lblTypes.Size = new System.Drawing.Size(73, 16);
             this.lblTypes.TabIndex = 3;
             this.lblTypes.Text = "Categories";
             // 
             // cmbCategory
             // 
             this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(801, 49);
-            this.cmbCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCategory.Location = new System.Drawing.Point(1068, 60);
+            this.cmbCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(164, 21);
+            this.cmbCategory.Size = new System.Drawing.Size(217, 24);
             this.cmbCategory.TabIndex = 2;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
@@ -159,6 +159,7 @@
             this.colBookdetails,
             this.colCategory,
             this.colPublisher,
+            this.colLocation,
             this.colCopies,
             this.colAvailable,
             this.EditCol,
@@ -173,15 +174,15 @@
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvResourceGrid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 130);
-            this.dgvResourceGrid.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 160);
+            this.dgvResourceGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvResourceGrid.Name = "dgvResourceGrid";
             this.dgvResourceGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dgvResourceGrid.RowHeadersVisible = false;
             this.dgvResourceGrid.RowHeadersWidth = 51;
             this.dgvResourceGrid.RowTemplate.Height = 40;
             this.dgvResourceGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvResourceGrid.Size = new System.Drawing.Size(1210, 505);
+            this.dgvResourceGrid.Size = new System.Drawing.Size(1613, 622);
             this.dgvResourceGrid.TabIndex = 33;
             this.dgvResourceGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResourceGrid_CellContentClick);
             this.dgvResourceGrid.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
@@ -190,7 +191,7 @@
             // 
             this.colBookId.DataPropertyName = "BookID";
             this.colBookId.FillWeight = 123.6588F;
-            this.colBookId.HeaderText = "Book ID";
+            this.colBookId.HeaderText = "Accession #";
             this.colBookId.MinimumWidth = 6;
             this.colBookId.Name = "colBookId";
             this.colBookId.ReadOnly = true;
@@ -223,6 +224,14 @@
             this.colPublisher.MinimumWidth = 6;
             this.colPublisher.Name = "colPublisher";
             this.colPublisher.ReadOnly = true;
+            // 
+            // colLocation
+            // 
+            this.colLocation.DataPropertyName = "Location";
+            this.colLocation.HeaderText = "Location";
+            this.colLocation.MinimumWidth = 6;
+            this.colLocation.Name = "colLocation";
+            this.colLocation.ReadOnly = true;
             // 
             // colCopies
             // 
@@ -274,13 +283,13 @@
             // 
             // A_ResourcesGridView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvResourceGrid);
             this.Controls.Add(this.panel9);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "A_ResourcesGridView";
-            this.Size = new System.Drawing.Size(1210, 638);
+            this.Size = new System.Drawing.Size(1613, 785);
             this.Load += new System.EventHandler(this.A_ResourcesGridView_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
@@ -303,6 +312,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colBookdetails;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPublisher;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colLocation;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCopies;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAvailable;
         private System.Windows.Forms.DataGridViewButtonColumn EditCol;

@@ -15,7 +15,6 @@ namespace LIBRARY.Models
         private string isbn;
         private string title;
         private string author;
-        private string publisherId;
         private string publisherName;
         private int publicationYear;
         private string edition;
@@ -24,12 +23,12 @@ namespace LIBRARY.Models
         private string resourcheType;
         private string description;
         private string coverImagePath;
+        private string location;
         public int ResourceId { get => resourceid; set => resourceid = value; }
         public string AccessionBase { get => accessionBase; set => accessionBase = value; }
         public string ISBN { get => isbn; set => isbn = value; }
         public string Title { get => title; set => title = value; }
         public string Author { get => author; set => author = value; }
-        public string PublisherId { get => publisherId; set => publisherId = value; }
         public string PublisherName { get => publisherName; set => publisherName = value; }
         public int PublicationYear { get => publicationYear; set => publicationYear = value; }
         public string Edition { get => edition; set => edition = value; }
@@ -38,6 +37,7 @@ namespace LIBRARY.Models
         public string ResourceType { get => resourcheType; set => resourcheType = value; }
         public string Description { get => description; set => description = value; }
         public string CoverImagePath { get => coverImagePath; set => coverImagePath = value; }
+        public string Location { get => location; set => location = value; }
 
         public string GetFullImagePath()
         {

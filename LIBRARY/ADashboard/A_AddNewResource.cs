@@ -34,13 +34,20 @@ namespace LIBRARY.ADashboard
                 newresource.ISBN = txtISBN.Text;
                 newresource.Title = txtTitle.Text;
                 newresource.Author = txtAuthor.Text;
-                newresource.PublisherId = txtPublisher.Text; 
+                newresource.PublisherName = txtPublisher.Text; 
                 newresource.PublicationYear = (int)numYear.Value;
                 newresource.Edition = txtEdition.Text;
                 newresource.Language = txtLanguage.Text;
-                newresource.Pages = int.Parse(txtPages.Text);
+                newresource.Description = txtDescription.Text;
+                newresource.Location = txtLocation.Text;
 
-                int copies = Convert.ToInt32(txtCopies.Text);
+                int pagesValue;
+                int.TryParse(txtPages.Text, out pagesValue); 
+                newresource.Pages = pagesValue;
+
+                int copiesValue;
+                int.TryParse(txtCopies.Text, out copiesValue); 
+                int copies = copiesValue;
 
                 int categoryId = Convert.ToInt32(cmbCategory.SelectedValue);
 

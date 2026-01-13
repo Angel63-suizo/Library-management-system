@@ -43,7 +43,8 @@ namespace LIBRARY.ADashboard
                 Author = txtAuthor.Text.Trim(),
                 PublisherName = txtPublisher.Text.Trim(),
                 PublicationYear = (int)numPubYear.Value,
-                Description = txtDescription.Text.Trim()
+                Description = txtDescription.Text.Trim(),
+                Location = txtLocation.Text.Trim() 
             };
 
             Update_Repository repo = new Update_Repository();
@@ -76,6 +77,7 @@ namespace LIBRARY.ADashboard
                 txtPublisher.Text = row["PublisherName"].ToString();
                 numPubYear.Value = Convert.ToInt32(row["PublicationYear"]);
                 txtDescription.Text = row["Description"].ToString();
+                txtLocation.Text = row["Location"].ToString();
             }
         }
 
@@ -99,7 +101,6 @@ namespace LIBRARY.ADashboard
 
             using (GraphicsPath path = new GraphicsPath())
             {
-                // Create the rounded rectangle path
                 path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
                 path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270, 90);
                 path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0, 90);

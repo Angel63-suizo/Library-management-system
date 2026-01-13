@@ -44,7 +44,7 @@ namespace LIBRARY.ADashboard
                     cmd.Parameters.AddWithValue("p_ISBN", resource.ISBN);
                     cmd.Parameters.AddWithValue("p_Title", resource.Title);
                     cmd.Parameters.AddWithValue("p_Author", resource.Author);
-                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherId);
+                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherName);
                     cmd.Parameters.AddWithValue("p_PubYear", resource.PublicationYear);
                     cmd.Parameters.AddWithValue("p_CategoryId", categoryId);
                     cmd.Parameters.AddWithValue("p_Description", description);  

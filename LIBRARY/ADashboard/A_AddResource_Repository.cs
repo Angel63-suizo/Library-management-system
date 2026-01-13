@@ -28,13 +28,15 @@ namespace LIBRARY.ADashboard
                     cmd.Parameters.AddWithValue("p_Title", resource.Title);
                     cmd.Parameters.AddWithValue("p_Author", resource.Author); 
                     cmd.Parameters.AddWithValue("p_CategoryId", categoryId); 
-                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherId); 
+                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherName); 
                     cmd.Parameters.AddWithValue("p_PubYear", resource.PublicationYear);
                     cmd.Parameters.AddWithValue("p_Edition", resource.Edition);
                     cmd.Parameters.AddWithValue("p_Language", resource.Language);
                     cmd.Parameters.AddWithValue("p_Pages", resource.Pages);
                     cmd.Parameters.AddWithValue("p_ResourceType", resourceType);
                     cmd.Parameters.AddWithValue("p_TotalCopies", Copies);
+                    cmd.Parameters.AddWithValue("p_Description", resource.Description);
+                    cmd.Parameters.AddWithValue("p_Location", resource.Location);
 
                     conn.Open();
                     using (var reader = cmd.ExecuteReader())
