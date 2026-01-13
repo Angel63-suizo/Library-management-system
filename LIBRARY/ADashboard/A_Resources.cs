@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,14 +14,16 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_Resources : UserControl
     {
-        public A_Resources()
+        private Admin LoggedInAdmin;
+        public A_Resources(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void A_Resources_Load(object sender, EventArgs e)
         {
-            A_ResourcesGridView myGrid = new A_ResourcesGridView();
+            A_ResourcesGridView myGrid = new A_ResourcesGridView(LoggedInAdmin);
             myGrid.Dock = DockStyle.Fill;
 
             pnlGridContent.Controls.Add(myGrid);

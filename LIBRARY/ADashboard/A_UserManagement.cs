@@ -15,15 +15,16 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_UserManagement : UserControl
     {
-
-        public A_UserManagement()
+        private Admin LoggedInAdmin;
+        public A_UserManagement(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void A_UserManagement_Load(object sender, EventArgs e)
         {
-            A_GridViewMember myGrid = new A_GridViewMember();
+            A_GridViewMember myGrid = new A_GridViewMember(LoggedInAdmin);
             myGrid.Dock = DockStyle.Fill;
 
             pnlGridContainer.Controls.Add(myGrid);

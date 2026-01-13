@@ -26,7 +26,7 @@ namespace LIBRARY
         private void L_MainForm_Load(object sender, EventArgs e)
         {
 
-            LoadUserControl(new S_circulation());
+            LoadUserControl(new S_circulation(LoggedInStaff));
 
         }
 
@@ -54,22 +54,22 @@ namespace LIBRARY
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new S_circulation());
+            LoadUserControl(new S_circulation(LoggedInStaff));
         }
 
         private void btnMembers_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new S_book_lookup());
+            LoadUserControl(new S_book_lookup(LoggedInStaff));
         }
 
         private void btnBookSearch_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new S_book_search());
+            LoadUserControl(new S_book_search(LoggedInStaff));
         }
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new S_reports());
+            LoadUserControl(new S_reports(LoggedInStaff));
         }
 
         private void pnlSidebar1_Paint(object sender, PaintEventArgs e)

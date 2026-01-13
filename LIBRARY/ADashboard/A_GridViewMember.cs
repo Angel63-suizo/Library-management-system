@@ -3,14 +3,17 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using LIBRARY.Class;
 
 namespace LIBRARY.ADashboard
 {
     public partial class A_GridViewMember : UserControl
     {
-        public A_GridViewMember()
+        private Admin LoggedInAdmin;
+        public A_GridViewMember(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void A_GridViewMember_Load(object sender, EventArgs e)
@@ -27,7 +30,7 @@ namespace LIBRARY.ADashboard
 
             if (dgvMemberGrid.Columns[e.ColumnIndex].Name == "EditCol")
             {
-                EditMembers editForm = new EditMembers(cardNum);
+                EditMembers editForm = new EditMembers(LoggedInAdmin, cardNum);
 
                 if (editForm.ShowDialog() == DialogResult.OK)
                 {
@@ -50,7 +53,7 @@ namespace LIBRARY.ADashboard
 
                 if (memberProfile != null)
                 {
-                    ViewMemberDetails view = new ViewMemberDetails(memberProfile, history);
+                    ViewMemberDetails view = new ViewMemberDetails(LoggedInAdmin, memberProfile, history);
                     view.ShowDialog();
                 }
             }
@@ -80,7 +83,7 @@ namespace LIBRARY.ADashboard
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            AddMember add = new AddMember();
+            AddMember add = new AddMember(LoggedInAdmin);
 
             if (add.ShowDialog() == DialogResult.OK)
             {
@@ -94,7 +97,7 @@ namespace LIBRARY.ADashboard
 
         private void btnLibraryStaff_Click(object sender, EventArgs e)
         {
-            A_AddLibraryStaff add = new A_AddLibraryStaff();
+            A_AddLibraryStaff add = new A_AddLibraryStaff(LoggedInAdmin);
             Control parentpanel = this.Parent;
 
             if (parentpanel != null)
@@ -162,29 +165,6 @@ namespace LIBRARY.ADashboard
             {
                 MessageBox.Show("Error populating Member Types: " + ex.Message);
             }
-        }
-
-        private void AddActionButtons()
-        {
-            if (dgvMemberGrid.Columns.Contains("View")) return;
-
-            DataGridViewImageColumn viewCol = new DataGridViewImageColumn();
-            viewCol.Name = "ViewCol";
-            viewCol.HeaderText = "";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvMemberGrid.Columns.Add(viewCol);
-
-            DataGridViewImageColumn deleteCol = new DataGridViewImageColumn();
-            deleteCol.Name = "DeleteCol";
-            deleteCol.HeaderText = "";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvMemberGrid.Columns.Add(deleteCol);
-
-            DataGridViewImageColumn editCol = new DataGridViewImageColumn();
-            editCol.Name = "EditCol";
-            editCol.HeaderText = "Actions";
-            viewCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
-            dgvMemberGrid.Columns.Add(editCol);
         }
 
         private void PopulateFilters()

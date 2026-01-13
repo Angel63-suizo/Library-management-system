@@ -8,17 +8,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Class;
+using LIBRARY.Models;
 
 namespace LIBRARY.ADashboard
 {
     public partial class ViewMemberDetails : Form
     {
+        private Admin LoggedInAdmin;
         private DataRow _memberData;
         private DataTable _transactionHistory;
-        public ViewMemberDetails(DataRow memberData, DataTable transactionHistory)
+        public ViewMemberDetails(Admin admin, DataRow memberData, DataTable transactionHistory)
         {
             InitializeComponent();
-
+            LoggedInAdmin = admin;
             _memberData = memberData;
             _transactionHistory = transactionHistory;
 

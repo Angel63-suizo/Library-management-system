@@ -1,4 +1,5 @@
 ﻿using Fizzler;
+using LIBRARY.Class;
 using LIBRARY.Models;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
@@ -17,9 +18,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_AddNewResource : Form
     {
-        public A_AddNewResource()
+        private Admin LoggedInAdmin;
+        public A_AddNewResource(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         public event EventHandler DataSaved;

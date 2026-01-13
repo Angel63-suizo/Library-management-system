@@ -1,4 +1,5 @@
 ﻿using K4os.Compression.LZ4.Internal;
+using LIBRARY.Class;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,14 +15,16 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_Inventory : UserControl
     {
-        public A_Inventory()
+        private Admin LoggedInAdmin;
+        public A_Inventory(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void A_Inventory_Load(object sender, EventArgs e)
         {
-            LoadUserControl(new AlertsView_UC());
+            LoadUserControl(new AlertsView_UC(LoggedInAdmin));
         }
 
         private void LoadUserControl(UserControl mem)
@@ -96,12 +99,12 @@ namespace LIBRARY.ADashboard
 
         private void btnAlertsView_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new AlertsView_UC());
+            LoadUserControl(new AlertsView_UC(LoggedInAdmin));
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new FullInventory_UC());
+            LoadUserControl(new FullInventory_UC(LoggedInAdmin));
         }
 
         private void label7_Click(object sender, EventArgs e)

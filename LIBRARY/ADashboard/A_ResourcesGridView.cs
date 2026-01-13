@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Asn1.Cmp;
+﻿using LIBRARY.Class;
+using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,14 +17,16 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_ResourcesGridView : UserControl
     {
-        public A_ResourcesGridView()
+        private Admin LoggedInAdmin;
+        public A_ResourcesGridView(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
-            A_AddNewResource add = new A_AddNewResource();
+            A_AddNewResource add = new A_AddNewResource(LoggedInAdmin);
             add.DataSaved += (s, args) =>
             {
                 RefreshGrid();
@@ -101,7 +104,7 @@ namespace LIBRARY.ADashboard
 
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "EditCol")
             {
-                A_EditResource editForm = new A_EditResource(bookId);
+                A_EditResource editForm = new A_EditResource(LoggedInAdmin, bookId);
 
                 if (editForm.ShowDialog() == DialogResult.OK)
                 {
@@ -114,7 +117,7 @@ namespace LIBRARY.ADashboard
             if (dgvResourceGrid.Columns[e.ColumnIndex].Name == "ViewCol")
             {
                 string BookId = dgvResourceGrid.Rows[e.RowIndex].Cells["colBookId"].Value.ToString();
-                A_ResourceDetail viewForm = new A_ResourceDetail(BookId);
+                A_ResourceDetail viewForm = new A_ResourceDetail(LoggedInAdmin, BookId);
                 viewForm.ShowDialog();
 
             }

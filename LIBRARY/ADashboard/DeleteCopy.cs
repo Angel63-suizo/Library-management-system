@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Asn1.X509;
+﻿using LIBRARY.Class;
+using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +16,13 @@ using static LIBRARY.ADashboard.AddCopy_Repository;
 namespace LIBRARY.ADashboard
 {
     public partial class DeleteCopy : Form
-    { 
+    {
+        private Admin LoggedInAdmin;
         private string  _booktitle;
-        public DeleteCopy(string title, string available, string total)
+        public DeleteCopy(Admin admin, string title, string available, string total)
         {
             InitializeComponent();
-
+            LoggedInAdmin = admin;
             _booktitle = title;
 
             this.Text = "Remove Copies for: " + _booktitle;

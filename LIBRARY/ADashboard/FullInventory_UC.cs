@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class FullInventory_UC : UserControl
     {
-        public FullInventory_UC()
+        private Admin LoggedInAdmin;
+        public FullInventory_UC(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void dgvInventoryGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -26,7 +29,7 @@ namespace LIBRARY.ADashboard
 
             if (dgvInventoryGrid.Columns[e.ColumnIndex].Name == "AddCol")
             {
-                AddCopy addCopyForm = new AddCopy(bookTitle);
+                AddCopy addCopyForm = new AddCopy(LoggedInAdmin, bookTitle);
 
                 if (addCopyForm.ShowDialog() == DialogResult.OK)
                 {
@@ -40,7 +43,7 @@ namespace LIBRARY.ADashboard
                 string currentStock = dgvInventoryGrid.Rows[e.RowIndex].Cells["AvailableCopies"].Value.ToString();
                 string totalStock = dgvInventoryGrid.Rows[e.RowIndex].Cells["TotalCopies"].Value.ToString();
 
-                DeleteCopy removeForm = new DeleteCopy(booktitle, currentStock, totalStock);
+                DeleteCopy removeForm = new DeleteCopy(LoggedInAdmin, booktitle, currentStock, totalStock);
 
                 if (removeForm.ShowDialog() == DialogResult.OK)
                 {

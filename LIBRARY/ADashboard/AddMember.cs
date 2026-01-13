@@ -8,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Class;
+using LIBRARY.Models;
 
 namespace LIBRARY.ADashboard
 {
     public partial class AddMember : Form
     {
-        public AddMember()
+        private Admin LoggedInAdmin;
+        public AddMember(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void AddMember_Load(object sender, EventArgs e)

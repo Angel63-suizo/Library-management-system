@@ -13,6 +13,7 @@ namespace LIBRARY.ADashboard
 {
     public partial class StockAlert_UC : UserControl
     {
+        
         public StockAlert_UC()
         {
             InitializeComponent();

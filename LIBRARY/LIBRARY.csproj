@@ -307,6 +307,7 @@
     <Compile Include="MDashboard\BookCardControl.Designer.cs">
       <DependentUpon>BookCardControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDashboard\BorrowingHistory_Repository.cs" />
     <Compile Include="MDashboard\Catalog_Repository.cs" />
     <Compile Include="MDashboard\frmBookDetails.cs">
       <SubType>Form</SubType>
@@ -314,11 +315,23 @@
     <Compile Include="MDashboard\frmBookDetails.Designer.cs">
       <DependentUpon>frmBookDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDashboard\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDashboard\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDashboard\frmConfirmReservation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDashboard\frmConfirmReservation.Designer.cs">
       <DependentUpon>frmConfirmReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\frmUpdateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDashboard\frmUpdateProfile.Designer.cs">
+      <DependentUpon>frmUpdateProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="MDashboard\M-borrowing_history.cs">
       <SubType>UserControl</SubType>
@@ -345,11 +358,18 @@
       <DependentUpon>M-my_books.cs</DependentUpon>
     </Compile>
     <Compile Include="MDashboard\MyBooks_Repository.cs" />
+    <Compile Include="MDashboard\Profile_Repository.cs" />
     <Compile Include="MDashboard\ucBorrowedBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="MDashboard\ucBorrowedBook.Designer.cs">
       <DependentUpon>ucBorrowedBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDashboard\ucBorrowingHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MDashboard\ucBorrowingHistory.Designer.cs">
+      <DependentUpon>ucBorrowingHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
@@ -506,8 +526,14 @@
     <EmbeddedResource Include="MDashboard\frmBookDetails.resx">
       <DependentUpon>frmBookDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\frmConfirmReservation.resx">
       <DependentUpon>frmConfirmReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\frmUpdateProfile.resx">
+      <DependentUpon>frmUpdateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\M-borrowing_history.resx">
       <DependentUpon>M-borrowing_history.cs</DependentUpon>
@@ -526,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\ucBorrowedBook.resx">
       <DependentUpon>ucBorrowedBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDashboard\ucBorrowingHistory.resx">
+      <DependentUpon>ucBorrowingHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="M_MainForm.resx">
       <DependentUpon>M_MainForm.cs</DependentUpon>
