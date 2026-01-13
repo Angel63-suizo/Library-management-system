@@ -1,4 +1,5 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,9 +15,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_AddLibraryStaff : UserControl
     {
-        public A_AddLibraryStaff()
+        private Admin LoggedInAdmin;
+        public A_AddLibraryStaff(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

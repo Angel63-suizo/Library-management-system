@@ -161,6 +161,7 @@
             this.btnReports.Text = "   Reports";
             this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // btnSettings
             // 
@@ -284,6 +285,7 @@
             this.btnCirculation.Text = "   Circulation";
             this.btnCirculation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCirculation.UseVisualStyleBackColor = false;
+            this.btnCirculation.Click += new System.EventHandler(this.btnCirculation_Click);
             // 
             // btnResources
             // 

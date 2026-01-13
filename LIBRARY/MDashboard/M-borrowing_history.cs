@@ -8,24 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Class;
 
 namespace LIBRARY.MDashboard
 {
     public partial class M_borrowing_history : UserControl
     {
+        private MemberType LoggedInMember;
         private bool isSearchFocused = false;
         private bool isPanel7Hovered = false;
         private bool isComboFocused = false;
         private DataTable borrowingData;
 
-        public M_borrowing_history()
+        public M_borrowing_history(MemberType member)
         {
             InitializeComponent();
-            InitializeBorrowingGrid();
-            LoadSampleData();
-            UpdateSummaryStatistics();
-            txtSearch.TextChanged += (s, e) => ApplyFilters();
-            cmbStatus.SelectedIndexChanged += (s, e) => ApplyFilters();
+            LoggedInMember = member;
+
             txtSearch.Enter += (s, e) =>
             {
                 isSearchFocused = true;
@@ -102,86 +101,67 @@ namespace LIBRARY.MDashboard
                 e.Graphics.DrawRectangle(pen, rect);
             }
         }
-        private void ApplyFilters()
-        {
-            if (borrowingData == null) return;
 
-            string searchText = txtSearch.Text.Trim().Replace("'", "''");
+        private void M_borrowing_history_Load(object sender, EventArgs e)
+        {
+            RefreshHistory();
+            LoadDashboardStats();
+            populateStatusFilter();
+        }
+
+        private void RefreshHistory()
+        {
             string selectedStatus = cmbStatus.SelectedItem?.ToString() ?? "All Status";
+            string searchKeyword = txtSearch.Text.Trim();
 
-            // Search by Title OR Author
-            string searchFilter = $"(Title LIKE '%{searchText}%' OR Author LIKE '%{searchText}%')";
+            BorrowingHistory_Repository repo = new BorrowingHistory_Repository();
+            DataTable dt = repo.GetMemberBorrowingHistory(LoggedInMember.MemberId, selectedStatus, searchKeyword);
 
-            // Combine with Status if not "All Status"
-            string finalFilter = searchFilter;
-            if (selectedStatus != "All Status" && !string.IsNullOrEmpty(selectedStatus))
+            flpBorrowingHistory.Controls.Clear();
+
+            if (dt != null && dt.Rows.Count > 0)
             {
-                finalFilter += $" AND Status = '{selectedStatus}'";
+                foreach (DataRow row in dt.Rows)
+                {
+                    ucBorrowingHistory bookRow = new ucBorrowingHistory();
+                    bookRow.SetData(row); 
+                    flpBorrowingHistory.Controls.Add(bookRow);
+                }
             }
-
-            // Apply the filter
-            borrowingData.DefaultView.RowFilter = finalFilter;
-            label7.Text = $"Showing {dgvHistory.Rows.Count} of {borrowingData.Rows.Count} records";
         }
-        private void InitializeBorrowingGrid()
+
+        private void LoadDashboardStats()
         {
-            borrowingData = new DataTable();
+            BorrowingHistory_Repository repo = new BorrowingHistory_Repository();
+            DataTable dt = repo.GetBorrowingStats(LoggedInMember.MemberId);
 
-            // These column names MUST match the "DataPropertyName" in your dgvHistory column properties
-            borrowingData.Columns.Add("Title");
-            borrowingData.Columns.Add("Author");
-            borrowingData.Columns.Add("BorrowDate");
-            borrowingData.Columns.Add("ReturnDate");
-            borrowingData.Columns.Add("Status");
-            borrowingData.Columns.Add("Fine");
-
-            dgvHistory.Columns["Title"].DataPropertyName = "Title";
-            dgvHistory.Columns["Author"].DataPropertyName = "Author";
-            dgvHistory.Columns["BorrowDate"].DataPropertyName = "BorrowDate";
-            dgvHistory.Columns["ReturnDate"].DataPropertyName = "ReturnDate";
-            dgvHistory.Columns["Status"].DataPropertyName = "Status";
-            dgvHistory.Columns["Fine"].DataPropertyName = "Fine";
-
-            // IMPORTANT: Since you added columns in Properties, prevent the grid from adding them again
-            dgvHistory.AutoGenerateColumns = false;
-
-            // Link the DataTable to the Grid
-            dgvHistory.DataSource = borrowingData;
+            if (dt.Rows.Count > 0)
+            {
+                DataRow row = dt.Rows[0];
+                lblCurrentlyBorrowed.Text = string.Format("{0:N0}", row["CurrentlyBorrowed"] ?? 0);
+                lblFinesPaid.Text = string.Format("{0:C}", row["FinesPaid"] ?? 0);
+                lblTotalBorrowed.Text = string.Format("{0:N0}", row["TotalBorrowed"] ?? 0);
+                lblReturned.Text = string.Format("${0:N0}", row["Returned"] ?? 0);
+            }
         }
-        private void LoadSampleData()
+
+        private void populateStatusFilter()
         {
-            // Adding rows to the DataTable
-            borrowingData.Rows.Add("The Great Gatsby", "F. Scott Fitzgerald", "2023-10-01", "2023-10-15", "Returned", "$0.00");
-            borrowingData.Rows.Add("1984", "George Orwell", "2023-11-01", "-", "Currently Borrowed", "$0.00");
-            borrowingData.Rows.Add("The Hobbit", "J.R.R. Tolkien", "2023-09-20", "2023-10-05", "Overdue Return", "$5.50");
+            cmbStatus.Items.Clear();
+            cmbStatus.Items.Add("All Status");
+            cmbStatus.Items.Add("Borrowed");
+            cmbStatus.Items.Add("Returned");
+            cmbStatus.SelectedIndex = 0;
         }
-        private void UpdateSummaryStatistics()
+
+        private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (borrowingData == null) return;
+            RefreshHistory();
+        }
 
-            // 1. Total Borrowed (Total rows in the table)
-            lblTotalBorrowed.Text = borrowingData.Rows.Count.ToString();
-
-            // 2. Currently Borrowed Count
-            int currentlyBorrowed = borrowingData.AsEnumerable()
-                .Count(row => row.Field<string>("Status") == "Currently Borrowed");
-            lblCurrentlyBorrowed.Text = currentlyBorrowed.ToString();
-
-            // 3. Returned Count (Includes "Returned" and "Overdue Return")
-            int returned = borrowingData.AsEnumerable()
-                .Count(row => row.Field<string>("Status").Contains("Returned"));
-            lblReturned.Text = returned.ToString();
-
-            // 4. Total Fines Paid
-            decimal totalFines = borrowingData.AsEnumerable()
-                .Sum(row => {
-                    decimal fine;
-                    return decimal.TryParse(row.Field<string>("Fine"), out fine) ? fine : 0;
-                });
-            lblFinesPaid.Text = $"${totalFines:N2}";
-
-            // 5. Update the "Showing X of X records" label (label7)
-            label7.Text = $"Showing {dgvHistory.Rows.Count} of {borrowingData.Rows.Count} records";
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            RefreshHistory();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace LIBRARY.LDashboard
 {
     public partial class S_reports : UserControl
     {
-        public S_reports()
+        libraryStaff LoggedInStaff;
+        public S_reports(libraryStaff staff)
         {
             InitializeComponent();
+            LoggedInStaff = staff;
 
             this.button1.Click += (s, e) => ExportOverdueReport();
 

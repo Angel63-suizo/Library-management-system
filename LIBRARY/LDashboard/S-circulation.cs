@@ -19,14 +19,17 @@ namespace LIBRARY.LDashboard
 {
     public partial class S_circulation : UserControl
     {
+        private libraryStaff LoggedInStaff;
+
         private MemberType currentUser = null;
         private bool isCheckoutMode = true;
         private List<string> scannedBooks = new List<string>();
 
-        public S_circulation()
+        public S_circulation(libraryStaff staff)
         {
             InitializeComponent();
             InitializeEvents();
+            LoggedInStaff = staff;
 
             pnlContainer1.Visible = false;
             pnlContentStatus.Visible = false;
@@ -44,6 +47,8 @@ namespace LIBRARY.LDashboard
 
             btnCheckout.Click += (s, e) => SetMode(true);  
             btnReturn.Click += (s, e) => SetMode(false);
+
+            dgvTransaction.CellContentClick += dgvTransaction_CellContentClick;
         }
 
         private void btnLoadMember_Click(object sender, EventArgs e)
@@ -332,6 +337,11 @@ namespace LIBRARY.LDashboard
             dgvTransaction.Rows.Clear();
             scannedBooks.Clear();
             txtSearch.Clear();
+            lblFullName.Text = "---";
+            lblCardNumber.Text = "ID: ---";
+            lblBooksBorrowed.Text = "0 / 0";
+            pbProfile.Image = null;
+            currentUser = null;
 
             pnlContainer1.Visible = false;
             dgvTransaction.Visible = false;

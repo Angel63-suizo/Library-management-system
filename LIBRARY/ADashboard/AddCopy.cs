@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +16,12 @@ namespace LIBRARY.ADashboard
 {
     public partial class AddCopy : Form
     {
+        private Admin LoggedInAdmin;
         private string _bookTitle;
-        public AddCopy(string title)
+        public AddCopy(Admin admin, string title)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
             _bookTitle = title;
 
             this.Text = "Add Copies for: " + _bookTitle;

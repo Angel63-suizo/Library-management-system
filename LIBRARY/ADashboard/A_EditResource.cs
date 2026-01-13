@@ -1,4 +1,5 @@
 ﻿using ExCSS;
+using LIBRARY.Class;
 using LIBRARY.Models;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
@@ -18,11 +19,12 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_EditResource : Form
     {
+        private Admin LoggedInAdmin;
         private string _bookId;
-        public A_EditResource(String BookId)
+        public A_EditResource(Admin admin, String BookId)
         {
             InitializeComponent();
-
+            LoggedInAdmin = admin;
             _bookId = BookId;
             LoadInitialData();
         }

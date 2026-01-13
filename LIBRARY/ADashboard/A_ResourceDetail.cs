@@ -1,4 +1,5 @@
-﻿using Org.BouncyCastle.Asn1.X509;
+﻿using LIBRARY.Class;
+using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,11 +16,12 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_ResourceDetail : Form
     {
-
+        private Admin LoggedInAdmin;
         private string _bookId;
-        public A_ResourceDetail(String BookId)
+        public A_ResourceDetail(Admin admin, String BookId)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
             this._bookId = BookId;
         }
 

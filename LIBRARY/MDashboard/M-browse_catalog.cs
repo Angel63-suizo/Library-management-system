@@ -25,7 +25,7 @@ namespace LIBRARY.MDashboard
             LoggedInMember = member;
 
             txtSearch.TextChanged += TxtSearch_TextChanged;
-            cmbSearch.SelectedIndexChanged += (s, e) => LoadCatalog(); // Added this
+            cmbSearch.SelectedIndexChanged += (s, e) => LoadCatalog(); 
 
             txtSearch.Enter += (s, e) => { isSearchFocused = true; panel20.Invalidate(); };
             txtSearch.Leave += (s, e) => { isSearchFocused = false; panel20.Invalidate(); };

@@ -72,12 +72,12 @@ namespace LIBRARY
 
         private void btnBorrowingHistory_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_borrowing_history());
+            LoadUserControl(new M_borrowing_history(LoggedInMember));
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new M_my_account());
+            LoadUserControl(new M_my_account(LoggedInMember));
         }
     }
 }

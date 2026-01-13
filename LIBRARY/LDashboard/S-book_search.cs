@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Models;
 
 namespace LIBRARY.LDashboard
 {
     public partial class S_book_search : UserControl
     {
-        public S_book_search()
+        private libraryStaff LoggedInStaff;
+        public S_book_search(libraryStaff staff)
         {
             InitializeComponent();
+            LoggedInStaff = staff;
+
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.txtSearch.KeyDown += new KeyEventHandler(this.txtSearch_KeyDown);
             ResetToEmptyState();

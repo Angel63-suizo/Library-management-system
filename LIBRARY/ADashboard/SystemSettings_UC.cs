@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class SystemSettings_UC : UserControl
     {
-        public SystemSettings_UC()
+        private Admin LoggedInAdmin;
+        public SystemSettings_UC(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -1,4 +1,5 @@
-﻿using LIBRARY.MDashboard;
+﻿using LIBRARY.Class;
+using LIBRARY.MDashboard;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
@@ -14,9 +15,12 @@ namespace LIBRARY.LDashboard
 {
     public partial class S_book_lookup : UserControl
     {
-        public S_book_lookup()
+        private libraryStaff LoggedInStaff;
+        public S_book_lookup(libraryStaff staff)
         {
             InitializeComponent();
+            LoggedInStaff = staff;
+
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             this.txtSearch.KeyDown += new KeyEventHandler(this.txtSearch_KeyDown);
 

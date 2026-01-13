@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,15 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LIBRARY.Models;
 
 namespace LIBRARY.ADashboard
 {
     public partial class EditMembers : Form
     {
+        private Admin LoggedInAdmin;
         private string _cardNumber;
-        public EditMembers(string cardNumber)
+        public EditMembers(Admin admin, string cardNumber)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
             _cardNumber = cardNumber;
             LoadInitialMemberData();
         }

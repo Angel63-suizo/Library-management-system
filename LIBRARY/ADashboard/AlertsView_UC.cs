@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +14,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class AlertsView_UC : UserControl
     {
-        public AlertsView_UC()
+        private Admin LoggedInAdmin;
+        public AlertsView_UC(Admin admin)
         {
             InitializeComponent();
+            LoggedInAdmin = admin;
         }
 
         private void AlertsView_UC_Load(object sender, EventArgs e)

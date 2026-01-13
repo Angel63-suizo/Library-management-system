@@ -14,11 +14,12 @@ namespace LIBRARY.ADashboard
 {
     public partial class A_dashboard : UserControl
     {
-
-        public A_dashboard()
+        Admin LoggedInAdmin;
+        public A_dashboard(Admin admin)
         {
             InitializeComponent();
             SetupCharts();
+            LoggedInAdmin = admin;
         }
 
         private void A_dashboard_Load(object sender, EventArgs e)
@@ -51,7 +52,7 @@ namespace LIBRARY.ADashboard
 
         private void btnAddMember_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_UserManagement());
+            LoadUserControl(new A_UserManagement(LoggedInAdmin));
         }
 
         private void LoadUserControl(UserControl mem)
@@ -71,12 +72,12 @@ namespace LIBRARY.ADashboard
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_Resources());
+            LoadUserControl(new A_Resources(LoggedInAdmin));
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new SystemSettings_UC());
+            LoadUserControl(new SystemSettings_UC(LoggedInAdmin));
         }
 
         private void UpdateDashboardLabels()

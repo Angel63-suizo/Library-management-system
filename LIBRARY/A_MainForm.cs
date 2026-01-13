@@ -24,8 +24,9 @@ namespace LIBRARY
 
         private void A_MainForm_Load(object sender, EventArgs e)
         {
-            LoadUserControl(new A_dashboard());
-
+            SetActiveButton(btnDashboard);
+            LoadUserControl(new A_dashboard(LoggedInAdmin));
+          
         }
          private void LoadUserControl(UserControl mem)
           {
@@ -57,12 +58,14 @@ namespace LIBRARY
 
         private void btnUserMng_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_UserManagement());
+            SetActiveButton((Button)sender);
+            LoadUserControl(new A_UserManagement(LoggedInAdmin));
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_dashboard());
+            SetActiveButton((Button)sender);
+            LoadUserControl(new A_dashboard(LoggedInAdmin));
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -77,7 +80,8 @@ namespace LIBRARY
 
         private void btnInventory_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_Inventory());
+            SetActiveButton((Button)sender);
+            LoadUserControl(new A_Inventory(LoggedInAdmin));
         }
 
         private void pnlContent_Paint(object sender, PaintEventArgs e)
@@ -112,12 +116,43 @@ namespace LIBRARY
 
         private void btnResources_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new A_Resources());
+            SetActiveButton((Button)sender);
+            LoadUserControl(new A_Resources(LoggedInAdmin));
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new SystemSettings_UC());
+            SetActiveButton((Button)sender);
+            LoadUserControl(new SystemSettings_UC(LoggedInAdmin));
+        }
+
+        private void SetActiveButton(Button clickedButton)
+        {
+
+            Color borderColor = Color.White;
+
+            foreach (Control ctrl in pnlSidebar1.Controls)
+            {
+                if (ctrl is Button btn)
+                {
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                }
+            }
+
+            clickedButton.FlatStyle = FlatStyle.Flat;
+            clickedButton.FlatAppearance.BorderSize = 1;
+            clickedButton.FlatAppearance.BorderColor = borderColor;
+        }
+
+        private void btnCirculation_Click(object sender, EventArgs e)
+        {
+            SetActiveButton((Button)sender);
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            SetActiveButton((Button)sender);
         }
     }
 }

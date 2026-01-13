@@ -59,6 +59,7 @@ namespace LIBRARY.Login
                                     UserId = Convert.ToInt32(reader["UserId"]),
                                     Firstname = reader["FirstName"].ToString(),
                                     Lastname = reader["LastName"].ToString(),
+                                    Username = reader["Username"].ToString(),
                                     Role = dbRole
                                 };
                             }
