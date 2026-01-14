@@ -152,6 +152,7 @@ namespace LIBRARY
 
         private void btnReports_Click(object sender, EventArgs e)
         {
+            LoadUserControl(new Reports(LoggedInAdmin));
             SetActiveButton((Button)sender);
         }
     }

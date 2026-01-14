@@ -18,14 +18,14 @@ namespace LIBRARY
             //Admin CurrentUser = new Admin();
             //libraryStaff CurrentUser = new libraryStaff();
             //Models.Member CurrentUser = new Models.Member();
-            //Admin LoggedInAdmin = new Admin();
+            Admin LoggedInAdmin = new Admin();
             //MemberType LoggedInMember = new MemberType();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login.Login());
+            //Application.Run(new Login.Login());
             //Application.Run(new Register.register());
             //Application.Run(new Register.LibrarianRegister());
-            //Application.Run(new A_MainForm(LoggedInAdmin));
+            Application.Run(new A_MainForm(LoggedInAdmin));
             //Application.Run(new M_MainForm(LoggedInMember));
             //.Run(new Form1());
         }
