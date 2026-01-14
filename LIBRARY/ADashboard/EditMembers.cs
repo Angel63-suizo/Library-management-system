@@ -32,7 +32,7 @@ namespace LIBRARY.ADashboard
 
         private void PopulateComboboxes()
         {
-            A_AddMember_Repository repo = new A_AddMember_Repository();
+            MemberManager repo = new MemberManager();
             try
             {
                 DataTable dt = repo.GetMemberType();
@@ -59,7 +59,7 @@ namespace LIBRARY.ADashboard
             {
                 lblMemberID.Text = member["CardNumber"].ToString();
                 txtFirstName.Text = member["FirstName"].ToString();
-                txtLastName.Text = member["FirstName"].ToString();
+                txtLastName.Text = member["LastName"].ToString();
                 txtEmail.Text = member["Email"].ToString();
                 txtPhone.Text = member["Phone"].ToString();
                 cmbMemberType.Text = member["MemberType"].ToString();

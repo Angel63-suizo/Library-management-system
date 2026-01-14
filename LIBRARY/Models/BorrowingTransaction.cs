@@ -6,35 +6,17 @@ using System.Threading.Tasks;
 
 namespace LIBRARY.Models
 {
-    internal class BorrowingTransaction
+    public class BorrowingTransaction
     {
-        private int transactionId;
-        private int memberId;
-        private int copyId;
-        private DateTime checkoutDate;
-        private DateTime dueDate;
-        private DateTime returnedDate;
-        private string status;
-        private decimal fineAmount;
 
-        public int TransactionId { get => transactionId; set => transactionId = value; }
-        public int MemberId { get => memberId; set => memberId = value; }
-        public int CopyId { get => copyId;  set => copyId = value; }
-        public DateTime CheckoutDate { get => checkoutDate; set => checkoutDate = value; }
-        public DateTime DueDate { get => dueDate; set => dueDate = value; }
-        public DateTime ReturnedDate { get => returnedDate; set => returnedDate = value; }
-        public string Status { get => status; set => status = value; }
-        public decimal FineAmount { get => fineAmount; set => fineAmount = value; }
+        public int TransactionId { get; set; }
+        public int MemberId { get; set; }
+        public int CopyId { get;  set; }
+        public DateTime CheckoutDate { get; set; }
+        public DateTime DueDate { get; set; }
+        public DateTime ReturnedDate { get; set; }
+        public string Status { get; set; }
+        public decimal FineAmount { get; set; }
 
-        public decimal CalculateFine()
-        {
-            if (Status == "Returned" && ReturnedDate > DueDate)
-            {
-                TimeSpan overdueDuration = ReturnedDate - DueDate;
-                decimal finePerDay = 1.00m; 
-                return (decimal)overdueDuration.Days * finePerDay;
-            }
-            return 0.00m;
-        }
     }
 }

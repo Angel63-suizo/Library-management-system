@@ -1,9 +1,10 @@
-﻿using System;
+﻿using LIBRARY.Class;
+using LIBRARY.Models;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using LIBRARY.Class;
 
 namespace LIBRARY.ADashboard
 {
@@ -140,7 +141,7 @@ namespace LIBRARY.ADashboard
         {
             try
             {
-                A_AddMember_Repository repo = new A_AddMember_Repository();
+                MemberManager repo = new MemberManager();
                 DataTable types = repo.GetMemberType();
 
                 cmbMemberType.Items.Clear();

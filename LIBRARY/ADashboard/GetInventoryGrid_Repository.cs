@@ -55,20 +55,5 @@ namespace LIBRARY.ADashboard
             }
             return dt;
         }
-
-        public void LogMovement(int resourceId, string type, string details, string user)
-        {
-            using (var conn = Database.GetConnection())
-            {
-                string query = "INSERT INTO InventoryLogs (ResourceId, ActionType, Details, PerformedBy) VALUES (@id, @type, @details, @user)";
-                MySqlCommand cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@id", resourceId);
-                cmd.Parameters.AddWithValue("@type", type);
-                cmd.Parameters.AddWithValue("@details", details);
-                cmd.Parameters.AddWithValue("@user", user); 
-                conn.Open();
-                cmd.ExecuteNonQuery();
-            }
-        }
     }
 }

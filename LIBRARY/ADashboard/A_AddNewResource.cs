@@ -30,44 +30,49 @@ namespace LIBRARY.ADashboard
         {
             try
             {
-                Resource newresource = new Resource();
-                newresource.ISBN = txtISBN.Text;
-                newresource.Title = txtTitle.Text;
-                newresource.Author = txtAuthor.Text;
-                newresource.PublisherName = txtPublisher.Text; 
-                newresource.PublicationYear = (int)numYear.Value;
-                newresource.Edition = txtEdition.Text;
-                newresource.Language = txtLanguage.Text;
-                newresource.Description = txtDescription.Text;
-                newresource.Location = txtLocation.Text;
+                Resource newresource = new Resource
+                {
+                    ISBN = txtISBN.Text,
+                    Title = txtTitle.Text,
+                    Author = txtAuthor.Text,
+                    PublisherName = txtPublisher.Text,
+                    PublicationYear = (int)numYear.Value,
+                    Edition = txtEdition.Text,
+                    Language = txtLanguage.Text,
+                    Description = txtDescription.Text,
+                    Location = txtLocation.Text,
+                    Pages = int.TryParse(txtPages.Text, out int p) ? p : 0
+                };
 
-                int pagesValue;
-                int.TryParse(txtPages.Text, out pagesValue); 
-                newresource.Pages = pagesValue;
-
-                int copiesValue;
-                int.TryParse(txtCopies.Text, out copiesValue); 
-                int copies = copiesValue;
-
+                int copiesValue = int.TryParse(txtCopies.Text, out int c) ? c : 1;
                 int categoryId = Convert.ToInt32(cmbCategory.SelectedValue);
 
-                A_AddResource_Repository repo = new A_AddResource_Repository();
-                repo.AddNewResource(newresource, categoryId, cmbResourceType.Text, copies);
+                string resultAccession = LoggedInAdmin.AddResourceToCatalog(newresource, categoryId, cmbResourceType.Text, copiesValue);
 
-                MessageBox.Show("Book added successfully!");
+                if (!string.IsNullOrEmpty(resultAccession))
+                {
+                    MessageBox.Show($"Resource added successfully!\nBase Accession: {resultAccession}",
+                                    "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    DataSaved?.Invoke(this, EventArgs.Empty);
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add resource. Please verify that the ISBN is unique and all required fields are filled.",
+                                    "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Input Error: " + ex.Message);
+                MessageBox.Show("Critical Error: " + ex.Message);
             }
-            DataSaved?.Invoke(this, EventArgs.Empty);
-            this.Close();
 
         }
 
         private void A_AddNewResource_Load(object sender, EventArgs e)
         {
-            A_AddResource_Repository repo = new A_AddResource_Repository();
+            CatalogManager repo = new CatalogManager();
             try
             {
                 DataTable dt = repo.GetCategories();

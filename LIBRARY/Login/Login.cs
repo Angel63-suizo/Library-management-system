@@ -110,9 +110,7 @@ namespace LIBRARY.Login
 
         private void lblLogin_Click(object sender, EventArgs e)
         {
-            Register.register signup = new Register.register();
-            signup.Show();
-            this.Hide();
+            
         }
 
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)

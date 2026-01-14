@@ -39,7 +39,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnCirculations = new System.Windows.Forms.Button();
             this.btnMemberLookup = new System.Windows.Forms.Button();
-            this.btnReports = new System.Windows.Forms.Button();
             this.btnBookSearch = new System.Windows.Forms.Button();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlSidebar1.SuspendLayout();
@@ -60,7 +59,6 @@
             this.pnlSidebar1.Controls.Add(this.btnLogout);
             this.pnlSidebar1.Controls.Add(this.btnCirculations);
             this.pnlSidebar1.Controls.Add(this.btnMemberLookup);
-            this.pnlSidebar1.Controls.Add(this.btnReports);
             this.pnlSidebar1.Controls.Add(this.btnBookSearch);
             this.pnlSidebar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlSidebar1.Location = new System.Drawing.Point(0, 0);
@@ -200,27 +198,6 @@
             this.btnMemberLookup.UseVisualStyleBackColor = false;
             this.btnMemberLookup.Click += new System.EventHandler(this.btnMembers_Click);
             // 
-            // btnReports
-            // 
-            this.btnReports.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnReports.BackColor = System.Drawing.Color.SlateGray;
-            this.btnReports.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnReports.FlatAppearance.BorderSize = 0;
-            this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReports.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Image = ((System.Drawing.Image)(resources.GetObject("btnReports.Image")));
-            this.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReports.Location = new System.Drawing.Point(11, 550);
-            this.btnReports.Margin = new System.Windows.Forms.Padding(3, 2, 3, 20);
-            this.btnReports.Name = "btnReports";
-            this.btnReports.Size = new System.Drawing.Size(274, 80);
-            this.btnReports.TabIndex = 1;
-            this.btnReports.Text = "   Reports";
-            this.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReports.UseVisualStyleBackColor = false;
-            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
-            // 
             // btnBookSearch
             // 
             this.btnBookSearch.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -280,7 +257,6 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnCirculations;
         private System.Windows.Forms.Button btnMemberLookup;
-        private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Button btnBookSearch;
         private System.Windows.Forms.Panel pnlContent;
         private System.Windows.Forms.Panel panel3;

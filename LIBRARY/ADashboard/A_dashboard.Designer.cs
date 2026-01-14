@@ -104,10 +104,10 @@
             this.panel1.Controls.Add(this.lblTotalBooks);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(59, 26);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(79, 32);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(378, 120);
+            this.panel1.Size = new System.Drawing.Size(504, 148);
             this.panel1.TabIndex = 23;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -117,10 +117,9 @@
             this.lblTotalBooks.AutoSize = true;
             this.lblTotalBooks.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalBooks.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalBooks.Location = new System.Drawing.Point(116, 62);
-            this.lblTotalBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalBooks.Location = new System.Drawing.Point(155, 76);
             this.lblTotalBooks.Name = "lblTotalBooks";
-            this.lblTotalBooks.Size = new System.Drawing.Size(25, 27);
+            this.lblTotalBooks.Size = new System.Drawing.Size(32, 35);
             this.lblTotalBooks.TabIndex = 5;
             this.lblTotalBooks.Text = "0";
             // 
@@ -128,10 +127,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Lime;
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(41, 36);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(55, 44);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(50, 50);
+            this.panel3.Size = new System.Drawing.Size(67, 62);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -139,8 +138,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Lime;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -154,10 +153,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(116, 34);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(155, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 21);
+            this.label1.Size = new System.Drawing.Size(117, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Total  Books";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -174,8 +172,8 @@
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
             legend1.Name = "Legend1";
             this.chartTrends.Legends.Add(legend1);
-            this.chartTrends.Location = new System.Drawing.Point(57, 362);
-            this.chartTrends.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartTrends.Location = new System.Drawing.Point(76, 446);
+            this.chartTrends.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartTrends.Name = "chartTrends";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -185,9 +183,10 @@
             series2.Name = "Returned";
             this.chartTrends.Series.Add(series1);
             this.chartTrends.Series.Add(series2);
-            this.chartTrends.Size = new System.Drawing.Size(604, 367);
+            this.chartTrends.Size = new System.Drawing.Size(805, 452);
             this.chartTrends.TabIndex = 27;
             this.chartTrends.Text = "chart1";
+            this.chartTrends.Click += new System.EventHandler(this.chartTrends_Click);
             this.chartTrends.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // chartCategory
@@ -197,8 +196,8 @@
             this.chartCategory.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chartCategory.Legends.Add(legend2);
-            this.chartCategory.Location = new System.Drawing.Point(690, 362);
-            this.chartCategory.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chartCategory.Location = new System.Drawing.Point(920, 446);
+            this.chartCategory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chartCategory.Name = "chartCategory";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
@@ -208,7 +207,7 @@
             series3.XValueMember = "Category";
             series3.YValueMembers = "TotalCount";
             this.chartCategory.Series.Add(series3);
-            this.chartCategory.Size = new System.Drawing.Size(608, 367);
+            this.chartCategory.Size = new System.Drawing.Size(811, 452);
             this.chartCategory.TabIndex = 28;
             this.chartCategory.Text = "chart2";
             this.chartCategory.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
@@ -220,10 +219,10 @@
             this.panel4.Controls.Add(this.lblBooksBorrowed);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(490, 26);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(653, 32);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(378, 120);
+            this.panel4.Size = new System.Drawing.Size(504, 148);
             this.panel4.TabIndex = 29;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -233,10 +232,9 @@
             this.lblBooksBorrowed.AutoSize = true;
             this.lblBooksBorrowed.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBooksBorrowed.ForeColor = System.Drawing.Color.Black;
-            this.lblBooksBorrowed.Location = new System.Drawing.Point(116, 62);
-            this.lblBooksBorrowed.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBooksBorrowed.Location = new System.Drawing.Point(155, 76);
             this.lblBooksBorrowed.Name = "lblBooksBorrowed";
-            this.lblBooksBorrowed.Size = new System.Drawing.Size(25, 27);
+            this.lblBooksBorrowed.Size = new System.Drawing.Size(32, 35);
             this.lblBooksBorrowed.TabIndex = 5;
             this.lblBooksBorrowed.Text = "0";
             // 
@@ -244,10 +242,10 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.MediumOrchid;
             this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(41, 36);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Location = new System.Drawing.Point(55, 44);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(50, 50);
+            this.panel5.Size = new System.Drawing.Size(67, 62);
             this.panel5.TabIndex = 4;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -255,8 +253,8 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.MediumOrchid;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -269,10 +267,9 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(116, 34);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(155, 42);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 21);
+            this.label5.Size = new System.Drawing.Size(155, 28);
             this.label5.TabIndex = 2;
             this.label5.Text = "Books Borrowed";
             // 
@@ -283,10 +280,10 @@
             this.panel2.Controls.Add(this.lblTotalMembers);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Location = new System.Drawing.Point(920, 26);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(1227, 32);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 120);
+            this.panel2.Size = new System.Drawing.Size(504, 148);
             this.panel2.TabIndex = 30;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -296,10 +293,9 @@
             this.lblTotalMembers.AutoSize = true;
             this.lblTotalMembers.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalMembers.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalMembers.Location = new System.Drawing.Point(116, 62);
-            this.lblTotalMembers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalMembers.Location = new System.Drawing.Point(155, 76);
             this.lblTotalMembers.Name = "lblTotalMembers";
-            this.lblTotalMembers.Size = new System.Drawing.Size(25, 27);
+            this.lblTotalMembers.Size = new System.Drawing.Size(32, 35);
             this.lblTotalMembers.TabIndex = 5;
             this.lblTotalMembers.Text = "0";
             // 
@@ -307,10 +303,10 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Location = new System.Drawing.Point(41, 36);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Location = new System.Drawing.Point(55, 44);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 50);
+            this.panel6.Size = new System.Drawing.Size(67, 62);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -318,8 +314,8 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -332,10 +328,9 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(116, 34);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(155, 42);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 21);
+            this.label6.Size = new System.Drawing.Size(146, 28);
             this.label6.TabIndex = 2;
             this.label6.Text = "Total  Members";
             // 
@@ -346,10 +341,10 @@
             this.panel7.Controls.Add(this.lblOverdueBooks);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.label8);
-            this.panel7.Location = new System.Drawing.Point(920, 193);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Location = new System.Drawing.Point(1227, 238);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(378, 120);
+            this.panel7.Size = new System.Drawing.Size(504, 148);
             this.panel7.TabIndex = 31;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -359,10 +354,9 @@
             this.lblOverdueBooks.AutoSize = true;
             this.lblOverdueBooks.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOverdueBooks.ForeColor = System.Drawing.Color.Black;
-            this.lblOverdueBooks.Location = new System.Drawing.Point(116, 62);
-            this.lblOverdueBooks.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOverdueBooks.Location = new System.Drawing.Point(155, 76);
             this.lblOverdueBooks.Name = "lblOverdueBooks";
-            this.lblOverdueBooks.Size = new System.Drawing.Size(25, 27);
+            this.lblOverdueBooks.Size = new System.Drawing.Size(32, 35);
             this.lblOverdueBooks.TabIndex = 5;
             this.lblOverdueBooks.Text = "0";
             // 
@@ -370,10 +364,10 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Crimson;
             this.panel8.Controls.Add(this.pictureBox4);
-            this.panel8.Location = new System.Drawing.Point(41, 36);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(55, 44);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(50, 50);
+            this.panel8.Size = new System.Drawing.Size(67, 62);
             this.panel8.TabIndex = 4;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -381,8 +375,8 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Crimson;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -395,10 +389,9 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(116, 34);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(155, 42);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(116, 21);
+            this.label8.Size = new System.Drawing.Size(145, 28);
             this.label8.TabIndex = 2;
             this.label8.Text = "Overdue Books";
             // 
@@ -409,10 +402,10 @@
             this.panel9.Controls.Add(this.lblTotalRevenue);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.label10);
-            this.panel9.Location = new System.Drawing.Point(490, 193);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Location = new System.Drawing.Point(653, 238);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(378, 120);
+            this.panel9.Size = new System.Drawing.Size(504, 148);
             this.panel9.TabIndex = 32;
             this.panel9.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -422,10 +415,9 @@
             this.lblTotalRevenue.AutoSize = true;
             this.lblTotalRevenue.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalRevenue.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalRevenue.Location = new System.Drawing.Point(116, 62);
-            this.lblTotalRevenue.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalRevenue.Location = new System.Drawing.Point(155, 76);
             this.lblTotalRevenue.Name = "lblTotalRevenue";
-            this.lblTotalRevenue.Size = new System.Drawing.Size(25, 27);
+            this.lblTotalRevenue.Size = new System.Drawing.Size(32, 35);
             this.lblTotalRevenue.TabIndex = 5;
             this.lblTotalRevenue.Text = "0";
             // 
@@ -433,10 +425,10 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.Orange;
             this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Location = new System.Drawing.Point(41, 36);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Location = new System.Drawing.Point(55, 44);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(50, 50);
+            this.panel10.Size = new System.Drawing.Size(67, 62);
             this.panel10.TabIndex = 4;
             this.panel10.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -444,8 +436,8 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Orange;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(32, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -458,10 +450,9 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(116, 34);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(155, 42);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 21);
+            this.label10.Size = new System.Drawing.Size(132, 28);
             this.label10.TabIndex = 2;
             this.label10.Text = "Total Revenue";
             // 
@@ -472,10 +463,10 @@
             this.panel11.Controls.Add(this.lblActiveStaff);
             this.panel11.Controls.Add(this.panel12);
             this.panel11.Controls.Add(this.label12);
-            this.panel11.Location = new System.Drawing.Point(59, 193);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Location = new System.Drawing.Point(79, 238);
+            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(378, 120);
+            this.panel11.Size = new System.Drawing.Size(504, 148);
             this.panel11.TabIndex = 33;
             this.panel11.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -485,10 +476,9 @@
             this.lblActiveStaff.AutoSize = true;
             this.lblActiveStaff.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActiveStaff.ForeColor = System.Drawing.Color.Black;
-            this.lblActiveStaff.Location = new System.Drawing.Point(116, 62);
-            this.lblActiveStaff.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblActiveStaff.Location = new System.Drawing.Point(155, 76);
             this.lblActiveStaff.Name = "lblActiveStaff";
-            this.lblActiveStaff.Size = new System.Drawing.Size(25, 27);
+            this.lblActiveStaff.Size = new System.Drawing.Size(32, 35);
             this.lblActiveStaff.TabIndex = 5;
             this.lblActiveStaff.Text = "0";
             // 
@@ -496,10 +486,10 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel12.Controls.Add(this.pictureBox6);
-            this.panel12.Location = new System.Drawing.Point(41, 36);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Location = new System.Drawing.Point(55, 44);
+            this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(50, 50);
+            this.panel12.Size = new System.Drawing.Size(67, 62);
             this.panel12.TabIndex = 4;
             this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -507,8 +497,8 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(32, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -521,10 +511,9 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(116, 34);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(155, 42);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 21);
+            this.label12.Size = new System.Drawing.Size(110, 28);
             this.label12.TabIndex = 2;
             this.label12.Text = "Active Staff";
             // 
@@ -537,10 +526,10 @@
             this.panel13.Controls.Add(this.btnAddBook);
             this.panel13.Controls.Add(this.btnAddMember);
             this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(57, 759);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Location = new System.Drawing.Point(76, 934);
+            this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(1240, 163);
+            this.panel13.Size = new System.Drawing.Size(1653, 201);
             this.panel13.TabIndex = 34;
             this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -550,10 +539,10 @@
             this.btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn.Image = ((System.Drawing.Image)(resources.GetObject("btn.Image")));
-            this.btn.Location = new System.Drawing.Point(952, 70);
-            this.btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn.Location = new System.Drawing.Point(1269, 86);
+            this.btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(244, 70);
+            this.btn.Size = new System.Drawing.Size(325, 86);
             this.btn.TabIndex = 4;
             this.btn.Text = "    System Settings";
             this.btn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -567,10 +556,10 @@
             this.btnGenerateReport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGenerateReport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGenerateReport.Image = ((System.Drawing.Image)(resources.GetObject("btnGenerateReport.Image")));
-            this.btnGenerateReport.Location = new System.Drawing.Point(649, 70);
-            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerateReport.Location = new System.Drawing.Point(865, 86);
+            this.btnGenerateReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGenerateReport.Name = "btnGenerateReport";
-            this.btnGenerateReport.Size = new System.Drawing.Size(248, 70);
+            this.btnGenerateReport.Size = new System.Drawing.Size(331, 86);
             this.btnGenerateReport.TabIndex = 3;
             this.btnGenerateReport.Text = "    Generate Report";
             this.btnGenerateReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -583,10 +572,10 @@
             this.btnAddBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddBook.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddBook.Image = ((System.Drawing.Image)(resources.GetObject("btnAddBook.Image")));
-            this.btnAddBook.Location = new System.Drawing.Point(344, 70);
-            this.btnAddBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddBook.Location = new System.Drawing.Point(459, 86);
+            this.btnAddBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddBook.Name = "btnAddBook";
-            this.btnAddBook.Size = new System.Drawing.Size(244, 70);
+            this.btnAddBook.Size = new System.Drawing.Size(325, 86);
             this.btnAddBook.TabIndex = 2;
             this.btnAddBook.Text = "    View Resources";
             this.btnAddBook.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -600,10 +589,10 @@
             this.btnAddMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddMember.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMember.Image = ((System.Drawing.Image)(resources.GetObject("btnAddMember.Image")));
-            this.btnAddMember.Location = new System.Drawing.Point(43, 70);
-            this.btnAddMember.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddMember.Location = new System.Drawing.Point(57, 86);
+            this.btnAddMember.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddMember.Name = "btnAddMember";
-            this.btnAddMember.Size = new System.Drawing.Size(245, 70);
+            this.btnAddMember.Size = new System.Drawing.Size(327, 86);
             this.btnAddMember.TabIndex = 1;
             this.btnAddMember.Text = "    View Member";
             this.btnAddMember.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -615,16 +604,15 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(32, 24);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label13.Location = new System.Drawing.Point(43, 30);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(99, 20);
+            this.label13.Size = new System.Drawing.Size(127, 25);
             this.label13.TabIndex = 0;
             this.label13.Text = "Quick Actions";
             // 
             // A_dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -637,9 +625,9 @@
             this.Controls.Add(this.chartCategory);
             this.Controls.Add(this.chartTrends);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "A_dashboard";
-            this.Size = new System.Drawing.Size(1355, 941);
+            this.Size = new System.Drawing.Size(1807, 1158);
             this.Load += new System.EventHandler(this.A_dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

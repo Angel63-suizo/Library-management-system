@@ -29,17 +29,33 @@ namespace LIBRARY.ADashboard
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Models.Member newMember = new Models.Member();
-            newMember.Firstname = txtFirstName.Text;
-            newMember.Lastname = txtLastName.Text;
-            newMember.Email = txtEmail.Text;
-            newMember.Password = txtPassword.Text;
-            newMember.Address = txtAddress.Text;
+            Models.Member newMember = new Models.Member
+            {
+                Firstname = txtFirstName.Text,
+                Lastname = txtLastName.Text,
+                Email = txtEmail.Text,
+                Password = txtPassword.Text,
+                Address = txtAddress.Text
+            };
 
-            A_AddMember_Repository repo = new A_AddMember_Repository();
-            repo.AddNewMember(newMember, cmbMemberType.Text, cmbStatus.Text);
+            string generatedCardNum = LoggedInAdmin.RegisterNewMember(newMember, cmbMemberType.Text, cmbStatus.Text);
 
-            MessageBox.Show("New member added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (!string.IsNullOrEmpty(generatedCardNum))
+            {
+                MessageBox.Show($"New member added successfully!\n\nLibrary Card Number: {generatedCardNum}",
+                                "Registration Complete",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+
+                btnClear_Click(null, null); 
+            }
+            else
+            {
+                MessageBox.Show("Failed to add member. Please check if the email is Valid and all fields are filled.",
+                                "Error",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -55,7 +71,7 @@ namespace LIBRARY.ADashboard
 
         private void PopulateComboboxes()
         {
-            A_AddMember_Repository repo = new A_AddMember_Repository();
+            MemberManager repo = new MemberManager();
             try
             {
                 DataTable dt = repo.GetMemberType();
@@ -100,6 +116,11 @@ namespace LIBRARY.ADashboard
                     e.Graphics.DrawPath(pen, path);
                 }
             }
+        }
+
+        private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

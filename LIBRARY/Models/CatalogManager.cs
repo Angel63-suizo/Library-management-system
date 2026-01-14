@@ -1,19 +1,15 @@
 ﻿using LIBRARY.Class;
-using LIBRARY.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Media.Animation;
 
-namespace LIBRARY.ADashboard
+namespace LIBRARY.Models
 {
-    internal class A_AddResource_Repository
+    internal class CatalogManager
     {
         public string AddNewResource(Resource resource, int categoryId, string resourceType, int Copies)
         {
@@ -21,14 +17,14 @@ namespace LIBRARY.ADashboard
             try
             {
                 using (var conn = Database.GetConnection())
-                using (var cmd = new MySqlCommand("sp_AddResource", conn)) 
+                using (var cmd = new MySqlCommand("sp_AddResource", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("p_ISBN", resource.ISBN);
                     cmd.Parameters.AddWithValue("p_Title", resource.Title);
-                    cmd.Parameters.AddWithValue("p_Author", resource.Author); 
-                    cmd.Parameters.AddWithValue("p_CategoryId", categoryId); 
-                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherName); 
+                    cmd.Parameters.AddWithValue("p_Author", resource.Author);
+                    cmd.Parameters.AddWithValue("p_CategoryId", categoryId);
+                    cmd.Parameters.AddWithValue("p_PublisherName", resource.PublisherName);
                     cmd.Parameters.AddWithValue("p_PubYear", resource.PublicationYear);
                     cmd.Parameters.AddWithValue("p_Edition", resource.Edition);
                     cmd.Parameters.AddWithValue("p_Language", resource.Language);

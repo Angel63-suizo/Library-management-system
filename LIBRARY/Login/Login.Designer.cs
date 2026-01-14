@@ -41,10 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.chkShowPassword = new System.Windows.Forms.CheckBox();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.lblLogin = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -71,9 +69,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.chkShowPassword);
             this.panel2.Controls.Add(this.btnLogin);
-            this.panel2.Controls.Add(this.lblLogin);
             this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.label5);
             this.panel2.Location = new System.Drawing.Point(0, 222);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
@@ -223,18 +219,6 @@
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             this.btnLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
-            // lblLogin
-            // 
-            this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLogin.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.lblLogin.Location = new System.Drawing.Point(273, 518);
-            this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(97, 16);
-            this.lblLogin.TabIndex = 67;
-            this.lblLogin.Text = "Create account";
-            this.lblLogin.Click += new System.EventHandler(this.lblLogin_Click);
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -260,16 +244,6 @@
             this.txtPassword.Size = new System.Drawing.Size(436, 32);
             this.txtPassword.TabIndex = 62;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(117, 518);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 16);
-            this.label5.TabIndex = 66;
-            this.label5.Text = "Don\'t have an account? ";
             // 
             // pictureBox1
             // 
@@ -332,7 +306,7 @@
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Controls.Add(this.panel2);
             this.panel5.Location = new System.Drawing.Point(758, 52);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(521, 798);
             this.panel5.TabIndex = 50;
@@ -368,8 +342,6 @@
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.CheckBox chkShowPassword;
-        private System.Windows.Forms.Label lblLogin;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsername;

@@ -1,4 +1,5 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,6 +53,63 @@ namespace LIBRARY.ADashboard
                 {
                     e.Graphics.DrawPath(pen, path);
                 }
+            }
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SystemSettings repo = new SystemSettings();
+            bool allSuccess = true;
+
+            allSuccess &= repo.UpdateMemberTypeLimits(1, (int)nudStudentMaxBooks.Value, (int)nudBorrowingPeriod.Value);
+
+            allSuccess &= repo.UpdateMemberTypeLimits(2, (int)nudFacultyMaxBooks.Value, (int)numericUpDown1.Value);
+
+            allSuccess &= repo.UpdateMemberTypeLimits(3, (int)nudStaffMaxBooks.Value, (int)nudStaffBorrowingPeriod.Value);
+
+            if (allSuccess)
+            {
+                MessageBox.Show("All member type limits updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void LoadCurrentMemberLimits()
+        {
+            SystemSettings repo = new SystemSettings();
+            DataTable dt = repo.FetchCurrentLimits();
+
+            foreach (DataRow row in dt.Rows)
+            {
+                int id = Convert.ToInt32(row["MemberTypeID"]);
+                int max = Convert.ToInt32(row["MaxBooksAllowed"]);
+                int days = Convert.ToInt32(row["BorrowingPeriodDays"]);
+
+                if (id == 1) { nudStudentMaxBooks.Value = max; nudBorrowingPeriod.Value = days; }
+                else if (id == 2) { nudFacultyMaxBooks.Value = max; numericUpDown1.Value = days; }
+                else if (id == 3) { nudStaffMaxBooks.Value = max; nudStaffBorrowingPeriod.Value = days; }
+            }
+        }
+
+        private void SystemSettings_UC_Load(object sender, EventArgs e)
+        {
+            LoadCurrentMemberLimits();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string newCategory = txtCategoryName.Text.Trim();
+
+            if (string.IsNullOrEmpty(newCategory))
+            {
+                MessageBox.Show("Please enter a category name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            SystemSettings repo = new SystemSettings();
+            if (repo.AddCategory(newCategory))
+            {
+                MessageBox.Show("Category added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtCategoryName.Clear();
             }
         }
     }

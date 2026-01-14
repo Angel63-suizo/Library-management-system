@@ -1,4 +1,5 @@
 ﻿using LIBRARY.Class;
+using LIBRARY.Models;
 using Org.BouncyCastle.Asn1.Cmp;
 using System;
 using System.Collections.Generic;
@@ -69,7 +70,7 @@ namespace LIBRARY.ADashboard
         {
             try
             {
-                A_AddResource_Repository repo = new A_AddResource_Repository();
+                CatalogManager repo = new CatalogManager();
                 DataTable types = repo.GetCategories();
 
                 cmbCategory.Items.Clear();
@@ -82,10 +83,6 @@ namespace LIBRARY.ADashboard
                         string Category = row["Name"].ToString();
                         cmbCategory.Items.Add(Category);
                     }
-                }
-                else
-                {
-                    MessageBox.Show("No Categories were found in the database.");
                 }
 
                 cmbCategory.SelectedIndex = 0;

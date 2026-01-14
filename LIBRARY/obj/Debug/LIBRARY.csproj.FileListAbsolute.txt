@@ -164,7 +164,6 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.exe.config
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddCopy.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AddMember.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.AlertsView_UC.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddLibraryStaff.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_AddNewResource.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.A_dashboard.resources
@@ -179,9 +178,7 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.EditMembers.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.frmReportModal.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.FullInventory_UC.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.InventoryMovements_UC.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.Reports.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.StockAlert_UC.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.SystemSettings_UC.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.ucReportPreview.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.ADashboard.ViewMemberDetails.resources
@@ -202,13 +199,10 @@ C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.M_browse_catalog.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.M_my_account.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.M_my_books.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.PhotoCropperForm.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.ucBorrowedBook.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.MDashboard.ucBorrowingHistory.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.M_MainForm.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.Properties.Resources.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.Register.LibrarianRegister.resources
-C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.Register.register.resources
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.GenerateResource.cache
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\obj\Debug\LIBRARY.csproj.CoreCompileInputs.cache
 C:\Users\Angel\source\repos\Angel63-suizo\Library-management-system\LIBRARY\bin\Debug\LIBRARY.exe.config

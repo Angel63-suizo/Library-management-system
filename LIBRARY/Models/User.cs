@@ -9,39 +9,21 @@ namespace LIBRARY.Class
 {
     public class User
     {
-        private int userId;
-        private string username;
-        private string password;
-        private string firstname;
-        private string lastname;
-        private string email;
-        private string phone;
-        private string role;
-        private DateTime createdAt;
 
-        public int UserId { get => userId; set => userId = value; }
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
-        public string Firstname { get => firstname; set => firstname = value; }
-        public string Lastname { get => lastname; set => lastname = value; }
-        public string Email { get => email; set => email = value; }
-        public string Phone { get => phone; set => phone = value; }
-        public string Role { get => role; set => role = value; }
-        public DateTime CreatedAt { get => createdAt; set => createdAt = value; }
+        public int UserId { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Role { get; set; }
+        public DateTime CreatedAt { get; set; }
         public string FullName
         {
-            get => $"{firstname} {lastname}";
-        }
-        public bool Login (string username, string password)
-        {
-            //add logic to checlk credentials
-            return false;
+            get => $"{Firstname} {Lastname}";
         }
 
-        public void Logout()
-        {
-            Console.WriteLine("User Logged out.");
-        }
     }
 
 }

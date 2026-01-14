@@ -10,34 +10,21 @@ namespace LIBRARY.Models
 {
     public class Resource
     {
-        private int resourceid;
-        private string accessionBase;
-        private string isbn;
-        private string title;
-        private string author;
-        private string publisherName;
-        private int publicationYear;
-        private string edition;
-        private string language;
-        private int pages;
-        private string resourcheType;
-        private string description;
-        private string coverImagePath;
-        private string location;
-        public int ResourceId { get => resourceid; set => resourceid = value; }
-        public string AccessionBase { get => accessionBase; set => accessionBase = value; }
-        public string ISBN { get => isbn; set => isbn = value; }
-        public string Title { get => title; set => title = value; }
-        public string Author { get => author; set => author = value; }
-        public string PublisherName { get => publisherName; set => publisherName = value; }
-        public int PublicationYear { get => publicationYear; set => publicationYear = value; }
-        public string Edition { get => edition; set => edition = value; }
-        public string Language { get => language; set => language = value; }
-        public int Pages { get => pages; set => pages = value; }
-        public string ResourceType { get => resourcheType; set => resourcheType = value; }
-        public string Description { get => description; set => description = value; }
-        public string CoverImagePath { get => coverImagePath; set => coverImagePath = value; }
-        public string Location { get => location; set => location = value; }
+
+        public int ResourceId { get; set; }
+        public string AccessionBase { get; set; }
+        public string ISBN { get; set; }
+        public string Title { get; set; }
+        public string Author { get; set; }
+        public string PublisherName { get; set; }
+        public int PublicationYear { get; set; }
+        public string Edition { get; set; }
+        public string Language { get; set; }
+        public int Pages { get; set; }
+        public string ResourceType { get; set; }
+        public string Description { get; set; }
+        public string CoverImagePath { get; set; }
+        public string Location { get; set; }
 
         public string GetFullImagePath()
         {

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblLocation = new System.Windows.Forms.Label();
+            this.lblPublisher = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblCategory = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,13 +49,11 @@
             this.lblCurrentlyBorrowed = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lblTotalCopies = new System.Windows.Forms.Label();
+            this.lblBookID = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblBookID = new System.Windows.Forms.Label();
-            this.lblPublisher = new System.Windows.Forms.Label();
-            this.lblLocation = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -94,6 +94,28 @@
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.ForeColor = System.Drawing.Color.Black;
+            this.lblLocation.Location = new System.Drawing.Point(461, 649);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(20, 20);
+            this.lblLocation.TabIndex = 61;
+            this.lblLocation.Text = "A";
+            // 
+            // lblPublisher
+            // 
+            this.lblPublisher.AutoSize = true;
+            this.lblPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPublisher.ForeColor = System.Drawing.Color.Black;
+            this.lblPublisher.Location = new System.Drawing.Point(100, 484);
+            this.lblPublisher.Name = "lblPublisher";
+            this.lblPublisher.Size = new System.Drawing.Size(20, 20);
+            this.lblPublisher.TabIndex = 60;
+            this.lblPublisher.Text = "A";
+            // 
             // panel4
             // 
             this.panel4.AutoSize = true;
@@ -102,7 +124,7 @@
             this.panel4.Location = new System.Drawing.Point(222, 178);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(153, 37);
+            this.panel4.Size = new System.Drawing.Size(106, 37);
             this.panel4.TabIndex = 59;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -135,7 +157,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblStatus.BackColor = System.Drawing.Color.Honeydew;
             this.lblStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.Color.Green;
@@ -150,7 +172,7 @@
             this.lblPubYear.AutoSize = true;
             this.lblPubYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPubYear.ForeColor = System.Drawing.Color.Black;
-            this.lblPubYear.Location = new System.Drawing.Point(464, 441);
+            this.lblPubYear.Location = new System.Drawing.Point(461, 484);
             this.lblPubYear.Name = "lblPubYear";
             this.lblPubYear.Size = new System.Drawing.Size(20, 20);
             this.lblPubYear.TabIndex = 57;
@@ -161,7 +183,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(465, 412);
+            this.label6.Location = new System.Drawing.Point(462, 455);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 19);
             this.label6.TabIndex = 56;
@@ -172,7 +194,7 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lblDescription.Location = new System.Drawing.Point(101, 228);
+            this.lblDescription.Location = new System.Drawing.Point(100, 252);
             this.lblDescription.Name = "lblDescription";
             this.lblDescription.Size = new System.Drawing.Size(20, 19);
             this.lblDescription.TabIndex = 55;
@@ -203,7 +225,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel3.Location = new System.Drawing.Point(69, 281);
+            this.panel3.Location = new System.Drawing.Point(66, 324);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(700, 4);
@@ -214,7 +236,7 @@
             this.labelloc.AutoSize = true;
             this.labelloc.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelloc.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelloc.Location = new System.Drawing.Point(465, 577);
+            this.labelloc.Location = new System.Drawing.Point(462, 620);
             this.labelloc.Name = "labelloc";
             this.labelloc.Size = new System.Drawing.Size(61, 19);
             this.labelloc.TabIndex = 48;
@@ -225,7 +247,7 @@
             this.lblAvailableCopies.AutoSize = true;
             this.lblAvailableCopies.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAvailableCopies.ForeColor = System.Drawing.Color.Black;
-            this.lblAvailableCopies.Location = new System.Drawing.Point(464, 526);
+            this.lblAvailableCopies.Location = new System.Drawing.Point(461, 569);
             this.lblAvailableCopies.Name = "lblAvailableCopies";
             this.lblAvailableCopies.Size = new System.Drawing.Size(20, 20);
             this.lblAvailableCopies.TabIndex = 47;
@@ -236,7 +258,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label11.Location = new System.Drawing.Point(465, 497);
+            this.label11.Location = new System.Drawing.Point(462, 540);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(108, 19);
             this.label11.TabIndex = 46;
@@ -247,7 +269,7 @@
             this.lblISBN.AutoSize = true;
             this.lblISBN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblISBN.ForeColor = System.Drawing.Color.Black;
-            this.lblISBN.Location = new System.Drawing.Point(464, 353);
+            this.lblISBN.Location = new System.Drawing.Point(461, 396);
             this.lblISBN.Name = "lblISBN";
             this.lblISBN.Size = new System.Drawing.Size(20, 20);
             this.lblISBN.TabIndex = 45;
@@ -258,7 +280,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label5.Location = new System.Drawing.Point(465, 325);
+            this.label5.Location = new System.Drawing.Point(462, 368);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 19);
             this.label5.TabIndex = 44;
@@ -269,7 +291,7 @@
             this.lblCurrentlyBorrowed.AutoSize = true;
             this.lblCurrentlyBorrowed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCurrentlyBorrowed.ForeColor = System.Drawing.Color.Black;
-            this.lblCurrentlyBorrowed.Location = new System.Drawing.Point(100, 606);
+            this.lblCurrentlyBorrowed.Location = new System.Drawing.Point(97, 649);
             this.lblCurrentlyBorrowed.Name = "lblCurrentlyBorrowed";
             this.lblCurrentlyBorrowed.Size = new System.Drawing.Size(20, 20);
             this.lblCurrentlyBorrowed.TabIndex = 43;
@@ -280,7 +302,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(101, 577);
+            this.label4.Location = new System.Drawing.Point(98, 620);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 19);
             this.label4.TabIndex = 42;
@@ -291,18 +313,29 @@
             this.lblTotalCopies.AutoSize = true;
             this.lblTotalCopies.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalCopies.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalCopies.Location = new System.Drawing.Point(100, 527);
+            this.lblTotalCopies.Location = new System.Drawing.Point(97, 570);
             this.lblTotalCopies.Name = "lblTotalCopies";
             this.lblTotalCopies.Size = new System.Drawing.Size(20, 20);
             this.lblTotalCopies.TabIndex = 41;
             this.lblTotalCopies.Text = "A";
+            // 
+            // lblBookID
+            // 
+            this.lblBookID.AutoSize = true;
+            this.lblBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookID.ForeColor = System.Drawing.Color.Black;
+            this.lblBookID.Location = new System.Drawing.Point(97, 396);
+            this.lblBookID.Name = "lblBookID";
+            this.lblBookID.Size = new System.Drawing.Size(20, 20);
+            this.lblBookID.TabIndex = 39;
+            this.lblBookID.Text = "A";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label7.Location = new System.Drawing.Point(101, 497);
+            this.label7.Location = new System.Drawing.Point(98, 540);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 19);
             this.label7.TabIndex = 26;
@@ -313,7 +346,7 @@
             this.label.AutoSize = true;
             this.label.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label.Location = new System.Drawing.Point(101, 412);
+            this.label.Location = new System.Drawing.Point(98, 455);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(65, 19);
             this.label.TabIndex = 25;
@@ -324,7 +357,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label3.Location = new System.Drawing.Point(101, 325);
+            this.label3.Location = new System.Drawing.Point(98, 368);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 19);
             this.label3.TabIndex = 16;
@@ -339,39 +372,6 @@
             this.label1.Size = new System.Drawing.Size(147, 32);
             this.label1.TabIndex = 12;
             this.label1.Text = "Book Details";
-            // 
-            // lblBookID
-            // 
-            this.lblBookID.AutoSize = true;
-            this.lblBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBookID.ForeColor = System.Drawing.Color.Black;
-            this.lblBookID.Location = new System.Drawing.Point(100, 353);
-            this.lblBookID.Name = "lblBookID";
-            this.lblBookID.Size = new System.Drawing.Size(20, 20);
-            this.lblBookID.TabIndex = 39;
-            this.lblBookID.Text = "A";
-            // 
-            // lblPublisher
-            // 
-            this.lblPublisher.AutoSize = true;
-            this.lblPublisher.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPublisher.ForeColor = System.Drawing.Color.Black;
-            this.lblPublisher.Location = new System.Drawing.Point(103, 441);
-            this.lblPublisher.Name = "lblPublisher";
-            this.lblPublisher.Size = new System.Drawing.Size(20, 20);
-            this.lblPublisher.TabIndex = 60;
-            this.lblPublisher.Text = "A";
-            // 
-            // lblLocation
-            // 
-            this.lblLocation.AutoSize = true;
-            this.lblLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.ForeColor = System.Drawing.Color.Black;
-            this.lblLocation.Location = new System.Drawing.Point(464, 606);
-            this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(20, 20);
-            this.lblLocation.TabIndex = 61;
-            this.lblLocation.Text = "A";
             // 
             // A_ResourceDetail
             // 

@@ -151,5 +151,10 @@ namespace LIBRARY.ADashboard
                 }
             }
         }
+
+        private void chartTrends_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using LIBRARY.Class;
-using LIBRARY.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -8,12 +7,10 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using static LIBRARY.Class.Database;
 
-namespace LIBRARY.ADashboard
+namespace LIBRARY.Models
 {
-    internal class A_AddMember_Repository
+    internal class MemberManager
     {
         public static string HashPassword(string password)
         {
@@ -60,7 +57,7 @@ namespace LIBRARY.ADashboard
             return cardNum;
         }
 
-       public DataTable GetMemberType()
+        public DataTable GetMemberType()
         {
             DataTable dt = new DataTable();
             try
@@ -68,13 +65,13 @@ namespace LIBRARY.ADashboard
                 using (var conn = Database.GetConnection())
                 using (var cmd = new MySqlCommand("sp_GetMemberTypes", conn))
                 {
-                   cmd.CommandType = CommandType.StoredProcedure;
-                   conn.Open();
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    conn.Open();
 
-                   using (MySqlDataAdapter adapt = new MySqlDataAdapter(cmd))
-                   {
-                      adapt.Fill(dt);
-                   }
+                    using (MySqlDataAdapter adapt = new MySqlDataAdapter(cmd))
+                    {
+                        adapt.Fill(dt);
+                    }
                 }
             }
             catch (Exception ex)
@@ -84,7 +81,7 @@ namespace LIBRARY.ADashboard
             return dt;
         }
 
-        public List<string> GetStatus(String tablename, string columnname )
+        public List<string> GetStatus(String tablename, string columnname)
         {
             List<string> values = new List<string>();
             try

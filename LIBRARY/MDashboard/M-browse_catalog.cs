@@ -39,7 +39,7 @@ namespace LIBRARY.MDashboard
         {
             try
             {
-                A_AddResource_Repository repo = new A_AddResource_Repository();
+                CatalogManager repo = new CatalogManager();
                 DataTable types = repo.GetCategories();
 
                 cmbSearch.Items.Clear();
@@ -156,14 +156,6 @@ namespace LIBRARY.MDashboard
 
         private void btnView_Click(object sender, EventArgs e)
         {
-        }
-
-        private void LoadUserControl(UserControl mem)
-        {
-            pnlContent.Controls.Clear();   
-            mem.Dock = DockStyle.Fill;       
-            pnlContent.Controls.Add(mem);  
-            mem.BringToFront();
         }
 
         private void pnlContent_Paint(object sender, PaintEventArgs e)

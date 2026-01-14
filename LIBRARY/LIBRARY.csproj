@@ -218,19 +218,12 @@
     <Compile Include="ADashboard\AddMember.Designer.cs">
       <DependentUpon>AddMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADashboard\AlertsView_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ADashboard\AlertsView_UC.Designer.cs">
-      <DependentUpon>AlertsView_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADashboard\A_AddNewResource.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ADashboard\A_AddNewResource.Designer.cs">
       <DependentUpon>A_AddNewResource.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADashboard\A_AddResource_Repository.cs" />
     <Compile Include="ADashboard\A_EditResource.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,7 +246,6 @@
       <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\A_AddLibraryStaff_Repository.cs" />
-    <Compile Include="ADashboard\A_AddMember_Repository.cs" />
     <Compile Include="ADashboard\A_dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -319,24 +311,13 @@
       <DependentUpon>FullInventory_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="ADashboard\GetInventoryGrid_Repository.cs" />
-    <Compile Include="ADashboard\InventoryMovements_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ADashboard\InventoryMovements_UC.Designer.cs">
-      <DependentUpon>InventoryMovements_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="ADashboard\Reports.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ADashboard\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="ADashboard\StockAlert_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ADashboard\StockAlert_UC.Designer.cs">
-      <DependentUpon>StockAlert_UC.cs</DependentUpon>
-    </Compile>
+    <Compile Include="ADashboard\SystemSettings.cs" />
     <Compile Include="ADashboard\SystemSettings_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -465,16 +446,16 @@
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\BookCopy.cs" />
     <Compile Include="Models\BorrowingTransaction.cs" />
-    <Compile Include="Models\Browse_Catalog.cs" />
+    <Compile Include="Models\CatalogManager.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Database.cs" />
     <Compile Include="Models\EBook.cs" />
     <Compile Include="Models\LibraryStaff.cs" />
     <Compile Include="Models\Member.cs" />
+    <Compile Include="Models\MemberManager.cs" />
     <Compile Include="Models\MemberType.cs" />
     <Compile Include="Models\Periodical.cs" />
     <Compile Include="Models\PhysicalBook.cs" />
-    <Compile Include="Models\Publisher.cs" />
     <Compile Include="Models\ReportsManager.cs" />
     <Compile Include="Models\Resource.cs" />
     <Compile Include="Models\Thesis.cs" />
@@ -484,12 +465,6 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MDashboard\PhotoCropperForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDashboard\PhotoCropperForm.Designer.cs">
-      <DependentUpon>PhotoCropperForm.cs</DependentUpon>
     </Compile>
     <Compile Include="M_MainForm.cs">
       <SubType>Form</SubType>
@@ -516,26 +491,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Register\LibrarianRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Register\LibrarianRegister.Designer.cs">
-      <DependentUpon>LibrarianRegister.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Register\register.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Register\register.Designer.cs">
-      <DependentUpon>register.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="ADashboard\AddCopy.resx">
       <DependentUpon>AddCopy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\AddMember.resx">
       <DependentUpon>AddMember.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ADashboard\AlertsView_UC.resx">
-      <DependentUpon>AlertsView_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\A_AddLibraryStaff.resx">
       <DependentUpon>A_AddLibraryStaff.cs</DependentUpon>
@@ -579,14 +539,8 @@
     <EmbeddedResource Include="ADashboard\FullInventory_UC.resx">
       <DependentUpon>FullInventory_UC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ADashboard\InventoryMovements_UC.resx">
-      <DependentUpon>InventoryMovements_UC.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ADashboard\StockAlert_UC.resx">
-      <DependentUpon>StockAlert_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADashboard\SystemSettings_UC.resx">
       <DependentUpon>SystemSettings_UC.cs</DependentUpon>
@@ -648,9 +602,6 @@
     <EmbeddedResource Include="MDashboard\M-my_books.resx">
       <DependentUpon>M-my_books.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MDashboard\PhotoCropperForm.resx">
-      <DependentUpon>PhotoCropperForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MDashboard\ucBorrowedBook.resx">
       <DependentUpon>ucBorrowedBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -664,12 +615,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Register\LibrarianRegister.resx">
-      <DependentUpon>LibrarianRegister.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Register\register.resx">
-      <DependentUpon>register.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

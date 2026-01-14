@@ -30,11 +30,11 @@ namespace LIBRARY.ADashboard
 
         }
 
-        public void DisplayReport(DataSet ds, string period)
+        public void DisplayReport(DataSet ds, string period, string reportType)
         {
             if (ucReportPreviewControl != null)
             {
-                ucReportPreviewControl.SetData(ds, period);
+                ucReportPreviewControl.SetData(ds, period, reportType);
                 ucReportPreviewControl.Invalidate(); 
                 this.Refresh();
             }

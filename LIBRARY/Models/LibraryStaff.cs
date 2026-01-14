@@ -1,4 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using LIBRARY.LDashboard;
+using LIBRARY.Models;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +13,21 @@ namespace LIBRARY.Class
 {
     public class libraryStaff : User
     {
-     /*public BorrowingTransaction ProcessCheckout()
+        private BorrowingTransaction_Repository _transactionRepo = new BorrowingTransaction_Repository();
+        public bool ProcessCheckout(string memberCardNumber, List<BorrowingTransaction> items)
         {
-            Console.WriteLine("Proccessing Book Checkout...";
-            return new BorrowingTransaction ();
+            if (items == null || items.Count == 0 || string.IsNullOrEmpty(memberCardNumber))
+                return false;
+
+            return _transactionRepo.SaveBorrowingTransaction(memberCardNumber, items);
         }
 
-        public Fine ProcessReturn()
+        public bool ProcessReturn(List<BorrowingTransaction> items)
         {
-            Console.WriteLine("Processing book return...");
-            return new Fine();
-        }*/
+            if (items == null || items.Count == 0)
+                return false;
+
+            return _transactionRepo.ReturnBooksTransaction(items);
+        }
     }
 }

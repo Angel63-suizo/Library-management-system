@@ -174,7 +174,7 @@ namespace LIBRARY.LDashboard
             {
                 pnlContentStatus.Visible = false;
                 label19.Text = "No items scanned yet";
-                label18.Text = "Scan book barcodes to begin";
+                label18.Text = "Type Accession Base";
                 pictureBox13.Visible = true;
             }
         }
@@ -276,16 +276,15 @@ namespace LIBRARY.LDashboard
                 });
             }
 
-            BorrowingTransaction_Repository repo = new BorrowingTransaction_Repository();
             bool success = false;
 
             if (isCheckoutMode)
             {
-                success = repo.SaveBorrowingTransaction(currentUser.Cardnumber, itemsToSave);
+                success = LoggedInStaff.ProcessCheckout(currentUser.Cardnumber, itemsToSave);
             }
             else
             {
-                success = repo.ReturnBooksTransaction(itemsToSave);
+                success = LoggedInStaff.ProcessReturn(itemsToSave);
             }
 
             if (success)
@@ -294,6 +293,11 @@ namespace LIBRARY.LDashboard
                 dgvTransaction.Rows.Clear();
                 UpdateTransactionList();
                 ItemsClear();
+            }
+            else
+            {
+                MessageBox.Show("Transaction failed. Please check the system logs.",
+                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -49,8 +49,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAlertsView = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pnlInventroryContainer = new System.Windows.Forms.Panel();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -73,10 +71,10 @@
             this.panel7.Controls.Add(this.lblCategories);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.lblCategorie);
-            this.panel7.Location = new System.Drawing.Point(933, 34);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(1244, 42);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(280, 115);
+            this.panel7.Size = new System.Drawing.Size(373, 142);
             this.panel7.TabIndex = 35;
             this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -86,10 +84,9 @@
             this.lblCategories.AutoSize = true;
             this.lblCategories.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategories.ForeColor = System.Drawing.Color.Black;
-            this.lblCategories.Location = new System.Drawing.Point(92, 56);
-            this.lblCategories.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategories.Location = new System.Drawing.Point(123, 69);
             this.lblCategories.Name = "lblCategories";
-            this.lblCategories.Size = new System.Drawing.Size(25, 27);
+            this.lblCategories.Size = new System.Drawing.Size(32, 35);
             this.lblCategories.TabIndex = 5;
             this.lblCategories.Text = "0";
             this.lblCategories.Click += new System.EventHandler(this.label7_Click);
@@ -98,10 +95,10 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.LimeGreen;
             this.panel8.Controls.Add(this.pictureBox4);
-            this.panel8.Location = new System.Drawing.Point(27, 32);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Location = new System.Drawing.Point(36, 39);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(50, 50);
+            this.panel8.Size = new System.Drawing.Size(67, 62);
             this.panel8.TabIndex = 4;
             this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -109,8 +106,8 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(32, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -124,10 +121,9 @@
             this.lblCategorie.AutoSize = true;
             this.lblCategorie.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategorie.ForeColor = System.Drawing.Color.Black;
-            this.lblCategorie.Location = new System.Drawing.Point(93, 32);
-            this.lblCategorie.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCategorie.Location = new System.Drawing.Point(124, 39);
             this.lblCategorie.Name = "lblCategorie";
-            this.lblCategorie.Size = new System.Drawing.Size(80, 20);
+            this.lblCategorie.Size = new System.Drawing.Size(102, 25);
             this.lblCategorie.TabIndex = 2;
             this.lblCategorie.Text = "Categories";
             // 
@@ -138,10 +134,10 @@
             this.panel5.Controls.Add(this.lblOutOfStock);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.lbl1);
-            this.panel5.Location = new System.Drawing.Point(623, 34);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(831, 42);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(280, 115);
+            this.panel5.Size = new System.Drawing.Size(373, 142);
             this.panel5.TabIndex = 34;
             this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -151,10 +147,9 @@
             this.lblOutOfStock.AutoSize = true;
             this.lblOutOfStock.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutOfStock.ForeColor = System.Drawing.Color.Black;
-            this.lblOutOfStock.Location = new System.Drawing.Point(92, 56);
-            this.lblOutOfStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblOutOfStock.Location = new System.Drawing.Point(123, 69);
             this.lblOutOfStock.Name = "lblOutOfStock";
-            this.lblOutOfStock.Size = new System.Drawing.Size(25, 27);
+            this.lblOutOfStock.Size = new System.Drawing.Size(32, 35);
             this.lblOutOfStock.TabIndex = 5;
             this.lblOutOfStock.Text = "0";
             // 
@@ -162,10 +157,10 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Red;
             this.panel6.Controls.Add(this.pictureBox3);
-            this.panel6.Location = new System.Drawing.Point(27, 32);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Location = new System.Drawing.Point(36, 39);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 50);
+            this.panel6.Size = new System.Drawing.Size(67, 62);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -173,8 +168,8 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(32, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -188,10 +183,9 @@
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.ForeColor = System.Drawing.Color.Black;
-            this.lbl1.Location = new System.Drawing.Point(93, 32);
-            this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl1.Location = new System.Drawing.Point(124, 39);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(97, 20);
+            this.lbl1.Size = new System.Drawing.Size(122, 25);
             this.lbl1.TabIndex = 2;
             this.lbl1.Text = "Out of Stocks";
             // 
@@ -202,10 +196,10 @@
             this.panel2.Controls.Add(this.lblLowStock);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(313, 34);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(417, 42);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(280, 115);
+            this.panel2.Size = new System.Drawing.Size(373, 142);
             this.panel2.TabIndex = 33;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -215,10 +209,9 @@
             this.lblLowStock.AutoSize = true;
             this.lblLowStock.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLowStock.ForeColor = System.Drawing.Color.Black;
-            this.lblLowStock.Location = new System.Drawing.Point(92, 56);
-            this.lblLowStock.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLowStock.Location = new System.Drawing.Point(123, 69);
             this.lblLowStock.Name = "lblLowStock";
-            this.lblLowStock.Size = new System.Drawing.Size(25, 27);
+            this.lblLowStock.Size = new System.Drawing.Size(32, 35);
             this.lblLowStock.TabIndex = 5;
             this.lblLowStock.Text = "0";
             // 
@@ -226,10 +219,10 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Orange;
             this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(25, 32);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(33, 39);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(50, 50);
+            this.panel4.Size = new System.Drawing.Size(67, 62);
             this.panel4.TabIndex = 4;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -237,8 +230,8 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -252,10 +245,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(93, 32);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(124, 39);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 20);
+            this.label4.Size = new System.Drawing.Size(145, 25);
             this.label4.TabIndex = 2;
             this.label4.Text = "Low Stock Items";
             // 
@@ -266,10 +258,10 @@
             this.panel1.Controls.Add(this.lblTotalInventory);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, 34);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(0, 42);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(280, 115);
+            this.panel1.Size = new System.Drawing.Size(373, 142);
             this.panel1.TabIndex = 32;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -279,10 +271,9 @@
             this.lblTotalInventory.AutoSize = true;
             this.lblTotalInventory.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalInventory.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalInventory.Location = new System.Drawing.Point(92, 56);
-            this.lblTotalInventory.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalInventory.Location = new System.Drawing.Point(123, 69);
             this.lblTotalInventory.Name = "lblTotalInventory";
-            this.lblTotalInventory.Size = new System.Drawing.Size(27, 32);
+            this.lblTotalInventory.Size = new System.Drawing.Size(34, 41);
             this.lblTotalInventory.TabIndex = 5;
             this.lblTotalInventory.Text = "0";
             // 
@@ -290,10 +281,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(25, 32);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(33, 39);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(50, 50);
+            this.panel3.Size = new System.Drawing.Size(67, 62);
             this.panel3.TabIndex = 4;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
@@ -301,8 +292,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.DodgerBlue;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(9, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -316,74 +307,35 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(93, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(124, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 21);
+            this.label1.Size = new System.Drawing.Size(142, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Total Inventory";
-            // 
-            // btnAlertsView
-            // 
-            this.btnAlertsView.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnAlertsView.BackColor = System.Drawing.Color.SlateGray;
-            this.btnAlertsView.FlatAppearance.BorderColor = System.Drawing.Color.SlateGray;
-            this.btnAlertsView.FlatAppearance.BorderSize = 0;
-            this.btnAlertsView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlertsView.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlertsView.ForeColor = System.Drawing.Color.White;
-            this.btnAlertsView.Location = new System.Drawing.Point(0, 197);
-            this.btnAlertsView.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAlertsView.Name = "btnAlertsView";
-            this.btnAlertsView.Size = new System.Drawing.Size(141, 45);
-            this.btnAlertsView.TabIndex = 37;
-            this.btnAlertsView.Text = "Alerts View";
-            this.btnAlertsView.UseVisualStyleBackColor = false;
-            this.btnAlertsView.Click += new System.EventHandler(this.btnAlertsView_Click);
-            this.btnAlertsView.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(160, 197);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 45);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "Full Inventory";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // pnlInventroryContainer
             // 
             this.pnlInventroryContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.pnlInventroryContainer.Location = new System.Drawing.Point(0, 288);
-            this.pnlInventroryContainer.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlInventroryContainer.Location = new System.Drawing.Point(3, 246);
+            this.pnlInventroryContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlInventroryContainer.Name = "pnlInventroryContainer";
-            this.pnlInventroryContainer.Size = new System.Drawing.Size(1213, 527);
+            this.pnlInventroryContainer.Size = new System.Drawing.Size(1617, 649);
             this.pnlInventroryContainer.TabIndex = 39;
             this.pnlInventroryContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 
             // A_Inventory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.Controls.Add(this.pnlInventroryContainer);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnAlertsView);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "A_Inventory";
-            this.Size = new System.Drawing.Size(1213, 857);
+            this.Size = new System.Drawing.Size(1617, 1055);
             this.Load += new System.EventHandler(this.A_Inventory_Load);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -431,8 +383,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAlertsView;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel pnlInventroryContainer;
     }
 }

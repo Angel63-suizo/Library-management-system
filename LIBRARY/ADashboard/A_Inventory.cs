@@ -24,7 +24,7 @@ namespace LIBRARY.ADashboard
 
         private void A_Inventory_Load(object sender, EventArgs e)
         {
-            LoadUserControl(new AlertsView_UC(LoggedInAdmin));
+            LoadUserControl(new FullInventory_UC(LoggedInAdmin));
         }
 
         private void LoadUserControl(UserControl mem)
@@ -95,16 +95,6 @@ namespace LIBRARY.ADashboard
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
 
-        }
-
-        private void btnAlertsView_Click(object sender, EventArgs e)
-        {
-            LoadUserControl(new AlertsView_UC(LoggedInAdmin));
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            LoadUserControl(new FullInventory_UC(LoggedInAdmin));
         }
 
         private void label7_Click(object sender, EventArgs e)
