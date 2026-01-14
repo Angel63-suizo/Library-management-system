@@ -1,15 +1,9 @@
 ﻿using LIBRARY.Class;
 using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Documents;
-using System.Xml.Linq;
 using ClosedXML.Excel;
+using ClosedXML.Graphics;
 
 namespace LIBRARY.Models
 {
@@ -35,6 +29,7 @@ namespace LIBRARY.Models
         {
             try
             {
+                LoadOptions.DefaultGraphicEngine = new DefaultGraphicEngine("Arial");
                 using (var workbook = new XLWorkbook())
                 {
                     var summarySheet = workbook.Worksheets.Add("Summary");
@@ -42,11 +37,13 @@ namespace LIBRARY.Models
                     summarySheet.Cell(1, 1).Style.Font.Bold = true;
 
                     summarySheet.Cell(3, 1).InsertTable(data.Tables[0]);
+                    summarySheet.Columns().AdjustToContents();
 
                     if (data.Tables.Count > 1)
                     {
                         var categorySheet = workbook.Worksheets.Add("Category Breakdown");
                         categorySheet.Cell(1, 1).InsertTable(data.Tables[1]);
+                        categorySheet.Columns().AdjustToContents();
                     }
 
                     workbook.SaveAs(filePath);

@@ -21,41 +21,57 @@ namespace LIBRARY.ADashboard
         {
 
         }
-        public void LoadData(DataSet ds, string period)
+        public void SetData(DataSet ds, string period)
         {
-            richTextBox1.Clear();
-            if (ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0) return;
+            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+            {
+                richTextBox1.Text = "No data available for this report.";
+                return;
+            }
 
+            richTextBox1.Clear();
             DataRow summary = ds.Tables[0].Rows[0];
 
             AppendBoldText("MONTHLY CIRCULATION REPORT\n");
-            AppendNormalText($"Generated: {DateTime.Now:M/d/yyyy}\n");
+            AppendNormalText($"Generated: {DateTime.Now:MM/dd/yyyy}\n");
             AppendNormalText($"Period: {period}\n\n");
 
             AppendBoldText("SUMMARY:\n");
-            AppendNormalText($"Total Checkouts: {summary["TotalCheckouts"]:N0}\n");
-            AppendNormalText($"Total Returns: {summary["TotalReturns"]:N0}\n");
-            AppendNormalText($"Active Reservations: {summary["ActiveReservations"]:N0}\n");
-            AppendNormalText($"Overdue Items: {summary["OverdueItems"]:N0}\n\n");
 
-            AppendBoldText("CATEGORY BREAKDOWN:\n");
-            foreach (DataRow row in ds.Tables[1].Rows)
+            AppendNormalText($"Total Checkouts: {Convert.ToInt32(summary["TotalCheckouts"]):N0}\n");
+            AppendNormalText($"Total Returns: {Convert.ToInt32(summary["TotalReturns"]):N0}\n");
+            AppendNormalText($"Active Reservations: {Convert.ToInt32(summary["ActiveReservations"]):N0}\n");
+            AppendNormalText($"Overdue Items: {Convert.ToInt32(summary["OverdueItems"]):N0}\n\n");
+
+            if (ds.Tables.Count > 1)
             {
-                AppendNormalText($"{row["Name"]}: {row["Percentage"]}%\n");
+                AppendBoldText("CATEGORY BREAKDOWN:\n");
+                foreach (DataRow row in ds.Tables[1].Rows)
+                {
+                    double pct = Convert.ToDouble(row["Percentage"]);
+                    AppendNormalText($"{row["Name"]}: {pct:F1}%\n");
+                }
             }
-
         }
 
         private void AppendBoldText(string text)
         {
-            richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Bold);
-            richTextBox1.AppendText(text);
+            Font currentFont = richTextBox1.Font ?? new Font("Segoe UI", 10);
+            using (Font boldFont = new Font(currentFont, FontStyle.Bold))
+            {
+                richTextBox1.SelectionFont = boldFont;
+                richTextBox1.AppendText(text);
+            }
         }
 
         private void AppendNormalText(string text)
         {
-            richTextBox1.SelectionFont = new Font(richTextBox1.Font, FontStyle.Regular);
-            richTextBox1.AppendText(text);
+            Font currentFont = richTextBox1.Font ?? new Font("Segoe UI", 10);
+            using (Font regularFont = new Font(currentFont, FontStyle.Regular))
+            {
+                richTextBox1.SelectionFont = regularFont;
+                richTextBox1.AppendText(text);
+            }
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using ClosedXML.Graphics;
-using DocumentFormat.OpenXml.Drawing.Charts;
-using LIBRARY.Class;
+﻿using LIBRARY.Class;
 using LIBRARY.Models;
 using System;
 using System.Collections.Generic;
@@ -61,6 +59,12 @@ namespace LIBRARY.ADashboard
             ReportsManager reports = new ReportsManager();
             DataSet ds = reports.GenerateReportData(dtpStartDate.Value, dtpEndDate.Value);
 
+            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show("No data found to export for the selected period.", "Export Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.Filter = "Excel Files (*.xlsx)|*.xlsx";
@@ -69,7 +73,6 @@ namespace LIBRARY.ADashboard
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     reports.ExportToExcel(ds, sfd.FileName);
-
                     MessageBox.Show("Report exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }

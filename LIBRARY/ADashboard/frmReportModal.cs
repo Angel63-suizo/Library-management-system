@@ -13,9 +13,11 @@ namespace LIBRARY.ADashboard
 {
     public partial class frmReportModal : Form
     {
+        private ucReportPreview ucReportPreviewControl;
         public frmReportModal()
         {
             InitializeComponent();
+            InitializeManualControls();
         }
 
         private void ucReportPreview1_Load(object sender, EventArgs e)
@@ -30,7 +32,28 @@ namespace LIBRARY.ADashboard
 
         public void DisplayReport(DataSet ds, string period)
         {
-            ucReportPreview1.LoadData(ds, period);
+            if (ucReportPreviewControl != null)
+            {
+                ucReportPreviewControl.SetData(ds, period);
+                ucReportPreviewControl.Invalidate(); 
+                this.Refresh();
+            }
+        }
+
+        private void InitializeManualControls()
+        {
+            ucReportPreviewControl = new ucReportPreview();
+
+            ucReportPreviewControl.Dock = DockStyle.Fill;
+
+            if (this.pnlContainer != null)
+            {
+                this.pnlContainer.Controls.Clear(); 
+                this.pnlContainer.Controls.Add(ucReportPreviewControl);
+
+                ucReportPreviewControl.Visible = true;
+                ucReportPreviewControl.BringToFront();
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
