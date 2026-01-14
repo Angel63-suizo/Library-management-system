@@ -319,7 +319,7 @@
             this.pnlInventroryContainer.Location = new System.Drawing.Point(3, 246);
             this.pnlInventroryContainer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlInventroryContainer.Name = "pnlInventroryContainer";
-            this.pnlInventroryContainer.Size = new System.Drawing.Size(1617, 649);
+            this.pnlInventroryContainer.Size = new System.Drawing.Size(1617, 764);
             this.pnlInventroryContainer.TabIndex = 39;
             this.pnlInventroryContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
             // 

@@ -237,6 +237,7 @@ namespace LIBRARY.LDashboard
             {
                 pnlStatusContainer.BackColor = Color.FromArgb(255, 204, 204); 
                 lblStatus.ForeColor = Color.DarkRed;
+                label1.ForeColor = Color.DarkRed;
             }
 
             int current = Convert.ToInt32(row["BooksBorrowed"]);
@@ -325,16 +326,7 @@ namespace LIBRARY.LDashboard
 
         private void dgvTransaction_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvTransaction.Columns[e.ColumnIndex].Name == "colAction" && e.RowIndex >= 0)
-            {
-                string accession = dgvTransaction.Rows[e.RowIndex].Cells["colAccession"].Value.ToString();
-
-                scannedBooks.Remove(accession);
-
-                dgvTransaction.Rows.RemoveAt(e.RowIndex);
-
-                UpdateTransactionList();
-            }
+            
         }
 
         private void ItemsClear()
@@ -397,6 +389,27 @@ namespace LIBRARY.LDashboard
                 using (Pen pen = new Pen(borderColor, borderThickness))
                 {
                     e.Graphics.DrawPath(pen, path);
+                }
+            }
+        }
+
+        private void dgvTransaction_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            if (dgvTransaction.Columns[e.ColumnIndex].Name == "colAction")
+            {
+                var cellValue = dgvTransaction.Rows[e.RowIndex].Cells["colAccession"].Value;
+
+                if (cellValue != null)
+                {
+                    string accession = cellValue.ToString();
+
+                    scannedBooks.Remove(accession);
+
+                    dgvTransaction.Rows.RemoveAt(e.RowIndex);
+
+                    UpdateTransactionList();
                 }
             }
         }

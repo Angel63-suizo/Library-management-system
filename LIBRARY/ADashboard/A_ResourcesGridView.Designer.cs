@@ -167,14 +167,14 @@
             this.DeleteCol});
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvResourceGrid.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 160);
+            this.dgvResourceGrid.Location = new System.Drawing.Point(0, 121);
             this.dgvResourceGrid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvResourceGrid.Name = "dgvResourceGrid";
             this.dgvResourceGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -182,7 +182,7 @@
             this.dgvResourceGrid.RowHeadersWidth = 51;
             this.dgvResourceGrid.RowTemplate.Height = 40;
             this.dgvResourceGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvResourceGrid.Size = new System.Drawing.Size(1613, 622);
+            this.dgvResourceGrid.Size = new System.Drawing.Size(1613, 607);
             this.dgvResourceGrid.TabIndex = 33;
             this.dgvResourceGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResourceGrid_CellContentClick);
             this.dgvResourceGrid.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawCustomBorder);
@@ -289,7 +289,7 @@
             this.Controls.Add(this.panel9);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "A_ResourcesGridView";
-            this.Size = new System.Drawing.Size(1613, 785);
+            this.Size = new System.Drawing.Size(1613, 730);
             this.Load += new System.EventHandler(this.A_ResourcesGridView_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();

@@ -1,10 +1,11 @@
-﻿using LIBRARY.Class;
+﻿using ClosedXML.Excel;
+using ClosedXML.Graphics;
+using LIBRARY.Class;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
-using ClosedXML.Excel;
-using ClosedXML.Graphics;
 using System.Windows;
+using System.Windows.Forms;
 
 namespace LIBRARY.Models
 {
@@ -78,27 +79,39 @@ namespace LIBRARY.Models
             {
                 if (data == null || data.Tables.Count == 0 || data.Tables[0].Rows.Count == 0)
                 {
-                    MessageBox.Show("No data available to export.");
+                    System.Windows.Forms.MessageBox.Show("No data available to export.");
                     return;
                 }
-                LoadOptions.DefaultGraphicEngine = new DefaultGraphicEngine("Arial");
+
                 using (var workbook = new XLWorkbook())
                 {
                     var sheet = workbook.Worksheets.Add("Overdue Report");
+
                     sheet.Cell(1, 1).Value = "OVERDUE BOOKS REPORT";
-                    sheet.Cell(2, 1).Value = $"Period: {DateTime.Now:yyyy-MM-dd}";
+                    sheet.Cell(1, 1).Style.Font.Bold = true;
+                    sheet.Cell(2, 1).Value = $"Generated: {DateTime.Now:yyyy-MM-dd}";
 
-                    var table = sheet.Cell(4, 1).InsertTable(data.Tables[0]);
-                    table.Theme = XLTableTheme.TableStyleLight8;
+                    if (data.Tables[0].Columns.Contains("FormattedReport"))
+                    {
+                        sheet.Cell(4, 1).Value = "Summary of Overdue Items";
+                        sheet.Cell(5, 1).Value = data.Tables[0].Rows[0]["FormattedReport"].ToString();
+                        sheet.Cell(5, 1).Style.Alignment.WrapText = true;
+                        sheet.Column(1).Width = 100;
+                    }
+                    else
+                    {
+                        var table = sheet.Cell(4, 1).InsertTable(data.Tables[0]);
+                        table.Theme = XLTableTheme.TableStyleLight8;
+                        sheet.Columns().AdjustToContents();
+                    }
 
-                    sheet.Columns().AdjustToContents();
                     workbook.SaveAs(filePath);
                 }
-                MessageBox.Show("Export Successful!");
+                System.Windows.Forms.MessageBox.Show("Excel report saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Export Error: " + ex.Message);
+                System.Windows.Forms.MessageBox.Show("Export Error: " + ex.Message);
             }
         }
 

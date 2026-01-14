@@ -149,10 +149,11 @@
             // 
             this.flowLayoutPanelBooks.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.flowLayoutPanelBooks.AutoScroll = true;
-            this.flowLayoutPanelBooks.Location = new System.Drawing.Point(4, 244);
+            this.flowLayoutPanelBooks.Location = new System.Drawing.Point(55, 244);
             this.flowLayoutPanelBooks.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanelBooks.Name = "flowLayoutPanelBooks";
-            this.flowLayoutPanelBooks.Size = new System.Drawing.Size(1516, 855);
+            this.flowLayoutPanelBooks.Padding = new System.Windows.Forms.Padding(10);
+            this.flowLayoutPanelBooks.Size = new System.Drawing.Size(1417, 855);
             this.flowLayoutPanelBooks.TabIndex = 24;
             // 
             // pnlContent

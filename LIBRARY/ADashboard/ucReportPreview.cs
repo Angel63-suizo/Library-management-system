@@ -85,39 +85,26 @@ namespace LIBRARY.ADashboard
                 return;
             }
 
-            DataTable dt = ds.Tables[0];
+            DataRow row = ds.Tables[0].Rows[0];
+
+            if (row["FormattedReport"] == DBNull.Value)
+            {
+                richTextBox1.Text = "No overdue records found for the selected period.";
+                return;
+            }
+
             richTextBox1.Clear();
 
             AppendBoldText("OVERDUE BOOKS REPORT\n");
-            AppendNormalText($"Generated: {DateTime.Now:MM/dd/yyyy}\n");
-            AppendNormalText($"Period: {period}\n\n");
+            AppendNormalText($"Period: {period}\n");
+            AppendBoldText($"TOTAL ITEMS: {row["TotalCount"]}\n");
+            AppendNormalText("==========================================\n\n");
 
-            AppendBoldText("OVERDUE ITEMS LIST:\n");
-            AppendNormalText("------------------------------------------\n");
+            AppendNormalText(row["FormattedReport"].ToString());
 
-            int count = 1;
-            foreach (DataRow row in dt.Rows)
-            {
-                string title = dt.Columns.Contains("BookTitle") ? row["BookTitle"].ToString() : "Unknown Book";
-                string accession = dt.Columns.Contains("Accession") ? row["Accession"].ToString() : "N/A";
+            AppendNormalText("\n\n==========================================\n");
+            AppendNormalText("End of Report");
 
-                AppendBoldText($"{count}. {title} ({accession})\n");
-
-                if (dt.Columns.Contains("MemberCode"))
-                    AppendNormalText($"   Member: {row["MemberCode"]}\n");
-
-                if (dt.Columns.Contains("DueDate"))
-                    AppendNormalText($"   Due: {Convert.ToDateTime(row["DueDate"]):yyyy-MM-dd}\n");
-
-                if (dt.Columns.Contains("FineAmount"))
-                {
-                    decimal fine = row["FineAmount"] != DBNull.Value ? Convert.ToDecimal(row["FineAmount"]) : 0m;
-                    AppendNormalText($"   Fine: ${fine:N2}\n");
-                }
-
-                richTextBox1.AppendText("\n");
-                count++;
-            }
         }
 
         private void DisplayMembersActivity(DataSet ds, string period)

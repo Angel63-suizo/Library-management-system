@@ -42,6 +42,8 @@
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pbCover = new System.Windows.Forms.PictureBox();
+            this.lblLocation = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCover)).BeginInit();
@@ -55,7 +57,7 @@
             this.btnReserve.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReserve.ForeColor = System.Drawing.Color.White;
             this.btnReserve.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReserve.Location = new System.Drawing.Point(689, 463);
+            this.btnReserve.Location = new System.Drawing.Point(689, 525);
             this.btnReserve.Margin = new System.Windows.Forms.Padding(4);
             this.btnReserve.Name = "btnReserve";
             this.btnReserve.Size = new System.Drawing.Size(159, 46);
@@ -214,12 +216,36 @@
             this.pbCover.TabIndex = 29;
             this.pbCover.TabStop = false;
             // 
+            // lblLocation
+            // 
+            this.lblLocation.AutoSize = true;
+            this.lblLocation.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLocation.Location = new System.Drawing.Point(25, 496);
+            this.lblLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblLocation.Name = "lblLocation";
+            this.lblLocation.Size = new System.Drawing.Size(21, 23);
+            this.lblLocation.TabIndex = 42;
+            this.lblLocation.Text = "A";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 454);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 32);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Location";
+            // 
             // frmBookDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(865, 517);
+            this.ClientSize = new System.Drawing.Size(865, 584);
+            this.Controls.Add(this.lblLocation);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnReserve);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.label9);
@@ -263,5 +289,7 @@
         private System.Windows.Forms.Label lblAuthor;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pbCover;
+        private System.Windows.Forms.Label lblLocation;
+        private System.Windows.Forms.Label label2;
     }
 }

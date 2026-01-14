@@ -62,12 +62,10 @@ namespace LIBRARY.ADashboard
             if (_transactionHistory == null || _transactionHistory.Rows.Count == 0)
             {
                 dgvHistory.Visible = false;
-                lblNoTransaction.Visible = true;
             }
             else
             {
                 dgvHistory.Visible = true;
-                lblNoTransaction.Visible = true;
 
                 dgvHistory.Columns["Type"].DataPropertyName = "TransactionType";
                 dgvHistory.Columns["Title"].DataPropertyName = "Title";

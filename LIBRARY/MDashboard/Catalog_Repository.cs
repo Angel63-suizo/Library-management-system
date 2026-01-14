@@ -75,7 +75,8 @@ namespace LIBRARY.MDashboard
                                 CoverImagePath = reader["CoverImagePath"].ToString(),
                                 ResourceType = reader["Categories"].ToString(),
                                 TotalCopies = Convert.ToInt32(reader["TotalCopies"]),
-                                AvailableCopies = Convert.ToInt32(reader["AvailableCopies"])
+                                AvailableCopies = Convert.ToInt32(reader["AvailableCopies"]),
+                                Location = reader["Location"].ToString()
                             };
                         }
                     }

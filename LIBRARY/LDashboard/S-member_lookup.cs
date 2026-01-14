@@ -72,12 +72,26 @@ namespace LIBRARY.LDashboard
             if (memberProfile != null)
             {
                 lblFullName.Text = memberProfile["FullName"].ToString();
-                lblCardNumber.Text = memberProfile["MemberId"].ToString();
+                lblCardNumber.Text = memberProfile["CardNumber"].ToString();
                 lblEmail.Text = memberProfile["Email"].ToString();
                 lblPhone.Text = memberProfile["Phone"].ToString();
                 lblJoinDate.Text = Convert.ToDateTime(memberProfile["CreatedAt"]).ToString("yyyy-MM-dd");
 
-                lblMemberStatus.Text = memberProfile["AccountStatus"].ToString();
+                string status = memberProfile["AccountStatus"].ToString();
+                lblMemberStatus.Text = status;
+
+                if (status == "Active")
+                {
+                    lblMemberStatus.ForeColor = Color.DarkGreen;
+                    lblMemberStatus.BackColor = Color.Honeydew;
+
+                }
+                else
+                {
+                    lblMemberStatus.ForeColor = Color.DarkRed;
+                    lblMemberStatus.BackColor = Color.MistyRose;
+
+                }
                 lblMemberType.Text = memberProfile["NameType"].ToString();
 
                 lblBooksBorrowed.Text = $"{memberProfile["BooksBorrowed"]} / {memberProfile["MaxBooksAllowed"]}";

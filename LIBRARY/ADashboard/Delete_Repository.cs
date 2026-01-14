@@ -67,7 +67,7 @@ namespace LIBRARY.ADashboard
             }
         }
 
-        public (bool Success, string Message) RemoveCopy(string title, int quantity, string reason)
+        public (bool Success, string Message) RemoveCopy(string title, string accession, bool removeAll)
         {
             try
             {
@@ -75,12 +75,12 @@ namespace LIBRARY.ADashboard
                 using (var cmd = new MySqlCommand("sp_RemoveCopies", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("p_AccessionNumber", accession);
+                    cmd.Parameters.AddWithValue("p_RemoveAll", removeAll);
                     cmd.Parameters.AddWithValue("p_Title", title);
-                    cmd.Parameters.AddWithValue("p_NumToRemove", quantity);
-                    cmd.Parameters.AddWithValue("p_Reason", reason);
 
-                    cmd.Parameters.Add(new MySqlParameter("p_Success", MySqlDbType.Byte)).Direction = ParameterDirection.Output;
-                    cmd.Parameters.Add(new MySqlParameter("p_Message", MySqlDbType.VarChar)).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(new MySqlParameter("p_Success", MySqlDbType.Bit)).Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(new MySqlParameter("p_Message", MySqlDbType.VarChar, 255)).Direction = ParameterDirection.Output;
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
@@ -95,6 +95,37 @@ namespace LIBRARY.ADashboard
             {
                 return (false, "System Error: " + ex.Message);
             }
+        }
+
+        public List<string> GetAccessionNumbers(string title)
+        {
+            List<string> accessions = new List<string>();
+
+            try
+            {
+                using (var conn = Database.GetConnection())
+                using (var cmd = new MySqlCommand("sp_GetAccessionNumbersByTitle", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("p_Title", title);
+
+                    if (conn.State != ConnectionState.Open) conn.Open();
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            accessions.Add(reader["AccessionNumber"].ToString());
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Database Error: " + ex.Message);
+            }
+
+            return accessions;
         }
     }
 }

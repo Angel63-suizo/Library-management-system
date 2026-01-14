@@ -28,20 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dtpStartDate = new System.Windows.Forms.DateTimePicker();
             this.lblStatus = new System.Windows.Forms.Label();
             this.lblTypes = new System.Windows.Forms.Label();
@@ -73,8 +71,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel9.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCirculationTrends)).BeginInit();
             this.panel4.SuspendLayout();
@@ -90,8 +86,8 @@
             // 
             this.panel9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.panel2);
-            this.panel9.Controls.Add(this.panel1);
+            this.panel9.Controls.Add(this.dtpStartDate);
+            this.panel9.Controls.Add(this.dtpEndDate);
             this.panel9.Controls.Add(this.lblStatus);
             this.panel9.Controls.Add(this.lblTypes);
             this.panel9.Location = new System.Drawing.Point(7, 14);
@@ -100,46 +96,26 @@
             this.panel9.Size = new System.Drawing.Size(1655, 117);
             this.panel9.TabIndex = 32;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.dtpEndDate);
-            this.panel2.Location = new System.Drawing.Point(335, 43);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(217, 43);
-            this.panel2.TabIndex = 10;
-            // 
             // dtpEndDate
             // 
             this.dtpEndDate.CustomFormat = "MM/dd/yyyy";
             this.dtpEndDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEndDate.Location = new System.Drawing.Point(3, 3);
-            this.dtpEndDate.MaxDate = new System.DateTime(2026, 1, 14, 0, 0, 0, 0);
+            this.dtpEndDate.Location = new System.Drawing.Point(335, 47);
+            this.dtpEndDate.MaxDate = new System.DateTime(2027, 1, 1, 0, 0, 0, 0);
             this.dtpEndDate.Name = "dtpEndDate";
             this.dtpEndDate.Size = new System.Drawing.Size(209, 30);
             this.dtpEndDate.TabIndex = 8;
             this.dtpEndDate.Value = new System.DateTime(2026, 1, 14, 0, 0, 0, 0);
             this.dtpEndDate.ValueChanged += new System.EventHandler(this.dtpEndDate_ValueChanged);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dtpStartDate);
-            this.panel1.Location = new System.Drawing.Point(39, 43);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(217, 43);
-            this.panel1.TabIndex = 9;
-            // 
             // dtpStartDate
             // 
             this.dtpStartDate.CustomFormat = "MM/dd/yyyy";
             this.dtpStartDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStartDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpStartDate.Location = new System.Drawing.Point(3, 3);
-            this.dtpStartDate.MaxDate = new System.DateTime(2026, 1, 14, 0, 0, 0, 0);
+            this.dtpStartDate.Location = new System.Drawing.Point(39, 47);
+            this.dtpStartDate.MaxDate = new System.DateTime(2027, 1, 1, 0, 0, 0, 0);
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(209, 30);
             this.dtpStartDate.TabIndex = 8;
@@ -191,39 +167,39 @@
             // 
             // chartCirculationTrends
             // 
-            chartArea3.AxisX.MajorGrid.Interval = 1D;
-            chartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
-            chartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
-            chartArea3.Name = "ChartArea1";
-            this.chartCirculationTrends.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartCirculationTrends.Legends.Add(legend3);
+            chartArea5.AxisX.MajorGrid.Interval = 1D;
+            chartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.LightGray;
+            chartArea5.Name = "ChartArea1";
+            this.chartCirculationTrends.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartCirculationTrends.Legends.Add(legend5);
             this.chartCirculationTrends.Location = new System.Drawing.Point(20, 76);
             this.chartCirculationTrends.Name = "chartCirculationTrends";
-            series7.BorderWidth = 3;
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.DarkBlue;
-            series7.Legend = "Legend1";
-            series7.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series7.Name = "Checkouts";
-            series8.BorderWidth = 3;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.HotPink;
-            series8.Legend = "Legend1";
-            series8.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series8.Name = "Returns";
-            series9.BorderWidth = 3;
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Color = System.Drawing.Color.Orange;
-            series9.Legend = "Legend1";
-            series9.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
-            series9.Name = "Reservations";
-            this.chartCirculationTrends.Series.Add(series7);
-            this.chartCirculationTrends.Series.Add(series8);
-            this.chartCirculationTrends.Series.Add(series9);
+            series13.BorderWidth = 3;
+            series13.ChartArea = "ChartArea1";
+            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series13.Color = System.Drawing.Color.DarkBlue;
+            series13.Legend = "Legend1";
+            series13.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series13.Name = "Checkouts";
+            series14.BorderWidth = 3;
+            series14.ChartArea = "ChartArea1";
+            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series14.Color = System.Drawing.Color.HotPink;
+            series14.Legend = "Legend1";
+            series14.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series14.Name = "Returns";
+            series15.BorderWidth = 3;
+            series15.ChartArea = "ChartArea1";
+            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series15.Color = System.Drawing.Color.Orange;
+            series15.Legend = "Legend1";
+            series15.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
+            series15.Name = "Reservations";
+            this.chartCirculationTrends.Series.Add(series13);
+            this.chartCirculationTrends.Series.Add(series14);
+            this.chartCirculationTrends.Series.Add(series15);
             this.chartCirculationTrends.Size = new System.Drawing.Size(760, 409);
             this.chartCirculationTrends.TabIndex = 0;
             this.chartCirculationTrends.Text = "chart1";
@@ -253,27 +229,27 @@
             // 
             // chartMemberActivity
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chartMemberActivity.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chartMemberActivity.Legends.Add(legend4);
+            chartArea6.Name = "ChartArea1";
+            this.chartMemberActivity.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartMemberActivity.Legends.Add(legend6);
             this.chartMemberActivity.Location = new System.Drawing.Point(30, 76);
             this.chartMemberActivity.Name = "chartMemberActivity";
-            series10.ChartArea = "ChartArea1";
-            series10.Color = System.Drawing.Color.DarkBlue;
-            series10.Legend = "Legend1";
-            series10.Name = "Student";
-            series11.ChartArea = "ChartArea1";
-            series11.Color = System.Drawing.Color.HotPink;
-            series11.Legend = "Legend1";
-            series11.Name = "Faculty";
-            series12.ChartArea = "ChartArea1";
-            series12.Color = System.Drawing.Color.LightSeaGreen;
-            series12.Legend = "Legend1";
-            series12.Name = "Staff";
-            this.chartMemberActivity.Series.Add(series10);
-            this.chartMemberActivity.Series.Add(series11);
-            this.chartMemberActivity.Series.Add(series12);
+            series16.ChartArea = "ChartArea1";
+            series16.Color = System.Drawing.Color.DarkBlue;
+            series16.Legend = "Legend1";
+            series16.Name = "Student";
+            series17.ChartArea = "ChartArea1";
+            series17.Color = System.Drawing.Color.HotPink;
+            series17.Legend = "Legend1";
+            series17.Name = "Faculty";
+            series18.ChartArea = "ChartArea1";
+            series18.Color = System.Drawing.Color.LightSeaGreen;
+            series18.Legend = "Legend1";
+            series18.Name = "Staff";
+            this.chartMemberActivity.Series.Add(series16);
+            this.chartMemberActivity.Series.Add(series17);
+            this.chartMemberActivity.Series.Add(series18);
             this.chartMemberActivity.Size = new System.Drawing.Size(756, 409);
             this.chartMemberActivity.TabIndex = 0;
             this.chartMemberActivity.Text = "chart2";
@@ -575,8 +551,6 @@
             this.Load += new System.EventHandler(this.Reports_Load);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartCirculationTrends)).EndInit();
@@ -602,8 +576,6 @@
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Label lblTypes;
         private System.Windows.Forms.DateTimePicker dtpStartDate;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DateTimePicker dtpEndDate;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartCirculationTrends;

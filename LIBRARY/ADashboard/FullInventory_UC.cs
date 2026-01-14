@@ -211,5 +211,10 @@ namespace LIBRARY.ADashboard
 
             cmbStatus.SelectedIndex = 0;
         }
+
+        private void panel9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

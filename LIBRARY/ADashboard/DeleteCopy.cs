@@ -18,7 +18,8 @@ namespace LIBRARY.ADashboard
     public partial class DeleteCopy : Form
     {
         private Admin LoggedInAdmin;
-        private string  _booktitle;
+        private string _booktitle;
+        private readonly Delete_Repository _repo = new Delete_Repository();
         public DeleteCopy(Admin admin, string title, string available, string total)
         {
             InitializeComponent();
@@ -30,26 +31,34 @@ namespace LIBRARY.ADashboard
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtCopy.Text, out int qty) || qty <= 0)
+            string selectedAccession = cmbAccessionNumber.Text;
+
+            if (string.IsNullOrEmpty(selectedAccession))
             {
-                MessageBox.Show("Please enter a valid quantity.");
+                MessageBox.Show("Please select an Accession Number or 'All'.");
                 return;
             }
 
-            string reason = cmbReason.Text;
+            bool isRemoveAll = (selectedAccession == "All");
 
-            var repo = new Delete_Repository();
-            var result = repo.RemoveCopy(_booktitle, qty, reason);
+            string confirmMsg = isRemoveAll
+                ? $"Are you sure you want to remove ALL copies of '{_booktitle}'?"
+                : $"Remove copy {selectedAccession} from the system?";
+
+            if (MessageBox.Show(confirmMsg, "Confirm Removal", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                return;
+
+            var result = _repo.RemoveCopy(_booktitle, selectedAccession, isRemoveAll);
 
             if (result.Success)
             {
-                MessageBox.Show(result.Message, "Stock Updated", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(result.Message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;
                 this.Close();
             }
             else
             {
-                MessageBox.Show(result.Message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show(result.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
@@ -80,6 +89,34 @@ namespace LIBRARY.ADashboard
                 {
                     e.Graphics.DrawPath(pen, path);
                 }
+            }
+        }
+
+        private void DeleteCopy_Load(object sender, EventArgs e)
+        {
+            UpdateAccessionList(_booktitle);
+        }
+
+        private void UpdateAccessionList(string title)
+        {
+            try
+            {
+                List<string> accessions = _repo.GetAccessionNumbers(title);
+
+                cmbAccessionNumber.Items.Clear();
+                cmbAccessionNumber.Items.Add("All");
+
+                foreach (var acc in accessions)
+                {
+                    cmbAccessionNumber.Items.Add(acc);
+                }
+
+                if (cmbAccessionNumber.Items.Count > 0)
+                    cmbAccessionNumber.SelectedIndex = 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error Loading Accessions", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

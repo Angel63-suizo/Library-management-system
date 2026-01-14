@@ -86,22 +86,20 @@ namespace LIBRARY.ADashboard
 
             if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
             {
-                MessageBox.Show("No data found to export for the selected period.", "Export Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("No data found to export for the selected period.", "Export Info",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
             using (SaveFileDialog sfd = new SaveFileDialog())
             {
                 sfd.Filter = "Excel Files (*.xlsx)|*.xlsx";
-                sfd.FileName = $"Overdue_Report_{DateTime.Now:yyyyMMdd}.xlsx";
+                sfd.FileName = $"Overdue_Book_Report{DateTime.Now:yyyyMMdd}.xlsx";
 
                 if (sfd.ShowDialog() == DialogResult.OK)
                 {
-                    ReportsManager manager = new ReportsManager();
-                    manager.ExportOverdueToExcel(ds, sfd.FileName);
-
-                    MessageBox.Show("Excel report downloaded successfully!", "Success",
-                                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    reports.ExportOverdueToExcel(ds, sfd.FileName);
+                    MessageBox.Show("Report exported successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

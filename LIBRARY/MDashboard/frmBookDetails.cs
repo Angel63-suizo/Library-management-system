@@ -43,6 +43,7 @@ namespace LIBRARY.MDashboard
                 LBLISBN.Text = book.ISBN;
                 lblCategory.Text = book.ResourceType;
                 lblDescription.Text = book.Description;
+                lblLocation.Text = book.Location;
 
                 lblAvailability.Text = $"{book.AvailableCopies} of {book.TotalCopies} copies available";
                 string path = book.GetFullImagePath();
